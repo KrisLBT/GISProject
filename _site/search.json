@@ -9,8 +9,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "GISProject",
+    "title": "GIS Project",
     "section": "",
-    "text": "This is our GIS Project! hello!"
+    "text": "The Thomson-East Coast line was announced to better connect residents in the North-South corridor and in the East to the central area, bring travel times down from 50 minutes to 35 minutes, and make commuting more convenient to around 1 million commuters every day.[1] The goal of this is to reduce crowd sizes on other MRT lines and to disincentivise car ownership in residents living in this area. Hence, it is imperative to ensure that the MRT station is as accessible as possible to residents living in the area so that they may benefit from the opening of this line.\nThis line will be released in ‘stages’ with different lines being opened to the public. This report will be exclusively concerned with the stage 4 stations, which is set to complete construction in 2024.\nTo assess accessibility to the public, we will be finding the catchment area of the various MRT stations. It will include areas that are within a 5, 10, 15 and 20 minute walking and cycling distance. Afterwards, we will find the buildings and points of interest that exist in the catchment areas."
+  },
+  {
+    "objectID": "intro.html#our-data-sets",
+    "href": "intro.html#our-data-sets",
+    "title": "Introduction",
+    "section": "Our data sets",
+    "text": "Our data sets"
   }
 ]
