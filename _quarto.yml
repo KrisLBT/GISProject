@@ -2,20 +2,20 @@ project:
   type: website
 
 website:
-  title: "GISProject"
+  title: "Catch Them All"
   navbar:
     left: 
       - href: intro.qmd
-        text: Introduction
+        text: Project Scope
       - href: methodology.qmd
         text: Methodology
-      - href: analysis.qmd
-        text: Analysis
+      - href: data.qmd
+        text: Data
       - href: results.qmd
         text: Results & Discussion
     right:
       - href: index.qmd
-        text: Home
+        text: Overview
       - about.qmd
 
 format:

@@ -5,4 +5,22 @@ editor: visual
 
 ## Our goals
 
-## Our data sets
+Our project aims to
+
+1.  Understand how well the new MRT stations will serve the people coming to and from this area
+
+2.  Access its accessibility to various amenities such as restaurants, schools and shopping malls
+
+3.  Find out which areas could have more roads and lines built to maximise the accessibility of the MRT stations
+
+4.  Find the population size of the people being served.
+
+## Motivations
+
+According to the Singapore Green Plan, the government wishes to substantially reduce our carbon emissions in order to combat climate change. One such way it aims to achieve this is by encouraging public transport instead of private transport.
+
+At present, most Singapore residents use public transport such as buses and trains. This is due to the costliness in purchasing and maintaining a car. However, many people still find public transportation to be insufficient, with many wealthier people and families opting for car ownership instead. This is partially driven by the comfort and ease that driving provides to its riders.
+
+However, this contributes to our carbon emissions and makes meeting the goals set by the Green Plan difficult to achieve. This is compounded by the fact that car ownership is a negative externality. Despite the convenience it affords to its owners, it aggravates traffic and is a source of various types of pollution apart from air pollution, such as noise.
+
+This points to a need to strengthen our public transportation system and to accommodate the diverse needs of Singapore residents.
