@@ -3,4 +3,4 @@ title: "Methodology"
 editor: visual
 ---
 
-How we handled the data etc. check check
+How we handled the data etc. check check see
