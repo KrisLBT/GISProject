@@ -1,5 +1,5 @@
 ---
-title: "Group 11: Catch Them All"
+title: "Catch Them All"
 ---
 
 ::: {.callout-note appearance="minimal"}

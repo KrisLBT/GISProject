@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Catch Them All"
+  title: "Group 11"
   navbar:
     left: 
       - href: intro.qmd

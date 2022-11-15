@@ -9,7 +9,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Group 11: Catch Them All",
+    "title": "Catch Them All",
     "section": "",
     "text": "Introduction\n\n\n\nThis website provides an overview of our assessment of the accessibility and catchment areas of the Stage 4 Thomson-East Coast line MRT stations. A more comprehensive analysis can be found in our report."
   },
@@ -30,21 +30,21 @@
   {
     "objectID": "index.html#motivation",
     "href": "index.html#motivation",
-    "title": "Group 11: Catch Them All",
+    "title": "Catch Them All",
     "section": "Motivation",
     "text": "Motivation\nWith Singapore Green Plan 2030, we want to explore how the expansion of TEL Stage 4 MRT Stations can help in making public transportation and Singapore more sustainable and greener."
   },
   {
     "objectID": "index.html#background",
     "href": "index.html#background",
-    "title": "Group 11: Catch Them All",
+    "title": "Catch Them All",
     "section": "Background",
     "text": "Background\nThomson East Coast line (TEL) was announced by the Land Transport Authority on 15 August 2014. It hopes to better serve communities living in the North-South corridor and the East by cutting down travel times to the Central area from 55min to 35min.\nThis is in conjunction with Singapore’s Green Plan which, among others, aims to significantly reduce our carbon emissions and ensure that Singapore is more sustainable. One way would be to reduce demand for private transportation.\nOur focus is on the Stage 4 stations(Founders Memorial to Bayshore) , which are currently in the works and will be opened by 2025."
   },
   {
     "objectID": "index.html#deliverables",
     "href": "index.html#deliverables",
-    "title": "Group 11: Catch Them All",
+    "title": "Catch Them All",
     "section": "Deliverables",
     "text": "Deliverables\n\nDeliverable #1\nWe will provide both the buffer regions and the ISO-areas (using QNEAT3) of the aforementioned stations. The maximum walking distance for both buffer and ISO-area is 1000m while maximum cycling distance is 1500m.\n\n\nDeliverable #2\nAfterwards, we will be conducting an analysis of the various amenities and buildings that lie within the catchment area.\n\n\nDeliverable #3\nWe will also find the population size of the people served by this line by using the composite subzone areas and population."
   },
@@ -72,7 +72,7 @@
   {
     "objectID": "index.html#problem-and-aim",
     "href": "index.html#problem-and-aim",
-    "title": "Group 11: Catch Them All",
+    "title": "Catch Them All",
     "section": "Problem and Aim",
     "text": "Problem and Aim\nPresently, however, private transportation is preferred due to its ease and comfort. As a result, this study aims to see how accessible and convenient TEL Stage 4 MRT stations are for first and last mile journeys. We will do so by analysing two ways in which Singaporeans may get to the MRT - walking or cycling. This will prove whether the construction of TEL Stage 4 MRT is competent to successfully encourage people to use public transportation."
   },
@@ -89,5 +89,12 @@
     "title": "Introduction",
     "section": "Motivations",
     "text": "Motivations\nAccording to the Singapore Green Plan, the government wishes to substantially reduce our carbon emissions in order to combat climate change. One such way it aims to achieve this is by encouraging public transport instead of private transport.\nAt present, most Singapore residents use public transport such as buses and trains. This is due to the costliness in purchasing and maintaining a car. However, many people still find public transportation to be insufficient, with many wealthier people and families opting for car ownership instead. This is partially driven by the comfort and ease that driving provides to its riders.\nHowever, this contributes to our carbon emissions and makes meeting the goals set by the Green Plan difficult to achieve. This is compounded by the fact that car ownership is a negative externality. Despite the convenience it affords to its owners, it aggravates traffic and is a source of various types of pollution apart from air pollution, such as noise.\nThis points to a need to strengthen our public transportation system and to accommodate the diverse needs of Singapore residents."
+  },
+  {
+    "objectID": "methodology.html",
+    "href": "methodology.html",
+    "title": "Methodology",
+    "section": "",
+    "text": "How we handled the data etc."
   }
 ]
