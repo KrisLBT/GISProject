@@ -113,8 +113,4 @@ Your screen should look similar to the screenshot as shown below:
 The original data is in **wgs84**. For the purpose of network analysis, the GIS data must be be in projected coordinates system (i.e. SVY21 for Singapore).
 :::
 
-------------------------------------------------------------------------
-
- [\[XX1\]](#_msoanchor_1)Need to show how to import and save as geopackage
-
  [\[XX2\]](#_msoanchor_2)Additionally, need to show how to extract out the MRT Exits
