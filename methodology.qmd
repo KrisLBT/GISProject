@@ -3,4 +3,118 @@ title: "Methodology"
 editor: visual
 ---
 
-How we handled the data etc. check check see
+## 1. Installing QNEAT3 plugin.
+
+Before getting started, you need to install
+QNEAT3 plugin.
+
+-   From the menu bar, select Plugins -\> Manage and Install plugins
+
+Plugins dialog window appears.
+
+-   At the query, type **QNEAT3**.
+
+Notice that QNEAT3 appears on the search
+output list.
+
+-   Click on **QNEAT3**.
+
+-   Click on **Install Plugin** button.
+
+When the installation is completed, close
+the dialog box by
+
+-   click on **Close** button.
+
+In order to activate the Iso-Area as Polygon/Contour algorithms you have to add the **matplotlib** library to your QGIS-Python installation. Depending on your operating system you may install matplotlib manually using the following options:
+
+### 1.1. Windows:
+
+Open the OSGeo4W shell that has been installed alongside QGIS.
+
+-   Click **Start** then type ***OSGeo4W Shell***, and hit **Enter** key.
+
+-   At the **OSGeo4W Shell**, type the command below.
+
+| python-qgis -m pip install matplotlib
+
+-   Press **Enter** key.
+
+-   When the installation is completed, restart QGIS3
+
+### 1.2. macOS
+
+-   Open a terminal.
+
+-   Type the following command:
+
+| /Library/Frameworks/Python.framework/Versions/3.x/bin/pip3.x install matplotlib
+
+Note: Replace the version number x
+according to your installation) into the terminal,
+
+-   Press **Enter** and confirm installation with *yes* when prompted
+
+-   Restart QGIS3
+
+After this installation, you are ready to
+use all QNEAT3 Algorithms.
+
+Before using the plugin, you must at least read the concept and methods of [Iso-area](https://root676.github.io/IsoAreaAlgs.html) because it will be used in this hands-on exercise.
+
+## 2. Start a new QGIS Project
+
+::: callout-tip
+DIY: Using the steps you had learned in previous hands-on exercise, start a new QGIS project. Save the project and give it a name (i.e. GIS_Project).
+:::
+
+**Reminder:** Ensure that svy21 projection system is used.
+
+## 3. Data Preparation
+
+### 3.1 Downloading Master Plan
+2019 Subzone Boundary (No Sea) layer
+
+-   Download Master Plan 2019 Subzone Boundary (No Sea) Data from data.gov.sg and import it into QGIS.
+
+-   In data.gov.sg portal, Master Plan 2019 Subzone Boundary (No Sea) data set is in kml and geojson formats. Import the kml format into QGIS as a GIS layer.
+
+-   Save the GIS layer into GeoPackage format. Name the output layer as MP19_Subzone.
+
+![](images/paste-E3C213AB.png){fig-align="center" width="300"}
+
+-   Your screen should look like this screenshot as shown below
+
+![](images/paste-C19782D8.png)
+
+::: callout-caution
+## Be Warned
+
+The original data is in **wgs84**. For the purpose of network analysis, the GIS data must be be in projected coordinates system (i.e. SVY21 for Singapore).
+:::
+
+### 3.2 Downloading Master Plan 2019 Rail Station layer 
+
+#### 3.2.1 Importing Master Plan 2019 Rail Station Layer 
+
+-   Download Rail Station Data from data.gov.sg and import it into QGIS.
+
+-   In data.gov.sg portal, Master Plan 2019 Rail Station data set is in kml and geojson formats.
+
+-   Import the kml format into QGIS as a GIS layer.
+
+Your screen should look similar to the screenshot as shown below:
+
+![](images/paste-D2B3965A.png)
+
+::: callout-caution
+## Be Warned
+
+The original data is in **wgs84**. For the purpose of network analysis, the GIS data must be be in projected coordinates system (i.e. SVY21 for Singapore).
+:::
+
+------------------------------------------------------------------------
+
+ [\[XX1\]](#_msoanchor_1)Need to show how to import and save as geopackage
+
+ [\[XX2\]](#_msoanchor_2)Additionally, need to show how to extract out the MRT Exits

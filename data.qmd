@@ -1,13 +1,18 @@
 ---
-title: "Data Preparation"
+title: "Data Used"
 editor: visual
 ---
 
 Our project used the following datasets and websites to conduct this analysis:
 
-| Name                              | Link                                                                                | Used for                               |
-|---------------------------|----------------------|------------------------|
-| Open Street Map (SG-MY-BN)        | [Geofabrikk](https://download.geofabrik.de/asia/malaysia-singapore-brunei.html)     | Finding the Street layer and Buildings |
-| Master Plan 2019 Subzone Boundary | [data.gov.sg](https://data.gov.sg/dataset/master-plan-2019-subzone-boundary-no-sea) | Outline                                |
-|                                   |                                                                                     | Coordinates for MRT lines              |
-|                                   |                                                                                     | Exit placement                         |
++------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
+| Name                                                                                     | Link                                                                                                                    | Used for                                                   |
++==========================================================================================+=========================================================================================================================+============================================================+
+| Open Street Map (SG-MY-BN)                                                               | [Geofabrikk](https://download.geofabrik.de/asia/malaysia-singapore-brunei.html)                                         | Finding the Street layer, Points of Interest and Buildings |
++------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
+| Master Plan 2019 Subzone Boundary                                                        | [data.gov.sg](https://data.gov.sg/dataset/master-plan-2019-subzone-boundary-no-sea)                                     | Outline                                                    |
++------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
+| Master Plan 2019 Rail Station Layer                                                      | [data.gov.sg](https://data.gov.sg/dataset/master-plan-2019-rail-station-name-layer)                                     |                                                            |
++------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
+| Singapore Residents by Planning Area/Subzone, Single Year of Age and Sex, June 2011-2020 | [singstat.gov.sg](https://www.singstat.gov.sg/find-data/search-by-theme/population/geographic-distribution/latest-data) | Coordinates for MRT lines                                  |
++------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+

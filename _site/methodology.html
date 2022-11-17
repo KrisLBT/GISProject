@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./methodology.html" aria-current="page">Methodology</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./data.html">Data</a>
+    <a class="nav-link" href="./data.html">Data Used</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./results.html">Results &amp; Discussion</a>
@@ -110,7 +110,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#installing-qneat3-plugin." id="toc-installing-qneat3-plugin." class="nav-link active" data-scroll-target="#installing-qneat3-plugin.">1.&nbsp;Installing QNEAT3 plugin.</a>
+  <ul class="collapse">
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">1.1. Windows:</a></li>
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos">1.2. macOS</a></li>
+  </ul></li>
+  <li><a href="#start-a-new-qgis-project" id="toc-start-a-new-qgis-project" class="nav-link" data-scroll-target="#start-a-new-qgis-project">2.&nbsp;Start a new QGIS Project</a></li>
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">3. Data Preparation</a>
+  <ul class="collapse">
+  <li><a href="#downloading-master-plan" id="toc-downloading-master-plan" class="nav-link" data-scroll-target="#downloading-master-plan">3.1 Downloading Master Plan</a></li>
+  <li><a href="#downloading-master-plan-2019-rail-station-layer" id="toc-downloading-master-plan-2019-rail-station-layer" class="nav-link" data-scroll-target="#downloading-master-plan-2019-rail-station-layer">3.2 Downloading Master Plan 2019 Rail Station layer</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -131,9 +147,137 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>How we handled the data etc. check check see</p>
+<section id="installing-qneat3-plugin." class="level2">
+<h2 class="anchored" data-anchor-id="installing-qneat3-plugin.">1.&nbsp;Installing QNEAT3 plugin.</h2>
+<p>Before getting started, you need to install QNEAT3 plugin.</p>
+<ul>
+<li>From the menu bar, select&nbsp;Plugins&nbsp;-&gt;&nbsp;Manage and Install plugins</li>
+</ul>
+<p>Plugins dialog window appears.</p>
+<ul>
+<li>At the query, type&nbsp;<strong>QNEAT3</strong>.</li>
+</ul>
+<p>Notice that QNEAT3 appears on the search output list.</p>
+<ul>
+<li><p>Click on&nbsp;<strong>QNEAT3</strong>.</p></li>
+<li><p>Click on&nbsp;<strong>Install Plugin</strong>&nbsp;button.</p></li>
+</ul>
+<p>When the installation is completed, close the dialog box by</p>
+<ul>
+<li>click on&nbsp;<strong>Close</strong>&nbsp;button.</li>
+</ul>
+<p>In order to activate the Iso-Area as Polygon/Contour algorithms you have to add the&nbsp;<strong>matplotlib</strong>&nbsp;library to your QGIS-Python installation. Depending on your operating system you may install matplotlib manually using the following options:</p>
+<section id="windows" class="level3">
+<h3 class="anchored" data-anchor-id="windows">1.1. Windows:</h3>
+<p>Open the OSGeo4W shell that has been installed alongside QGIS.</p>
+<ul>
+<li><p>Click <strong>Start</strong> then type <strong><em>OSGeo4W Shell</em></strong>, and hit <strong>Enter</strong> key.</p></li>
+<li><p>At the&nbsp;<strong>OSGeo4W Shell</strong>, type the command below.</p></li>
+</ul>
+<p>python-qgis -m pip install matplotlib</p>
+<ul>
+<li><p>Press <strong>Enter</strong> key.</p></li>
+<li><p>When the installation is completed, restart QGIS3</p></li>
+</ul>
+</section>
+<section id="macos" class="level3">
+<h3 class="anchored" data-anchor-id="macos">1.2. macOS</h3>
+<ul>
+<li><p>Open a terminal.</p></li>
+<li><p>Type the following command:</p></li>
+</ul>
+<p>/Library/Frameworks/Python.framework/Versions/3.x/bin/pip3.x install matplotlib</p>
+<p>Note: Replace the version number x according to your installation) into the terminal,</p>
+<ul>
+<li><p>Press <strong>Enter</strong> and confirm installation with <em>yes</em> when prompted</p></li>
+<li><p>Restart QGIS3</p></li>
+</ul>
+<p>After this installation, you are ready to use all QNEAT3 Algorithms.</p>
+<p>Before using the plugin, you must at least read the concept and methods of <a href="https://root676.github.io/IsoAreaAlgs.html">Iso-area</a> because it will be used in this hands-on exercise.</p>
+</section>
+</section>
+<section id="start-a-new-qgis-project" class="level2">
+<h2 class="anchored" data-anchor-id="start-a-new-qgis-project">2.&nbsp;Start a new QGIS Project</h2>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>DIY: Using the steps you had learned in previous hands-on exercise, start a new QGIS project. Save the project and give it a name (i.e.&nbsp;GIS_Project).</p>
+</div>
+</div>
+<p><strong>Reminder:</strong>&nbsp;Ensure that svy21 projection system is used.</p>
+</section>
+<section id="data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation">3. Data Preparation</h2>
+<section id="downloading-master-plan" class="level3">
+<h3 class="anchored" data-anchor-id="downloading-master-plan">3.1 Downloading Master Plan</h3>
+<p>2019 Subzone Boundary (No Sea) layer</p>
+<ul>
+<li><p>Download Master Plan 2019 Subzone Boundary (No Sea) Data from data.gov.sg and import it into QGIS.</p></li>
+<li><p>In data.gov.sg portal, Master Plan 2019 Subzone Boundary (No Sea) data set is in kml and geojson formats. Import the kml format into QGIS as a GIS layer.</p></li>
+<li><p>Save the GIS layer into GeoPackage format. Name the output layer as MP19_Subzone.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-E3C213AB.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<ul>
+<li>Your screen should look like this screenshot as shown below</li>
+</ul>
+<p><img src="images/paste-C19782D8.png" class="img-fluid"></p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Be Warned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The original data is in&nbsp;<strong>wgs84</strong>. For the purpose of network analysis, the GIS data must be be in projected coordinates system (i.e.&nbsp;SVY21 for Singapore).</p>
+</div>
+</div>
+</section>
+<section id="downloading-master-plan-2019-rail-station-layer" class="level3">
+<h3 class="anchored" data-anchor-id="downloading-master-plan-2019-rail-station-layer">3.2 Downloading Master Plan 2019 Rail Station layer</h3>
+<section id="importing-master-plan-2019-rail-station-layer" class="level4">
+<h4 class="anchored" data-anchor-id="importing-master-plan-2019-rail-station-layer">3.2.1 Importing Master Plan 2019 Rail Station Layer</h4>
+<ul>
+<li><p>Download Rail Station Data from data.gov.sg and import it into QGIS.</p></li>
+<li><p>In data.gov.sg portal, Master Plan 2019 Rail Station data set is in kml and geojson formats.</p></li>
+<li><p>Import the kml&nbsp;format into QGIS as a GIS layer.</p></li>
+</ul>
+<p>Your screen should look similar to the screenshot as shown below:</p>
+<p><img src="images/paste-D2B3965A.png" class="img-fluid"></p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Be Warned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The original data is in&nbsp;<strong>wgs84</strong>. For the purpose of network analysis, the GIS data must be be in projected coordinates system (i.e.&nbsp;SVY21 for Singapore).</p>
+</div>
+</div>
+<hr>
+<p>&nbsp;<a href="#_msoanchor_1">[XX1]</a>Need to show how to import and save as geopackage</p>
+<p>&nbsp;<a href="#_msoanchor_2">[XX2]</a>Additionally, need to show how to extract out the MRT Exits</p>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
