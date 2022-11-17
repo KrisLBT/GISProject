@@ -5,8 +5,7 @@ editor: visual
 
 ## 1. Installing QNEAT3 plugin.
 
-Before getting started, you need to install
-QNEAT3 plugin.
+Before getting started, you need to install QNEAT3 plugin.
 
 -   From the menu bar, select Plugins -\> Manage and Install plugins
 
@@ -14,15 +13,13 @@ Plugins dialog window appears.
 
 -   At the query, type **QNEAT3**.
 
-Notice that QNEAT3 appears on the search
-output list.
+Notice that QNEAT3 appears on the search output list.
 
 -   Click on **QNEAT3**.
 
 -   Click on **Install Plugin** button.
 
-When the installation is completed, close
-the dialog box by
+When the installation is completed, close the dialog box by
 
 -   click on **Close** button.
 
@@ -50,15 +47,13 @@ Open the OSGeo4W shell that has been installed alongside QGIS.
 
 | /Library/Frameworks/Python.framework/Versions/3.x/bin/pip3.x install matplotlib
 
-Note: Replace the version number x
-according to your installation) into the terminal,
+Note: Replace the version number x according to your installation) into the terminal,
 
 -   Press **Enter** and confirm installation with *yes* when prompted
 
 -   Restart QGIS3
 
-After this installation, you are ready to
-use all QNEAT3 Algorithms.
+After this installation, you are ready to use all QNEAT3 Algorithms.
 
 Before using the plugin, you must at least read the concept and methods of [Iso-area](https://root676.github.io/IsoAreaAlgs.html) because it will be used in this hands-on exercise.
 
@@ -73,6 +68,7 @@ DIY: Using the steps you had learned in previous hands-on exercise, start a new 
 ## 3. Data Preparation
 
 ### 3.1 Downloading Master Plan
+
 2019 Subzone Boundary (No Sea) layer
 
 -   Download Master Plan 2019 Subzone Boundary (No Sea) Data from data.gov.sg and import it into QGIS.
@@ -93,9 +89,9 @@ DIY: Using the steps you had learned in previous hands-on exercise, start a new 
 The original data is in **wgs84**. For the purpose of network analysis, the GIS data must be be in projected coordinates system (i.e. SVY21 for Singapore).
 :::
 
-### 3.2 Downloading Master Plan 2019 Rail Station layer 
+### 3.2 Downloading Master Plan 2019 Rail Station layer
 
-#### 3.2.1 Importing Master Plan 2019 Rail Station Layer 
+#### 3.2.1 Importing Master Plan 2019 Rail Station Layer
 
 -   Download Rail Station Data from data.gov.sg and import it into QGIS.
 
