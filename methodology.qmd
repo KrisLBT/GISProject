@@ -419,8 +419,9 @@ Click on ![](images/paste-2E4682DD.png){width="16"} to push these 8 rows to the 
 should look similar to the screenshot below
 :::
 
--   ![](images/paste-D0B05B85.png){width="600"}
-    However, since you only want the road feature fclasses that are not these selected features, click on ![](images/paste-E7DBD6E3.png){width="16" height="17"} to invert the selection
+![](images/paste-D0B05B85.png){width="600"}
+
+-   However, since you only want the road feature fclasses that are not these selected features, click on ![](images/paste-E7DBD6E3.png){width="16" height="17"} to invert the selection
 
 -   You can see from ![](images/paste-3640171B.png){width="300" height="14"}that 219057 rows are selected.
 
