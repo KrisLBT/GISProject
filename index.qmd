@@ -5,7 +5,7 @@ title: "Catch Them All"
 ::: {.callout-note appearance="minimal"}
 ## Introduction
 
-This website provides an overview of our assessment of the accessibility and catchment areas of the Stage 4 Thomson-East Coast line MRT stations. A more comprehensive analysis can be found in our report*.*
+This website provides an overview of our assessment of the accessibility and catchment areas of the Stage 4 Thomson-East Coast line MRT stations.
 :::
 
 # Project Summary

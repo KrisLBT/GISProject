@@ -3,6 +3,12 @@ title: "Methodology"
 editor: visual
 ---
 
+For our analysis, we used QNEAT3 to find the ISO-area from the various station exits within distances of 1000m and 1500m through the road network. We subsequently used the buffer region using the Euclidean distance of the same values. We then also found the potential population served by the stations. Assuming the population is spread out equally, we used ratio of the subzone area covered by the ISO-area to the total subzone area as a proxy for population percentage served by train station.
+
+The following is a step-by-step guide in using QGIS to complete our task.
+
+------------------------------------------------------------------------
+
 ## 1. Installing QNEAT3 plugin.
 
 Before getting started, you need to install QNEAT3 plugin.
@@ -432,3 +438,133 @@ Using the steps you had learned earlier, save these
 selected features as a new layer as OSM_Roads into
 your GeoPackage
 :::
+
+### 3.5. -- Extracting and Preparing Building, Points of Interest and Transport Layers
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, conduct data preparation and save gis_osm_buildings_a\_free_1 as OSM_Buildings, gis_osm_pois_free_1, OSM_POIs and gis_osm_transport_a\_free_1 as OSM_Transport into your GeoPackage Your screen should look like the screenshot as shown below
+:::
+
+![](images/paste-F2400C92.png){width="1000"}
+
+::: callout-important
+## Remember
+
+Remove all the source data from QGIS project before continue to the next section
+:::
+
+### 3.6 Downloading Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020
+
+#### 3.6.1. Importing Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020 Data into QGIS
+
+-   Download [Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020](https://www.singstat.gov.sg/-/media/files/find_data/population/statistical_tables/respopagesex2011to2020.ashx) Data from singstats.gov.sg and import it into QGIS.
+
+```{=html}
+<!-- -->
+```
+-   From the **Layer Panel**, navigate to the path of **Add Delimited Text Layer** as shown in the screenshot below.
+
+    ![](images/paste-777E040A.png){width="600"}
+
+```{=html}
+<!-- -->
+```
+-   Double-click on **Add Delimited Text Layer** and browse for respopagesex2011to2020 by clicking  ![](images/paste-2E8AA0AD.png){width="16"}  which is at the right of File name. Your screen should look similar to the screenshot as shown below before clicking add
+
+    ![](images/paste-3DC6EB57.png){width="600"}
+
+-   You will see that respopagesex2011to2020 will be added to your Layers Window as shown below
+
+![](images/paste-7DC38E1A.png){width="600"}
+
+#### 3.6.2. Extracting 2020 Population Data 
+
+Now, we are going to extract populations belonging to year 2020 from respopagesex2011to2020 layer.
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, open the **Attribute Table** of respopagesex2011to2020 and **Select by Expression** to extract our population belonging to 2020. Your screen should look like the screenshot as shown below before clicking ok
+:::
+
+![](images/paste-5E0DC346.png){fig-align="center" width="600"}
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, save the selected feature as POP2020 into your GeoPackage
+:::
+
+#### 3.6.3. Calculating 2020 Population Data based on Subzones and Planning Areas using Data Manager 
+
+Next, we are going to derive a data table that aggregates the population figure for 2000 by planning area (i.e. PA) and planning subzone (i.e SZ) by SQL in DB Manager tool of QGIS. Before getting started, you are encouraged to read this [link](https://docs.qgis.org/3.22/en/docs/user_manual/plugins/core_plugins/plugins_db_manager.html).
+
+-   From the menu bar, select **Database** -\> **DB Manager**.
+
+![](images/paste-788A5B8D.png){fig-align="center" width="200"}
+
+DB manager dialog window appears.
+
+-   From **Providers** panel, click on **Virtual Layers** -\> **Project layers** -\> Population \-\-- POP2020
+
+Your screen should look similar to the screenshot below. If necessary click on the **Info** tab.
+
+![](images/paste-5A9AABEC.png){width="600"}Notice that the beauty of DB Manager is that beside GeoPackage, Oracle Spatial PostGIS and SpatialLite, it is also able to work with Virtual Layers in the Layer panel.
+
+Next we are going to write the first SQL.
+
+-   Click on **SQL Window** button.
+
+![](images/paste-873F1923.png){width="200"}
+
+Notice that **Query (Project layers)** appears.
+
+![](images/paste-51FB29CB.png){fig-align="center" width="1000"}
+
+-   Type the SQL below onto **Query Panel**.
+
+![](images/paste-97532525.png){fig-align="center" width="600"}
+
+-   Your screen should look similar to the screenshot as shown below
+
+![](images/paste-EAE11F20.png){fig-align="center" width="600"}
+
+-   When you are ready, click on **Execute** button.
+
+After a short while, the query results appears as shown below.
+
+![](https://lh3.googleusercontent.com/Ttdpi-mQy3nOfsM1jfc55zeaKUWu4KtLvUJgzgi0dcBLrKX2-d-ToJtLm5pZGayz3QZLWKq8OKWMpnIzYEfeSErHXti-IGTCXNtaFxL8IYp8x86X99093Slmz0HEZHXHMQU7FEvt9hvepIeTLyApXep1i2RhI5GRJ6KTg2XFmzDVx7gyH8U4zz4g_wreX158HJpZb1zxHQ){alt="Graphical user interface, application" ="" Description automatically generated="" fig-align="center" width="1000"}
+
+Now you are going to add the query into **Layers Panel**.
+
+-   Click on the check-box in front of **Load as new layer**.
+
+Notice that a sub-panel is added onto **DB Manager** dialog window.
+
+![](images/paste-3503CB43.png){fig-align="center" width="1000"}
+
+-   By default, the checkbox in front of **Geometry column** is checked. Click on the checkbox to un-check it. This is because our data table has no geometry.
+
+![](images/paste-6323CF2B.png){fig-align="center" width="1000"}
+
+-   Lastly, click on **Load** button.
+
+Notice that a QueryLayer has been added into Layers panel. Now, we are going to save it into Geopackage.
+
+![](images/paste-61103E49.png){fig-align="center" width="200"}
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, save the selected feature as 2020POP into your GeoPackage
+:::
+
+\
+
+
+\
+
+
+

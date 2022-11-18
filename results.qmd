@@ -7,7 +7,9 @@ editor: visual
 
 For the analysis, both the buffer area (calculated by a given Euclidean distance), the ISO-area (derived from the road network) and the various amenities and buildings that lie within them will be used to assess the accessibility of the stations. A distance of 1000m will be used for walking buffer and ISO-area while a distance of 1500m will be used for cycling. For both cycling and walking ISO-areas, intervals of 200m will be used to determine the relative accessibility of certain amenities within a given catchment area.
 
-## TE22A -- Founders Memorial
+## Catchment and Buffer Area Analysis
+
+### TE22A -- Founders Memorial
 
 |                  Catchment Area                  |                   Buffer                    |
 |:--------------------------------:|:--------------------------------:|
@@ -25,7 +27,7 @@ For the cycling catchment area, more residential areas are covered within it. Th
 
 Furthermore, Promenade MRT (CC4/DT14) lies within the cycling catchment area. This means that line transfers for cyclists who need to travel to a station in the Thomson-East Coast line can do so easily without having to take the bus or private transport.
 
-## TE23 -- Tanjong Rhu
+### TE23 -- Tanjong Rhu
 
 |                Catchment Area                |                        Buffer                         |
 |:-------------------------------------:|:-------------------------------------:|
@@ -45,7 +47,7 @@ In the cycling catchment area, more amenities are covered. The map shows more ty
 
 This area also now covers the bridge. Thus, travellers will be able to quickly cross it once they alight from the station.
 
-## TE24 -- Katong Park
+### TE24 -- Katong Park
 
 |                Catchment Area                |                        Buffer                         |
 |:----------------------------------:|:----------------------------------:|
@@ -63,7 +65,7 @@ For the cycling catchment area, more amenities are covered and other schools - T
 
 A large number of low rise residential areas are also covered within this region. This could mean that a significant number of people will no longer need to use their cars to get to different areas of Singapore.
 
-## TE25 -- Tanjong Katong
+### TE25 -- Tanjong Katong
 
 |                Catchment Area                |                          Buffer                          |
 |:----------------------------------:|:----------------------------------:|

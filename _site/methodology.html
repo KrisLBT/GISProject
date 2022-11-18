@@ -126,6 +126,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#downloading-master-plan-2019-rail-station-layer" id="toc-downloading-master-plan-2019-rail-station-layer" class="nav-link" data-scroll-target="#downloading-master-plan-2019-rail-station-layer">3.2 Downloading Master Plan 2019 Rail Station layer</a></li>
   <li><a href="#extracting-te-stage-4-mrt-stations-exits" id="toc-extracting-te-stage-4-mrt-stations-exits" class="nav-link" data-scroll-target="#extracting-te-stage-4-mrt-stations-exits">3.3 Extracting TE Stage 4 MRT Stations Exits</a></li>
   <li><a href="#extracting-and-preparing-road-network-layer" id="toc-extracting-and-preparing-road-network-layer" class="nav-link" data-scroll-target="#extracting-and-preparing-road-network-layer">3.4 Extracting and Preparing road network layer</a></li>
+  <li><a href="#extracting-and-preparing-building-points-of-interest-and-transport-layers" id="toc-extracting-and-preparing-building-points-of-interest-and-transport-layers" class="nav-link" data-scroll-target="#extracting-and-preparing-building-points-of-interest-and-transport-layers">3.5. – Extracting and Preparing Building, Points of Interest and Transport Layers</a></li>
+  <li><a href="#downloading-singapore-residents-by-planning-area-subzone-single-year-of-age-and-sex-june-2011-2020" id="toc-downloading-singapore-residents-by-planning-area-subzone-single-year-of-age-and-sex-june-2011-2020" class="nav-link" data-scroll-target="#downloading-singapore-residents-by-planning-area-subzone-single-year-of-age-and-sex-june-2011-2020">3.6 Downloading Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -149,6 +151,9 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>For our analysis, we used QNEAT3 to find the ISO-area from the various station exits within distances of 1000m and 1500m through the road network. We subsequently used the buffer region using the Euclidean distance of the same values. We then also found the potential population served by the stations. Assuming the population is spread out equally, we used ratio of the subzone area covered by the ISO-area to the total subzone area as a proxy for population percentage served by train station.</p>
+<p>The following is a step-by-step guide in using QGIS to complete our task.</p>
+<hr>
 <section id="installing-qneat3-plugin." class="level2">
 <h2 class="anchored" data-anchor-id="installing-qneat3-plugin.">1.&nbsp;Installing QNEAT3 plugin.</h2>
 <p>Before getting started, you need to install QNEAT3 plugin.</p>
@@ -668,6 +673,186 @@ DIY
 <p>Using the steps you had learned earlier, save these selected features as a new layer as OSM_Roads into your GeoPackage</p>
 </div>
 </div>
+</section>
+</section>
+<section id="extracting-and-preparing-building-points-of-interest-and-transport-layers" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-and-preparing-building-points-of-interest-and-transport-layers">3.5. – Extracting and Preparing Building, Points of Interest and Transport Layers</h3>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, conduct data preparation and save gis_osm_buildings_a_free_1 as OSM_Buildings, gis_osm_pois_free_1, OSM_POIs and gis_osm_transport_a_free_1 as OSM_Transport into your GeoPackage Your screen should look like the screenshot as shown below</p>
+</div>
+</div>
+<p><img src="images/paste-F2400C92.png" class="img-fluid" width="1000"></p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Remember
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Remove all the source data from QGIS project before continue to the next section</p>
+</div>
+</div>
+</section>
+<section id="downloading-singapore-residents-by-planning-area-subzone-single-year-of-age-and-sex-june-2011-2020" class="level3">
+<h3 class="anchored" data-anchor-id="downloading-singapore-residents-by-planning-area-subzone-single-year-of-age-and-sex-june-2011-2020">3.6 Downloading Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020</h3>
+<section id="importing-singapore-residents-by-planning-area-subzone-single-year-of-age-and-sex-june-2011-2020-data-into-qgis" class="level4">
+<h4 class="anchored" data-anchor-id="importing-singapore-residents-by-planning-area-subzone-single-year-of-age-and-sex-june-2011-2020-data-into-qgis">3.6.1. Importing Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020 Data into QGIS</h4>
+<ul>
+<li>Download <a href="https://www.singstat.gov.sg/-/media/files/find_data/population/statistical_tables/respopagesex2011to2020.ashx">Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020</a> Data from singstats.gov.sg and import it into QGIS.</li>
+</ul>
+<!-- -->
+<ul>
+<li><p>From the <strong>Layer Panel</strong>, navigate to the path of <strong>Add Delimited Text Layer</strong> as shown in the screenshot below.</p>
+<p><img src="images/paste-777E040A.png" class="img-fluid" width="600"></p></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Double-click on&nbsp;<strong>Add Delimited Text Layer</strong> and browse for respopagesex2011to2020 by clicking&nbsp; <img src="images/paste-2E8AA0AD.png" class="img-fluid" width="16">&nbsp; which is at the right of File name. Your screen should look similar to the screenshot as shown below before clicking add</p>
+<p><img src="images/paste-3DC6EB57.png" class="img-fluid" width="600"></p></li>
+<li><p>You will see that respopagesex2011to2020 will be added to your Layers Window as shown below</p></li>
+</ul>
+<p><img src="images/paste-7DC38E1A.png" class="img-fluid" width="600"></p>
+</section>
+<section id="extracting-2020-population-data" class="level4">
+<h4 class="anchored" data-anchor-id="extracting-2020-population-data">3.6.2. Extracting 2020 Population Data&nbsp;</h4>
+<p>Now, we are going to extract populations belonging to year 2020 from&nbsp;respopagesex2011to2020 layer.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, open the <strong>Attribute Table</strong> of respopagesex2011to2020 and <strong>Select by Expression</strong> to extract our population belonging to 2020. Your screen should look like the screenshot as shown below before clicking ok</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-5E0DC346.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, save the selected feature as POP2020 into your GeoPackage</p>
+</div>
+</div>
+</section>
+<section id="calculating-2020-population-data-based-on-subzones-and-planning-areas-using-data-manager" class="level4">
+<h4 class="anchored" data-anchor-id="calculating-2020-population-data-based-on-subzones-and-planning-areas-using-data-manager">3.6.3. Calculating 2020 Population Data based on Subzones and Planning Areas using Data Manager&nbsp;</h4>
+<p>Next, we are going to derive a data table that aggregates the population figure for 2000 by planning area (i.e.&nbsp;PA) and planning subzone (i.e SZ) by SQL in DB Manager tool of QGIS. Before getting started, you are encouraged to read this&nbsp;<a href="https://docs.qgis.org/3.22/en/docs/user_manual/plugins/core_plugins/plugins_db_manager.html">link</a>.</p>
+<ul>
+<li>From the menu bar, select <strong>Database</strong> -&gt; <strong>DB Manager</strong>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-788A5B8D.png" class="img-fluid figure-img" width="200"></p>
+</figure>
+</div>
+<p>DB manager dialog window appears.</p>
+<ul>
+<li>From <strong>Providers</strong>&nbsp;panel, click on <strong>Virtual Layers</strong> -&gt; <strong>Project layers</strong> -&gt; Population --- POP2020</li>
+</ul>
+<p>Your screen should look similar to the screenshot below. If necessary click on the&nbsp;<strong>Info</strong>&nbsp;tab.</p>
+<p><img src="images/paste-5A9AABEC.png" class="img-fluid" width="600">Notice that the beauty of DB Manager is that beside GeoPackage, Oracle Spatial PostGIS and SpatialLite, it is also able to work with Virtual Layers in the Layer panel.</p>
+<p>Next we are going to write the first SQL.</p>
+<ul>
+<li>Click on <strong>SQL Window</strong> button.</li>
+</ul>
+<p><img src="images/paste-873F1923.png" class="img-fluid" width="200"></p>
+<p>Notice that <strong>Query (Project layers)</strong> appears.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-51FB29CB.png" class="img-fluid figure-img" width="1000"></p>
+</figure>
+</div>
+<ul>
+<li>Type the SQL below onto <strong>Query Panel</strong>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-97532525.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+<ul>
+<li>Your screen should look similar to the screenshot as shown below</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-EAE11F20.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+<ul>
+<li>When you are ready, click on&nbsp;<strong>Execute</strong>&nbsp;button.</li>
+</ul>
+<p>After a short while, the query results appears as shown below.</p>
+<p><img src="https://lh3.googleusercontent.com/Ttdpi-mQy3nOfsM1jfc55zeaKUWu4KtLvUJgzgi0dcBLrKX2-d-ToJtLm5pZGayz3QZLWKq8OKWMpnIzYEfeSErHXti-IGTCXNtaFxL8IYp8x86X99093Slmz0HEZHXHMQU7FEvt9hvepIeTLyApXep1i2RhI5GRJ6KTg2XFmzDVx7gyH8U4zz4g_wreX158HJpZb1zxHQ.png" class="img-fluid">{alt=“Graphical user interface, application” =“” Description automatically generated=“” fig-align=“center” width=“1000”}</p>
+<p>Now you are going to add the query into <strong>Layers Panel</strong>.</p>
+<ul>
+<li>Click on the check-box in front of <strong>Load as new layer</strong>.</li>
+</ul>
+<p>Notice that a sub-panel is added onto <strong>DB Manager</strong> dialog window.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-3503CB43.png" class="img-fluid figure-img" width="1000"></p>
+</figure>
+</div>
+<ul>
+<li>By default, the checkbox in front of <strong>Geometry column</strong> is checked. Click on the checkbox to un-check it. This is because our data table has no geometry.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-6323CF2B.png" class="img-fluid figure-img" width="1000"></p>
+</figure>
+</div>
+<ul>
+<li>Lastly, click on <strong>Load</strong> button.</li>
+</ul>
+<p>Notice that a QueryLayer has been added into Layers panel. Now, we are going to save it into Geopackage.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-61103E49.png" class="img-fluid figure-img" width="200"></p>
+</figure>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, save the selected feature as 2020POP into your GeoPackage</p>
+</div>
+</div>
+<p><br>
+</p>
+<p><br>
+</p>
 
 
 </section>
