@@ -59,8 +59,10 @@ Before using the plugin, you must at least read the concept and methods of [Iso-
 
 ## 2. Start a new QGIS Project
 
-::: callout-tip
-DIY: Using the steps you had learned in previous hands-on exercise, start a new QGIS project. Save the project and give it a name (i.e. GIS_Project).
+::: callout-note
+## DIY
+
+Using the steps you had learned in previous hands-on exercise, start a new QGIS project. Save the project and give it a name (i.e. GIS_Project).
 :::
 
 **Reminder:** Ensure that svy21 projection system is used.
@@ -107,4 +109,325 @@ Your screen should look similar to the screenshot as shown below:
 ## Be Warned
 
 The original data is in **wgs84**. For the purpose of network analysis, the GIS data must be be in projected coordinates system (i.e. SVY21 for Singapore).
+:::
+
+#### 3.2.2 Extracting Thomson East Coast Line Stage 4 MRT Stations
+
+-   Open the **Attribute Table**
+    of master-plan-2019-rail-station-layer-geojseon by right clicking it in the layer menu
+
+    ![](images/paste-5343A460.png)
+
+-   Your screen should look like the screenshot below
+
+    ![](images/paste-7516C876.png)
+
+-   Click on ![](images/paste-B98498EB.png) in the menu. Your screen should look similar to the screenshot as shown below:
+
+    ![](images/paste-8428C865.png)
+
+-   To extract out the following TE Stage 4 MRT stations by name:
+
+    1.  TE22A Founder's Memorial
+
+    2.  TE23 Tanjong Rhu
+
+    3.  TE24 Katong Park
+
+    4.  TE25 Tanjong Katong
+
+    5.  TE26 Marine Parade
+
+    6.  TE27 Marine Terrace
+
+    7.  TE28 Siglap
+
+    8.  TE29 Bayshore
+
+    type in the following expression as shown in the screenshot a click on ![](images/paste-F0F87810.png){width="80"}
+
+    ![](images/paste-FA2824FC.png)
+
+-   You can see from ![](images/paste-7BF607E2.png){width="500" height="25"}that 8 MRT stations have been selected. Click on ![](images/paste-8C218272.png) to push these 8 rows to the top. Your screen should look similar to the screenshot below:
+
+    ![](images/paste-783C89F0.png)
+
+#### 3.2.3 Saving Thomson East Coast Line Stage 4 MRT Stations into Geopackage format
+
+-   From the main screen, select **Save selected features as**
+
+    ![](images/paste-2C28036C.png)
+
+Save the GIS layer into Geopackage format. Name the output layer as TEL Stage 4 MRT Stations. Your screen should look similar to the screenshot shown below:
+
+![](images/paste-BFAC825C.png){fig-align="center" width="300"}
+
+-   Click **OK**
+
+-   Your screen should look similar to the screenshot below:
+
+    ![](images/paste-4717B379.png)
+
+### 3.3 Extracting TE Stage 4 MRT Stations Exits
+
+However, TEL Stage 4 MRT Station Exits Layer is not currently available on any official websites. As a result, we are not able to download but can only extract out the exits with reference to the MRT layout pictures on [LTA website](https://www.lta.gov.sg/content/ltagov/en/upcoming_projects/rail_expansion/thomson_east_coast_line.html).
+
+#### 3.3.1 Importing OSM and Opening LTA MRT Website
+
+We will be guiding you through the extraction of TE22A Founders Memorial Exits as an example. Each MRT should have one layer with all its respective exits. Therefore, we need to create 7 more vector point layers on top of TE22A Founders Memorial Exits layer
+
+-   Import OSM layer from **Browser**. You will need to refer to the LTA Website as you pick the exit points out. Your screen should look similar to the screenshot as shown below.
+
+    ![](images/paste-6CD3F614.png)
+
+-   Click the LTA Website Link as given above and scroll down till you find TE22A Founders Memorial under Location of Stations. Your screen should look similar to the screenshot as shown below:
+
+    ![](images/paste-3BAE5613.png)
+
+#### 3.3.2 Creating a New Layer for TE22A Founder's Memorial Exits
+
+-   Under **Layers** at the top menu bar, hover your cursor over **Create Layers** and click on **New Shapefile Layer**.
+
+    ![](images/paste-D292441E.png)
+
+Your screen should similar to the screenshot below:
+
+![](images/paste-CA52B5A4.png){fig-align="center" width="300"}
+
+Fill n the specific information as shown in the screenshot below:
+
+![](images/paste-3134789E.png){fig-align="center" width="300"}
+
+-   Under the **Fields List,** click on id and delete it by clicking ![](images/paste-D24000A5.png){width="80" height="20"}
+
+![](images/paste-05C1D015.png){fig-align="center" width="300"}
+
+-   Now, we will start naming our attributes. Once every attribute is filled up, we can click on ![](images/paste-A41F8C08.png){width="80"} to create the field. We need the following attributes:
+
+    1.  Fid (Type: Integer, Length: 10)
+
+        ![](images/paste-CF5ED0FB.png){width="300"}
+
+    2.  MRT line (Type: String, Length: 30)
+
+        ![](images/paste-B29E85EC.png){width="300"}
+
+    3.  Exit (Type: String, Length: 30)
+
+        ![](images/paste-8643F463.png){width="300"}
+
+After creating all 3 variables, your screen should look similar to the screenshot below:
+
+![](images/paste-F59E5832.png){fig-align="center" width="300"}
+
+-   Once you click on **OK**, you can see that TE22A Founder Memorial Exits is added to your layer Menu as a Layer as shown below:
+
+![](images/paste-7C017547.png){fig-align="center" width="300"}
+
+-   If you open your attribute table for TE22A Founders Memorial Exits, you will realize that the **Attribute Table** is empty. Your screen should look like the screenshot as shown below. We will be adding the exit points manually in the next section.
+
+![](images/paste-3F7B5742.png){fig-align="center" width="300"}
+
+#### 3.3.3 Adding Exit Points into Founders Memorial Exit Layer
+
+-   Open the Attribute Table of TE22A Founders Memorial Exits by right-clicking it in the layer menu
+
+![](images/paste-BA0B0BD5.png){fig-align="center" width="300"}
+
+-   Click on ![](images/paste-B0333C09.png){width="16"} so that editing mode can be turned on so that we can start adding the exit points in.
+
+-   Once you exit the **Attribute Table**,
+    click on ![](images/paste-7282DAE8.png){width="16" height="16"}in the top menu and start marking the exit points out with reference to the TE22A Founders Memorial Layout from the LTA Website.
+
+    -   Try to refer to the geographical features (eg. Roads and streets) from both the OSM layer that we previously imported, and image from the LTA website to get as accurate of an
+        exit point as possible. For each exit points selected, fid will be in numerical order and Exits will be in alphabetical order
+
+![](images/paste-950EA1AE.png){fig-align="center" width="300"}
+
+-   Once both exits of TE22A Founders Memorial MRT Station has been marked out, click on **Toggle Editing**
+
+![](images/paste-33D5DBA1.png){fig-align="center" width="300"}
+
+-   Save the changes made by clicking **Save**
+
+![](images/paste-1E4FE4DA.png){fig-align="center" width="300"}
+
+-   Your screen should similar to the screenshot shown below
+
+![](images/paste-EF0DACB4.png){fig-align="center"}
+
+-   Let's compare this to the TE22A Founders Memorial Exits from the LTA website:
+
+![](images/paste-839A7054.png){fig-align="center" width="600"}
+
+-   Let's compare this to the TE22A Founders Memorial Exits from the LTA website
+
+|            Our GIS             |          LTA Website           |
+|:------------------------------:|:------------------------------:|
+| ![](images/paste-102E8091.png) | ![](images/paste-50DD2DB9.png) |
+
+-   You can see that the points are quite similar in both images but just bear in mind that these points that you have plotted will not be accurate to that of LTA website and my screenshots due to human error. However, you do not have to worry because the results will just vary slightly.
+
+-   Now when you open your **Attribute Table** for TE22A Founders Memorial Exits, you can see that there will be 2 rows of data, reflecting the two exits for the MRT Station. Your screen should look similar to the screenshot as shown below
+
+![](images/paste-F2C999BE.png){fig-align="center" width="300"}
+
+::: callout-note
+## DIY
+
+Using the steps you had learned in previous hands-on exercise, save this layer into your GeoPackage as TE22A Founders Memorial MRT Exits
+:::
+
+#### 3.3.4. Explain Outliers for TE26 Marine Parade
+
+-   There will be some MRT Outline Layer from Data.gov which might not tally to the MRT Outline from LTA. Let\'s take TE26 Marine Parade as an example
+
+|    Our QGIS (from data.gov)    |          LTA Website           |
+|:------------------------------:|:------------------------------:|
+| ![](images/paste-3F5119DD.png) | ![](images/paste-3763C08A.png) |
+
+You can see that TE26 Marine Parade Outline from Data.gov is significantly shorter than that of LTA Website. However, exit points will be flushed more together than that of LTA website and the roads near the exit points will vary significantly if we want to take **TE26 Marine Parade Outline from Data.gov as reference.** This will significantly affect our analysis (shortest distance taken) later.
+
+Therefore, it would be better to take **TE26
+Marine Parade Outline from LTA Website as reference** since it would be more accurate geographically and plot exit points out of TE26 Marine Parade MRT Outline from Data.gov. Your screen should look similar to the screenshot as shown below.
+
+![](images/paste-735CAFDE.png){fig-align="center" width="600"}
+
+#### 
+3.3.5. Extracting Exit Points as Individual Layers for the rest of TE24 MRT Stations 
+
+::: callout-note
+Using the steps you had learned earlier, create 7 MRT Exits layers for the rest of the MRT Stations and save them into your GeoPackage as
+
+1.  TE23 Tanjong Rhu MRT Exits -- 2 Exits
+
+2.  TE24 Katong Park MRT Exits -- 2 Exits
+
+3.  TE25 Tanjong Katong MRT Exits -- 3 Exits
+
+4.  TE26 Marine Parade MRT Exits -- 6 Exits
+
+5.  TE27 Marine Terrace MRT Exits -- 6 Exits
+
+6.  TE28 Siglap MRT Exits -- 4 Exits
+
+7.  TE29 Bayshore MRT Exits -- 5 Exits
+
+Your screen should look like the screenshot as shown below
+:::
+
+![](images/paste-1A602478.png){fig-align="center" width="600"}
+
+### 3.4 Extracting and Preparing road network layer
+
+I can\'t emphasize enough the importance of a quality data preparation in GIS analysis. In this sub-section, you will use basic QGIS functions to perform the following data preparation tasks:
+
+-   selecting all roads features with the study area
+
+-   extracting appropriate road classes for the analysis
+
+#### 3.4.1. Selecting all Road network with the study area
+
+-   Import road data set of OSMinto QGIS. Your screen should look similar to the screenshot as shown below)
+
+![](images/paste-1C509029.png){fig-align="center" width="600"}
+
+-   Under **Vector** from the menu bar, hover your cursor over **Geoprocessing Tools** and click on the **Clip**
+
+    ![](images/paste-42C7B576.png){width="400"}
+
+-   Select the correct layers for **Input
+    and Output layers** as shown in the screenshot below:
+
+    ![](images/paste-B34C10D2.png){width="600"}
+
+-   For **Input Layer**, click on ![](images/paste-37720F4C.png){width="16"}. Your screen should look similar to the screenshot as shown below:
+
+    ![](images/paste-37DAE9AE.png){width="400"}
+
+-   For better performance, select *Do Not Filter (Better Performance)* from **Invalid feature filtering** as shown in the screenshot below:
+
+    ![](images/paste-BE6A04A7.png){width="400"}
+
+::: callout-note
+## DIY
+
+Using the steps you learned earlier, do the same thing fo **Output Layer**
+:::
+
+-   Click on ![](images/paste-90E8C235.png){width="40" height="18"}to extract out the roads in Singapore. It will take awhile for QGIS to run due to large data to process but once the process is completed, a new temporary layer Clipped should appear in your Layers Menu.
+
+-   Your screen should look like the screenshot as shown below:
+
+![](images/paste-441B2EA2.png){fig-align="center" width="600"}
+
+::: callout-warning
+## Be Warned
+
+The original data is in **wgs84**. For the purpose of network analysis, the road data must be in projected coordinates system (i.e. svy21 in Singapore).
+:::
+
+#### 3.4.2. Extracting suitable road network
+
+Since we want to study the catchment area for walking and cycling, we do not need these following road feature classes:
+
+1.  Trunk
+
+2.  Trunk_link
+
+3.  Motorway
+
+4.  Motorway_link
+
+Therefore, we need to remove them before saving the rest of the road feature classes into our GeoPackage.
+
+-   Open the **Attribute Table** of Clipped
+
+    ![](images/paste-A1836F52.png){width="400"}
+
+-   Your screen should look similar to the screenshot as shown below:
+
+    ![](images/paste-82FF5B4C.png){width="400"}
+
+-   Click on ![](images/paste-6B11C8A6.png){width="16" height="14"} in the menu. Your screen should look like the screenshot as shown below:
+
+    ![](images/paste-20E8B2FA.png){width="600"}
+
+    To extract out the following Roads by name,
+
+    1\) Motorway
+
+    2\) Motorway Link
+
+    3\) Trunk
+
+    4\) Trunk Link
+
+-   Type in the following expression as shown in the screenshot below and click on ![](images/paste-865F9147.png){width="50" height="13"}
+
+    ![](images/paste-311D827D.png){width="600"}
+
+```{=html}
+<!-- -->
+```
+-   You can see from ![](images/paste-D5E16E8C.png){width="200"}that 6830 rows are selected.
+
+::: callout-note
+## DIY
+
+Click on ![](images/paste-2E4682DD.png){width="16"} to push these 8 rows to the top. Your screen
+should look similar to the screenshot below
+:::
+
+-   ![](images/paste-D0B05B85.png){width="600"}
+    However, since you only want the road feature fclasses that are not these selected features, click on ![](images/paste-E7DBD6E3.png){width="16" height="17"} to invert the selection
+
+-   You can see from ![](images/paste-3640171B.png){width="300" height="14"}that 219057 rows are selected.
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, save these
+selected features as a new layer as OSM_Roads into
+your GeoPackage
 :::

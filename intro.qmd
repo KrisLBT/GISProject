@@ -24,3 +24,13 @@ At present, most Singapore residents use public transport such as buses and trai
 However, this contributes to our carbon emissions and makes meeting the goals set by the Green Plan difficult to achieve. This is compounded by the fact that car ownership is a negative externality. Despite the convenience it affords to its owners, it aggravates traffic and is a source of various types of pollution apart from air pollution, such as noise.
 
 This points to a need to strengthen our public transportation system and to accommodate the diverse needs of Singapore residents.
+
+## Project Scope
+
+To assess the accessibility and effectiveness of the MRT stations, we analysed the building types and amenities within a 1000m and 1500m distance from the stations, both via Euclidean distance and network analysis. Furthermore, the population distribution by subzone was also used to understand the potential reach to residents within the area.
+
+## Project Timeline
+
+### Our Gantt Chart
+
+![](images/paste-1B42AB19.png)

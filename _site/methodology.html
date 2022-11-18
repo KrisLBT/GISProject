@@ -124,6 +124,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#downloading-master-plan" id="toc-downloading-master-plan" class="nav-link" data-scroll-target="#downloading-master-plan">3.1 Downloading Master Plan</a></li>
   <li><a href="#downloading-master-plan-2019-rail-station-layer" id="toc-downloading-master-plan-2019-rail-station-layer" class="nav-link" data-scroll-target="#downloading-master-plan-2019-rail-station-layer">3.2 Downloading Master Plan 2019 Rail Station layer</a></li>
+  <li><a href="#extracting-te-stage-4-mrt-stations-exits" id="toc-extracting-te-stage-4-mrt-stations-exits" class="nav-link" data-scroll-target="#extracting-te-stage-4-mrt-stations-exits">3.3 Extracting TE Stage 4 MRT Stations Exits</a></li>
+  <li><a href="#extracting-and-preparing-road-network-layer" id="toc-extracting-and-preparing-road-network-layer" class="nav-link" data-scroll-target="#extracting-and-preparing-road-network-layer">3.4 Extracting and Preparing road network layer</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -198,17 +200,17 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="start-a-new-qgis-project" class="level2">
 <h2 class="anchored" data-anchor-id="start-a-new-qgis-project">2.&nbsp;Start a new QGIS Project</h2>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Tip
+DIY
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>DIY: Using the steps you had learned in previous hands-on exercise, start a new QGIS project. Save the project and give it a name (i.e.&nbsp;GIS_Project).</p>
+<p>Using the steps you had learned in previous hands-on exercise, start a new QGIS project. Save the project and give it a name (i.e.&nbsp;GIS_Project).</p>
 </div>
 </div>
 <p><strong>Reminder:</strong>&nbsp;Ensure that svy21 projection system is used.</p>
@@ -268,6 +270,401 @@ Be Warned
 </div>
 <div class="callout-body-container callout-body">
 <p>The original data is in&nbsp;<strong>wgs84</strong>. For the purpose of network analysis, the GIS data must be be in projected coordinates system (i.e.&nbsp;SVY21 for Singapore).</p>
+</div>
+</div>
+</section>
+<section id="extracting-thomson-east-coast-line-stage-4-mrt-stations" class="level4">
+<h4 class="anchored" data-anchor-id="extracting-thomson-east-coast-line-stage-4-mrt-stations">3.2.2 Extracting Thomson East Coast Line Stage 4 MRT Stations</h4>
+<ul>
+<li><p>Open the <strong>Attribute Table</strong> of master-plan-2019-rail-station-layer-geojseon by right clicking it in the layer menu</p>
+<p><img src="images/paste-5343A460.png" class="img-fluid"></p></li>
+<li><p>Your screen should look like the screenshot below</p>
+<p><img src="images/paste-7516C876.png" class="img-fluid"></p></li>
+<li><p>Click on <img src="images/paste-B98498EB.png" class="img-fluid"> in the menu. Your screen should look similar to the screenshot as shown below:</p>
+<p><img src="images/paste-8428C865.png" class="img-fluid"></p></li>
+<li><p>To extract out the following TE Stage 4 MRT stations by name:</p>
+<ol type="1">
+<li><p>TE22A Founder’s Memorial</p></li>
+<li><p>TE23 Tanjong Rhu</p></li>
+<li><p>TE24 Katong Park</p></li>
+<li><p>TE25 Tanjong Katong</p></li>
+<li><p>TE26 Marine Parade</p></li>
+<li><p>TE27 Marine Terrace</p></li>
+<li><p>TE28 Siglap</p></li>
+<li><p>TE29 Bayshore</p></li>
+</ol>
+<p>type in the following expression as shown in the screenshot a click on <img src="images/paste-F0F87810.png" class="img-fluid" width="80"></p>
+<p><img src="images/paste-FA2824FC.png" class="img-fluid"></p></li>
+<li><p>You can see from <img src="images/paste-7BF607E2.png" width="500" height="25">that 8 MRT stations have been selected. Click on <img src="images/paste-8C218272.png" class="img-fluid"> to push these 8 rows to the top. Your screen should look similar to the screenshot below:</p>
+<p><img src="images/paste-783C89F0.png" class="img-fluid"></p></li>
+</ul>
+</section>
+<section id="saving-thomson-east-coast-line-stage-4-mrt-stations-into-geopackage-format" class="level4">
+<h4 class="anchored" data-anchor-id="saving-thomson-east-coast-line-stage-4-mrt-stations-into-geopackage-format">3.2.3 Saving Thomson East Coast Line Stage 4 MRT Stations into Geopackage format</h4>
+<ul>
+<li><p>From the main screen, select <strong>Save selected features as</strong></p>
+<p><img src="images/paste-2C28036C.png" class="img-fluid"></p></li>
+</ul>
+<p>Save the GIS layer into Geopackage format. Name the output layer as TEL Stage 4 MRT Stations. Your screen should look similar to the screenshot shown below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-BFAC825C.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<ul>
+<li><p>Click <strong>OK</strong></p></li>
+<li><p>Your screen should look similar to the screenshot below:</p>
+<p><img src="images/paste-4717B379.png" class="img-fluid"></p></li>
+</ul>
+</section>
+</section>
+<section id="extracting-te-stage-4-mrt-stations-exits" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-te-stage-4-mrt-stations-exits">3.3 Extracting TE Stage 4 MRT Stations Exits</h3>
+<p>However, TEL Stage 4 MRT Station Exits Layer is not currently available on any official websites. As a result, we are not able to download but can only extract out the exits with reference to the MRT layout pictures on <a href="https://www.lta.gov.sg/content/ltagov/en/upcoming_projects/rail_expansion/thomson_east_coast_line.html">LTA website</a>.</p>
+<section id="importing-osm-and-opening-lta-mrt-website" class="level4">
+<h4 class="anchored" data-anchor-id="importing-osm-and-opening-lta-mrt-website">3.3.1 Importing OSM and Opening LTA MRT Website</h4>
+<p>We will be guiding you through the extraction of TE22A Founders Memorial Exits as an example. Each MRT should have one layer with all its respective exits. Therefore, we need to create 7 more vector point layers on top of TE22A Founders Memorial Exits layer</p>
+<ul>
+<li><p>Import OSM layer from <strong>Browser</strong>. You will need to refer to the LTA Website as you pick the exit points out. Your screen should look similar to the screenshot as shown below.</p>
+<p><img src="images/paste-6CD3F614.png" class="img-fluid"></p></li>
+<li><p>Click the LTA Website Link as given above and scroll down till you find TE22A Founders Memorial under Location of Stations. Your screen should look similar to the screenshot as shown below:</p>
+<p><img src="images/paste-3BAE5613.png" class="img-fluid"></p></li>
+</ul>
+</section>
+<section id="creating-a-new-layer-for-te22a-founders-memorial-exits" class="level4">
+<h4 class="anchored" data-anchor-id="creating-a-new-layer-for-te22a-founders-memorial-exits">3.3.2 Creating a New Layer for TE22A Founder’s Memorial Exits</h4>
+<ul>
+<li><p>Under <strong>Layers</strong> at the top menu bar, hover your cursor over <strong>Create Layers</strong> and click on <strong>New Shapefile Layer</strong>.</p>
+<p><img src="images/paste-D292441E.png" class="img-fluid"></p></li>
+</ul>
+<p>Your screen should similar to the screenshot below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-CA52B5A4.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<p>Fill n the specific information as shown in the screenshot below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-3134789E.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<ul>
+<li>Under the <strong>Fields List,</strong> click on id and delete it by clicking <img src="images/paste-D24000A5.png" width="80" height="20"></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-05C1D015.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<ul>
+<li><p>Now, we will start naming our attributes. Once every attribute is filled up, we can click on <img src="images/paste-A41F8C08.png" class="img-fluid" width="80"> to create the field. We need the following attributes:</p>
+<ol type="1">
+<li><p>Fid (Type: Integer, Length: 10)</p>
+<p><img src="images/paste-CF5ED0FB.png" class="img-fluid" width="300"></p></li>
+<li><p>MRT line (Type: String, Length: 30)</p>
+<p><img src="images/paste-B29E85EC.png" class="img-fluid" width="300"></p></li>
+<li><p>Exit (Type: String, Length: 30)</p>
+<p><img src="images/paste-8643F463.png" class="img-fluid" width="300"></p></li>
+</ol></li>
+</ul>
+<p>After creating all 3 variables, your screen should look similar to the screenshot below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-F59E5832.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<ul>
+<li>Once you click on <strong>OK</strong>, you can see that TE22A Founder Memorial Exits is added to your layer Menu as a Layer as shown below:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-7C017547.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<ul>
+<li>If you open your attribute table for TE22A Founders Memorial Exits, you will realize that the <strong>Attribute Table</strong> is empty. Your screen should look like the screenshot as shown below. We will be adding the exit points manually in the next section.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-3F7B5742.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+</section>
+<section id="adding-exit-points-into-founders-memorial-exit-layer" class="level4">
+<h4 class="anchored" data-anchor-id="adding-exit-points-into-founders-memorial-exit-layer">3.3.3 Adding Exit Points into Founders Memorial Exit Layer</h4>
+<ul>
+<li>Open the Attribute Table of TE22A Founders Memorial Exits by right-clicking it in the layer menu</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-BA0B0BD5.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<ul>
+<li><p>Click on <img src="images/paste-B0333C09.png" class="img-fluid" width="16"> so that editing mode can be turned on so that we can start adding the exit points in.</p></li>
+<li><p>Once you exit the <strong>Attribute Table</strong>, click on <img src="images/paste-7282DAE8.png" width="16" height="16">in the top menu and start marking the exit points out with reference to the TE22A Founders Memorial Layout from the LTA Website.</p>
+<ul>
+<li>Try to refer to the geographical features (eg. Roads and streets) from both the OSM layer that we previously imported, and image from the LTA website to get as accurate of an exit point as possible. For each exit points selected, fid will be in numerical order and Exits will be in alphabetical order</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-950EA1AE.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<ul>
+<li>Once both exits of TE22A Founders Memorial MRT Station has been marked out, click on <strong>Toggle Editing</strong></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-33D5DBA1.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<ul>
+<li>Save the changes made by clicking <strong>Save</strong></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-1E4FE4DA.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<ul>
+<li>Your screen should similar to the screenshot shown below</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-EF0DACB4.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<ul>
+<li>Let’s compare this to the TE22A Founders Memorial Exits from the LTA website:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-839A7054.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+<ul>
+<li>Let’s compare this to the TE22A Founders Memorial Exits from the LTA website</li>
+</ul>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Our GIS</th>
+<th style="text-align: center;">LTA Website</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/paste-102E8091.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="images/paste-50DD2DB9.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>You can see that the points are quite similar in both images but just bear in mind that these points that you have plotted will not be accurate to that of LTA website and my screenshots due to human error. However, you do not have to worry because the results will just vary slightly.</p></li>
+<li><p>Now when you open your <strong>Attribute Table</strong> for TE22A Founders Memorial Exits, you can see that there will be 2 rows of data, reflecting the two exits for the MRT Station. Your screen should look similar to the screenshot as shown below</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-F2C999BE.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned in previous hands-on exercise, save this layer into your GeoPackage as TE22A Founders Memorial MRT Exits</p>
+</div>
+</div>
+</section>
+<section id="explain-outliers-for-te26-marine-parade" class="level4">
+<h4 class="anchored" data-anchor-id="explain-outliers-for-te26-marine-parade">3.3.4. Explain Outliers for TE26 Marine Parade</h4>
+<ul>
+<li>There will be some MRT Outline Layer from Data.gov which might not tally to the MRT Outline from LTA. Let's take TE26 Marine Parade as an example</li>
+</ul>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Our QGIS (from data.gov)</th>
+<th style="text-align: center;">LTA Website</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/paste-3F5119DD.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="images/paste-3763C08A.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+<p>You can see that TE26 Marine Parade Outline from Data.gov is significantly shorter than that of LTA Website. However, exit points will be flushed more together than that of LTA website and the roads near the exit points will vary significantly if we want to take <strong>TE26 Marine Parade Outline from Data.gov as reference.</strong> This will significantly affect our analysis (shortest distance taken) later.</p>
+<p>Therefore, it would be better to take <strong>TE26 Marine Parade Outline from LTA Website as reference</strong> since it would be more accurate geographically and plot exit points out of TE26 Marine Parade MRT Outline from Data.gov. Your screen should look similar to the screenshot as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-735CAFDE.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+</section>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section"></h4>
+<p>3.3.5. Extracting Exit Points as Individual Layers for the rest of TE24 MRT Stations</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, create 7 MRT Exits layers for the rest of the MRT Stations and save them into your GeoPackage as</p>
+<ol type="1">
+<li><p>TE23 Tanjong Rhu MRT Exits – 2 Exits</p></li>
+<li><p>TE24 Katong Park MRT Exits – 2 Exits</p></li>
+<li><p>TE25 Tanjong Katong MRT Exits – 3 Exits</p></li>
+<li><p>TE26 Marine Parade MRT Exits – 6 Exits</p></li>
+<li><p>TE27 Marine Terrace MRT Exits – 6 Exits</p></li>
+<li><p>TE28 Siglap MRT Exits – 4 Exits</p></li>
+<li><p>TE29 Bayshore MRT Exits – 5 Exits</p></li>
+</ol>
+<p>Your screen should look like the screenshot as shown below</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-1A602478.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="extracting-and-preparing-road-network-layer" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-and-preparing-road-network-layer">3.4 Extracting and Preparing road network layer</h3>
+<p>I can't emphasize enough the importance of a quality data preparation in GIS analysis. In this sub-section, you will use basic QGIS functions to perform the following data preparation tasks:</p>
+<ul>
+<li><p>selecting all roads features with the study area</p></li>
+<li><p>extracting appropriate road classes for the analysis</p></li>
+</ul>
+<section id="selecting-all-road-network-with-the-study-area" class="level4">
+<h4 class="anchored" data-anchor-id="selecting-all-road-network-with-the-study-area">3.4.1. Selecting all Road network with the study area</h4>
+<ul>
+<li>Import road data set of OSMinto QGIS. Your screen should look similar to the screenshot as shown below)</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-1C509029.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+<ul>
+<li><p>Under <strong>Vector</strong> from the menu bar, hover your cursor over <strong>Geoprocessing Tools</strong> and click on the <strong>Clip</strong></p>
+<p><img src="images/paste-42C7B576.png" class="img-fluid" width="400"></p></li>
+<li><p>Select the correct layers for <strong>Input and Output layers</strong> as shown in the screenshot below:</p>
+<p><img src="images/paste-B34C10D2.png" class="img-fluid" width="600"></p></li>
+<li><p>For <strong>Input Layer</strong>, click on <img src="images/paste-37720F4C.png" class="img-fluid" width="16">. Your screen should look similar to the screenshot as shown below:</p>
+<p><img src="images/paste-37DAE9AE.png" class="img-fluid" width="400"></p></li>
+<li><p>For better performance, select <em>Do Not Filter (Better Performance)</em> from <strong>Invalid feature filtering</strong> as shown in the screenshot below:</p>
+<p><img src="images/paste-BE6A04A7.png" class="img-fluid" width="400"></p></li>
+</ul>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you learned earlier, do the same thing fo <strong>Output Layer</strong></p>
+</div>
+</div>
+<ul>
+<li><p>Click on <img src="images/paste-90E8C235.png" width="40" height="18">to extract out the roads in Singapore. It will take awhile for QGIS to run due to large data to process but once the process is completed, a new temporary layer Clipped should appear in your Layers Menu.</p></li>
+<li><p>Your screen should look like the screenshot as shown below:</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-441B2EA2.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Be Warned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The original data is in <strong>wgs84</strong>. For the purpose of network analysis, the road data must be in projected coordinates system (i.e.&nbsp;svy21 in Singapore).</p>
+</div>
+</div>
+</section>
+<section id="extracting-suitable-road-network" class="level4">
+<h4 class="anchored" data-anchor-id="extracting-suitable-road-network">3.4.2. Extracting suitable road network</h4>
+<p>Since we want to study the catchment area for walking and cycling, we do not need these following road feature classes:</p>
+<ol type="1">
+<li><p>Trunk</p></li>
+<li><p>Trunk_link</p></li>
+<li><p>Motorway</p></li>
+<li><p>Motorway_link</p></li>
+</ol>
+<p>Therefore, we need to remove them before saving the rest of the road feature classes into our GeoPackage.</p>
+<ul>
+<li><p>Open the <strong>Attribute Table</strong> of Clipped</p>
+<p><img src="images/paste-A1836F52.png" class="img-fluid" width="400"></p></li>
+<li><p>Your screen should look similar to the screenshot as shown below:</p>
+<p><img src="images/paste-82FF5B4C.png" class="img-fluid" width="400"></p></li>
+<li><p>Click on <img src="images/paste-6B11C8A6.png" width="16" height="14"> in the menu. Your screen should look like the screenshot as shown below:</p>
+<p><img src="images/paste-20E8B2FA.png" class="img-fluid" width="600"></p>
+<p>To extract out the following Roads by name,</p>
+<p>1) Motorway</p>
+<p>2) Motorway Link</p>
+<p>3) Trunk</p>
+<p>4) Trunk Link</p></li>
+<li><p>Type in the following expression as shown in the screenshot below and click on <img src="images/paste-865F9147.png" width="50" height="13"></p>
+<p><img src="images/paste-311D827D.png" class="img-fluid" width="600"></p></li>
+</ul>
+<!-- -->
+<ul>
+<li>You can see from <img src="images/paste-D5E16E8C.png" class="img-fluid" width="200">that 6830 rows are selected.</li>
+</ul>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Click on <img src="images/paste-2E4682DD.png" class="img-fluid" width="16"> to push these 8 rows to the top. Your screen should look similar to the screenshot below</p>
+</div>
+</div>
+<ul>
+<li><p><img src="images/paste-D0B05B85.png" class="img-fluid" width="600"> However, since you only want the road feature fclasses that are not these selected features, click on <img src="images/paste-E7DBD6E3.png" width="16" height="17">&nbsp;to invert the selection</p></li>
+<li><p>You can see from <img src="images/paste-3640171B.png" width="300" height="14">that 219057 rows are selected.</p></li>
+</ul>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, save these selected features as a new layer as OSM_Roads into your GeoPackage</p>
 </div>
 </div>
 

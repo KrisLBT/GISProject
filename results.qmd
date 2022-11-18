@@ -6,3 +6,87 @@ editor: visual
 ## Overview
 
 For the analysis, both the buffer area (calculated by a given Euclidean distance), the ISO-area (derived from the road network) and the various amenities and buildings that lie within them will be used to assess the accessibility of the stations. A distance of 1000m will be used for walking buffer and ISO-area while a distance of 1500m will be used for cycling. For both cycling and walking ISO-areas, intervals of 200m will be used to determine the relative accessibility of certain amenities within a given catchment area.
+
+## TE22A -- Founders Memorial
+
+|                  Catchment Area                  |                   Buffer                    |
+|:--------------------------------:|:--------------------------------:|
+| ![](images/TE22A%20Walking-01.png){width="3507"} | ![](images/TE22A%20Walking%20Buffer-01.png) |
+
+Notably, there are few residential areas within the walking catchment area. The residential areas are also within the 800-1000m contour, where only a small number of people would be willing to walk. However, this MRT station is near several tourist attractions such as Founder's Memorial and Garden by the Bay East. In doing so, people who wish to visit these areas will have their needs better accommodated to and businesses that cater to them may see increased foot traffic. Hence, tourists and tourist-facing businesses are the main beneficiaries of this station. 
+
+The buffer area covers the area across the bridge while the catchment area that is based on the road network cuts off before the bridge. This suggests that there is the potential for encouraging walks across the bridge that has not yet been fully tapped into yet. To do so, more direct networks could be built such that travellers would be able to cross the bridge without having to use other forms of transport such as buses or taxis.
+
+|                Catchment Area                 |                  Buffer                  |
+|:---------------------------------:|:--------------------------------:|
+| ![](images/TE22A%20Cycling.png){width="3507"} | ![](images/TE22A%20Cycling%20Buffer.png) |
+
+For the cycling catchment area, more residential areas are covered within it. This could encourage residents to cycle to the MRT instead of driving to their destination. Hence, this could reduce demand for private forms of transportation and encourage them to cycle to the nearby MRT stations.
+
+Furthermore, Promenade MRT (CC4/DT14) lies within the cycling catchment area. This means that line transfers for cyclists who need to travel to a station in the Thomson-East Coast line can do so easily without having to take the bus or private transport.
+
+## TE23 -- Tanjong Rhu
+
+|                Catchment Area                |                        Buffer                         |
+|:-------------------------------------:|:-------------------------------------:|
+| ![](images/TE23%20Walking.png){width="1000"} | ![](images/TE23%20Walking%20Buffer.png){width="1000"} |
+
+Compared to Founder's Memorial, the buffer area and the catchment areas are very similar to each other. This means that this area is very well-connected by the roads and walk/cycleways within the area and no new pathways need to be built to accommodate easier transit
+
+The contours for 0-600m around Tanjong Rhu station exits covers a significant number of residential areas . Upon looking at the area on Google Street Maps, some of these residential buildings may also be hotels. Building an MRT station here would ensure that Singaporeans and tourists staying within this area will be better served by public transportation, especially since there are no nearby other MRT stations within this area, apart from Founder's Memorial.
+
+Sports Hub also lies within the 1000m buffer zone. Singapore residents who wish to exercise will be able to use public transportation to travel there.
+
+|                 Catchment Area                  |                        Buffer                         |
+|:--------------------------------------:|:--------------------------------------:|
+| ![](images/TE23%20Cycling-01.png){width="1000"} | ![](images/TE23%20Cycling%20Buffer.png){width="1000"} |
+
+In the cycling catchment area, more amenities are covered. The map shows more types of services that Singaporeans can access at the convenience of cycling. Within this area, a school - specifically Dunman High - is accessible within a 1500m distance of the MRT stations. This enables more efficient travel for the students attending that school and eases traffic in the area during school drop-off and pick-up.
+
+This area also now covers the bridge. Thus, travellers will be able to quickly cross it once they alight from the station.
+
+## TE24 -- Katong Park
+
+|                Catchment Area                |                        Buffer                         |
+|:----------------------------------:|:----------------------------------:|
+| ![](images/TE24%20Walking.png){width="1000"} | ![](images/TE24%20Walking%20Buffer.png){width="1000"} |
+
+For the walking buffer area, it covers a significant number of residential areas for both low rise and high rise buildings, including hotels. The station will, thus, be able to cater to a large and diverse set of people who may need to travel to tourist attractions or to commercial buildings. Since the station aims to reduce travel time to the central area, both tourists and workers will be better accommodated.
+
+Dunman High is also 400-600m away (5-7 minutes' walk) from TE24, making it more convenient for students to alight here than at Mountbatten, the current nearest MRT which is a 15 minutes' walk.
+
+|                Catchment Area                |                        Buffer                         |
+|:----------------------------------:|:----------------------------------:|
+| ![](images/TE24%20Cycling.png){width="1000"} | ![](images/TE24%20Cycling%20Buffer.png){width="1000"} |
+
+For the cycling catchment area, more amenities are covered and other schools - Tanjong Katong Girl's School and Tanjong Katong Secondary School - also lie within this area. Should students opt for cycling, this station has the potential to ease traffic during drop-off and pick-up periods, which will likely be similar across all levels, especially in primary school.
+
+A large number of low rise residential areas are also covered within this region. This could mean that a significant number of people will no longer need to use their cars to get to different areas of Singapore.
+
+## TE25 -- Tanjong Katong
+
+|                Catchment Area                |                          Buffer                          |
+|:----------------------------------:|:----------------------------------:|
+| ![](images/TE25%20Walking.png){width="1000"} | ![](images/TE25%20Walking%20Buffer-02.png){width="1000"} |
+
+While there is a discrepancy between the buffer area and the area covered by the network, the difference is mostly in the water, suggesting that this area is well connected by the roads and other networks.
+
+The walking catchment area covers a significant number of residential areas - both high rise and low rise, including hotels and condominiums. This could suggest that the MRT line would need to be able to accommodate a diverse pool of needs, ranging from tourists and workers alike. Importantly, the majority of them are low rise residential areas, where people are generally car owners. Making public transport more accessible to these residents could incentivise them to use their cars less frequently and opt to use the train when travelling.
+
+A large number of amenities lie within this area, such as cafes and shops.  Building an MRT station in this area could boost business due to increased footfall and more efficient travel.
+
+|                Catchment Area                |                        Buffer                         |
+|:----------------------------------:|:----------------------------------:|
+| ![](images/TE25%20Cycling.png){width="1000"} | ![](images/TE25%20Cycling%20Buffer.png){width="1000"} |
+
+For the cycling catchment area, even more amenities are covered. The map shows more types of services that Singaporeans can access at the convenience of cycling. We can easily see that most buildings, which are mainly residential, lie within the range of 1600m.
+
+Cyclists will be able to visit various amenities throughout this region, which could boost interest in smaller businesses within this area. Furthermore, several schools lie within this catchment area. In doing so, families beyond only the Tanjong Katong region will be served and students will have alternative means to go to school. This could reduce traffic in the region, particularly during drop-off and pick-up periods.\
+
+\
+
+\
+
+\
+
+\
