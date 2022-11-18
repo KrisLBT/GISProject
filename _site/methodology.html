@@ -868,7 +868,7 @@ DIY
 <p>A more realistic approach to delineating service area is by using network distance. By and large, there are two approaches, namely shortest network distance and fastest network distance. In this sub-section, shortest network distance approach will be used. You will learn how to delineate service area using fastest distance approach in the next sub-section.</p>
 <p>To delineate service area using shortest distance approach, <strong>Iso-Area as Polygons (from Layer)</strong> function of <strong>QNEAT3</strong> will be used.</p>
 <ul>
-<li>From QGIS's menu bar, select&nbsp;<strong>Processing</strong>&nbsp;-&gt;&nbsp;<strong>Toolbox</strong>.</li>
+<li>From QGIS’s menu bar, select&nbsp;<strong>Processing</strong>&nbsp;-&gt;&nbsp;<strong>Toolbox</strong>.</li>
 </ul>
 <p>The <strong>Processing Toolbox</strong> panel appears.</p>
 <ul>
@@ -899,7 +899,7 @@ DIY
 <p>When the process completed, two temporary layers namely:&nbsp;Output Polygon&nbsp;and&nbsp;Output Interpolation&nbsp;will be added onto Layers panel and display on QGIS View window.</p>
 <p><img src="images/paste-7A7AC651.png" class="img-fluid" width="1600"></p>
 <p>The Output Interpolation&nbsp;layer is a raster layer created using triangular irregular network (TIN). On the other hand, Output Polygon layer is a polygon feature showing the 5-km service area of Bukit Batok Fire Station by road network.</p>
-<p>The&nbsp;Output Polygon&nbsp;is popularly known as isochrone. It is originated from Greek: iso means "the same" and chronos means "time".</p>
+<p>The&nbsp;Output Polygon&nbsp;is popularly known as isochrone. It is originated from Greek: iso means “the same” and chronos means “time”.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -974,185 +974,188 @@ DIY
 </div>
 </section>
 <section id="creating-cycling-network-service-area-using-iso-area-as-polygons-from-layer-for-te22a-founders-memorial" class="level4">
-<h4 class="anchored" data-anchor-id="creating-cycling-network-service-area-using-iso-area-as-polygons-from-layer-for-te22a-founders-memorial"><strong>1.5.1.3&nbsp;Creating Cycling Network Service Area using Iso-Area as Polygons (from Layer) for TE22A Founders Memorial</strong></h4>
+<h4 class="anchored" data-anchor-id="creating-cycling-network-service-area-using-iso-area-as-polygons-from-layer-for-te22a-founders-memorial"><strong>4.1.3. Creating Cycling Network Service Area using Iso-Area as Polygons (from Layer) for TE22A Founders Memorial</strong></h4>
 <p>Now, we will be doing the same steps to delineate the network service area for cycling</p>
 <p>To delineate service area using shortest distance approach, <strong>Iso-Area as Polygons (from Layer)</strong> function of <strong>QNEAT3</strong> will be used.</p>
 <ul>
-<li>From QGIS's menu bar, select&nbsp;<strong>Processing</strong>&nbsp;-&gt;&nbsp;<strong>Toolbox</strong>.</li>
+<li>From QGIS’s menu bar, select&nbsp;<strong>Processing</strong>&nbsp;-&gt;&nbsp;<strong>Toolbox</strong>.</li>
 </ul>
 <p>The <strong>Processing Toolbox</strong> panel appears.</p>
 <ul>
-<li>Select&nbsp;<strong>QNEATS3</strong>&nbsp;-&gt;&nbsp;<strong>Iso-Areas</strong>&nbsp;-&gt;&nbsp;<strong>Iso-Area as Polygons (from Layer)</strong>.</li>
+<li><p>Select&nbsp;<strong>QNEATS3</strong>&nbsp;-&gt;<strong>Iso-Areas</strong> -&gt; I<strong>so-Area as Polygons (from Layer)</strong>.</p>
+<p><img src="images/paste-D69A3CBA.png" class="img-fluid" width="400"></p></li>
 </ul>
-<p>![Graphical user interface, text, application, chat or text message</p>
-<p>Description automatically generated](https://lh5.googleusercontent.com/E4rGfmxEMG6HTOyrPu5ZPW_bfwph_ikAPBg4l7YdfV7eEcDopJ8-6PWV8vjS2XXOAs8_RT-dJNGgGmK6BwT1Xrv6xMUsfUmR6Ud_5AW5VWV-0u-N8WMmdFctykFn-dc50OtByjFfnPRc2sVlAlRb-qif4r3w9fKjk1iKQzZj5ofhUui7KQ_oY6if4j_Cf5mTg4XP6m1YIA){alt=“Graphical user interface, text, application, chat or text message</p>
-<p>Description automatically generated”}</p>
-<p>The&nbsp;<strong>Iso-Area as Polygons (From Layer)</strong>&nbsp;dialog window appears.</p>
+<p>The <strong>Iso-Area as Polygons (From Layer)</strong> dialog window appears.</p>
 <ul>
-<li><p>For&nbsp;<strong>Vector layer representing network</strong>, select&nbsp;Roads&nbsp;from the drop-down list.</p></li>
-<li><p>For&nbsp;<strong>Start Points</strong>, select&nbsp;TE22A Founders Memorial&nbsp;from the drop-down list.</p></li>
+<li><p>For <strong>Vector layer representing network</strong>, select Roads from the drop-down list.</p></li>
+<li><p>For <strong>Start Points</strong>, select TE22A Founders Memorial from the drop-down list.</p></li>
 </ul>
 <p>Notice that both GIS layers are in projected coordinates system (i.e.&nbsp;EPSG:3414 which is svy21).</p>
 <ul>
-<li><p>For&nbsp;<strong>Unique Point ID field</strong>, select&nbsp;fid from the drop-down list.</p></li>
-<li><p>For&nbsp;<strong>Size of Iso-Area (distance or time value)</strong>, type&nbsp;1500.</p></li>
-<li><p>For&nbsp;<strong>Contour Interval</strong>, type&nbsp;200.</p></li>
-<li><p>For&nbsp;<strong>Path type to calculate</strong>, select&nbsp;Shortest Path (distance optimization)&nbsp;from the drop-down list.</p></li>
+<li><p>For <strong>Unique Point ID field</strong>, select fid from the drop-down list.</p></li>
+<li><p>For <strong>Size of Iso-Area (distance or time value)</strong>, type 1500.</p>
+<ul>
+<li>For <strong>Contour Interval</strong>, type 200.</li>
+</ul></li>
+<li><p>For <strong>Path type to calculate</strong>, select Shortest Path (distance optimization) from the drop-down list.</p></li>
 <li><p>For <strong>Value for Default Speed (km/h)</strong>, type in 10</p></li>
 </ul>
 <p>Keep the rest of the entries as default.</p>
 <p>Your screen should look similar to the screenshot below.</p>
-<p><img src="https://lh5.googleusercontent.com/OuNyywUa02_Xz8lNQ9PmmezD-mfxcqXd31aGYGAJDCYIqGi-4cAvGjDQCex5NogVg7_mwLDr735xjJGgB445GtLVet662QryTVf42Z0Xgvdn02HhASvrSW23KWGykdc71UEa95gTGPRlmpblyyzC69IG_8BRPLLqdhwdheekHPYvVxlL73wz6XEyDYbLbr7Oe_-19-eTdg.png" class="img-fluid"><img src="https://lh3.googleusercontent.com/r6kECTEL4-NrBGbkkLy4TGiKKyzqdlVvs320YUTgIEVCBjOowpvxOHzY7vssXWd_rn5s1uFJ2b7_TdZ6fGm5jPlpUTnkgvo-qt0DfirgAD4E-Fp1BgWP_LFZI5uoELoQiSj3pfWnHvcu_Bn11Xy62SaJJemcoWYsJiBc8jzlBx33s3wwFNTU0nxG1XgZpklmXsnyM23aAw.png" class="img-fluid"></p>
+<p><img src="images/paste-3023CFE0.png" class="img-fluid"> <img src="images/paste-7B433E8C.png" class="img-fluid"></p>
 <p>When you are ready to run the function,</p>
 <ul>
-<li>click on the&nbsp;<strong>Run</strong>&nbsp;button.</li>
+<li>click on the <strong>Run</strong> button.</li>
 </ul>
 <p>The process involves massive computation and will take a while to complete (usually less than 5 mins in a standard 64bit machine).</p>
-<p>When the process is completed, two temporary layers namely:&nbsp;Output Polygon&nbsp;and&nbsp;Output Interpolation&nbsp;will be added onto <strong>Layers</strong> panel and display on QGIS View window.</p>
-<p><img src="https://lh3.googleusercontent.com/XbyJhV_yBGS0_mzVaxDqzDBsa_FwJPoyNQqQF7LUeYjZr1eRf420ctlaoUgAh85KkE-ai7mY3ZTK18kio41evGgbLNbJaH-nJLl1lN4LggdIOM54giYeLkIJFu-IOTVA8pqM3ByVjunnesbpdI7JtGfvI0TAjIMAT2eFNti8jlNjgi14pWS7PvdQ-LZdZXER032KaZssDg.png" class="img-fluid"></p>
+<p>When the process is completed, two temporary layers namely: Output Polygon and Output Interpolation will be added onto <strong>Layers</strong> panel and display on QGIS View window.</p>
+<p><img src="images/paste-11B73704.png" class="img-fluid"></p>
 <p>The&nbsp;Output Interpolation&nbsp;layer is a raster layer created using triangular irregular network (TIN). On the other hand,&nbsp;Output Polygon&nbsp;layer is a polygon feature showing the 5-km service area of Bukit Batok Fire Station by road network.</p>
-<p>The&nbsp;Output Polygon&nbsp;is popularly known as isochrone. It is originated from Greek:&nbsp;iso&nbsp;means "the same" and&nbsp;chronos&nbsp;means "time".</p>
+<p>The&nbsp;Output Polygon&nbsp;is popularly known as isochrone. It is originated from Greek:&nbsp;iso&nbsp;means “the same” and&nbsp;chronos&nbsp;means “time”.</p>
 <p>DIY: Using the steps you had learned earlier, save the Output_Polygon Layer as TE22A Contours (Cycling) into your GeoPackage</p>
 </section>
 <section id="data-cleaning-of-cycling-network-service-area-of-te22a-founders-memorial" class="level4">
-<h4 class="anchored" data-anchor-id="data-cleaning-of-cycling-network-service-area-of-te22a-founders-memorial"><strong>1.5.1.4&nbsp;Data Cleaning of Cycling Network Service Area of TE22A Founders Memorial</strong></h4>
+<h4 class="anchored" data-anchor-id="data-cleaning-of-cycling-network-service-area-of-te22a-founders-memorial"><strong>4.1.4. Data Cleaning of Cycling Network Service Area of TE22A Founders Memorial</strong></h4>
 <ul>
-<li>To better visualize the contours for walking distance, open the <strong>Properties Table</strong> of TE22A Contours (Walking)</li>
+<li><p>To better visualize the contours for walking distance, open the <strong>Properties Table</strong> of TE22A Contours (Walking) <img src="images/paste-35D0E301.png" class="img-fluid"></p></li>
+<li><p>Click on the <strong>Symbology</strong> tab and click on Graduated</p>
+<p><img src="images/paste-3BE6709B.png" class="img-fluid"></p></li>
+<li><p>From <strong>Value</strong>, select cost_level</p>
+<p><img src="images/paste-CACFDD90.png" class="img-fluid"></p></li>
+<li><p>From <strong>Color Ramp</strong>, click on Reds</p>
+<p><img src="images/paste-AE8466AD.png" class="img-fluid"></p></li>
+<li><p>Drop number of <strong>Classes</strong> to 7</p>
+<p><img src="images/paste-27521062.png" class="img-fluid"></p></li>
 </ul>
-<p><img src="https://lh6.googleusercontent.com/R5i6JlnTeyscUTsg-0my_zZbBPmgPFobS6UtAnrn_omqteEgRrvEkjwqSSRwYs6V69dpyGXQojory73XrOi7Uo_SvVC6e84t_ctrvtkI655gOzV0I5DAOTcE_Nx2HUfRGopwzCIVCM9zJxt1JaY7gG_UE7QJnMFKi2qtjlZByO1s_U88UmyHeQIq7M9At34Xn0mYpkteag.png" class="img-fluid"></p>
+<!-- -->
 <ul>
-<li>Click on the <strong>Symbology</strong> tab and click on Graduated</li>
+<li><p>From <strong>Mode</strong>, click on Fixed Interval <img src="images/paste-6C2F5EA7.png" class="img-fluid" width="200"></p></li>
+<li><p>Type 200 for <strong>Interval Size</strong> and click <strong>Classify</strong></p>
+<p><img src="images/paste-24D90C3C.png" class="img-fluid" width="200"></p></li>
+<li><p>Your screen should look similar to the screenshot as shown below</p>
+<p><img src="images/paste-C2F256B4.png" class="img-fluid"></p></li>
+<li><p>From <strong>Layer Rendering</strong>, drop <strong>Opacity</strong> to 50%. Your screen should look like the screenshot as shown below before clicking <strong>OK</strong> <img src="images/paste-2D895A64.png" class="img-fluid"></p></li>
 </ul>
-<p><img src="https://lh4.googleusercontent.com/zoqDsla0Cf5jUN3rio_r8U9EtVsGgN8FANDoqKyXM1se2VhRIuCXfbNvXOeFDp66zyC28cbvsCjaHa8_gvZ_GX6vHbijYzRQyKG6AGvzFJ_kMtfT4vMk7K7LeUsKkDkgSpC83vggRjKaeqeKALYOR9Ux9_e_7vUiDbzk_Yr3d7ynYj5F6SQPyGS5mopEFQdWoIKWV3rRAA.png" class="img-fluid"></p>
+<!-- -->
 <ul>
-<li>From <strong>Value</strong>, select cost_level</li>
+<li><p>With that, your walking contours can now capture the OSM layer for better analysis as it is more transparent and better categorized</p>
+<p><img src="images/paste-AF483C37.png" class="img-fluid"></p></li>
 </ul>
-<p><img src="https://lh3.googleusercontent.com/2WEVjjGzlN5kpa1HgozwPf49nQdS-0KrujiCTsSAyp2exw8O9mSKmGXClHirjJNSoPaZ_LXRyXK5JeOMQeBAXM4hCa10rp2xIKkUApZZ5RTQvbeo3j2bsKrO0scAKYf5uAcM10z2QP6i_jQyoVzgTKZv_rtBWmtjtowNpCvTphcJ_r74_bX2qVINDHi0l_maLw87i4-_4g.png" class="img-fluid"></p>
-<ul>
-<li>From <strong>Color Ramp</strong>, click on Reds</li>
-</ul>
-<p><img src="https://lh6.googleusercontent.com/wwQwVwn-f5fZfaTXheDRollIrZergrjyIkQANmO0KpWHzu1Ph2AaMg3fM-llfjA8VFYUBJdZwAzvHR3iXeNcAYPHoEp9GB8-5ut7jvRY3ESVTy5ftPmu5OVsBgEj1DPPm3zDbgkA4e-3MKXnGbQ2IGvL77nZQkhoU7XeVYhtirJ25V0F6gkhurADMog35wo8N38zBVs3uQ.png" class="img-fluid"></p>
-<ul>
-<li>Drop number of <strong>Classes</strong> to 7</li>
-</ul>
-<p><img src="https://lh6.googleusercontent.com/t_J6mEStlpmIozkZw5UjLOBQxGgMlipXBPWHuTWvPA29ru7VC_q5dkgWahKPvHAapEdIDZM-_JjXeUu2zPtPckcRkOeEwe-XCpDOHR6DKgdM_kt4MGZv3Ws_vh8q7IV_8i0RN-uW_JW7F4nudbvhPP3U6rz7_jcGtnLjuvloBFvSg3n_aYsIW6639zNlBNxK6KE508squQ.png" class="img-fluid"></p>
-<ul>
-<li>From <strong>Mode</strong>, click on Fixed Interval</li>
-</ul>
-<p><img src="https://lh4.googleusercontent.com/3CccY0N0kejIrQnkv0gq5IJXIdqvlAfjjTEIZ0pCfdhrZf3nxp7QjQ6t3alf5-sBHEBovgvLDx0-V9mSlvoF1S6k99MeP4-LXeS2QuJtOTfLUKYtToLZ05qIjjzUPHrkx2NyW8tFDI82jW64SKqbgAhGDqij2SI0sIfINuciC7skkpwwSt9ZlyoCBzrAWGFlOjX8rC2XLg.png" class="img-fluid"></p>
-<ul>
-<li>Type 200 for <strong>Interval Size</strong> and click <strong>Classify</strong></li>
-</ul>
-<p><img src="https://lh4.googleusercontent.com/O81pvrOlBDY-E3lQArSZiZgRsM2WWj7kxcTL3-v2z-zAPQqA9qU0wVoWDvAYgBffGGW3bjfmvVasio0rMswivsvcmKU92CsejTee0TwVvwFzQlhIh_NM9WJKtK26kz-7MZG5kpgHd08x-1QR1_hOKzQO5FRQcXSmR5qYQ09_MMuPEG1UiDkLf4ZeRxtVgCQGrK0B6Gbp7w.png" class="img-fluid"></p>
-<ul>
-<li>Your screen should look similar to the screenshot as shown below&nbsp;</li>
-</ul>
-<p><img src="https://lh4.googleusercontent.com/afsVx-wiJJa4LUKOTLBHoPAnzGafWtAzgQD5LDvz1HsWdPCRv5G1Ue_XPzF7UTxneL-8XeM_zNgIrndEwsXS8YONSpKlxTtVs3XvogLrM1BH-OiCsI3PqevOSTA1zx5n1pLLPsfpmrR808n2pwGeURHvG29gGX1YYRad-YtBpp8mbZyUbW0yCRxbiQ_3y5fQdLMtKYZsnw.png" class="img-fluid"></p>
-<ul>
-<li>From <strong>Layer Rendering</strong>, drop <strong>Opacity</strong> to 50%. Your screen should look like the screenshot as shown below before clicking <strong>OK</strong></li>
-</ul>
-<p><img src="https://lh5.googleusercontent.com/2hXnRxtAUVyVbTUCgCZq0xlt68FXSSWp3jCo0qXXaMkskhZK-aoYSGVPetlF33ZePpp1nKYp7YgmQ4L5K_jBks9Y23_E6XFvDH2L1pjqzvQi4otbY84ikmvjK77wA03-x6nvJyY2O9r8kiiXy7EcI5BXHteqfMGq1I-CZYmArxgSSB1GXFR7B9l7syFLgpf4axliH7NiMA.png" class="img-fluid"></p>
-<ul>
-<li>With that, your walking contours can now capture the OSM layer for better analysis as it is more transparent and better categorized</li>
-</ul>
-<p><img src="https://lh6.googleusercontent.com/ey581mQNyx4H40bjNiFsJxYY5eLdxuEd7OEpvprdaVw7tzKa7bNLf5aJkI5TWpwi-HdnSLJyXPZ-sh7HkC6eJNDXqc5uDon5gy5h6yvRC7jf_mDL9VhQygfIhMKv3btAt0sYl09KW0ox03XBa-v8-YBwc-LwlYkZk6zbClpdc1r_ygxmYrsqsOnOCxHUm_IRy-kEeHOAmQ.png" class="img-fluid"></p>
-<p><br>
-</p>
-<p>DIY: Using the steps you had learned earlier, save the Output_Polygon Layer as TE22A Contours (Cycling) into your GeoPackage</p>
-<p>DIY: Using the steps you had learned earlier, generate walking and cycling network service areas for the rest of <strong>TEL Stage 4 MRT Stations</strong> into your GeoPackage</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, save the Output_Polygon Layer as TE22A Contours (Cycling) into your GeoPackage</p>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, generate walking and cycling network service areas for the rest of <strong>TEL Stage 4 MRT Stations</strong> into your GeoPackage</p>
+</div>
+</div>
 </section>
 <section id="creating-walking-and-cycling-network-service-area-for-the-rest-of-the-tel-stage-4-mrt-stations" class="level4">
-<h4 class="anchored" data-anchor-id="creating-walking-and-cycling-network-service-area-for-the-rest-of-the-tel-stage-4-mrt-stations"><strong>1.5.1.5&nbsp;Creating Walking and Cycling Network Service Area for the Rest of the TEL Stage 4 MRT Stations</strong></h4>
+<h4 class="anchored" data-anchor-id="creating-walking-and-cycling-network-service-area-for-the-rest-of-the-tel-stage-4-mrt-stations"><strong>4.1.5. Creating Walking and Cycling Network Service Area for the Rest of the TEL Stage 4 MRT Stations</strong></h4>
 <table class="table">
 <colgroup>
-<col style="width: 47%">
-<col style="width: 47%">
-<col style="width: 4%">
+<col style="width: 26%">
+<col style="width: 40%">
+<col style="width: 31%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>MRT Station Name</th>
-<th>Layer Cleaning</th>
-<th>Layer Name</th>
+<th style="text-align: center;">MRT Station Name</th>
+<th style="text-align: center;">Layer Cleaning</th>
+<th style="text-align: center;">Layer Name</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>TE23 Tanjong Rhu</td>
-<td><img src="https://lh3.googleusercontent.com/7WOpIhnHmLVBM9tQbwi8oKJemqDNzQWFn_RHlisEAtZUwfwrPCW0VJJla2YIXr8DbmIwPUBr_JNYddspzxesUx1Tu4aVKaul3a1X6ailMUr4ldAF05oAjnC3lnIUAQ6lVam2-ulwtqyIB9m76j8OO4DhTVmls_q0hCQYdoeYxXCq5qMTBbSIUZ5d-QJIEL8-jsvuRs0uzw.png" class="img-fluid"></td>
-<td>TE23 Contours (Walking)</td>
+<td style="text-align: center;">TE23 Tanjong Rhu</td>
+<td style="text-align: center;"><img src="images/paste-F1627895.png" class="img-fluid"></td>
+<td style="text-align: center;">TE23 Contours (Walking)</td>
 </tr>
 <tr class="even">
-<td><img src="https://lh3.googleusercontent.com/D3buTZhMFkGbOfjzLecgC6iuEFrvUVByV3F8CI-GUzu0CacP-wB38VXlUWKjxuDiINymL7HGn5uXkd5jdU-3pm1QQi0YdTvRf5O6F_ls6joARQ8cJuJA19WH7HIwJyTV3ESQsii19yuNCriQ1SWwnXttr5E1CEFMyPFzvI0X8pvND_vcUgiLG-iwJnRYOqEYlzVXZX5k7A.png" class="img-fluid"></td>
-<td>TE23 Contours (Cycling)</td>
-<td></td>
+<td style="text-align: center;">TE23 Tanjong Rhu</td>
+<td style="text-align: center;"><img src="images/paste-57A1A192.png" class="img-fluid"></td>
+<td style="text-align: center;">TE23 Contours (Cycling)</td>
 </tr>
 <tr class="odd">
-<td>TE24 Katong Park</td>
-<td><img src="https://lh6.googleusercontent.com/-oRnV3JSXygyyGrEOPSjTIGIqgyZMt-kIxaGb7X6vjfGdFRooBMKHepLG8ASTxRSPXWZ2g5tyF-PpvmEkYBB4JUmgOMEt4d_hEIvVlpIiwMuhybWxNyJXh1dSzEUtE7nJUPjPZFkHhGtfLH5wy9K457iU-3ON6farkRAzGjPPKNuL9Bi6sQG7S7cUrGZxwVZqEVuyBMe4g.png" class="img-fluid"></td>
-<td>TE24 Contours (Walking)</td>
+<td style="text-align: center;">TE24 Katong Park</td>
+<td style="text-align: center;"><img src="images/paste-F9EB11E7.png" class="img-fluid"></td>
+<td style="text-align: center;">TE24 Contours (Walking)</td>
 </tr>
 <tr class="even">
-<td><img src="https://lh4.googleusercontent.com/jQqoiCrqr2lnIkLzfGHBhZjo390UK8Mq5__lnfw0DMVs3AJJwFIY6J2xyZbvWctE5FAz-WxuXyzBZyEelkoS32UZ6LdaYQLLhzOnh1vR3Afw6B3JDsNTNULicR4PVR5snHNFblRQ2LWEWkU8ZtqGwA0UxgXz7arfaOzcRoK32IV7YXH6p-GsUieSpdxg8Oxkmue_aBwD6Q.png" class="img-fluid"></td>
-<td>TE24 Contours (Cycling)</td>
-<td></td>
+<td style="text-align: center;">TE24 Katong Park</td>
+<td style="text-align: center;"><img src="images/paste-44EE9F00.png" class="img-fluid"></td>
+<td style="text-align: center;">TE24 Contours (Cycling)</td>
 </tr>
 <tr class="odd">
-<td>TE25 Tanjong Katong</td>
-<td><img src="https://lh3.googleusercontent.com/SQ20V1FgJh_aT3BSReIrCc-RKJJVGDxLjS9fyXapCzxdIWbWFHKdbB_dnaL6v1VQtJ0OkKYoHCnHj1Oo0sPKf7GAa2x4r-FTaoSvBA8Frf7RLh90rct1gY9KCDyRU0n8aETj1CJRJdiRb0FRyPrKHjQf7eubJNbPmtIrSmAlM6U5InILwX7giVM6zyPZW0WHjXRXzqYlLw.png" class="img-fluid"></td>
-<td>TE25 Contours (Walking)</td>
+<td style="text-align: center;">TE25 Tanjong Katong</td>
+<td style="text-align: center;"><img src="images/paste-32474ADC.png" class="img-fluid"></td>
+<td style="text-align: center;">TE25 Contours (Walking)</td>
 </tr>
 <tr class="even">
-<td><img src="https://lh3.googleusercontent.com/AxH24HMgHrO3v_WRavXmG90g30Tcmi--LeKHRsMtHUAQHPO5SP5fUEmtt9C11DSgej7BOeTlBjzhbrOLpCMZGEtm3E42Olnch6h-cRm4X3FXrXTVlaww3hDogn46mBWe35u4F73HiWyNM4WAqPNaxFicDWqtYD5fRqf8-NbuYfHSdNmJwDAWjgNm1aQvgHpMspHX8A-YlA.png" class="img-fluid"></td>
-<td>TE25 Contours (Cycling)</td>
-<td></td>
+<td style="text-align: center;">TE25 Tanjong Katong</td>
+<td style="text-align: center;"><img src="images/paste-96F6298B.png" class="img-fluid"></td>
+<td style="text-align: center;">TE25 Contours (Cycling)</td>
 </tr>
 <tr class="odd">
-<td>TE26 Marine Parade</td>
-<td><img src="https://lh5.googleusercontent.com/G5wqFeuFo0MQfzcuGxbq2uzvhl8p2xie2m--c_ZPC4WyImJYh2odWVs6owv6piALr_AtBcmcQ__6Zm16L1sIdTU4xhGI2hP-fG-QfJPO3zh-D4fNp5YOERRZNvWYfa1GOaNgEX4NPwfbIFoKIRkx9q3CZ7DqPdtPnuWtrixYA9jU3WNu7PFD5vtNpW7lK0qnP5bXI1Iamw.png" class="img-fluid"></td>
-<td>TE26 Contours (Walking)</td>
+<td style="text-align: center;">TE26 Marine Parade</td>
+<td style="text-align: center;"><img src="images/paste-A9ABA3FD.png" class="img-fluid"></td>
+<td style="text-align: center;">TE26 Contours (Walking)</td>
 </tr>
 <tr class="even">
-<td><img src="https://lh6.googleusercontent.com/e84o3TexGg-Qi_BMS5tJ74npXSKTVFCDApoIO7VzDuHypRmcWl5KqS9aIbDZhvSZc9J8zY_b-nYDdyY_5YlplI-DC66TsNDlgYeQRfs6OxngXZa49tA5PmdwBKuIXBoxRhz0AvjfboFM9ktPdVo7q2O2-KYASBwThLRVgcSzk8hs7dr53ehty2a-NL9Yw3Kh8n-cXpF3Fg.png" class="img-fluid"></td>
-<td>TE26 Contours (Cycling)</td>
-<td></td>
+<td style="text-align: center;">TE26 Marine Parade</td>
+<td style="text-align: center;"><img src="images/paste-81496094.png" class="img-fluid"></td>
+<td style="text-align: center;">TE26 Contours (Cycling)</td>
 </tr>
 <tr class="odd">
-<td>TE27 Marine Terrace</td>
-<td><img src="https://lh4.googleusercontent.com/UVk-BunQ44f_T2JmwZppNplaL_pCjKnUbkKWXr3S7nk3uSeNLiJSaeqcrDCjqDxCqTJfy1Umb-68BtANN55OCsrPG7rEVDCtjL1DCnFXK5wBu2HEF5LA_WJ6qulIxOFfEBjouFYq3Ro5HBzhSsIPQzRd00tubRiyfLWSmssnP1vlWuEHSvzCrxp_lwpGuQVGbuIpdR_hDA.png" class="img-fluid"></td>
-<td>TE27 Contours (Walking)</td>
+<td style="text-align: center;">TE27 Marine Terrace</td>
+<td style="text-align: center;"><img src="images/paste-1A40E7E9.png" class="img-fluid"></td>
+<td style="text-align: center;">TE27 Contours (Walking)</td>
 </tr>
 <tr class="even">
-<td><img src="https://lh5.googleusercontent.com/gF5JW3ePCk7Cr002BEVF3xNAp62qIZhjbiZgHj1dGzdfy01bulmFsYTwmKQWz062KSBuaNpBB-0qdhAIF3jhHSOYTZ40PA8UBpzEpG_Wf47nIpL3XQwZtbIKQKVyAlJXDC_u8G8uDdsmbm6NwEofdf3BeL_E9880FI-A_KeA0dtZqtqfNuQZ5v_NN4qP9FRuNTCjXkjuhA.png" class="img-fluid"></td>
-<td>TE27 Contours (Cycling)</td>
-<td></td>
+<td style="text-align: center;">TE27 Marine Terrace</td>
+<td style="text-align: center;"><img src="images/paste-038D26A1.png" class="img-fluid"></td>
+<td style="text-align: center;">TE27 Contours (Cycling)</td>
 </tr>
 <tr class="odd">
-<td>TE28 Siglap</td>
-<td><img src="https://lh5.googleusercontent.com/XTlAc8pND-6Q5idCNOGgj5vxcGcP4W4q04qeZ73OlwPnsKOjS-Qsng2MyXmmCpOFht9SQXsHMV8OiFwhLADJGuxwAz6GersEF62D0Q-dCH7AJKUwPN2hvUzATn5tpJtFvbHPafcFFo9CkUdpUcq7J5J20_XV_LUE_EkBfIbRW1XLmkcLyZuSjUnXDL966YM01lpVzYqxbg.png" class="img-fluid"></td>
-<td>TE28 Contours (Walking)</td>
+<td style="text-align: center;">TE28 Siglap</td>
+<td style="text-align: center;"><img src="images/paste-302637B9.png" class="img-fluid"></td>
+<td style="text-align: center;">TE28 Contours (Walking)</td>
 </tr>
 <tr class="even">
-<td><img src="https://lh5.googleusercontent.com/E4R83f7TJFRuhURmBirHuCXYjYTyfnwvoIOjcV8dY0GCOGB4rI0ILZRkEXgfBEFNSq_Avzpb80QXw13HSZj5GX6ajalQePTlRGnI-Lu4LHxSjA9EMnCDUQyKk9HuOwXQZdcC4nIvwJzDUqyEvr-5Xqjb155Rd9D3o10McY_rNoGvt2uNytq5QV_OLUicVTnfbOx4pUn6JA.png" class="img-fluid"></td>
-<td>TE28 Contours (Cycling)</td>
-<td></td>
+<td style="text-align: center;">TE28 Siglap</td>
+<td style="text-align: center;"><img src="images/paste-992D62CC.png" class="img-fluid"></td>
+<td style="text-align: center;">TE28 Contours (Cycling)</td>
 </tr>
 <tr class="odd">
-<td>TE29 Bayshore</td>
-<td><img src="https://lh5.googleusercontent.com/oJcUJrQCyPx_H6bfJEKhmDlhU6M-qArfhjWORkQhRUq6juzgDMNaSV437oZl0-D6Kxp6aXlsPFv6C_9kGuhzIzik0uE3Y8xneQXCtUOxkL98Vx9cKxBIL5KIeNlZBoD4kX2_EkV4Ro1G9B52Yb486dsRfJcmMzQwsVRI1wb9d_YEQZhHK7djN_wM7vrzqA9qDfP-MB2Lsw.png" class="img-fluid"></td>
-<td>TE29 Contours (Walking)</td>
+<td style="text-align: center;">TE29 Bayshore</td>
+<td style="text-align: center;"><img src="images/paste-3C489BBA.png" class="img-fluid"></td>
+<td style="text-align: center;">TE29 Contours (Walking)</td>
 </tr>
 <tr class="even">
-<td><img src="https://lh4.googleusercontent.com/nZerwIWnxxACguiHeJnSz5XQxkHKmq3RTylQNREVK7glxBFb_r9xbwwJdv1hFU-U4-5gD8tiefdeDlWH_gXJJX8qR3WUoF_-GROAPKRj6LW360E5KaLP1HhuWionRa69OVcNt3tdyPQlYAKN3AJqVU0m0iDR3x7OjKZMYap6byzpEEwvbfxOmFH8q9QZrywQqpzyhse5lA.png" class="img-fluid"></td>
-<td>TE29 Contours (Cycling)</td>
-<td></td>
+<td style="text-align: center;">TE29 Bayshore</td>
+<td style="text-align: center;"><img src="images/paste-6932FABE.png" class="img-fluid"></td>
+<td style="text-align: center;">TE29 Contours (Cycling)</td>
 </tr>
 </tbody>
 </table>
-<p><br>
-</p>
-<p><br>
-</p>
 
 
 </section>

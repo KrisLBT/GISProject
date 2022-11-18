@@ -565,7 +565,7 @@ A more realistic approach to delineating service area is by using network distan
 
 To delineate service area using shortest distance approach, **Iso-Area as Polygons (from Layer)** function of **QNEAT3** will be used.
 
--   From QGIS\'s menu bar, select **Processing** -\> **Toolbox**.
+-   From QGIS's menu bar, select **Processing** -\> **Toolbox**.
 
 The **Processing Toolbox** panel appears.
 
@@ -595,8 +595,7 @@ Keep the rest of the entries as default.
 
 Your screen should look similar to the screenshot below.
 
-![](images/paste-BD583D10.png){width="600"}
-![](images/paste-38212C77.png){width="600"}
+![](images/paste-BD583D10.png){width="600"} ![](images/paste-38212C77.png){width="600"}
 
 When you are ready to run the function,
 
@@ -610,7 +609,7 @@ When the process completed, two temporary layers namely: Output Polygon and O
 
 The Output Interpolation layer is a raster layer created using triangular irregular network (TIN). On the other hand, Output Polygon layer is a polygon feature showing the 5-km service area of Bukit Batok Fire Station by road network.
 
-The Output Polygon is popularly known as isochrone. It is originated from Greek: iso means \"the same\" and chronos means \"time\".
+The Output Polygon is popularly known as isochrone. It is originated from Greek: iso means "the same" and chronos means "time".
 
 ::: callout-note
 ## DIY
@@ -660,39 +659,35 @@ Using the steps you had learned earlier, save the Output_Polygon Layer as TE22A 
 
 ![](images/paste-46115266.png){fig-align="center" width="1600"}
 
-#### **1.5.1.3 Creating Cycling Network Service Area using Iso-Area as Polygons (from Layer) for TE22A Founders Memorial**
+#### **4.1.3. Creating Cycling Network Service Area using Iso-Area as Polygons (from Layer) for TE22A Founders Memorial**
 
 Now, we will be doing the same steps to delineate the network service area for cycling
 
 To delineate service area using shortest distance approach, **Iso-Area as Polygons (from Layer)** function of **QNEAT3** will be used.
 
--   From QGIS\'s menu bar, select **Processing** -\> **Toolbox**.
+-   From QGIS's menu bar, select **Processing** -\> **Toolbox**.
 
 The **Processing Toolbox** panel appears.
 
--   Select **QNEATS3** -\> **Iso-Areas** -\> **Iso-Area as Polygons (from Layer)**.
+-   Select **QNEATS3** -\>**Iso-Areas** -\> I**so-Area as Polygons (from Layer)**.
 
-![Graphical user interface, text, application, chat or text message
+    ![](images/paste-D69A3CBA.png){width="400"}
 
-Description automatically generated](https://lh5.googleusercontent.com/E4rGfmxEMG6HTOyrPu5ZPW_bfwph_ikAPBg4l7YdfV7eEcDopJ8-6PWV8vjS2XXOAs8_RT-dJNGgGmK6BwT1Xrv6xMUsfUmR6Ud_5AW5VWV-0u-N8WMmdFctykFn-dc50OtByjFfnPRc2sVlAlRb-qif4r3w9fKjk1iKQzZj5ofhUui7KQ_oY6if4j_Cf5mTg4XP6m1YIA){alt="Graphical user interface, text, application, chat or text message
+The **Iso-Area as Polygons (From Layer)** dialog window appears.
 
-Description automatically generated"}
+-   For **Vector layer representing network**, select Roads from the drop-down list.
 
-The **Iso-Area as Polygons (From Layer)** dialog window appears.
-
--   For **Vector layer representing network**, select Roads from the drop-down list.
-
--   For **Start Points**, select TE22A Founders Memorial from the drop-down list.
+-   For **Start Points**, select TE22A Founders Memorial from the drop-down list.
 
 Notice that both GIS layers are in projected coordinates system (i.e. EPSG:3414 which is svy21).
 
--   For **Unique Point ID field**, select fid from the drop-down list.
+-   For **Unique Point ID field**, select fid from the drop-down list.
 
--   For **Size of Iso-Area (distance or time value)**, type 1500.
+-   For **Size of Iso-Area (distance or time value)**, type 1500.
 
--   For **Contour Interval**, type 200.
+    -   For **Contour Interval**, type 200.
 
--   For **Path type to calculate**, select Shortest Path (distance optimization) from the drop-down list.
+-   For **Path type to calculate**, select Shortest Path (distance optimization) from the drop-down list.
 
 -   For **Value for Default Speed (km/h)**, type in 10
 
@@ -700,91 +695,142 @@ Keep the rest of the entries as default.
 
 Your screen should look similar to the screenshot below.
 
-![](https://lh5.googleusercontent.com/OuNyywUa02_Xz8lNQ9PmmezD-mfxcqXd31aGYGAJDCYIqGi-4cAvGjDQCex5NogVg7_mwLDr735xjJGgB445GtLVet662QryTVf42Z0Xgvdn02HhASvrSW23KWGykdc71UEa95gTGPRlmpblyyzC69IG_8BRPLLqdhwdheekHPYvVxlL73wz6XEyDYbLbr7Oe_-19-eTdg)![](https://lh3.googleusercontent.com/r6kECTEL4-NrBGbkkLy4TGiKKyzqdlVvs320YUTgIEVCBjOowpvxOHzY7vssXWd_rn5s1uFJ2b7_TdZ6fGm5jPlpUTnkgvo-qt0DfirgAD4E-Fp1BgWP_LFZI5uoELoQiSj3pfWnHvcu_Bn11Xy62SaJJemcoWYsJiBc8jzlBx33s3wwFNTU0nxG1XgZpklmXsnyM23aAw)
+![](images/paste-3023CFE0.png)
+![](images/paste-7B433E8C.png)
 
 When you are ready to run the function,
 
--   click on the **Run** button.
+-   click on the **Run** button.
 
 The process involves massive computation and will take a while to complete (usually less than 5 mins in a standard 64bit machine).
 
-When the process is completed, two temporary layers namely: Output Polygon and Output Interpolation will be added onto **Layers** panel and display on QGIS View window.
+When the process is completed, two temporary layers namely: Output Polygon and Output Interpolation will be added onto **Layers** panel and display on QGIS View window.
 
-![](https://lh3.googleusercontent.com/XbyJhV_yBGS0_mzVaxDqzDBsa_FwJPoyNQqQF7LUeYjZr1eRf420ctlaoUgAh85KkE-ai7mY3ZTK18kio41evGgbLNbJaH-nJLl1lN4LggdIOM54giYeLkIJFu-IOTVA8pqM3ByVjunnesbpdI7JtGfvI0TAjIMAT2eFNti8jlNjgi14pWS7PvdQ-LZdZXER032KaZssDg)
+![](images/paste-11B73704.png)
 
 The Output Interpolation layer is a raster layer created using triangular irregular network (TIN). On the other hand, Output Polygon layer is a polygon feature showing the 5-km service area of Bukit Batok Fire Station by road network.
 
-The Output Polygon is popularly known as isochrone. It is originated from Greek: iso means \"the same\" and chronos means \"time\".
+The Output Polygon is popularly known as isochrone. It is originated from Greek: iso means "the same" and chronos means "time".
 
 DIY: Using the steps you had learned earlier, save the Output_Polygon Layer as TE22A Contours (Cycling) into your GeoPackage
 
-#### **1.5.1.4 Data Cleaning of Cycling Network Service Area of TE22A Founders Memorial** 
+#### **4.1.4. Data Cleaning of Cycling Network Service Area of TE22A Founders Memorial**
 
 -   To better visualize the contours for walking distance, open the **Properties Table** of TE22A Contours (Walking)
-
-![](https://lh6.googleusercontent.com/R5i6JlnTeyscUTsg-0my_zZbBPmgPFobS6UtAnrn_omqteEgRrvEkjwqSSRwYs6V69dpyGXQojory73XrOi7Uo_SvVC6e84t_ctrvtkI655gOzV0I5DAOTcE_Nx2HUfRGopwzCIVCM9zJxt1JaY7gG_UE7QJnMFKi2qtjlZByO1s_U88UmyHeQIq7M9At34Xn0mYpkteag)
+    ![](images/paste-35D0E301.png)
 
 -   Click on the **Symbology** tab and click on Graduated
 
-![](https://lh4.googleusercontent.com/zoqDsla0Cf5jUN3rio_r8U9EtVsGgN8FANDoqKyXM1se2VhRIuCXfbNvXOeFDp66zyC28cbvsCjaHa8_gvZ_GX6vHbijYzRQyKG6AGvzFJ_kMtfT4vMk7K7LeUsKkDkgSpC83vggRjKaeqeKALYOR9Ux9_e_7vUiDbzk_Yr3d7ynYj5F6SQPyGS5mopEFQdWoIKWV3rRAA)
+    ![](images/paste-3BE6709B.png)
 
 -   From **Value**, select cost_level
 
-![](https://lh3.googleusercontent.com/2WEVjjGzlN5kpa1HgozwPf49nQdS-0KrujiCTsSAyp2exw8O9mSKmGXClHirjJNSoPaZ_LXRyXK5JeOMQeBAXM4hCa10rp2xIKkUApZZ5RTQvbeo3j2bsKrO0scAKYf5uAcM10z2QP6i_jQyoVzgTKZv_rtBWmtjtowNpCvTphcJ_r74_bX2qVINDHi0l_maLw87i4-_4g)
+    ![](images/paste-CACFDD90.png)
 
 -   From **Color Ramp**, click on Reds
 
-![](https://lh6.googleusercontent.com/wwQwVwn-f5fZfaTXheDRollIrZergrjyIkQANmO0KpWHzu1Ph2AaMg3fM-llfjA8VFYUBJdZwAzvHR3iXeNcAYPHoEp9GB8-5ut7jvRY3ESVTy5ftPmu5OVsBgEj1DPPm3zDbgkA4e-3MKXnGbQ2IGvL77nZQkhoU7XeVYhtirJ25V0F6gkhurADMog35wo8N38zBVs3uQ)
+    ![](images/paste-AE8466AD.png)
 
 -   Drop number of **Classes** to 7
 
-![](https://lh6.googleusercontent.com/t_J6mEStlpmIozkZw5UjLOBQxGgMlipXBPWHuTWvPA29ru7VC_q5dkgWahKPvHAapEdIDZM-_JjXeUu2zPtPckcRkOeEwe-XCpDOHR6DKgdM_kt4MGZv3Ws_vh8q7IV_8i0RN-uW_JW7F4nudbvhPP3U6rz7_jcGtnLjuvloBFvSg3n_aYsIW6639zNlBNxK6KE508squQ)
+    ![](images/paste-27521062.png)
 
+```{=html}
+<!-- -->
+```
 -   From **Mode**, click on Fixed Interval
-
-![](https://lh4.googleusercontent.com/3CccY0N0kejIrQnkv0gq5IJXIdqvlAfjjTEIZ0pCfdhrZf3nxp7QjQ6t3alf5-sBHEBovgvLDx0-V9mSlvoF1S6k99MeP4-LXeS2QuJtOTfLUKYtToLZ05qIjjzUPHrkx2NyW8tFDI82jW64SKqbgAhGDqij2SI0sIfINuciC7skkpwwSt9ZlyoCBzrAWGFlOjX8rC2XLg)
+    ![](images/paste-6C2F5EA7.png){width="200"}
 
 -   Type 200 for **Interval Size** and click **Classify**
 
-![](https://lh4.googleusercontent.com/O81pvrOlBDY-E3lQArSZiZgRsM2WWj7kxcTL3-v2z-zAPQqA9qU0wVoWDvAYgBffGGW3bjfmvVasio0rMswivsvcmKU92CsejTee0TwVvwFzQlhIh_NM9WJKtK26kz-7MZG5kpgHd08x-1QR1_hOKzQO5FRQcXSmR5qYQ09_MMuPEG1UiDkLf4ZeRxtVgCQGrK0B6Gbp7w)
+    ![](images/paste-24D90C3C.png){width="200"}
 
--   Your screen should look similar to the screenshot as shown below 
+-   Your screen should look similar to the screenshot as shown below
 
-![](https://lh4.googleusercontent.com/afsVx-wiJJa4LUKOTLBHoPAnzGafWtAzgQD5LDvz1HsWdPCRv5G1Ue_XPzF7UTxneL-8XeM_zNgIrndEwsXS8YONSpKlxTtVs3XvogLrM1BH-OiCsI3PqevOSTA1zx5n1pLLPsfpmrR808n2pwGeURHvG29gGX1YYRad-YtBpp8mbZyUbW0yCRxbiQ_3y5fQdLMtKYZsnw)
+    ![](images/paste-C2F256B4.png)
 
 -   From **Layer Rendering**, drop **Opacity** to 50%. Your screen should look like the screenshot as shown below before clicking **OK**
+    ![](images/paste-2D895A64.png)
 
-![](https://lh5.googleusercontent.com/2hXnRxtAUVyVbTUCgCZq0xlt68FXSSWp3jCo0qXXaMkskhZK-aoYSGVPetlF33ZePpp1nKYp7YgmQ4L5K_jBks9Y23_E6XFvDH2L1pjqzvQi4otbY84ikmvjK77wA03-x6nvJyY2O9r8kiiXy7EcI5BXHteqfMGq1I-CZYmArxgSSB1GXFR7B9l7syFLgpf4axliH7NiMA)
-
+```{=html}
+<!-- -->
+```
 -   With that, your walking contours can now capture the OSM layer for better analysis as it is more transparent and better categorized
 
-![](https://lh6.googleusercontent.com/ey581mQNyx4H40bjNiFsJxYY5eLdxuEd7OEpvprdaVw7tzKa7bNLf5aJkI5TWpwi-HdnSLJyXPZ-sh7HkC6eJNDXqc5uDon5gy5h6yvRC7jf_mDL9VhQygfIhMKv3btAt0sYl09KW0ox03XBa-v8-YBwc-LwlYkZk6zbClpdc1r_ygxmYrsqsOnOCxHUm_IRy-kEeHOAmQ)
+    ![](images/paste-AF483C37.png)
 
-\
+::: callout-note
+## DIY
 
-DIY: Using the steps you had learned earlier, save the Output_Polygon Layer as TE22A Contours (Cycling) into your GeoPackage
+Using the steps you had learned earlier, save the Output_Polygon Layer as TE22A Contours (Cycling) into your GeoPackage
+:::
 
-DIY: Using the steps you had learned earlier, generate walking and cycling network service areas for the rest of **TEL Stage 4 MRT Stations** into your GeoPackage
+::: callout-note
+## DIY
 
-#### **1.5.1.5 Creating Walking and Cycling Network Service Area for the Rest of the TEL Stage 4 MRT Stations**
+Using the steps you had learned earlier, generate walking and cycling network service areas for the rest of **TEL Stage 4 MRT Stations** into your GeoPackage
+:::
 
-| MRT Station Name                                                                                                                                                                                                                                  | Layer Cleaning                                                                                                                                                                                                                                    | Layer Name              |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| TE23 Tanjong Rhu                                                                                                                                                                                                                                  | ![](https://lh3.googleusercontent.com/7WOpIhnHmLVBM9tQbwi8oKJemqDNzQWFn_RHlisEAtZUwfwrPCW0VJJla2YIXr8DbmIwPUBr_JNYddspzxesUx1Tu4aVKaul3a1X6ailMUr4ldAF05oAjnC3lnIUAQ6lVam2-ulwtqyIB9m76j8OO4DhTVmls_q0hCQYdoeYxXCq5qMTBbSIUZ5d-QJIEL8-jsvuRs0uzw) | TE23 Contours (Walking) |
-| ![](https://lh3.googleusercontent.com/D3buTZhMFkGbOfjzLecgC6iuEFrvUVByV3F8CI-GUzu0CacP-wB38VXlUWKjxuDiINymL7HGn5uXkd5jdU-3pm1QQi0YdTvRf5O6F_ls6joARQ8cJuJA19WH7HIwJyTV3ESQsii19yuNCriQ1SWwnXttr5E1CEFMyPFzvI0X8pvND_vcUgiLG-iwJnRYOqEYlzVXZX5k7A) | TE23 Contours (Cycling)                                                                                                                                                                                                                           |                         |
-| TE24 Katong Park                                                                                                                                                                                                                                  | ![](https://lh6.googleusercontent.com/-oRnV3JSXygyyGrEOPSjTIGIqgyZMt-kIxaGb7X6vjfGdFRooBMKHepLG8ASTxRSPXWZ2g5tyF-PpvmEkYBB4JUmgOMEt4d_hEIvVlpIiwMuhybWxNyJXh1dSzEUtE7nJUPjPZFkHhGtfLH5wy9K457iU-3ON6farkRAzGjPPKNuL9Bi6sQG7S7cUrGZxwVZqEVuyBMe4g) | TE24 Contours (Walking) |
-| ![](https://lh4.googleusercontent.com/jQqoiCrqr2lnIkLzfGHBhZjo390UK8Mq5__lnfw0DMVs3AJJwFIY6J2xyZbvWctE5FAz-WxuXyzBZyEelkoS32UZ6LdaYQLLhzOnh1vR3Afw6B3JDsNTNULicR4PVR5snHNFblRQ2LWEWkU8ZtqGwA0UxgXz7arfaOzcRoK32IV7YXH6p-GsUieSpdxg8Oxkmue_aBwD6Q) | TE24 Contours (Cycling)                                                                                                                                                                                                                           |                         |
-| TE25 Tanjong Katong                                                                                                                                                                                                                               | ![](https://lh3.googleusercontent.com/SQ20V1FgJh_aT3BSReIrCc-RKJJVGDxLjS9fyXapCzxdIWbWFHKdbB_dnaL6v1VQtJ0OkKYoHCnHj1Oo0sPKf7GAa2x4r-FTaoSvBA8Frf7RLh90rct1gY9KCDyRU0n8aETj1CJRJdiRb0FRyPrKHjQf7eubJNbPmtIrSmAlM6U5InILwX7giVM6zyPZW0WHjXRXzqYlLw) | TE25 Contours (Walking) |
-| ![](https://lh3.googleusercontent.com/AxH24HMgHrO3v_WRavXmG90g30Tcmi--LeKHRsMtHUAQHPO5SP5fUEmtt9C11DSgej7BOeTlBjzhbrOLpCMZGEtm3E42Olnch6h-cRm4X3FXrXTVlaww3hDogn46mBWe35u4F73HiWyNM4WAqPNaxFicDWqtYD5fRqf8-NbuYfHSdNmJwDAWjgNm1aQvgHpMspHX8A-YlA) | TE25 Contours (Cycling)                                                                                                                                                                                                                           |                         |
-| TE26 Marine Parade                                                                                                                                                                                                                                | ![](https://lh5.googleusercontent.com/G5wqFeuFo0MQfzcuGxbq2uzvhl8p2xie2m--c_ZPC4WyImJYh2odWVs6owv6piALr_AtBcmcQ__6Zm16L1sIdTU4xhGI2hP-fG-QfJPO3zh-D4fNp5YOERRZNvWYfa1GOaNgEX4NPwfbIFoKIRkx9q3CZ7DqPdtPnuWtrixYA9jU3WNu7PFD5vtNpW7lK0qnP5bXI1Iamw) | TE26 Contours (Walking) |
-| ![](https://lh6.googleusercontent.com/e84o3TexGg-Qi_BMS5tJ74npXSKTVFCDApoIO7VzDuHypRmcWl5KqS9aIbDZhvSZc9J8zY_b-nYDdyY_5YlplI-DC66TsNDlgYeQRfs6OxngXZa49tA5PmdwBKuIXBoxRhz0AvjfboFM9ktPdVo7q2O2-KYASBwThLRVgcSzk8hs7dr53ehty2a-NL9Yw3Kh8n-cXpF3Fg) | TE26 Contours (Cycling)                                                                                                                                                                                                                           |                         |
-| TE27 Marine Terrace                                                                                                                                                                                                                               | ![](https://lh4.googleusercontent.com/UVk-BunQ44f_T2JmwZppNplaL_pCjKnUbkKWXr3S7nk3uSeNLiJSaeqcrDCjqDxCqTJfy1Umb-68BtANN55OCsrPG7rEVDCtjL1DCnFXK5wBu2HEF5LA_WJ6qulIxOFfEBjouFYq3Ro5HBzhSsIPQzRd00tubRiyfLWSmssnP1vlWuEHSvzCrxp_lwpGuQVGbuIpdR_hDA) | TE27 Contours (Walking) |
-| ![](https://lh5.googleusercontent.com/gF5JW3ePCk7Cr002BEVF3xNAp62qIZhjbiZgHj1dGzdfy01bulmFsYTwmKQWz062KSBuaNpBB-0qdhAIF3jhHSOYTZ40PA8UBpzEpG_Wf47nIpL3XQwZtbIKQKVyAlJXDC_u8G8uDdsmbm6NwEofdf3BeL_E9880FI-A_KeA0dtZqtqfNuQZ5v_NN4qP9FRuNTCjXkjuhA) | TE27 Contours (Cycling)                                                                                                                                                                                                                           |                         |
-| TE28 Siglap                                                                                                                                                                                                                                       | ![](https://lh5.googleusercontent.com/XTlAc8pND-6Q5idCNOGgj5vxcGcP4W4q04qeZ73OlwPnsKOjS-Qsng2MyXmmCpOFht9SQXsHMV8OiFwhLADJGuxwAz6GersEF62D0Q-dCH7AJKUwPN2hvUzATn5tpJtFvbHPafcFFo9CkUdpUcq7J5J20_XV_LUE_EkBfIbRW1XLmkcLyZuSjUnXDL966YM01lpVzYqxbg) | TE28 Contours (Walking) |
-| ![](https://lh5.googleusercontent.com/E4R83f7TJFRuhURmBirHuCXYjYTyfnwvoIOjcV8dY0GCOGB4rI0ILZRkEXgfBEFNSq_Avzpb80QXw13HSZj5GX6ajalQePTlRGnI-Lu4LHxSjA9EMnCDUQyKk9HuOwXQZdcC4nIvwJzDUqyEvr-5Xqjb155Rd9D3o10McY_rNoGvt2uNytq5QV_OLUicVTnfbOx4pUn6JA) | TE28 Contours (Cycling)                                                                                                                                                                                                                           |                         |
-| TE29 Bayshore                                                                                                                                                                                                                                     | ![](https://lh5.googleusercontent.com/oJcUJrQCyPx_H6bfJEKhmDlhU6M-qArfhjWORkQhRUq6juzgDMNaSV437oZl0-D6Kxp6aXlsPFv6C_9kGuhzIzik0uE3Y8xneQXCtUOxkL98Vx9cKxBIL5KIeNlZBoD4kX2_EkV4Ro1G9B52Yb486dsRfJcmMzQwsVRI1wb9d_YEQZhHK7djN_wM7vrzqA9qDfP-MB2Lsw) | TE29 Contours (Walking) |
-| ![](https://lh4.googleusercontent.com/nZerwIWnxxACguiHeJnSz5XQxkHKmq3RTylQNREVK7glxBFb_r9xbwwJdv1hFU-U4-5gD8tiefdeDlWH_gXJJX8qR3WUoF_-GROAPKRj6LW360E5KaLP1HhuWionRa69OVcNt3tdyPQlYAKN3AJqVU0m0iDR3x7OjKZMYap6byzpEEwvbfxOmFH8q9QZrywQqpzyhse5lA) | TE29 Contours (Cycling)                                                                                                                                                                                                                           |                         |
+#### **4.1.5. Creating Walking and Cycling Network Service Area for the Rest of the TEL Stage 4 MRT Stations**
 
-\
-
-\
++---------------------+--------------------------------+-------------------------+
+| MRT Station Name    | Layer Cleaning                 | Layer Name              |
++:===================:+:==============================:+:=======================:+
+| TE23 Tanjong Rhu    |                                |                         |
+|                     |                                |                         |
+|                     | ![](images/paste-F1627895.png) | TE23 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+| TE23 Tanjong Rhu    | ![](images/paste-57A1A192.png) |                         |
+|                     |                                |                         |
+|                     |                                | TE23 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE24 Katong Park    | ![](images/paste-F9EB11E7.png) | TE24 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE24 Katong Park    | ![](images/paste-44EE9F00.png) | TE24 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE25 Tanjong Katong | ![](images/paste-32474ADC.png) | TE25 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE25 Tanjong Katong | ![](images/paste-96F6298B.png) | TE25 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE26 Marine Parade  | ![](images/paste-A9ABA3FD.png) | TE26 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE26 Marine Parade  | ![](images/paste-81496094.png) | TE26 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE27 Marine Terrace | ![](images/paste-1A40E7E9.png) |                         |
+|                     |                                |                         |
+|                     |                                | TE27 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE27 Marine Terrace | ![](images/paste-038D26A1.png) | TE27 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE28 Siglap         | ![](images/paste-302637B9.png) | TE28 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE28 Siglap         | ![](images/paste-992D62CC.png) | TE28 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE29 Bayshore       | ![](images/paste-3C489BBA.png) | TE29 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+|                     |                                |                         |
+|                     |                                |                         |
+| TE29 Bayshore       | ![](images/paste-6932FABE.png) | TE29 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
