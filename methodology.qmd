@@ -553,13 +553,13 @@ Using the steps you had learned earlier, save the selected feature as 2020POP in
 
 \
 
-## **4. Delineating Network Service Areas with NEAT3 Plugin**
+## 4. Delineating Network Service Areas with NEAT3 Plugin
 
 In this section, you will learn how to delineate network service areas by using QGIS Network Analysis Toolbox (QNEAT3) plugin. We will be delineating both Walking and Cycling network service areas. We will be guiding you through the delineation of Network Service Areas within TE22A Founders Memorial as an example.
 
-### **4.1 Shortest network distance method**
+### 4.1 Shortest network distance method
 
-#### **4.1.1 Creating Walking Network Service Area using Iso-Area as Polygons (from Layer) for TE22A Founders Memorial**
+#### 4.1.1 Creating Walking Network Service Area using Iso-Area as Polygons (from Layer) for TE22A Founders Memorial
 
 A more realistic approach to delineating service area is by using network distance. By and large, there are two approaches, namely shortest network distance and fastest network distance. In this sub-section, shortest network distance approach will be used. You will learn how to delineate service area using fastest distance approach in the next sub-section.
 
@@ -618,7 +618,7 @@ The Output Polygon is popularly known as isochrone. It is originated from Gree
 Using the steps you had learned earlier, save the Output_Polygon Layer as TE22A Contours (Walking) into your GeoPackage
 :::
 
-#### **4.1.2. Data Cleaning of Walking Network Service Area of TE22A Founders Memorial**
+#### 4.1.2. Data Cleaning of Walking Network Service Area of TE22A Founders Memorial
 
 -   To better visualize the contours for walking distance, open the **Properties Table** of TE22A Contours (Walking)
 
