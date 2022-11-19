@@ -39,3 +39,9 @@ Afterwards, we will be conducting an analysis of the various amenities and build
 ### Deliverable 3
 
 We will also find the population size of the people served by this line by using the composite subzone areas and population.
+
+## Poster
+
+Here is the poster used at the Townhall presentation:
+
+![](images/Catch%20Them%20All.jpg){width="1600"}

@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Instructor: Kim Tin Seong"
+    "text": "Instructor: Kim Tin Seong\n\nOur Project Github\nPlease see https://github.com/KrisLBT/GISProject for our project github"
   },
   {
     "objectID": "data.html",
@@ -47,6 +47,13 @@
     "title": "Catch Them All",
     "section": "Deliverables",
     "text": "Deliverables\n\nDeliverable 1\nWe will provide both the buffer regions and the ISO-areas (using QNEAT3) of the aforementioned stations. The maximum walking distance for both buffer and ISO-area is 1000m while maximum cycling distance is 1500m.\n\n\nDeliverable 2\nAfterwards, we will be conducting an analysis of the various amenities and buildings that lie within the catchment area.\n\n\nDeliverable 3\nWe will also find the population size of the people served by this line by using the composite subzone areas and population."
+  },
+  {
+    "objectID": "index.html#poster",
+    "href": "index.html#poster",
+    "title": "Catch Them All",
+    "section": "Poster",
+    "text": "Poster\nHere is the poster used at the Townhall presentation:"
   },
   {
     "objectID": "intro.html",

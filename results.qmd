@@ -12,9 +12,7 @@ For the analysis, both the buffer area (calculated by a given Euclidean distance
 ### TE22A -- Founders Memorial
 
 ::: {layout-ncol="2"}
-![Catchment Area](images/TE22A%20Walking-01.png){fig-align="center" width="600"}
-
-![Buffer](images/TE22A%20Walking%20Buffer-01.png){fig-align="center" width="600"}
+![Walking Catchment and Buffer](images/TE22A%20Walking%20Buffer-01.png){fig-align="center" width="600"}
 :::
 
 Notably, there are few residential areas within the walking catchment area. The residential areas are also within the 800-1000m contour, where only a small number of people would be willing to walk. However, this MRT station is near several tourist attractions such as Founder's Memorial and Garden by the Bay East. In doing so, people who wish to visit these areas will have their needs better accommodated to and businesses that cater to them may see increased foot traffic. Hence, tourists and tourist-facing businesses are the main beneficiaries of this station. 
@@ -22,9 +20,7 @@ Notably, there are few residential areas within the walking catchment area. The 
 The buffer area covers the area across the bridge while the catchment area that is based on the road network cuts off before the bridge. This suggests that there is the potential for encouraging walks across the bridge that has not yet been fully tapped into yet. To do so, more direct networks could be built such that travellers would be able to cross the bridge without having to use other forms of transport such as buses or taxis.
 
 ::: {layout-ncol="2"}
-![Catchment Area](images/TE22A%20Cycling.png){fig-align="center" width="600"}
-
-![Buffer](images/TE22A%20Cycling%20Buffer.png){fig-align="center" width="600"}
+![Cycling Catchment and Buffer](images/TE22A%20Cycling%20Buffer.png){fig-align="center" width="600"}
 :::
 
 For the cycling catchment area, more residential areas are covered within it. This could encourage residents to cycle to the MRT instead of driving to their destination. Hence, this could reduce demand for private forms of transportation and encourage them to cycle to the nearby MRT stations.
@@ -35,10 +31,9 @@ This will significantly improve first and last mile journeys using public transp
 
 ### TE23 -- Tanjong Rhu
 
-::: {layout-ncol="2"}
-![Catchment Area](images/TE23%20Walking.png){fig-align="center" width="600"}
+::: {layout-colnum="2"}
 
-![Buffer](images/TE23%20Walking%20Buffer.png){fig-align="center" width="600"}
+![Walking Catchment and Buffer](images/TE23%20Walking%20Buffer-01.png){fig-align="center"}
 :::
 
 Compared to Founder's Memorial, the buffer area and the catchment areas are very similar to each other. This means that this area is very well-connected by the roads and walk/cycleways within the area and no new pathways need to be built to accommodate easier transit
@@ -50,9 +45,7 @@ Upon looking at the area on Google Street Maps, some buildings may also be hotel
 Sports Hub also lies within the 1000m buffer zone. While it may be a 1000m walk from TE23, people who visit the Sports Hub are most likely to be ready to engage in some form of exercise. Hence, the willingness to walk 1000m to their destination will likely be greater than 15%. Thus, TE23 will serve as a sustainable and motivational form of transportation for active citizens travelling to the Sports Hub. Hence, Singapore residents who wish to exercise will be able to use public transportation to travel there.
 
 ::: {layout-ncol="2"}
-![Catchment Area](images/TE23%20Cycling-01.png){fig-align="center" width="600"}
-
-![Buffer](images/TE23%20Cycling%20Buffer.png){fig-align="center" width="600"}
+![Cycling Catchment and Buffer](images/TE23%20Cycling-02.png){fig-align="center"}
 :::
 
 In the cycling catchment area, more amenities are covered. The map shows more types of services that Singaporeans can access at the convenience of cycling. Within this area, a school - specifically Dunman High - is accessible within a 1500m distance of the MRT stations. This enables more efficient travel for the students attending that school and eases traffic in the area during school drop-off and pick-up.
@@ -62,9 +55,7 @@ This area also now extends to the Paddock Club F1 area through the Benjamin Shea
 ### TE24 -- Katong Park
 
 ::: {layout-ncol="2"}
-![Catchment Area](images/TE24%20Walking.png){fig-align="center" width="600"}
-
-![Buffer](images/TE24%20Walking%20Buffer.png){fig-align="center" width="600"}
+![Walking Catchment and Buffer](images/TE24%20Walking-01.png){fig-align="center"}
 :::
 
 For the walking catchment area, it covers a significant number of residential areas for both low rise and high rise buildings, including hotels. The station will, thus, be able to cater to a large and diverse set of people who may need to travel to tourist attractions or to commercial buildings. Since the station aims to reduce travel time to the central area, both tourists and workers will be better accommodated.
@@ -72,9 +63,7 @@ For the walking catchment area, it covers a significant number of residential ar
 Dunman High is also 400-600m away (5-7 minutes' walk) from TE24, making it more convenient for students to alight here than at Mountbatten, the current nearest MRT which is a 15 minutes' walk.
 
 ::: {layout-ncol="2"}
-![Catchment Area](images/TE24%20Cycling.png){fig-align="center" width="600"}
-
-![Buffer](images/TE24%20Cycling.png){fig-align="center" width="600"}
+![Cycling Catchment and Buffer](images/TE24%20Cycling%20Buffer-02.png){fig-align="center"}
 :::
 
 For the cycling catchment area, more amenities are covered and other schools - Tanjong Katong Girl's School and Tanjong Katong Secondary School - also lie within this area. Should students opt for cycling, this station has the potential to ease traffic during drop-off and pick-up periods, which will likely be similar across all levels, especially in primary school.
@@ -84,9 +73,7 @@ A large number of low rise residential areas are also covered within this region
 ### TE25 -- Tanjong Katong
 
 ::: {layout-ncol="2"}
-![Catchment Area](images/TE25%20Walking.png){fig-align="center" width="600"}
-
-![Buffer](images/TE25%20Walking%20Buffer-02.png){fig-align="center" width="600"}
+![Walking Catchment and Buffer](images/TE25%20Walking%20Buffer-02.png){fig-align="center" width="600"}
 :::
 
 While there is a discrepancy between the buffer area and the area covered by the network, the difference is mostly in the water, suggesting that this area is well connected by the roads and other networks.
@@ -96,9 +83,7 @@ The walking catchment area covers a significant number of residential areas - bo
 A large number of amenities lie within this area, such as cafes and shops.  Building an MRT station in this area could boost business due to increased footfall and more efficient travel.
 
 ::: {layout-ncol="2"}
-![Catchment Area](images/TE25%20Cycling.png){fig-align="center" width="600"}
-
-![Buffer](images/TE25%20Cycling%20Buffer.png){fig-align="center" width="600"}
+![Cycling Catchment and Buffer](images/TE25%20Cycling%20Buffer.png){fig-align="center" width="600"}
 :::
 
 For the cycling catchment area, even more amenities are covered. The map shows more types of services that Singaporeans can access at the convenience of cycling. We can easily see that most buildings, which are mainly residential, lie within the range of 1600m.
