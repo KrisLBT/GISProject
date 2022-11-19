@@ -89,7 +89,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./data.html">Data Used</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./results.html">Report</a>
+    <a class="nav-link" href="./results.html">Catchment Analysis</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./results2.html">Population Analysis</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -159,6 +162,23 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#creating-layouts-for-population-analysis" id="toc-creating-layouts-for-population-analysis" class="nav-link" data-scroll-target="#creating-layouts-for-population-analysis">9. Creating Layouts for Population Analysis</a>
   <ul class="collapse">
   <li><a href="#displaying-data-in-a-new-layout-for-analysis-1" id="toc-displaying-data-in-a-new-layout-for-analysis-1" class="nav-link" data-scroll-target="#displaying-data-in-a-new-layout-for-analysis-1">9.1. Displaying Data in a New Layout for Analysis</a></li>
+  </ul></li>
+  <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link" data-scroll-target="#appendix-a">Appendix A</a>
+  <ul class="collapse">
+  <li><a href="#figure-1." id="toc-figure-1." class="nav-link" data-scroll-target="#figure-1.">Figure 1.</a></li>
+  <li><a href="#figure-2." id="toc-figure-2." class="nav-link" data-scroll-target="#figure-2.">Figure 2.</a></li>
+  <li><a href="#figure-3." id="toc-figure-3." class="nav-link" data-scroll-target="#figure-3.">Figure 3.</a></li>
+  <li><a href="#figure-4." id="toc-figure-4." class="nav-link" data-scroll-target="#figure-4.">Figure 4.</a></li>
+  <li><a href="#figure-5." id="toc-figure-5." class="nav-link" data-scroll-target="#figure-5.">Figure 5.</a></li>
+  <li><a href="#figure-6." id="toc-figure-6." class="nav-link" data-scroll-target="#figure-6.">Figure 6.</a></li>
+  <li><a href="#figure-7." id="toc-figure-7." class="nav-link" data-scroll-target="#figure-7.">Figure 7.</a></li>
+  <li><a href="#figure-8." id="toc-figure-8." class="nav-link" data-scroll-target="#figure-8.">Figure 8.</a></li>
+  <li><a href="#figure-9." id="toc-figure-9." class="nav-link" data-scroll-target="#figure-9.">Figure 9.</a></li>
+  <li><a href="#figure-10." id="toc-figure-10." class="nav-link" data-scroll-target="#figure-10.">Figure 10.</a></li>
+  <li><a href="#figure-11." id="toc-figure-11." class="nav-link" data-scroll-target="#figure-11.">Figure 11.</a></li>
+  <li><a href="#figure-12." id="toc-figure-12." class="nav-link" data-scroll-target="#figure-12.">Figure 12.</a></li>
+  <li><a href="#figure-13." id="toc-figure-13." class="nav-link" data-scroll-target="#figure-13.">Figure 13.</a></li>
+  <li><a href="#figure-14." id="toc-figure-14." class="nav-link" data-scroll-target="#figure-14.">Figure 14.</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -1098,7 +1118,7 @@ DIY
 <h4 class="anchored" data-anchor-id="creating-walking-and-cycling-network-service-area-for-the-rest-of-the-tel-stage-4-mrt-stations"><strong>4.1.5. Creating Walking and Cycling Network Service Area for the Rest of the TEL Stage 4 MRT Stations</strong></h4>
 <table class="table">
 <colgroup>
-<col style="width: 27%">
+<col style="width: 26%">
 <col style="width: 40%">
 <col style="width: 31%">
 </colgroup>
@@ -1227,18 +1247,123 @@ DIY
 <section id="data-cleaning-for-null-buildings-within-the-catchment-area" class="level4">
 <h4 class="anchored" data-anchor-id="data-cleaning-for-null-buildings-within-the-catchment-area"><strong>5.1.3 Data Cleaning for NULL Buildings within the Catchment Area</strong></h4>
 <p>Below shows a table of how and why we recategorize NULL buildings into the correct building types that we use in our analysis.</p>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<p><img src="images/Table%20GIS-01.png" class="img-fluid"> <img src="images/paste-D91A6FBA.png" class="img-fluid" width="598"></p>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<p><img src="images/paste-09EAEF93.png" class="img-fluid" width="598"></p>
-</div>
-</div>
-</div>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Buildings</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Examples</strong></th>
+<th><strong>Justification</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nursing care homes</td>
+<td>"residential"</td>
+<td><p>Econ Nursing Home Services (1987) Ptd Ltd</p>
+<p>Refer to Appendix A Figure 1.</p></td>
+<td>According to the <a href="https://www.ura.gov.sg/Corporate/Guidelines/Development-Control/Non-Residential/C-CI/Home">Urban Redevelopment Authority</a> (2019), nursing care homes are either zoned as "Civic and Community Institution’’ or "Residential/Institution" in the Master Plan. However, since elderly live in these homes, we decided to classify them as "residential".</td>
+</tr>
+<tr class="even">
+<td>"apartments" /&nbsp; "condominium" / "hall"</td>
+<td>"residential"</td>
+<td>Refer to Appendix A Figure 2.</td>
+<td>Our term "residential" would refer to residential buildings that are not low rise (which are only 4 or less storeys high). These buildings will then be classified as buildings that have a large population density, and they approximately hold the same number of residents as Housing &amp; Development Board (HDB) buildings. HDB buildings will be classified as "residential" as well.</td>
+</tr>
+<tr class="odd">
+<td>Landed houses / terrace houses</td>
+<td>"Low rise residential"</td>
+<td>Refer to Appendix A Figure 3.</td>
+<td>These building types are low rise, and they only serve as residential blocks for a small number of people. This will allow us to estimate the amount of people that are affected in this building type during our analysis.</td>
+</tr>
+<tr class="even">
+<td>"semidetached_house" / "detached" / "bungalow" / "house"</td>
+<td>"Low rise residential"</td>
+<td>Refer to Appendix A Figure 4.</td>
+<td>This is for standardisation and data cleaning as they all serve to hold a small number of people.</td>
+</tr>
+<tr class="odd">
+<td>Repair shops / Servicing shops / Stand-alone Small Businesses /</td>
+<td>"business"</td>
+<td>Refer to Appendix A Figure 5.</td>
+<td>These are small businesses that operate for profit making. We follow the business types according to the <a href="https://www.ura.gov.sg/Corporate/Guidelines/Development-Control/Non-Residential/B2/Allowable-Uses">URA</a> (2022) classification guideline.</td>
+</tr>
+<tr class="even">
+<td>"office" / "shop"</td>
+<td>"business"</td>
+<td>Refer to Appendix A Figure 6.</td>
+<td><p>"office" buildings would be considered large corporate businesses. We classify them together with other small businesses because we want to generalise how business workers will be affected by the MRT stations when travelling to or from work.</p>
+<p>"shop" are recategorized to "business" because they are a <a href="https://www.ura.gov.sg/Corporate/Property/Business/Change-Use-of-Property-for-Business/Assessment-Criteria">subset of a business</a>. "shop" have the same nature as stand-alone small businesses and offices since they are buildings for people to work in.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Religious buildings /</p>
+<p>"chapel" / "church" / "mosque" / "religion" / "religious" / "shrine" / "temple"</p></td>
+<td>"Place of worship"</td>
+<td>Refer to Appendix A Figure 7.</td>
+<td>We recategorize to make the classification cleaner and neater by having all religious forms of activity classified under 1 label. We use this term according to <a href="https://www.ura.gov.sg/Corporate/Guidelines/Development-Control/Non-Residential/PW/Introduction">URA's</a> as they term it "place of worship" as well.</td>
+</tr>
+<tr class="even">
+<td>Community Centres / Police Station / Town Hall</td>
+<td>"C&amp;CI"</td>
+<td>Refer to Appendix A Figure 8.</td>
+<td>According to the <a href="https://www.ura.gov.sg/Corporate/Guidelines/Development-Control/Non-Residential/C-CI/Introduction">URA</a>, these building types are commonly termed "Civic and Community Institution", "C&amp;CI" in short. Therefore, we follow these guidelines when classifying and giving these buildings a term.</td>
+</tr>
+<tr class="odd">
+<td>"civic" / "clubhouse" / "club house" / "fire_station" / "government" / "public" / "sports_centre" / "sports_hall" / "stadium"</td>
+<td>"C&amp;CI"</td>
+<td>Refer to Appendix A Figure 9.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>"garage" / "garages"</td>
+<td>"C&amp;CI"</td>
+<td>-</td>
+<td>This is for standardization and data cleaning.</td>
+</tr>
+<tr class="odd">
+<td>Stand-alone Restaurants / Cafe</td>
+<td>"food"</td>
+<td>Refer to Appendix A Figure 10.</td>
+<td>Since these buildings are stand-alone, they only serve one purpose which is providing food service. We can distinguish these food shops from "business" to show how food places, food choices, and food availability may be affected by residents in catchment areas due to the MRT.</td>
+</tr>
+<tr class="even">
+<td>Shophouses</td>
+<td>"commercial"</td>
+<td>Refer to Appendix A Figure 11.</td>
+<td>These shophouses often encompass many different types of uses such as eateries, convenience stores, salons, houses, small company enterprises, and many more. Hence, it is unfeasible and will be inaccurate to distinctively mark out every unit into a certain building type. Furthermore, this will complicate the classification process and create too many classes that will be too specific. Hence, we classify them as "commercial" to show that these buildings have many different uses.</td>
+</tr>
+<tr class="odd">
+<td>"toilets"</td>
+<td>"toilet"</td>
+<td>-</td>
+<td>This is for standardization and data cleaning.</td>
+</tr>
+<tr class="even">
+<td>Building structures that do not appear on Google Maps / Building structures that cannot be classified by eye</td>
+<td>"unclassified"</td>
+<td>Refer to Appendix A Figure 12.</td>
+<td>These do not have a label on Google. Hence, we are not able to identify its specific use and it is better not to assume of the building use. Furthermore, their use may differ at different times of the year. Therefore, we do not know the true purpose of these building types.</td>
+</tr>
+<tr class="odd">
+<td>Primary schools / Secondary schools / Preschools / School organizations</td>
+<td>"school"</td>
+<td>Refer to Appendix A Figure 13.</td>
+<td>These building types are distinctively classified as "school".</td>
+</tr>
+<tr class="even">
+<td>"kindergarten"</td>
+<td>"school"</td>
+<td>-</td>
+<td>This is for standardization and data cleaning.</td>
+</tr>
+<tr class="odd">
+<td>Petrol stations</td>
+<td>"transport facilities"</td>
+<td>Refer to Appendix A Figure 14.</td>
+<td>According to the <a href="https://www.ura.gov.sg/Corporate/Guidelines/Development-Control/Non-Residential/Transport/Petrol-Station">URA</a> (2019), these buildings are deemed as "transport facilities".</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li><p>After editing, click on <strong>Toggle Editing Mode</strong> icon. A pop-up window will appear as shown below</p>
 <p><img src="images/paste-3E8C865E.png" class="img-fluid" width="200"></p></li>
@@ -1837,18 +1962,18 @@ DIY
 </div>
 <p>You will see that your <strong>Attribute Table</strong> for MP19_Subzone is so much cleaner now</p>
 <p><img src="images/paste-CE694802.png" class="img-fluid"></p>
-<p>If you look at both <strong>Attribute Tables</strong> carefully, you will realize that the column 'SZ' in 2020POP is in lower case of column 'SUBZONE_N' in MP19_Subzone. Therefore, we need to use subzone names to merge both 2020POP and MP19_Subzone together.</p>
+<p>If you look at both <strong>Attribute Tables</strong> carefully, you will realize that the column ‘SZ’ in 2020POP is in lower case of column ‘SUBZONE_N’ in MP19_Subzone. Therefore, we need to use subzone names to merge both 2020POP and MP19_Subzone together.</p>
 <ul>
-<li><p>Go to 2020POP's <strong>Attribute Table</strong> and select <strong>Open Field Calculator</strong><img src="images/paste-E60BBB07.png" width="20" height="22"> at the top. A pop-up window will appear as shown below</p>
+<li><p>Go to 2020POP’s <strong>Attribute Table</strong> and select <strong>Open Field Calculator</strong><img src="images/paste-E60BBB07.png" width="20" height="22"> at the top. A pop-up window will appear as shown below</p>
 <p><img src="images/paste-2B058F90.png" class="img-fluid" width="800"></p></li>
-<li><p>As we aim to capitalize the string data in 'SZ' column, fill in the <strong>Output Field Name</strong> and the <strong>Output Field Type</strong> as shown below.</p>
+<li><p>As we aim to capitalize the string data in ‘SZ’ column, fill in the <strong>Output Field Name</strong> and the <strong>Output Field Type</strong> as shown below.</p>
 <p><img src="images/paste-0D5C1001.png" class="img-fluid" width="1000"></p></li>
 <li><p>Type the following code as shown below</p></li>
 </ul>
 <p><img src="images/paste-B39D124F.png" class="img-fluid"></p>
-<p>The preview will show you what the new string will be in the new column 'SUBZONE'</p>
+<p>The preview will show you what the new string will be in the new column ‘SUBZONE’</p>
 <ul>
-<li>Click <strong>OK</strong> and you will see that a new column 'SUBZONE' is added to your 2020POP's <strong>Attribute Table</strong></li>
+<li>Click <strong>OK</strong> and you will see that a new column ‘SUBZONE’ is added to your 2020POP’s <strong>Attribute Table</strong></li>
 </ul>
 <p><img src="images/paste-E5D6DE1C.png" class="img-fluid"></p>
 <p>However, the table will be in edit format, so you need to save the changes that you had made.</p>
@@ -1859,7 +1984,7 @@ DIY
 </section>
 <section id="performing-relational-join-between-mp19_subzone-and-2020pop-layers" class="level3">
 <h3 class="anchored" data-anchor-id="performing-relational-join-between-mp19_subzone-and-2020pop-layers">8.2. Performing Relational Join Between MP19_Subzone and 2020POP layers</h3>
-<p>Now you are ready to perform relational join between the MP19_Subzone layer and the 2020POP layer. To join the <strong>Attribute Table</strong> of a geospatial data and an aspatial <strong>Attribute Table</strong>, we need to identify the common key or popularly known as&nbsp;<strong>Unique Identifier</strong>&nbsp;between these two data sets with we had prepared earlier. In this case, it is the Subzone Names ('SUBZONE' and 'SUBZONE_N')</p>
+<p>Now you are ready to perform relational join between the MP19_Subzone layer and the 2020POP layer. To join the <strong>Attribute Table</strong> of a geospatial data and an aspatial <strong>Attribute Table</strong>, we need to identify the common key or popularly known as&nbsp;<strong>Unique Identifier</strong>&nbsp;between these two data sets with we had prepared earlier. In this case, it is the Subzone Names (‘SUBZONE’ and ‘SUBZONE_N’)</p>
 <p><img src="images/paste-B2539C7F.png" class="img-fluid"></p>
 <p>You are ready to join both tables now.</p>
 <ul>
@@ -1903,7 +2028,7 @@ DIY
 <p><img src="images/paste-20848659.png" class="img-fluid" width="1000"></p></li>
 <li><p>Click on <strong>Select Features</strong>&nbsp;</p></li>
 </ul>
-<p>You can tell that from <img src="images/paste-F786FF5C.png" class="img-fluid" width="400"> that 0 row is selected which means that both attributes' tables are joined properly</p>
+<p>You can tell that from <img src="images/paste-F786FF5C.png" class="img-fluid" width="400"> that 0 row is selected which means that both attributes’ tables are joined properly</p>
 </section>
 <section id="creating-choropleth-map-for-subzone-population" class="level3">
 <h3 class="anchored" data-anchor-id="creating-choropleth-map-for-subzone-population">8.3. Creating Choropleth Map for Subzone Population</h3>
@@ -1944,16 +2069,16 @@ DIY
 <h3 class="anchored" data-anchor-id="calculating-catchment-population">8.4. Calculating Catchment Population</h3>
 <p>We will be guiding you through the calculation of Catchment Population for TE27 Marine Terrace Contours (Walking) as an example.</p>
 <section id="creating-a-subzone_area-column-for-mp19_subzone" class="level4">
-<h4 class="anchored" data-anchor-id="creating-a-subzone_area-column-for-mp19_subzone">8.4.1. Creating a 'Subzone_Area' column for MP19_Subzone</h4>
+<h4 class="anchored" data-anchor-id="creating-a-subzone_area-column-for-mp19_subzone">8.4.1. Creating a ‘Subzone_Area’ column for MP19_Subzone</h4>
 <p>To calculate the Catchment Population, we need to find out the ratio of Subzone Catchment Area to its Subzone Area for all subzones that falls within each contour line first.&nbsp;</p>
 <p>DIY: Using the steps that you learned earlier, open <strong>Attribute Table</strong> of MP19_Subzone and click on <strong>Open Field Calculator</strong>. Your screen should look similar to the screenshot as shown below</p>
 <p><img src="images/paste-7DC396DF.png" class="img-fluid"></p>
-<p>We want to create a new column 'Subzone_Area' for each subzone area.</p>
+<p>We want to create a new column ‘Subzone_Area’ for each subzone area.</p>
 <ul>
 <li>Type the following code as shown in the screenshot below before clicking <strong>OK</strong></li>
 </ul>
 <p><img src="images/paste-EC3F8EA5.png" class="img-fluid"></p>
-<p>You will see that a new column 'Subzone_Area' is now created in the <strong>Attribute Table</strong> of MP19_Subzone</p>
+<p>You will see that a new column ‘Subzone_Area’ is now created in the <strong>Attribute Table</strong> of MP19_Subzone</p>
 <p><img src="images/paste-85FD8C07.png" class="img-fluid"></p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -1995,7 +2120,7 @@ DIY
 </div>
 <p>You can see that a temporary layer Union is created in your layer menu.</p>
 <p><img src="images/paste-6B33C082.png" class="img-fluid"></p>
-<p>Let's analyze the <strong>Attribute Table</strong> of this Temporary layer Union.&nbsp;</p>
+<p>Let’s analyze the <strong>Attribute Table</strong> of this Temporary layer Union.&nbsp;</p>
 <p>DIY: With the steps that you learnt earlier, open the <strong>Attribute Table</strong> of Union. Your screen should look similar to the screenshot as shown below</p>
 <p><img src="images/paste-44E6E373.png" class="img-fluid"></p>
 <p>You can see that it is very messy, thus filtering of column is required.</p>
@@ -2063,7 +2188,7 @@ DIY
 <p><img src="images/paste-FE077ABB.png" class="img-fluid"></p>
 </section>
 <section id="creating-a-catchment_-subzone_area-column" class="level4">
-<h4 class="anchored" data-anchor-id="creating-a-catchment_-subzone_area-column"><strong>8.4.3. Creating a 'Catchment_ Subzone_Area' Column</strong></h4>
+<h4 class="anchored" data-anchor-id="creating-a-catchment_-subzone_area-column"><strong>8.4.3. Creating a ‘Catchment_ Subzone_Area’ Column</strong></h4>
 <p>To calculate the Catchment Subzone Area, we need to open the <strong>Attribute Table</strong> for TE27 Population (Walking).&nbsp;</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -2109,7 +2234,7 @@ DIY
 </div>
 </div>
 <p><img src="images/paste-2008C453.png" class="img-fluid"></p>
-<p>Your <strong>Attribute Table</strong> should reflect the additional 'Catchment_Area' created as shown in the screenshot below.&nbsp;</p>
+<p>Your <strong>Attribute Table</strong> should reflect the additional ‘Catchment_Area’ created as shown in the screenshot below.&nbsp;</p>
 <p><img src="images/paste-A3C6A690.png" class="img-fluid"></p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -2126,7 +2251,7 @@ DIY
 </div>
 </section>
 <section id="creating-a-ratio-column-for-te27-population-walking" class="level4">
-<h4 class="anchored" data-anchor-id="creating-a-ratio-column-for-te27-population-walking"><strong>8.4.4. Creating a 'Ratio' Column for TE27 Population (Walking)</strong></h4>
+<h4 class="anchored" data-anchor-id="creating-a-ratio-column-for-te27-population-walking"><strong>8.4.4. Creating a ‘Ratio’ Column for TE27 Population (Walking)</strong></h4>
 <p>Assuming that Population is equally distributed across the subzone area, you need to calculate the percentage of Catchment Area to respective Subzone Area. Since now you have both Catchment Subzone Area and Subzone Area, this is now possible.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -2138,11 +2263,11 @@ DIY
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Using the steps that you learnt earlier, create a new column 'Ratio' using the <strong>Open Field Calculator</strong> in the <strong>Attribute Table</strong> and type in the following code as shown below before clicking <strong>OK</strong></p>
+<p>Using the steps that you learnt earlier, create a new column ‘Ratio’ using the <strong>Open Field Calculator</strong> in the <strong>Attribute Table</strong> and type in the following code as shown below before clicking <strong>OK</strong></p>
 </div>
 </div>
 <p><img src="images/paste-770D8891.png" class="img-fluid"></p>
-<p>Your <strong>Attribute Table</strong> should reflect the additional 'Ratio' created as shown in the screenshot below.&nbsp;</p>
+<p>Your <strong>Attribute Table</strong> should reflect the additional ‘Ratio’ created as shown in the screenshot below.&nbsp;</p>
 <p><img src="images/paste-7E096E7B.png" class="img-fluid"></p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -2159,7 +2284,7 @@ DIY
 </div>
 </section>
 <section id="creating-a-catchment_population-column" class="level4">
-<h4 class="anchored" data-anchor-id="creating-a-catchment_population-column"><strong>8.4.5. Creating a 'Catchment_Population' Column</strong></h4>
+<h4 class="anchored" data-anchor-id="creating-a-catchment_population-column"><strong>8.4.5. Creating a ‘Catchment_Population’ Column</strong></h4>
 <p>Since now we have the ratio, we will calculate Catchment Population by multiplying the Subzone Population and respective ratio per subzone and contour. The assumption made above still holds.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -2171,11 +2296,11 @@ DIY
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Using the steps that you learnt earlier, create a new column 'Catchment_Population' using the <strong>Open Field Calculator</strong> in the <strong>Attribute Table</strong> and type in the following code as shown below before clicking <strong>OK</strong></p>
+<p>Using the steps that you learnt earlier, create a new column ‘Catchment_Population’ using the <strong>Open Field Calculator</strong> in the <strong>Attribute Table</strong> and type in the following code as shown below before clicking <strong>OK</strong></p>
 </div>
 </div>
 <p><img src="images/paste-06FE1910.png" class="img-fluid"></p>
-<p>Your <strong>Attribute Table</strong> should reflect the additional 'Catchment_Population' created as shown in the screenshot below.</p>
+<p>Your <strong>Attribute Table</strong> should reflect the additional ‘Catchment_Population’ created as shown in the screenshot below.</p>
 <p><img src="images/paste-5BCFBBB5.png" class="img-fluid"><br>
 </p>
 <div class="callout-note callout callout-style-default callout-captioned">
@@ -2211,7 +2336,7 @@ DIY
 <p>Using the steps that you learnt earlier, open the <strong>Layer Properties</strong> for TE27 Population (Walking) and click on the <strong>Symbology</strong> tab.</p>
 </div>
 </div>
-<p>Our value for Catchment Population Choropleth Map would be 'Catchment_Population'. But wait! You can see from the screenshot below that this column is not present anywhere in the list of values as shown in the screenshot below.</p>
+<p>Our value for Catchment Population Choropleth Map would be ‘Catchment_Population’. But wait! You can see from the screenshot below that this column is not present anywhere in the list of values as shown in the screenshot below.</p>
 <p><img src="images/paste-3A232904.png" class="img-fluid"></p>
 <p>Is there any way to overcome this? Of course!</p>
 <ul>
@@ -2223,7 +2348,7 @@ DIY
 <li><p>Type in the following code as shown below before clicking <strong>OK</strong></p>
 <p><img src="images/paste-CC7A48EE.png" class="img-fluid"></p></li>
 </ul>
-<p>Now you can see that 'Catchment_Population' is reflected as the value as shown in the screenshot below.</p>
+<p>Now you can see that ‘Catchment_Population’ is reflected as the value as shown in the screenshot below.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2251,7 +2376,7 @@ DIY
 </section>
 <section id="making-a-transparent-fill-for-mp19_subzone-layer" class="level4">
 <h4 class="anchored" data-anchor-id="making-a-transparent-fill-for-mp19_subzone-layer"><strong>8.5.1. Making a Transparent Fill for MP19_Subzone Layer</strong></h4>
-<p>However, this isn't visibly pleasing. If we can show the division of MP19_Subzone and the OSM layer, it can provide us with more information for better analysis.&nbsp;</p>
+<p>However, this isn’t visibly pleasing. If we can show the division of MP19_Subzone and the OSM layer, it can provide us with more information for better analysis.&nbsp;</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2435,15 +2560,279 @@ DIY
 </div>
 <p><img src="images/paste-D2D63C26.png" class="img-fluid"><br>
 </p>
-<p><br>
-</p>
-<p><br>
-</p>
-<p><br>
-</p>
-
-
 </section>
+</section>
+</section>
+<section id="appendix-a" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-a">Appendix A</h2>
+<section id="figure-1." class="level3">
+<h3 class="anchored" data-anchor-id="figure-1.">Figure 1.</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-37B78B7F.png" class="img-fluid"></td>
+<td><img src="images/paste-D1F731C6.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-2." class="level3">
+<h3 class="anchored" data-anchor-id="figure-2.">Figure 2.</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-95B31C2E.png" class="img-fluid"></td>
+<td><img src="images/paste-DCB8696F.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-3." class="level3">
+<h3 class="anchored" data-anchor-id="figure-3.">Figure 3.</h3>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://lh5.googleusercontent.com/mS0gn-_cCLEvIkXM_63yzX78b8McAkFeVMfHs_ONtflo0NLqQkglxLLufHGcOzBDMKlZBPG8A3EprdqnaAilRo5WOVl8uXDwW-Ca8szJeQUfxEvMLDjydpDFOd4-Afv2wfUnEkotCXw-2Su6kuGI4s0KZKoDgqYTdW3kXnwPB1ErZYwLT0w3aKHdcHHs5g.png" class="img-fluid"></td>
+<td><img src="https://lh6.googleusercontent.com/vdT2ykXfzj-tyKfzJKFdwVz3-QoCHxKNKltuh25T9MpAUQUTzrR5mYIQ2Vcjh18OF2rJ06pOV_4LGRMMsiOPG2Mk_lfvnwOmxG9xux3CHGe5LXxxO9EUur85g7TjCGAYmKz1YpcjnnLOrYFneTD3gd5qeKRHEFUYGWUJfx1blD5fs3uzatzSXXUb3XwX3g.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-4." class="level3">
+<h3 class="anchored" data-anchor-id="figure-4.">Figure 4.</h3>
+<table class="table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-209DC606.png" class="img-fluid"></td>
+<td><p><img src="images/paste-040833FC.png" class="img-fluid"></p>
+<p>Change to</p>
+<p><img src="images/paste-397E480C.png" class="img-fluid"></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-5." class="level3">
+<h3 class="anchored" data-anchor-id="figure-5.">Figure 5.</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-11C9A86A.png" class="img-fluid"></td>
+<td><img src="images/paste-795CCE5A.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-6." class="level3">
+<h3 class="anchored" data-anchor-id="figure-6.">Figure 6.</h3>
+<table class="table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-89C08FE7.png" class="img-fluid"></td>
+<td><p><img src="images/paste-245EEAC2.png" class="img-fluid"></p>
+<p>Change to</p>
+<p><img src="images/paste-E5047F64.png" class="img-fluid"></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-7." class="level3">
+<h3 class="anchored" data-anchor-id="figure-7.">Figure 7.</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-26225E3F.png" class="img-fluid"></td>
+<td><img src="images/paste-302B94C3.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-8." class="level3">
+<h3 class="anchored" data-anchor-id="figure-8.">Figure 8.</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-3F9D16CB.png" class="img-fluid"></td>
+<td><img src="images/paste-DCFC2176.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-9." class="level3">
+<h3 class="anchored" data-anchor-id="figure-9.">Figure 9.</h3>
+<table class="table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-085BEFD5.png" class="img-fluid"></td>
+<td><p><img src="images/paste-558E8C0C.png" class="img-fluid"></p>
+<p>Change to</p>
+<p><img src="images/paste-D1EABEE7.png" class="img-fluid"></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-10." class="level3">
+<h3 class="anchored" data-anchor-id="figure-10.">Figure 10.</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-BAEEA5BF.png" class="img-fluid"></td>
+<td><img src="images/paste-D60B2B2C.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-11." class="level3">
+<h3 class="anchored" data-anchor-id="figure-11.">Figure 11.</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-13B907C8.png" class="img-fluid"></td>
+<td><img src="images/paste-B4ADE5A7.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-12." class="level3">
+<h3 class="anchored" data-anchor-id="figure-12.">Figure 12.</h3>
+<table class="table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><img src="images/paste-D1462F0F.png" class="img-fluid"></p>
+<p><img src="images/paste-1A97803D.png" class="img-fluid"></p></td>
+<td><img src="images/paste-7610FC59.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-13." class="level3">
+<h3 class="anchored" data-anchor-id="figure-13.">Figure 13.</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-36DE60A1.png" class="img-fluid"></td>
+<td><img src="images/paste-A54469C2.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-14." class="level3">
+<h3 class="anchored" data-anchor-id="figure-14.">Figure 14.</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Google Map</strong></th>
+<th><strong>QGIS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/paste-42BA25A5.png" class="img-fluid"></td>
+<td><img src="images/paste-78DCA6D1.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</p>
+
+
 </section>
 </section>
 

@@ -765,22 +765,37 @@ Using the steps you had learned earlier, generate walking and cycling network se
 
 #### **4.1.5. Creating Walking and Cycling Network Service Area for the Rest of the TEL Stage 4 MRT Stations**
 
-|  MRT Station Name   |         Layer Cleaning         |       Layer Name        |
-|:------------------:|:---------------------------:|:---------------------:|
-|  TE23 Tanjong Rhu   | ![](images/paste-F1627895.png) | TE23 Contours (Walking) |
-|  TE23 Tanjong Rhu   | ![](images/paste-57A1A192.png) | TE23 Contours (Cycling) |
-|  TE24 Katong Park   | ![](images/paste-F9EB11E7.png) | TE24 Contours (Walking) |
-|  TE24 Katong Park   | ![](images/paste-44EE9F00.png) | TE24 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+| MRT Station Name    | Layer Cleaning                 | Layer Name              |
++:===================:+:==============================:+:=======================:+
+| TE23 Tanjong Rhu    | ![](images/paste-F1627895.png) | TE23 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+| TE23 Tanjong Rhu    | ![](images/paste-57A1A192.png) | TE23 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+| TE24 Katong Park    | ![](images/paste-F9EB11E7.png) | TE24 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+| TE24 Katong Park    | ![](images/paste-44EE9F00.png) | TE24 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
 | TE25 Tanjong Katong | ![](images/paste-32474ADC.png) | TE25 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
 | TE25 Tanjong Katong | ![](images/paste-96F6298B.png) | TE25 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
 | TE26 Marine Parade  | ![](images/paste-A9ABA3FD.png) | TE26 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
 | TE26 Marine Parade  | ![](images/paste-81496094.png) | TE26 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
 | TE27 Marine Terrace | ![](images/paste-1A40E7E9.png) | TE27 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
 | TE27 Marine Terrace | ![](images/paste-038D26A1.png) | TE27 Contours (Cycling) |
-|     TE28 Siglap     | ![](images/paste-302637B9.png) | TE28 Contours (Walking) |
-|     TE28 Siglap     | ![](images/paste-992D62CC.png) | TE28 Contours (Cycling) |
-|    TE29 Bayshore    | ![](images/paste-3C489BBA.png) | TE29 Contours (Walking) |
-|    TE29 Bayshore    | ![](images/paste-6932FABE.png) | TE29 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+| TE28 Siglap         | ![](images/paste-302637B9.png) | TE28 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+| TE28 Siglap         | ![](images/paste-992D62CC.png) | TE28 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+| TE29 Bayshore       | ![](images/paste-3C489BBA.png) | TE29 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+| TE29 Bayshore       | ![](images/paste-6932FABE.png) | TE29 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
 
 ## 5. Extracting Amenities within Catchment Areas for Amenities Analysis
 
@@ -822,9 +837,8 @@ Upon closer inspection on **Attribute Table** for the OSM_Buildings layer, we fi
 
     ![](images/paste-2B27FB97.png){width="600"}
 
-```{=html}
 <!-- -->
-```
+
 -   We see that the **Type** is null for these buildings.
 
 ![](images/paste-6D102738.png){width="600"}
@@ -837,20 +851,58 @@ Now, we will need to use external software, Google Maps or Maps, to identify our
 
 Below shows a table of how and why we recategorize NULL buildings into the correct building types that we use in our analysis.
 
-::: {layout-nrow="2"}
-![](images/Table%20GIS-01.png)
-![](images/paste-D91A6FBA.png){width="598"}
-
-![](images/paste-09EAEF93.png){width="598"}
-:::
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Buildings**                                                                                                                                   | **Type**                 | **Examples**                              | **Justification**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
++=================================================================================================================================================+==========================+===========================================+======================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
+| Nursing care homes                                                                                                                              | \"residential\"          | Econ Nursing Home Services (1987) Ptd Ltd | According to the [Urban Redevelopment Authority](https://www.ura.gov.sg/Corporate/Guidelines/Development-Control/Non-Residential/C-CI/Home) (2019), nursing care homes are either zoned as \"Civic and Community Institution'' or \"Residential/Institution\" in the Master Plan. However, since elderly live in these homes, we decided to classify them as \"residential\".                                                                                                                        |
+|                                                                                                                                                 |                          |                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                 |                          | Refer to Appendix A Figure 1.             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \"apartments\" /  \"condominium\" / \"hall\"                                                                                                    | \"residential\"          | Refer to Appendix A Figure 2.             | Our term \"residential\" would refer to residential buildings that are not low rise (which are only 4 or less storeys high). These buildings will then be classified as buildings that have a large population density, and they approximately hold the same number of residents as Housing & Development Board (HDB) buildings. HDB buildings will be classified as \"residential\" as well.                                                                                                        |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Landed houses / terrace houses                                                                                                                  | \"Low rise residential\" | Refer to Appendix A Figure 3.             | These building types are low rise, and they only serve as residential blocks for a small number of people. This will allow us to estimate the amount of people that are affected in this building type during our analysis.                                                                                                                                                                                                                                                                          |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \"semidetached_house\" / \"detached\" / \"bungalow\" / \"house\"                                                                                | \"Low rise residential\" | Refer to Appendix A Figure 4.             | This is for standardisation and data cleaning as they all serve to hold a small number of people.                                                                                                                                                                                                                                                                                                                                                                                                    |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Repair shops / Servicing shops / Stand-alone Small Businesses /                                                                                 | \"business\"             | Refer to Appendix A Figure 5.             | These are small businesses that operate for profit making. We follow the business types according to the [URA](https://www.ura.gov.sg/Corporate/Guidelines/Development-Control/Non-Residential/B2/Allowable-Uses) (2022) classification guideline.                                                                                                                                                                                                                                                   |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \"office\" / \"shop\"                                                                                                                           | \"business\"             | Refer to Appendix A Figure 6.             | \"office\" buildings would be considered large corporate businesses. We classify them together with other small businesses because we want to generalise how business workers will be affected by the MRT stations when travelling to or from work.                                                                                                                                                                                                                                                  |
+|                                                                                                                                                 |                          |                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                 |                          |                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                 |                          |                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                 |                          |                                           | \"shop\" are recategorized to \"business\" because they are a [subset of a business](https://www.ura.gov.sg/Corporate/Property/Business/Change-Use-of-Property-for-Business/Assessment-Criteria). \"shop\" have the same nature as stand-alone small businesses and offices since they are buildings for people to work in.                                                                                                                                                                          |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Religious buildings /                                                                                                                           | \"Place of worship\"     | Refer to Appendix A Figure 7.             | We recategorize to make the classification cleaner and neater by having all religious forms of activity classified under 1 label. We use this term according to [URA\'s](https://www.ura.gov.sg/Corporate/Guidelines/Development-Control/Non-Residential/PW/Introduction) as they term it \"place of worship\" as well.                                                                                                                                                                              |
+|                                                                                                                                                 |                          |                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| \"chapel\" / \"church\" / \"mosque\" / \"religion\" / \"religious\" / \"shrine\" / \"temple\"                                                   |                          |                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Community Centres / Police Station / Town Hall                                                                                                  | \"C&CI\"                 | Refer to Appendix A Figure 8.             | According to the [URA](https://www.ura.gov.sg/Corporate/Guidelines/Development-Control/Non-Residential/C-CI/Introduction), these building types are commonly termed \"Civic and Community Institution\", \"C&CI\" in short. Therefore, we follow these guidelines when classifying and giving these buildings a term.                                                                                                                                                                                |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \"civic\" / \"clubhouse\" / \"club house\" / \"fire_station\" / \"government\" / \"public\" / \"sports_centre\" / \"sports_hall\" / \"stadium\" | \"C&CI\"                 | Refer to Appendix A Figure 9.             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \"garage\" / \"garages\"                                                                                                                        | \"C&CI\"                 | \-                                        | This is for standardization and data cleaning.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Stand-alone Restaurants / Cafe                                                                                                                  | \"food\"                 | Refer to Appendix A Figure 10.            | Since these buildings are stand-alone, they only serve one purpose which is providing food service. We can distinguish these food shops from \"business\" to show how food places, food choices, and food availability may be affected by residents in catchment areas due to the MRT.                                                                                                                                                                                                               |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Shophouses                                                                                                                                      | \"commercial\"           | Refer to Appendix A Figure 11.            | These shophouses often encompass many different types of uses such as eateries, convenience stores, salons, houses, small company enterprises, and many more. Hence, it is unfeasible and will be inaccurate to distinctively mark out every unit into a certain building type. Furthermore, this will complicate the classification process and create too many classes that will be too specific. Hence, we classify them as \"commercial\" to show that these buildings have many different uses. |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \"toilets\"                                                                                                                                     | \"toilet\"               | \-                                        | This is for standardization and data cleaning.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Building structures that do not appear on Google Maps / Building structures that cannot be classified by eye                                    | \"unclassified\"         | Refer to Appendix A Figure 12.            | These do not have a label on Google. Hence, we are not able to identify its specific use and it is better not to assume of the building use. Furthermore, their use may differ at different times of the year. Therefore, we do not know the true purpose of these building types.                                                                                                                                                                                                                   |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Primary schools / Secondary schools / Preschools / School organizations                                                                         | \"school\"               | Refer to Appendix A Figure 13.            | These building types are distinctively classified as \"school\".                                                                                                                                                                                                                                                                                                                                                                                                                                     |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \"kindergarten\"                                                                                                                                | \"school\"               | \-                                        | This is for standardization and data cleaning.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Petrol stations                                                                                                                                 | \"transport facilities\" | Refer to Appendix A Figure 14.            | According to the [URA](https://www.ura.gov.sg/Corporate/Guidelines/Development-Control/Non-Residential/Transport/Petrol-Station) (2019), these buildings are deemed as \"transport facilities\".                                                                                                                                                                                                                                                                                                     |
++-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 -   After editing, click on **Toggle Editing Mode** icon. A pop-up window will appear as shown below
 
     ![](images/paste-3E8C865E.png){width="200"}
 
-```{=html}
 <!-- -->
-```
+
 -   Click on **Save** when the prompt appears.
 
 #### **5.1.4 Extracting all Buildings in Catchment Area**
@@ -869,9 +921,8 @@ The **Select by Location** dialog windows appear.
 
     ![](images/paste-217AB6DB.png){width="600"}
 
-```{=html}
 <!-- -->
-```
+
 -   Click **Run**. Your screen should look similar to the screenshot as shown below.
 
 ![](images/paste-D340669C.png)\
@@ -950,9 +1001,8 @@ An ideal catchment area would be buffer generated based on the correct distance 
 
     ![](images/paste-C5466398.png){width="400"}
 
-```{=html}
 <!-- -->
-```
+
 -   From Input layer, select TE29 Bayshore Contours (Walking)
 
 -   From Distance, change the values depending on the contour you are doing
@@ -961,9 +1011,8 @@ An ideal catchment area would be buffer generated based on the correct distance 
 
     -   If you are doing cycling contour, change the value to 1500
 
-```{=html}
 <!-- -->
-```
+
 -   From Segments, type 100
 
 Your screen should look similar to the screenshot as shown below.
@@ -1002,9 +1051,8 @@ Using the steps you had learned earlier, open **Symbology** tab of TE29\_ walkin
 
     ![](images/paste-559D6CB8.png){width="600"}
 
-```{=html}
 <!-- -->
-```
+
 -   Click **OK**. Your screen should look similar to the screenshot as shown below.
 
 ![](images/paste-7124160A.png){fig-align="center" width="600"}
@@ -1041,9 +1089,8 @@ Using the steps that you learnt earlier, open DB Manager and select either TE29_
 
         ![](images/paste-BEB63429.png){width="600"}
 
-```{=html}
 <!-- -->
-```
+
 -   Click **Execute**
 
 After inspecting the query loaded and making sure that it is correct, whereby there is a type and count column, you can proceed to save this query you created. The query loaded should similar to the screenshot as shown below.
@@ -1070,9 +1117,8 @@ Repeat this process for all POI and building layers for both Walking and Cycling
 
     ![](images/paste-8BAD1B62.png){width="400"}
 
-```{=html}
 <!-- -->
-```
+
 -   Provide an appropriate title. An example would be:
 
     ![](images/paste-27DF3DFE.png){width="400"}
@@ -1113,7 +1159,7 @@ The sub-panel should look like this.
 
 ![](images/paste-DE40BF02.png){width="600"}\
 
-#### **7.2.4. Changing the main properties** 
+#### **7.2.4. Changing the main properties**
 
 To prevent the view on the layout changes when we turn on/off some layers or change their styles, it is important for us to lock the layers and styles.
 
@@ -1366,13 +1412,13 @@ You will see that your **Attribute Table** for MP19_Subzone is so much cleaner n
 
 ![](images/paste-CE694802.png)
 
-If you look at both **Attribute Tables** carefully, you will realize that the column \'SZ\' in 2020POP is in lower case of column \'SUBZONE_N\' in MP19_Subzone. Therefore, we need to use subzone names to merge both 2020POP and MP19_Subzone together.
+If you look at both **Attribute Tables** carefully, you will realize that the column 'SZ' in 2020POP is in lower case of column 'SUBZONE_N' in MP19_Subzone. Therefore, we need to use subzone names to merge both 2020POP and MP19_Subzone together.
 
--   Go to 2020POP\'s **Attribute Table** and select **Open Field Calculator**![](images/paste-E60BBB07.png){width="20" height="22"} at the top. A pop-up window will appear as shown below
+-   Go to 2020POP's **Attribute Table** and select **Open Field Calculator**![](images/paste-E60BBB07.png){width="20" height="22"} at the top. A pop-up window will appear as shown below
 
     ![](images/paste-2B058F90.png){width="800"}
 
--   As we aim to capitalize the string data in \'SZ\' column, fill in the **Output Field Name** and the **Output Field Type** as shown below.
+-   As we aim to capitalize the string data in 'SZ' column, fill in the **Output Field Name** and the **Output Field Type** as shown below.
 
     ![](images/paste-0D5C1001.png){width="1000"}
 
@@ -1380,9 +1426,9 @@ If you look at both **Attribute Tables** carefully, you will realize that the co
 
 ![](images/paste-B39D124F.png)
 
-The preview will show you what the new string will be in the new column \'SUBZONE\'
+The preview will show you what the new string will be in the new column 'SUBZONE'
 
--   Click **OK** and you will see that a new column \'SUBZONE\' is added to your 2020POP\'s **Attribute Table**
+-   Click **OK** and you will see that a new column 'SUBZONE' is added to your 2020POP's **Attribute Table**
 
 ![](images/paste-E5D6DE1C.png)
 
@@ -1394,7 +1440,7 @@ However, the table will be in edit format, so you need to save the changes that 
 
 ### 8.2. Performing Relational Join Between MP19_Subzone and 2020POP layers
 
-Now you are ready to perform relational join between the MP19_Subzone layer and the 2020POP layer. To join the **Attribute Table** of a geospatial data and an aspatial **Attribute Table**, we need to identify the common key or popularly known as **Unique Identifier** between these two data sets with we had prepared earlier. In this case, it is the Subzone Names (\'SUBZONE\' and \'SUBZONE_N\')
+Now you are ready to perform relational join between the MP19_Subzone layer and the 2020POP layer. To join the **Attribute Table** of a geospatial data and an aspatial **Attribute Table**, we need to identify the common key or popularly known as **Unique Identifier** between these two data sets with we had prepared earlier. In this case, it is the Subzone Names ('SUBZONE' and 'SUBZONE_N')
 
 ![](images/paste-B2539C7F.png)
 
@@ -1450,7 +1496,7 @@ If the rows are not joined properly, values belonging to 2020POP in **Attribute 
 
 -   Click on **Select Features** 
 
-You can tell that from ![](images/paste-F786FF5C.png){width="400"} that 0 row is selected which means that both attributes\' tables are joined properly
+You can tell that from ![](images/paste-F786FF5C.png){width="400"} that 0 row is selected which means that both attributes' tables are joined properly
 
 ### 8.3. Creating Choropleth Map for Subzone Population
 
@@ -1506,7 +1552,7 @@ Your screen should look similar to the figure below.
 
 We will be guiding you through the calculation of Catchment Population for TE27 Marine Terrace Contours (Walking) as an example.
 
-#### 8.4.1. Creating a \'Subzone_Area\' column for MP19_Subzone
+#### 8.4.1. Creating a 'Subzone_Area' column for MP19_Subzone
 
 To calculate the Catchment Population, we need to find out the ratio of Subzone Catchment Area to its Subzone Area for all subzones that falls within each contour line first. 
 
@@ -1514,13 +1560,13 @@ DIY: Using the steps that you learned earlier, open **Attribute Table** of MP19_
 
 ![](images/paste-7DC396DF.png)
 
-We want to create a new column \'Subzone_Area\' for each subzone area.
+We want to create a new column 'Subzone_Area' for each subzone area.
 
 -   Type the following code as shown in the screenshot below before clicking **OK**
 
 ![](images/paste-EC3F8EA5.png)
 
-You will see that a new column \'Subzone_Area\' is now created in the **Attribute Table** of MP19_Subzone
+You will see that a new column 'Subzone_Area' is now created in the **Attribute Table** of MP19_Subzone
 
 ![](images/paste-85FD8C07.png)
 
@@ -1556,7 +1602,7 @@ You can see that a temporary layer Union is created in your layer menu.
 
 ![](images/paste-6B33C082.png)
 
-Let\'s analyze the **Attribute Table** of this Temporary layer Union. 
+Let's analyze the **Attribute Table** of this Temporary layer Union. 
 
 DIY: With the steps that you learnt earlier, open the **Attribute Table** of Union. Your screen should look similar to the screenshot as shown below
 
@@ -1608,7 +1654,7 @@ You can see that a permanent layer called TE27 Population (Walking) is now creat
 
 ![](images/paste-FE077ABB.png)
 
-#### **8.4.3. Creating a \'Catchment\_ Subzone_Area\' Column**
+#### **8.4.3. Creating a 'Catchment\_ Subzone_Area' Column**
 
 To calculate the Catchment Subzone Area, we need to open the **Attribute Table** for TE27 Population (Walking). 
 
@@ -1640,7 +1686,7 @@ Using the steps that you learnt earlier, create a new column for Catchment_Area 
 
 ![](images/paste-2008C453.png)
 
-Your **Attribute Table** should reflect the additional \'Catchment_Area\' created as shown in the screenshot below. 
+Your **Attribute Table** should reflect the additional 'Catchment_Area' created as shown in the screenshot below. 
 
 ![](images/paste-A3C6A690.png)
 
@@ -1650,19 +1696,19 @@ Your **Attribute Table** should reflect the additional \'Catchment_Area\' create
 Using the steps that you learnt earlier, save the changes made to the **Attribute Table** of TE27 Population (Walking)
 :::
 
-#### **8.4.4. Creating a \'Ratio\' Column for TE27 Population (Walking)**
+#### **8.4.4. Creating a 'Ratio' Column for TE27 Population (Walking)**
 
 Assuming that Population is equally distributed across the subzone area, you need to calculate the percentage of Catchment Area to respective Subzone Area. Since now you have both Catchment Subzone Area and Subzone Area, this is now possible.
 
 ::: callout-note
 ## DIY
 
-Using the steps that you learnt earlier, create a new column \'Ratio\' using the **Open Field Calculator** in the **Attribute Table** and type in the following code as shown below before clicking **OK**
+Using the steps that you learnt earlier, create a new column 'Ratio' using the **Open Field Calculator** in the **Attribute Table** and type in the following code as shown below before clicking **OK**
 :::
 
 ![](images/paste-770D8891.png)
 
-Your **Attribute Table** should reflect the additional \'Ratio\' created as shown in the screenshot below. 
+Your **Attribute Table** should reflect the additional 'Ratio' created as shown in the screenshot below. 
 
 ![](images/paste-7E096E7B.png)
 
@@ -1672,19 +1718,19 @@ Your **Attribute Table** should reflect the additional \'Ratio\' created as show
 Using the steps that you learnt earlier, save the changes made to the **Attribute Table** of TE27 Population (Walking)
 :::
 
-#### **8.4.5. Creating a \'Catchment_Population\' Column**
+#### **8.4.5. Creating a 'Catchment_Population' Column**
 
 Since now we have the ratio, we will calculate Catchment Population by multiplying the Subzone Population and respective ratio per subzone and contour. The assumption made above still holds.
 
 ::: callout-note
 ## DIY
 
-Using the steps that you learnt earlier, create a new column \'Catchment_Population\' using the **Open Field Calculator** in the **Attribute Table** and type in the following code as shown below before clicking **OK**
+Using the steps that you learnt earlier, create a new column 'Catchment_Population' using the **Open Field Calculator** in the **Attribute Table** and type in the following code as shown below before clicking **OK**
 :::
 
 ![](images/paste-06FE1910.png)
 
-Your **Attribute Table** should reflect the additional \'Catchment_Population\' created as shown in the screenshot below.
+Your **Attribute Table** should reflect the additional 'Catchment_Population' created as shown in the screenshot below.
 
 ![](images/paste-5BCFBBB5.png)\
 
@@ -1706,7 +1752,7 @@ To better present the data, it would be better to represent the Catchment Popula
 Using the steps that you learnt earlier, open the **Layer Properties** for TE27 Population (Walking) and click on the **Symbology** tab.
 :::
 
-Our value for Catchment Population Choropleth Map would be \'Catchment_Population\'. But wait! You can see from the screenshot below that this column is not present anywhere in the list of values as shown in the screenshot below.
+Our value for Catchment Population Choropleth Map would be 'Catchment_Population'. But wait! You can see from the screenshot below that this column is not present anywhere in the list of values as shown in the screenshot below.
 
 ![](images/paste-3A232904.png)
 
@@ -1716,14 +1762,13 @@ Is there any way to overcome this? Of course!
 
     ![](images/paste-18571AD6.png)
 
-```{=html}
 <!-- -->
-```
+
 -   Type in the following code as shown below before clicking **OK**
 
     ![](images/paste-CC7A48EE.png)
 
-Now you can see that \'Catchment_Population\' is reflected as the value as shown in the screenshot below.
+Now you can see that 'Catchment_Population' is reflected as the value as shown in the screenshot below.
 
 ::: callout-note
 ## DIY
@@ -1739,7 +1784,7 @@ Now, you can see that a **Choropleth Map** is generated based on TE27 Contours (
 
 #### **8.5.1. Making a Transparent Fill for MP19_Subzone Layer**
 
-However, this isn\'t visibly pleasing. If we can show the division of MP19_Subzone and the OSM layer, it can provide us with more information for better analysis. 
+However, this isn't visibly pleasing. If we can show the division of MP19_Subzone and the OSM layer, it can provide us with more information for better analysis. 
 
 ::: callout-note
 ## DIY
@@ -1849,12 +1894,113 @@ Using the steps that you learnt earlier, save TE29 Population (Walking) Layout t
 
 ![](images/paste-D2D63C26.png)\
 
+## Appendix A
 
-\
+### Figure 1.
 
+| **Google Map**                 | **QGIS**                       |
+|--------------------------------|--------------------------------|
+| ![](images/paste-37B78B7F.png) | ![](images/paste-D1F731C6.png) |
 
-\
+###  Figure 2.
 
+| **Google Map**                 | **QGIS**                       |
+|--------------------------------|--------------------------------|
+| ![](images/paste-95B31C2E.png) | ![](images/paste-DCB8696F.png) |
+
+###   Figure 3.
+
+| **Google Map**                                                                                                                                                                                                                        | **QGIS**                                                                                                                                                                                                                              |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![](https://lh5.googleusercontent.com/mS0gn-_cCLEvIkXM_63yzX78b8McAkFeVMfHs_ONtflo0NLqQkglxLLufHGcOzBDMKlZBPG8A3EprdqnaAilRo5WOVl8uXDwW-Ca8szJeQUfxEvMLDjydpDFOd4-Afv2wfUnEkotCXw-2Su6kuGI4s0KZKoDgqYTdW3kXnwPB1ErZYwLT0w3aKHdcHHs5g) | ![](https://lh6.googleusercontent.com/vdT2ykXfzj-tyKfzJKFdwVz3-QoCHxKNKltuh25T9MpAUQUTzrR5mYIQ2Vcjh18OF2rJ06pOV_4LGRMMsiOPG2Mk_lfvnwOmxG9xux3CHGe5LXxxO9EUur85g7TjCGAYmKz1YpcjnnLOrYFneTD3gd5qeKRHEFUYGWUJfx1blD5fs3uzatzSXXUb3XwX3g) |
+
+###   Figure 4.
+
++--------------------------------+--------------------------------+
+| **Google Map**                 | **QGIS**                       |
++================================+================================+
+| ![](images/paste-209DC606.png) | ![](images/paste-040833FC.png) |
+|                                |                                |
+|                                | Change to                      |
+|                                |                                |
+|                                | ![](images/paste-397E480C.png) |
++--------------------------------+--------------------------------+
+
+###   Figure 5.
+
+| **Google Map**                 | **QGIS**                       |
+|--------------------------------|--------------------------------|
+| ![](images/paste-11C9A86A.png) | ![](images/paste-795CCE5A.png) |
+
+###   Figure 6.
+
++--------------------------------+--------------------------------+
+| **Google Map**                 | **QGIS**                       |
++================================+================================+
+| ![](images/paste-89C08FE7.png) | ![](images/paste-245EEAC2.png) |
+|                                |                                |
+|                                | Change to                      |
+|                                |                                |
+|                                | ![](images/paste-E5047F64.png) |
++--------------------------------+--------------------------------+
+
+###   Figure 7.
+
+| **Google Map**                 | **QGIS**                       |
+|--------------------------------|--------------------------------|
+| ![](images/paste-26225E3F.png) | ![](images/paste-302B94C3.png) |
+
+###   Figure 8.
+
+| **Google Map**                 | **QGIS**                       |
+|--------------------------------|--------------------------------|
+| ![](images/paste-3F9D16CB.png) | ![](images/paste-DCFC2176.png) |
+
+###   Figure 9.
+
++--------------------------------+--------------------------------+
+| **Google Map**                 | **QGIS**                       |
++================================+================================+
+| ![](images/paste-085BEFD5.png) | ![](images/paste-558E8C0C.png) |
+|                                |                                |
+|                                | Change to                      |
+|                                |                                |
+|                                | ![](images/paste-D1EABEE7.png) |
++--------------------------------+--------------------------------+
+
+###  Figure 10.
+
+| **Google Map**                 | **QGIS**                       |
+|--------------------------------|--------------------------------|
+| ![](images/paste-BAEEA5BF.png) | ![](images/paste-D60B2B2C.png) |
+
+###   Figure 11.
+
+| **Google Map**                 | **QGIS**                       |
+|--------------------------------|--------------------------------|
+| ![](images/paste-13B907C8.png) | ![](images/paste-B4ADE5A7.png) |
+
+###   Figure 12.
+
++--------------------------------+--------------------------------+
+| **Google Map**                 | **QGIS**                       |
++================================+================================+
+| ![](images/paste-D1462F0F.png) | ![](images/paste-7610FC59.png) |
+|                                |                                |
+| ![](images/paste-1A97803D.png) |                                |
++--------------------------------+--------------------------------+
+
+###   Figure 13.
+
+| **Google Map**                 | **QGIS**                       |
+|--------------------------------|--------------------------------|
+| ![](images/paste-36DE60A1.png) | ![](images/paste-A54469C2.png) |
+
+###   Figure 14.
+
+| **Google Map**                 | **QGIS**                       |
+|--------------------------------|--------------------------------|
+| ![](images/paste-42BA25A5.png) | ![](images/paste-78DCA6D1.png) |
 
 \
 

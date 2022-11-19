@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Group 11 - Population Analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Group 11</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./intro.html">Project Scope</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./methodology.html">Step by Step Guide</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./data.html">Data Used</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./results.html">Catchment Analysis</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./results2.html" aria-current="page">Population Analysis</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">Overview</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">About</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#means-of-analysis" id="toc-means-of-analysis" class="nav-link active" data-scroll-target="#means-of-analysis">1 Means of Analysis</a>
+  <ul class="collapse">
+  <li><a href="#significance-of-catchment-population-distribution-walking-analysis" id="toc-significance-of-catchment-population-distribution-walking-analysis" class="nav-link" data-scroll-target="#significance-of-catchment-population-distribution-walking-analysis">1.1. Significance of Catchment Population Distribution (Walking) Analysis</a></li>
+  <li><a href="#significance-of-catchment-population-distribution-cycling-analysis" id="toc-significance-of-catchment-population-distribution-cycling-analysis" class="nav-link" data-scroll-target="#significance-of-catchment-population-distribution-cycling-analysis">1.2 Significance of Catchment Population Distribution (cycling) Analysis</a></li>
+  </ul></li>
+  <li><a href="#te22a-founders-memorial" id="toc-te22a-founders-memorial" class="nav-link" data-scroll-target="#te22a-founders-memorial">2 TE22A Founders Memorial</a>
+  <ul class="collapse">
+  <li><a href="#catchment-population-distribution-walking" id="toc-catchment-population-distribution-walking" class="nav-link" data-scroll-target="#catchment-population-distribution-walking">2.1 Catchment Population Distribution (Walking)</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
+  <li><a href="#te23-tanjong-rhu" id="toc-te23-tanjong-rhu" class="nav-link" data-scroll-target="#te23-tanjong-rhu">3 TE23 Tanjong Rhu</a>
+  <ul class="collapse">
+  <li><a href="#catchment-population-distribution-walking-1" id="toc-catchment-population-distribution-walking-1" class="nav-link" data-scroll-target="#catchment-population-distribution-walking-1">3.1 Catchment Population Distribution (Walking)</a></li>
+  <li><a href="#catchment-population-distribution-cycling" id="toc-catchment-population-distribution-cycling" class="nav-link" data-scroll-target="#catchment-population-distribution-cycling">3.2 Catchment Population Distribution (Cycling)</a></li>
+  </ul></li>
+  <li><a href="#te24-katong-park" id="toc-te24-katong-park" class="nav-link" data-scroll-target="#te24-katong-park">4 TE24 Katong Park</a>
+  <ul class="collapse">
+  <li><a href="#catchment-population-distribution-walking-2" id="toc-catchment-population-distribution-walking-2" class="nav-link" data-scroll-target="#catchment-population-distribution-walking-2">4.1 Catchment Population Distribution (Walking)</a></li>
+  <li><a href="#catchment-population-distribution-walking-3" id="toc-catchment-population-distribution-walking-3" class="nav-link" data-scroll-target="#catchment-population-distribution-walking-3">4.2 Catchment Population Distribution (Walking)</a></li>
+  </ul></li>
+  <li><a href="#te25-tanjong-katong" id="toc-te25-tanjong-katong" class="nav-link" data-scroll-target="#te25-tanjong-katong">5 TE25 Tanjong Katong</a>
+  <ul class="collapse">
+  <li><a href="#catchment-population-distribution-walking-4" id="toc-catchment-population-distribution-walking-4" class="nav-link" data-scroll-target="#catchment-population-distribution-walking-4">5.1 Catchment Population Distribution (Walking)</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
+  </ul></li>
+  <li><a href="#te26-marine-parade" id="toc-te26-marine-parade" class="nav-link" data-scroll-target="#te26-marine-parade">6 TE26 Marine Parade</a>
+  <ul class="collapse">
+  <li><a href="#catchment-population" id="toc-catchment-population" class="nav-link" data-scroll-target="#catchment-population">6.1 Catchment Population</a></li>
+  <li><a href="#catchment-population-1" id="toc-catchment-population-1" class="nav-link" data-scroll-target="#catchment-population-1">6.2 Catchment Population</a></li>
+  </ul></li>
+  <li><a href="#te27-marine-terrace" id="toc-te27-marine-terrace" class="nav-link" data-scroll-target="#te27-marine-terrace">7 TE27 Marine Terrace</a>
+  <ul class="collapse">
+  <li><a href="#catchment-population-2" id="toc-catchment-population-2" class="nav-link" data-scroll-target="#catchment-population-2">7.1 Catchment Population</a></li>
+  <li><a href="#catchment-population-distribution-cycling-1" id="toc-catchment-population-distribution-cycling-1" class="nav-link" data-scroll-target="#catchment-population-distribution-cycling-1">7.2 Catchment Population Distribution (Cycling)</a></li>
+  </ul></li>
+  <li><a href="#te28-siglap" id="toc-te28-siglap" class="nav-link" data-scroll-target="#te28-siglap">8 TE28 Siglap</a>
+  <ul class="collapse">
+  <li><a href="#catchment-population-distribution-walking-5" id="toc-catchment-population-distribution-walking-5" class="nav-link" data-scroll-target="#catchment-population-distribution-walking-5">8.1 Catchment Population Distribution (Walking)</a></li>
+  <li><a href="#catchment-population-3" id="toc-catchment-population-3" class="nav-link" data-scroll-target="#catchment-population-3">8.2 Catchment Population</a></li>
+  </ul></li>
+  <li><a href="#te29-bayshore" id="toc-te29-bayshore" class="nav-link" data-scroll-target="#te29-bayshore">9 TE29 Bayshore</a>
+  <ul class="collapse">
+  <li><a href="#catchment-population-distribution-walking-6" id="toc-catchment-population-distribution-walking-6" class="nav-link" data-scroll-target="#catchment-population-distribution-walking-6">9.1 Catchment Population Distribution (Walking)</a></li>
+  <li><a href="#catchment-population-distribution-cycling-2" id="toc-catchment-population-distribution-cycling-2" class="nav-link" data-scroll-target="#catchment-population-distribution-cycling-2">9.2 Catchment Population Distribution (Cycling)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Population Analysis</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="means-of-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="means-of-analysis">1 Means of Analysis</h2>
+<section id="significance-of-catchment-population-distribution-walking-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="significance-of-catchment-population-distribution-walking-analysis">1.1. Significance of Catchment Population Distribution (Walking) Analysis</h3>
+<p>As Singapore moves towards SG Green Plan 2030, one of their goals is to <a href="https://www.greenplan.gov.sg/targets">achieve 75% mass public transport (i.e.&nbsp;rail and bus) peak-period modal share</a>. By expanding current MRT station network, they hope to make public transportation more accessible for Singaporeans to encourage more Singaporeans to take them. With this goal in mind, we will&nbsp;</p>
+<p>Our analysis consists of the following:</p>
+<ol type="1">
+<li><p>Proportion of population captured within a subzone&nbsp;</p></li>
+<li><p>Proportion of subzone population who is willing to walk to TEL Stage 4 MRT Stations.</p></li>
+</ol>
+<p>The reason why we want to analyze Catchment Population Distribution (Walking) this way because we want to explore how effective are the walking catchment areas of the upcoming Thomson East Coast Line Stage 4 MRT Stations are based on current road network present.&nbsp;</p>
+<p>Additionally, with the current road network present, it is important to analyze the proportion of Singaporeans who is wiling to walk at each contour distance to evaluate the location chosen for the TEL Stage 4 MRT Stations.</p>
+<p>Assumptions made are:</p>
+<ol type="1">
+<li><p>Population is evenly distributed throughout the entire subzone</p></li>
+<li><p>Results from the study still hold true for all Singaporeans</p></li>
+</ol>
+<p>We have also defined the variables that we will be using in our calculations later and its formula (if any) based on the table as shown below.</p>
+<table class="table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 38%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variables</th>
+<th>Definition</th>
+<th>Formula (if any)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Subzone Name</td>
+<td>Name of Subzone</td>
+<td>-Nil-</td>
+</tr>
+<tr class="even">
+<td>Catchment Area</td>
+<td>Area of Subzone in the Catchment Zone</td>
+<td>$area from QGIS</td>
+</tr>
+<tr class="odd">
+<td>Subzone Area</td>
+<td>Area of Subzone</td>
+<td>$area from QGIS</td>
+</tr>
+<tr class="even">
+<td>Ratio</td>
+<td>Calculated Ratio of Catchment Area to Subzone Area</td>
+<td>Catchment Area/Subzone Area</td>
+</tr>
+<tr class="odd">
+<td>Subzone Population</td>
+<td>Raw Subzone Population Numbers</td>
+<td>Subzone Population</td>
+</tr>
+<tr class="even">
+<td>Catchment Population</td>
+<td>Calculated Catchment Population Numbers</td>
+<td>Ratio * Total Subzone Population</td>
+</tr>
+<tr class="odd">
+<td>Population (Willing to Walk to MRT)</td>
+<td>Calculated Catchment Population who is willing to walk to MRT</td>
+<td><p>200m:</p>
+<p>Catchment Population (0-200m) * 1</p>
+<p>400m:</p>
+<p>Catchment Population (200-400m) * 0.8</p>
+<p>600m:</p>
+<p>Catchment Population (400-600m) * 0.5</p>
+<p>800m:</p>
+<p>Catchment Population (600-800m) * 0.3</p>
+<p>1000m:</p>
+<p>Catchment Population (800-1000m) * 0.15</p></td>
+</tr>
+<tr class="even">
+<td>Percentage Population</td>
+<td>Calculated Percentage of Subzone Population who is willing to walk to MRT Station</td>
+<td>Total Population (Willing to Walk to MRT) within Contour / Total Subzone Population * 100</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</p>
+</section>
+<section id="significance-of-catchment-population-distribution-cycling-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="significance-of-catchment-population-distribution-cycling-analysis">1.2 Significance of Catchment Population Distribution (cycling) Analysis</h3>
+<p>Furthermore, we will explore how effective are the catchment areas of the upcoming Thomson East Coast Line Stage 4 MRT Station based on current road network present in encouraging Singaporeans to cycle.&nbsp;</p>
+<p>Our analysis consists of the following:</p>
+<ol type="1">
+<li><p>Proportion of population captured within a subzone&nbsp;</p></li>
+<li><p>Accessibility of TEL Stage 4 MRT Stations</p></li>
+</ol>
+<p>The reason why we want to analyze Catchment Population Distribution (Cycling) this way because we want to explore how effective are the cycling catchment areas of the upcoming Thomson East Coast Line Stage 4 MRT Stations are based on current road network present.&nbsp;</p>
+<p>However, based on URA, it is stated that only 3.9% of Singaporeans take a combination of transportation. For example, one combination would be cycling and taking the bus. Therefore, the proportion of Singapore who cycles and takes the MRT is far lesser than the 3.9% stated. As a result, due to the low numbers, a better analysis would be how accessible TEL Stage 4 MRT Stations would be from the various subzones that fall within 1.6km radius instead of the number of people who is willing to cycle within the catchment area.&nbsp;</p>
+<p>The Singapore Government only built 800 bicycle racks within the 1.5km radius of each MRT Station. However, since our interval between each contour is 200m for contour generation in our QGIS, the max contour will be at 1.6km instead. We will also eliminate subzones from the list of accessibility if the proportion of the subzone that is in the catchment area is below 5% as it renders the subzone insignificant in the catchment area.</p>
+<p>Assumption made is:</p>
+<ol type="1">
+<li>Population is evenly distributed throughout the entire subzone</li>
+</ol>
+<p>We have also defined the variables that we will be using in our calculations later and its formula (if any) based on the table as shown below.</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 47%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variables</th>
+<th>Definition</th>
+<th>Formula (if any)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Subzone Name</td>
+<td>Name of Subzone</td>
+<td>-Nil-</td>
+</tr>
+<tr class="even">
+<td>Catchment Area</td>
+<td>Area of Subzone in the Catchment Zone</td>
+<td>$area from QGIS</td>
+</tr>
+<tr class="odd">
+<td>Subzone Area</td>
+<td>Area of Subzone</td>
+<td>$area from QGIS</td>
+</tr>
+<tr class="even">
+<td>Ratio</td>
+<td>Calculated Ratio of Catchment Area to Subzone Area</td>
+<td>Catchment Area/Subzone Area</td>
+</tr>
+<tr class="odd">
+<td>Subzone Population</td>
+<td>Raw Subzone Population Numbers</td>
+<td>-Nil-</td>
+</tr>
+<tr class="even">
+<td>Catchment Population</td>
+<td>Calculated Catchment Population Numbers</td>
+<td>Ratio * Total Subzone Population</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</p>
+</section>
+</section>
+<section id="te22a-founders-memorial" class="level2">
+<h2 class="anchored" data-anchor-id="te22a-founders-memorial">2 TE22A Founders Memorial</h2>
+<section id="catchment-population-distribution-walking" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-distribution-walking">2.1 Catchment Population Distribution (Walking)</h3>
+<p>[insert pic here]</p>
+<p>Based on the Walking Catchment Population Distribution for TE22A Founders Memorial, we can see that these following subzones (Marina East and Tanjong Rhu) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Tanjong Rhu. This is shown by the blue contour layers.</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Additionally, we will be multiplying these numbers at every contour level by a ratio (as mentioned earlier) to accurately reflect how many people who are willing to walk to TE22A Founders Memorial (shown below).&nbsp;</p>
+<p>Based on the numbers generated, the following breakdown are the Singaporeans who are willing to walk to TE22A Founders Memorial based on each contour interval:</p>
+<ol type="1">
+<li><p>0 Singaporeans within 200m contour</p></li>
+<li><p>0 Singaporeans within 200-400m contour</p></li>
+<li><p>19 Singaporeans within 400-600m contour</p></li>
+<li><p>115 Singaporeans within 600-800m contour</p></li>
+<li><p>65 Singaporeans within 800-1000m contour</p></li>
+</ol>
+<p>855 Singaporeans stay within the 1000m contour but only 199 of them are willing to walk to TE22A Founders Memorial. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 23.3%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.</p>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+<p><img src="images/paste-4B6D61C9.png" class="img-fluid"></p>
+<p>2.2 Catchment Population Distribution (Cycling)</p>
+<p>[pic here]</p>
+<p>Based on the Cycling Catchment Population Distribution for TE22A Founders Memorial, we can see that the largest proportion of the catchment population falls within Tanjong Rhu. This is shown by the red contour layers. However, the largest subzone covered in this catchment area is Marina East. This is shown by the white contours covering almost Marina East fully.&nbsp;</p>
+<p><br>
+</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.</p>
+<p><br>
+</p>
+<p>Based on the layout and numbers generated, these following subzones [Marina East (86.5%), Marina South (9.7%), Nicoll (8.1%), Marina Centre (16.5%), Marina East (MP) (2.2%) and Tanjong Rhu (20.2%)] are captured at the 1600m mark. Additionally, it is noted that:</p>
+<ol type="1">
+<li><p>Marina South (9.7%) that is within the catchment area, covers water bodies mainly.</p></li>
+<li><p>Despite 8% of Nicoll falling within the catchment area, this proportion of land coverage is even smaller if we want to eliminate the proportion of Nicoll that is made up of water bodies in the catchment area.</p></li>
+<li><p>2.2% of Marina East (MP) falls within the cycling catchment area.</p></li>
+</ol>
+<p><br>
+</p>
+<p>As a result, these three subzones are considered insignificant, thus we will eliminate them from the list of subzones.</p>
+<p><br>
+</p>
+<p>Therefore, TE22A Founders Memorial is accessible from multiple subzones by cycling:</p>
+<ol type="1">
+<li><p>Marina East (86.5%)</p></li>
+<li><p>Tanjong Rhu (20.2%)</p></li>
+<li><p>Marina Centre (16.5%)</p></li>
+</ol>
+<p><img src="images/paste-EDCE629A.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="te23-tanjong-rhu" class="level2">
+<h2 class="anchored" data-anchor-id="te23-tanjong-rhu">3 TE23 Tanjong Rhu</h2>
+<section id="catchment-population-distribution-walking-1" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-distribution-walking-1">3.1 Catchment Population Distribution (Walking)</h3>
+<p>[insert pic here]</p>
+<p>Based on the Walking Catchment Population Distribution for TE23 Tanjong Rhu, we can see that these following subzones (Marina East, Nicoll and Tanjong Rhu) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Tanjong Rhu at the 200m mark onwards where all the residential areas lie. This is shown by the blue contour layers.</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Additionally, we will be multiplying these numbers at every contour level by a ratio (as mentioned earlier) to accurately reflect how many people who are willing to walk to TE23 Tanjong Rhu (shown below).&nbsp;</p>
+<p>Based on the numbers generated, the following breakdown are the Singaporeans who are willing to walk to TE23 Tanjong Rhu based on each contour interval:</p>
+<ol type="1">
+<li><p>335 Singaporeans within 200m contour</p></li>
+<li><p>794 Singaporeans within 200-400m contour</p></li>
+<li><p>613 Singaporeans within 400-600m contour</p></li>
+<li><p>526 Singaporeans within 600-800m contour</p></li>
+<li><p>313 Singaporeans within 800-1000m contour</p></li>
+</ol>
+<p>6391 Singaporeans stay within the 1000m contour but only 2581 of them are willing to walk to TE23 Tanjong Rhu. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 40.4%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.</p>
+<p><img src="images/paste-2BAB8A36.png" class="img-fluid"></p>
+</section>
+<section id="catchment-population-distribution-cycling" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-distribution-cycling">3.2 Catchment Population Distribution (Cycling)</h3>
+<p>[insert pic here]</p>
+<p>Based on the Cycling Catchment Population Distribution for TE23 Tanjong Rhu, we can see that the largest proportion of the catchment population still falls within Tanjong Rhu. This is shown by red contour layers. The largest subzone covered in this catchment area is also Tanjong Rhu. This is shown by the red contours covering Tanjong Rhu almost fully as well.&nbsp;</p>
+<p><br>
+</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.</p>
+<p><br>
+</p>
+<p>Based on the layout and numbers generated, these following subzones [Alijunied (0.4%), Kampong Bugis (17.9%), Marina Centre (7.3%), Marina East (31.3%), Marina East (MP) (6.5%), Mountbatten (1.5%), Nicoll (54.5%) and Tanjong Rhu (96.4)] are captured at the 1600m mark. Additionally, it is noted that:</p>
+<p><br>
+</p>
+<ol type="1">
+<li><p>Only 1.5% of Mountbatten falls within the catchment area</p></li>
+<li><p>Only 0.4% of Alijunied falls within the catchment area</p></li>
+</ol>
+<p><br>
+</p>
+<p>As a result, these two subzones are considered insignificant, thus we will eliminate Mountbatten and Alijunied from the list of subzones.</p>
+<p><br>
+</p>
+<p>Therefore, TE22A Founders Memorial is accessible from multiple subzones by cycling:</p>
+<ol type="1">
+<li><p>Tanjong Rhu (96.4)</p></li>
+<li><p>Nicoll (54.5%)</p></li>
+<li><p>Marina East (31.3%)</p></li>
+<li><p>Kampong Bugis (17.9%)</p></li>
+<li><p>Marina Centre (7.3%)</p></li>
+<li><p>Marina East (MP) (6.5%)</p></li>
+</ol>
+<p><img src="images/paste-3B6A65F0.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="te24-katong-park" class="level2">
+<h2 class="anchored" data-anchor-id="te24-katong-park">4 TE24 Katong Park</h2>
+<section id="catchment-population-distribution-walking-2" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-distribution-walking-2">4.1 Catchment Population Distribution (Walking)</h3>
+<p>[insert pic here]</p>
+<p>Based on the Walking Catchment Population Distribution for TE24 Katong Park, we can see that these following subzones (Aljunied, Marina East (MP), Mountbattenl and Tanjong Rhu) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Mountbatten. This is shown by the darkest blue contour layer.</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Additionally, we will be multiplying these numbers at every contour level by a ratio (as mentioned earlier) to accurately reflect how many people who are willing to walk to TE22A Founders Memorial (shown below).&nbsp;</p>
+<p>Based on the numbers generated, the following breakdown are the Singaporeans who are willing to walk to TE24 Katong Park based on each contour interval:</p>
+<ol type="1">
+<li><p>396 Singaporeans within 200m contour</p></li>
+<li><p>979 Singaporeans within 200-400m contour</p></li>
+<li><p>818 Singaporeans within 400-600m contour</p></li>
+<li><p>691 Singaporeans within 600-800m contour</p></li>
+<li><p>413 Singaporeans within 800-1000m contour</p></li>
+</ol>
+<p>8302 Singaporeans stays within the 1000m contour but only 3297 of them are willing to walk to TE24 Katong Park. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 39.7%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.</p>
+<p><br>
+<img src="images/paste-7655EA63.png" class="img-fluid"></p>
+</section>
+<section id="catchment-population-distribution-walking-3" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-distribution-walking-3">4.2 Catchment Population Distribution (Walking)</h3>
+<p>[insert pic here]</p>
+<p>Based on the Cycling Catchment Population Distribution for TE24 Katong Park, we can see that the largest proportion of the catchment population falls within Mountbatten. This is shown by the darkest red contour. The largest subzone covered in this catchment area is also Mountbatten. This is shown by the largest contour covering almost Mountbatten fully as well.&nbsp;</p>
+<p><br>
+</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.</p>
+<p><br>
+</p>
+<p>Based on the layout and numbers generated, these following subzones [Alijunied (13.8%), East Coast (0.5%), Geylang East (0.1%), Katong (0.9%), Marina East (4.3%), Marina East (MP) (94.9%), Marine Parade (3.2%), Mountbatten (91.2%) and Tanjong Rhu (54.1%)] are captured at the 1600m mark. Additionally, it is noted that:</p>
+<p><br>
+</p>
+<ol type="1">
+<li><p>4.3% of Marina East falls within the catchment area</p></li>
+<li><p>3.2% of Marine Parade falls within the catchment area</p></li>
+</ol>
+<!-- -->
+<ol type="1">
+<li><p>0.9% of Katong falls within the catchment area</p></li>
+<li><p>0.5% of East Coast falls within the catchment area</p></li>
+<li><p>0.1% of Geylang East falls within the catchment area</p></li>
+</ol>
+<p><br>
+</p>
+<p>As a result, these five subzones are considered insignificant, thus we will eliminate them from the list of subzones.</p>
+<p><br>
+</p>
+<p>Therefore, TE24 Katong Park is accessible from multiple subzones by cycling:</p>
+<ol type="1">
+<li>Marina East (MP) (94.9%)</li>
+</ol>
+<!-- -->
+<ol start="3" type="1">
+<li><p>Mountbatten (91.2%)&nbsp;</p></li>
+<li><p>Tanjong Rhu (54.1%)</p></li>
+<li><p>Alijunied (13.8%)</p></li>
+</ol>
+<p><img src="images/paste-7E325785.png" class="img-fluid"> <img src="images/paste-3FC35CAC.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="te25-tanjong-katong" class="level2">
+<h2 class="anchored" data-anchor-id="te25-tanjong-katong">5 TE25 Tanjong Katong</h2>
+<section id="catchment-population-distribution-walking-4" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-distribution-walking-4">5.1 Catchment Population Distribution (Walking)</h3>
+<p>[insert pic here]</p>
+<p>Based on the Walking Catchment Population Distribution for TE25 Tanjong Katong, we can see that these following subzones (East Coast, Katong, Marina East (MP), Marine Parade and Mountbatten) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Marine Parade. This is shown by the darkest blue contour layers.</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Additionally, we will be multiplying these numbers at every contour level by a ratio (as mentioned earlier) to accurately reflect how many people who are willing to walk to TE25 Tanjong Katong (shown below).&nbsp;</p>
+<p>Based on the numbers generated, the following breakdown are the Singaporeans who are willing to walk to TE25 Tanjong Katong based on each contour interval:</p>
+<ol type="1">
+<li><p>617 Singaporeans within 200m contour</p></li>
+<li><p>2444 Singaporeans within 200-400m contour</p></li>
+<li><p>1680 Singaporeans within 400-600m contour</p></li>
+<li><p>1111 Singaporeans within 600-800m contour</p></li>
+<li><p>768 Singaporeans within 800-1000m</p></li>
+</ol>
+<p>15857 Singaporeans stay within the 1000m contour but only 6620 of them are willing to walk to TE25 Tanjong Katong. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 41.7%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.</p>
+<p><br>
+<img src="images/paste-E7AA9F90.png" class="img-fluid"></p>
+</section>
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1"></h3>
+<p>5.2 Catchment Population Distribution (Cycling)</p>
+<p>[insert pic here]</p>
+<p>Based on the Cycling Catchment Population Distribution for TE25 Tanjong Katong, we can see that the largest proportion of the catchment population falls within Marine Parade. This is shown by the darkest red contour layer. However, the largest subzone covered in this catchment area is Mountbatten. This is shown by the largest contour covering almost Mountbatten fully.&nbsp;</p>
+<p><br>
+</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.</p>
+<p><br>
+</p>
+<p>Based on the layout and numbers generated, these following subzones [Alijunied (0.2%), East Coast (50.5%), Geylang East (10.8%), Katong (74.2%), Marina East (MP) (14.9%), Marine Parade (58.1%), Mountbatten (92.2%) and Tanjong Rhu (1.6%)] are captured at the 1600m mark. Additionally, you can highlight that:</p>
+<ol type="1">
+<li><p>1.6% of Tanjong Rhu falls within the catchment area</p></li>
+<li><p>0.2% of Alijunied falls within the catchment area</p></li>
+</ol>
+<p>As a result, these two subzones are considered insignificant, thus we will eliminate them from the list of subzones.</p>
+<p>Therefore, TE25 Tanjong Katong is accessible from multiple subzones by cycling:</p>
+<ol type="1">
+<li><p>Mountbatten (92.2%)&nbsp;</p></li>
+<li><p>Katong (74.2%)</p></li>
+<li><p>Marine Parade (58.1%)</p></li>
+<li><p>East Coast (50.5%)</p></li>
+<li><p>Marina East (MP) (14.9%)</p></li>
+<li><p>Geylang East (10.8%)</p></li>
+</ol>
+<p><img src="images/paste-C78A9790.png" class="img-fluid"> <img src="images/paste-BDB915B7.png" class="img-fluid"> <img src="images/paste-BEC68E9C.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="te26-marine-parade" class="level2">
+<h2 class="anchored" data-anchor-id="te26-marine-parade">6 TE26 Marine Parade</h2>
+<section id="catchment-population" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population">6.1 Catchment Population</h3>
+<p>Distribution (Walking)</p>
+<p>[insert pic here]</p>
+<p>Based on the Walking Catchment Population Distribution for TE26 Marine Parade, we can see that these following subzones (East Coast, Frankel, Geylang East, Katong and Marine Parade) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Marine Parade. This is shown by the darkest blue contour layers.</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Additionally, we will be multiplying these numbers at every contour level by a ratio (as mentioned earlier) to accurately reflect how many people who are willing to walk to TE26 Marine Parade (shown below).&nbsp;</p>
+<p>Based on the numbers generated, the following breakdown are the Singaporeans who are willing to walk to TE26 Marine Parade based on each contour interval:</p>
+<ol type="1">
+<li><p>2974 Singaporeans within 200m contour</p></li>
+<li><p>5175 Singaporeans within 200-400m contour</p></li>
+<li><p>3432 Singaporeans within 400-600m contour</p></li>
+<li><p>2332 Singaporeans within 600-800m contour</p></li>
+<li><p>1395 Singaporeans within 800-1000m contour</p></li>
+</ol>
+<p>33379 Singaporeans stay within the 1000m contour but only 15308 of them are willing to walk to TE26 Marine Parade. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 45.9%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.</p>
+<p><img src="images/paste-CA23C417.png" class="img-fluid"></p>
+</section>
+<section id="catchment-population-1" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-1">6.2 Catchment Population</h3>
+<p>Distribution (Cycling)</p>
+<p>[insert pic here]</p>
+<p>Based on the Cycling Catchment Population Distribution for TE26 Marine Parade, we can see that the largest proportion of the catchment population falls within Marine Parade. This is shown by the darkest red contour layer. However, the largest subzone covered in this catchment area is also Marine Parade. This is shown by the largest contour covering Marine Parade fully.&nbsp;</p>
+<p><br>
+</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.</p>
+<p><br>
+</p>
+<p>Based on the layout and numbers generated, these following subzones [Mountbatten (18,4%), Katong (98.4%), Marine Parade (100%), East Coast (96.8%), Marina East (2.7%), Frankel (26.9%), Geylang East (20.4%) and Siglap (15.7%)] are captured at the 1600m mark. Additionally, it is noted that:</p>
+<p><br>
+</p>
+<ol type="1">
+<li>2.7% of Marina East falls within the catchment area</li>
+</ol>
+<p><br>
+</p>
+<p>As a result, this subzone is considered insignificant, thus we will eliminate it from the list of subzones.</p>
+<p><br>
+</p>
+<p>Therefore, TE26 Marine Parade is accessible from multiple subzones by cycling:</p>
+<ol type="1">
+<li>Marine Parade (100%)</li>
+</ol>
+<!-- -->
+<ol start="2" type="1">
+<li><p>Katong (98.4%)</p></li>
+<li><p>East Coast (96.8%)</p></li>
+<li><p>Frankel (26.9%)</p></li>
+<li><p>Geylang East (20.4%)</p></li>
+<li><p>Mountbatten (18,4%)</p></li>
+<li><p>Siglap (15.7%)</p></li>
+</ol>
+<p><img src="images/paste-0D9244BE.png" class="img-fluid"> <img src="images/paste-93E07A44.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="te27-marine-terrace" class="level2">
+<h2 class="anchored" data-anchor-id="te27-marine-terrace">7 TE27 Marine Terrace</h2>
+<section id="catchment-population-2" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-2">7.1 Catchment Population</h3>
+<p>Distribution (Walking)</p>
+<p>[insert pic here]</p>
+<p>Based on the Walking Catchment Population Distribution for TE27 Marine Terrace, we can see that these following subzones (Katong, Marine Parade, East Coast, Frankel and Siglap) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Marine Terrace. This is shown by the darkest blue contour layers.</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Additionally, we will be multiplying these numbers at every contour level by a ratio (as mentioned earlier) to accurately reflect how many people who are willing to walk to TE27 Marine Terrace (shown below).&nbsp;</p>
+<p>Based on the numbers generated, the following breakdown are the Singaporeans who are willing to walk to TE27 Marine Terrace based on each contour interval:</p>
+<ol type="1">
+<li><p>2359 Singaporeans within 200m contour</p></li>
+<li><p>3968 Singaporeans within 200-400m contour</p></li>
+<li><p>2601 Singaporeans within 400-600m contour</p></li>
+<li><p>1633 Singaporeans within 600-800m contour</p></li>
+<li><p>1097 Singaporeans within 800-1000m contour</p></li>
+</ol>
+<p>25277 Singaporeans stay within the 1000m contour but only 11658 of them are willing to walk to TE27 Marine Terrace. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 46.1%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.</p>
+<p><img src="images/paste-D9D49199.png" class="img-fluid"> <img src="images/paste-BBF00F7F.png" class="img-fluid"></p>
+</section>
+<section id="catchment-population-distribution-cycling-1" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-distribution-cycling-1">7.2 Catchment Population Distribution (Cycling)</h3>
+<p>[insert pic here]</p>
+<p>Based on the Cycling Catchment Population Distribution for TE27 Marine Terrace, we can see that the larger proportion of the catchment population falls within Marine Parade and Frankel. This is shown by the darkest red contour layers. However, the largest subzone covered in this catchment area is Frankel. This is shown by the largest contour covering Frankel.&nbsp;</p>
+<p><br>
+</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.</p>
+<p><br>
+</p>
+<p>Based on the layout and numbers generated, these following subzones [Marine Parade (81.1%), Frankel (55.2%), Siglap (55.6%), Geylang East (2.1%), Katong (53.6%), Kembangan (0.9%) and East Coast (63.6%)] are captured at the 1600m mark. Additionally, it is noted that:</p>
+<p><br>
+</p>
+<ol type="1">
+<li><p>2.1% of Geylang East falls within the catchment area</p></li>
+<li><p>0.9% of Kembangan falls within the catchment area</p></li>
+</ol>
+<p><br>
+</p>
+<p>As a result, these subzones are considered insignificant, thus we will eliminate them from the list of subzones.</p>
+<p><br>
+</p>
+<p>Therefore, TE27 Marine Terrace is accessible from multiple subzones by cycling:</p>
+<ol type="1">
+<li><p>Marine Parade (81.1%)</p></li>
+<li><p>East Coast (63.6%)</p></li>
+<li><p>Siglap (55.6%)</p></li>
+<li><p>Frankel (55.2%)</p></li>
+<li><p>Katong (53.6%)</p></li>
+</ol>
+<p><img src="images/paste-61CAE461.png" class="img-fluid"></p>
+<p><img src="images/paste-95CEF0AC.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="te28-siglap" class="level2">
+<h2 class="anchored" data-anchor-id="te28-siglap">8 TE28 Siglap</h2>
+<section id="catchment-population-distribution-walking-5" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-distribution-walking-5">8.1 Catchment Population Distribution (Walking)</h3>
+<p>[insert pic here]</p>
+<p>Based on the Walking Catchment Population Distribution for TE28 Siglap, we can see that these following subzones (Siglap, Frankel, Bayshore and Bedok South) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Frankel. This is shown by the darkest blue contour layer.</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Additionally, we will be multiplying these numbers at every contour level by a ratio (as mentioned earlier) to accurately reflect how many people who are willing to walk to TE28 Siglap (shown below).&nbsp;</p>
+<p>Based on the numbers generated, the following breakdown are the Singaporeans who are willing to walk to TE28 Siglap based on each contour interval:</p>
+<ol type="1">
+<li><p>573 Singaporeans within 200m contour</p></li>
+<li><p>1281 Singaporeans within 200-400m contour</p></li>
+<li><p>1182 Singaporeans within 400-600m contour</p></li>
+<li><p>1192 Singaporeans within 600-800m contour</p></li>
+<li><p>4982 Singaporeans within 800-1000m contour</p></li>
+</ol>
+<p>13544 Singaporeans stay within the 1000m contour but only 4982 of them are willing to walk to TE28 Siglap. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 36.8%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.</p>
+<p><img src="images/paste-B5D4F0AD.png" class="img-fluid"></p>
+</section>
+<section id="catchment-population-3" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-3">8.2 Catchment Population</h3>
+<p>Distribution (Cycling)</p>
+<p>[insert pic here]</p>
+<p>Based on the Cycling Catchment Population Distribution for TE28 Siglap, we can see that the largest proportion of the catchment population falls within Frankel. This is shown by the darkest red contour layers. The largest subzone covered in this catchment area is also Frankel. This is shown by the largest contour covering Frankel.&nbsp;</p>
+<p><br>
+</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.</p>
+<p><br>
+</p>
+<p>Based on the layout and numbers generated, these following subzones [Siglap (90.0%), Frankel (50.4%), Bayshore (24.5%), Bedok South (16.8%), Marine Parade (7.0%) and East Coast (0.5%)] are captured at the 1600m mark. Additionally, it is noted that:</p>
+<p><br>
+</p>
+<ol type="1">
+<li>0.5% of East Coast falls within the catchment area</li>
+</ol>
+<p><br>
+</p>
+<p>As a result, this subzone is considered insignificant, thus we will eliminate it from the list of subzones.</p>
+<p><br>
+</p>
+<p>Therefore, TE28 Siglap is accessible from multiple subzones by cycling:</p>
+<p><br>
+</p>
+<ol type="1">
+<li><p>Siglap (90.0%)</p></li>
+<li><p>Frankel (50.4%)</p></li>
+<li><p>Bayshore (24.5%)</p></li>
+<li><p>Bedok South (16.8%)</p></li>
+<li><p>Marine Parade (7.0%)</p></li>
+</ol>
+<p><img src="images/paste-52114DCB.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="te29-bayshore" class="level2">
+<h2 class="anchored" data-anchor-id="te29-bayshore">9 TE29 Bayshore</h2>
+<section id="catchment-population-distribution-walking-6" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-distribution-walking-6">9.1 Catchment Population Distribution (Walking)</h3>
+<p>[insert pic here]</p>
+<p>Based on the Walking Catchment Population Distribution for TE29 Bayshore, we can see that these following subzones (Bayshore, Bedok South, Frankel, Siglap) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Bedok South. This is shown by the darkest blue contour layer.</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Additionally, we will be multiplying these numbers at every contour level by a ratio (as mentioned earlier) to accurately reflect how many people who are willing to walk to TE29 Bayshore (shown below).&nbsp;</p>
+<p>Based on the numbers generated, the following breakdown are the Singaporeans who are willing to walk to TE29 Bayshore based on each contour interval:</p>
+<ol type="1">
+<li><p>317 Singaporeans within 200m contour</p></li>
+<li><p>957 Singaporeans within 200-400m contour</p></li>
+<li><p>1013 Singaporeans within 400-600m contour</p></li>
+<li><p>1164 Singaporeans within 600-800m contour</p></li>
+<li><p>838 Singaporeans within 800-1000m contour</p></li>
+</ol>
+<p>13004 Singaporeans stay within the 1000m contour but only 4289 of them are willing to walk to TE29 Bayshore. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 33.0%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.</p>
+<p><img src="images/paste-12573723.png" class="img-fluid"></p>
+</section>
+<section id="catchment-population-distribution-cycling-2" class="level3">
+<h3 class="anchored" data-anchor-id="catchment-population-distribution-cycling-2">9.2 Catchment Population Distribution (Cycling)</h3>
+<p>[insert pic here]</p>
+<p>Based on the Cycling Catchment Population Distribution for TE29 Bayshore, we can see that the largest proportion of the catchment population falls within Bedok South. This is shown by the darkest red contour layer. The largest subzone covered in this catchment area is also Bedok South. This is shown by the largest contour covering Bedok South.&nbsp;</p>
+<p><br>
+</p>
+<p>We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.</p>
+<p><br>
+</p>
+<p>Based on the layout and numbers generated, these following subzones [Bayshore (51.9%), Bedok South (54.4%), Frankel (10.3%) and Siglap (26.5%)] are captured at the 1600m mark.&nbsp;</p>
+<p><br>
+</p>
+<p>Since there are no insignificant subzones, TE28 Siglap is accessible from multiple subzones by cycling:</p>
+<p><br>
+</p>
+<ol type="1">
+<li><p>Bedok South (54.4%)</p></li>
+<li><p>Bayshore (51.9%)</p></li>
+<li><p>Siglap (26.5%)</p></li>
+<li><p>Frankel (10.3%)</p></li>
+</ol>
+<p><img src="images/paste-9E17227A.png" class="img-fluid"></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

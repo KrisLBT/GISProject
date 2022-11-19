@@ -7,8 +7,6 @@ editor: visual
 
 For the analysis, both the buffer area (calculated by a given Euclidean distance), the ISO-area (derived from the road network) and the various amenities and buildings that lie within them will be used to assess the accessibility of the stations. A distance of 1000m will be used for walking buffer and ISO-area while a distance of 1500m will be used for cycling. For both cycling and walking ISO-areas, intervals of 200m will be used to determine the relative accessibility of certain amenities within a given catchment area.
 
-Subsequently, we used the ratio of the subzones covered by the buffer regions to the total size of the subzone as a proxy for percentage of the population served by the stations. For this, we assumed the population will be evenly distributed throughout the subzone.
-
 ## Catchment and Buffer Area Analysis
 
 ### TE22A -- Founders Memorial
@@ -45,7 +43,7 @@ This will significantly improve first and last mile journeys using public transp
 
 Compared to Founder's Memorial, the buffer area and the catchment areas are very similar to each other. This means that this area is very well-connected by the roads and walk/cycleways within the area and no new pathways need to be built to accommodate easier transit
 
-There are more buildings covered by Tanjong Rhu catchment area as compared to Founder\'s Memorial catchment area. However, some of which lie in both catchment areas. These buildings in the overlapping catchment areas include residential and commercial buildings. Therefore, residents and people who frequent these commercial buildings get to benefit from the convenience of having two accessible MRT stations.
+There are more buildings covered by Tanjong Rhu catchment area as compared to Founder's Memorial catchment area. However, some of which lie in both catchment areas. These buildings in the overlapping catchment areas include residential and commercial buildings. Therefore, residents and people who frequent these commercial buildings get to benefit from the convenience of having two accessible MRT stations.
 
 Upon looking at the area on Google Street Maps, some buildings may also be hotels. Building an MRT station in the catchment area would ensure that Singaporeans and tourists staying within this area will be better served by public transportation, especially since there are no nearby other MRT stations within this area, apart from Founder's Memorial.
 
@@ -69,7 +67,7 @@ This area also now extends to the Paddock Club F1 area through the Benjamin Shea
 ![Buffer](images/TE24%20Walking%20Buffer.png){fig-align="center" width="600"}
 :::
 
-For the walking buffer area, it covers a significant number of residential areas for both low rise and high rise buildings, including hotels. The station will, thus, be able to cater to a large and diverse set of people who may need to travel to tourist attractions or to commercial buildings. Since the station aims to reduce travel time to the central area, both tourists and workers will be better accommodated.
+For the walking catchment area, it covers a significant number of residential areas for both low rise and high rise buildings, including hotels. The station will, thus, be able to cater to a large and diverse set of people who may need to travel to tourist attractions or to commercial buildings. Since the station aims to reduce travel time to the central area, both tourists and workers will be better accommodated.
 
 Dunman High is also 400-600m away (5-7 minutes' walk) from TE24, making it more convenient for students to alight here than at Mountbatten, the current nearest MRT which is a 15 minutes' walk.
 
@@ -192,6 +190,10 @@ All types of residential buildings lie close on the north and west sides of TE29
 :::
 
 For the cycling catchment area, more amenities are covered. The map shows more types of services that Singaporeans can access at the convenience of cycling. More housing estates, as well as schools can be reached. These institutions lie within 1-1.2km of the MRT, a less than 10 minutes cycle. Hence, this convenience may encourage students to cycle to school from the MRT.
+
+### Conclusion
+
+The catchment areas, for both walking and cycling, show us that the main beneficiaries of  the TEL Stage 4 MRT stations are the residents. This is primarily due to the large catering of land use by the [Master Plan 2019](https://www.ura.gov.sg/maps/?service=MP) toward Residential along the East Coast of Singapore in the Marine Parade Subzone. These Residential land use will hence have the greatest direct impact by the presence of TEL. With the majority of these residential buildings being low rise residential estates, the TEL may achieve its goal of encouraging more people to switch to more sustainable forms of transportation as residents will have high convenience and accessibility levels to use public transport to travel to the city centre (as compared to now where they are left with little choice but to use their private vehicles). Since walking or cycling to these MRT stations is very convenient for these residents, and using public transportation to get to the city centre is much more affordable than using taxis or paying city centre parking fees, a majority of these residents will definitely switch to using TEL for the journeys. This will improve road congestion problems
 
 \
 
