@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-## About this site
-
 This research study was conducted for SMT201: Geographic Information Systems for Urban Planning in AY2022-2023 Term 1, in Singapore Management University
 
 Instructor: Kim Tin Seong

@@ -8,11 +8,11 @@ website:
       - href: intro.qmd
         text: Project Scope
       - href: methodology.qmd
-        text: Methodology
+        text: Step by Step Guide
       - href: data.qmd
         text: Data Used
       - href: results.qmd
-        text: Results & Discussion
+        text: Report
     right:
       - href: index.qmd
         text: Overview

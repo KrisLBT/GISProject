@@ -1,9 +1,7 @@
 ---
-title: "Methodology"
+title: "Step by Step Guide"
 editor: visual
 ---
-
-For our analysis, we used QNEAT3 to find the ISO-area from the various station exits within distances of 1000m and 1500m through the road network. We subsequently used the buffer region using the Euclidean distance of the same values. We then also found the potential population served by the stations. Assuming the population is spread out equally, we used ratio of the subzone area covered by the ISO-area to the total subzone area as a proxy for population percentage served by train station.
 
 The following is a step-by-step guide in using QGIS to complete our task.
 
@@ -695,8 +693,7 @@ Keep the rest of the entries as default.
 
 Your screen should look similar to the screenshot below.
 
-![](images/paste-3023CFE0.png)
-![](images/paste-7B433E8C.png)
+![](images/paste-3023CFE0.png) ![](images/paste-7B433E8C.png)
 
 When you are ready to run the function,
 
@@ -716,8 +713,7 @@ DIY: Using the steps you had learned earlier, save the Output_Polygon Layer as T
 
 #### **4.1.4. Data Cleaning of Cycling Network Service Area of TE22A Founders Memorial**
 
--   To better visualize the contours for walking distance, open the **Properties Table** of TE22A Contours (Walking)
-    ![](images/paste-35D0E301.png)
+-   To better visualize the contours for walking distance, open the **Properties Table** of TE22A Contours (Walking) ![](images/paste-35D0E301.png)
 
 -   Click on the **Symbology** tab and click on Graduated
 
@@ -735,11 +731,9 @@ DIY: Using the steps you had learned earlier, save the Output_Polygon Layer as T
 
     ![](images/paste-27521062.png)
 
-```{=html}
 <!-- -->
-```
--   From **Mode**, click on Fixed Interval
-    ![](images/paste-6C2F5EA7.png){width="200"}
+
+-   From **Mode**, click on Fixed Interval ![](images/paste-6C2F5EA7.png){width="200"}
 
 -   Type 200 for **Interval Size** and click **Classify**
 
@@ -749,12 +743,10 @@ DIY: Using the steps you had learned earlier, save the Output_Polygon Layer as T
 
     ![](images/paste-C2F256B4.png)
 
--   From **Layer Rendering**, drop **Opacity** to 50%. Your screen should look like the screenshot as shown below before clicking **OK**
-    ![](images/paste-2D895A64.png)
+-   From **Layer Rendering**, drop **Opacity** to 50%. Your screen should look like the screenshot as shown below before clicking **OK** ![](images/paste-2D895A64.png)
 
-```{=html}
 <!-- -->
-```
+
 -   With that, your walking contours can now capture the OSM layer for better analysis as it is more transparent and better categorized
 
     ![](images/paste-AF483C37.png)
@@ -773,64 +765,1096 @@ Using the steps you had learned earlier, generate walking and cycling network se
 
 #### **4.1.5. Creating Walking and Cycling Network Service Area for the Rest of the TEL Stage 4 MRT Stations**
 
-+---------------------+--------------------------------+-------------------------+
-| MRT Station Name    | Layer Cleaning                 | Layer Name              |
-+:===================:+:==============================:+:=======================:+
-| TE23 Tanjong Rhu    |                                |                         |
-|                     |                                |                         |
-|                     | ![](images/paste-F1627895.png) | TE23 Contours (Walking) |
-+---------------------+--------------------------------+-------------------------+
-| TE23 Tanjong Rhu    | ![](images/paste-57A1A192.png) |                         |
-|                     |                                |                         |
-|                     |                                | TE23 Contours (Cycling) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
-| TE24 Katong Park    | ![](images/paste-F9EB11E7.png) | TE24 Contours (Walking) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
-| TE24 Katong Park    | ![](images/paste-44EE9F00.png) | TE24 Contours (Cycling) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
+|  MRT Station Name   |         Layer Cleaning         |       Layer Name        |
+|:------------------:|:---------------------------:|:---------------------:|
+|  TE23 Tanjong Rhu   | ![](images/paste-F1627895.png) | TE23 Contours (Walking) |
+|  TE23 Tanjong Rhu   | ![](images/paste-57A1A192.png) | TE23 Contours (Cycling) |
+|  TE24 Katong Park   | ![](images/paste-F9EB11E7.png) | TE24 Contours (Walking) |
+|  TE24 Katong Park   | ![](images/paste-44EE9F00.png) | TE24 Contours (Cycling) |
 | TE25 Tanjong Katong | ![](images/paste-32474ADC.png) | TE25 Contours (Walking) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
 | TE25 Tanjong Katong | ![](images/paste-96F6298B.png) | TE25 Contours (Cycling) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
 | TE26 Marine Parade  | ![](images/paste-A9ABA3FD.png) | TE26 Contours (Walking) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
 | TE26 Marine Parade  | ![](images/paste-81496094.png) | TE26 Contours (Cycling) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
-| TE27 Marine Terrace | ![](images/paste-1A40E7E9.png) |                         |
-|                     |                                |                         |
-|                     |                                | TE27 Contours (Walking) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
+| TE27 Marine Terrace | ![](images/paste-1A40E7E9.png) | TE27 Contours (Walking) |
 | TE27 Marine Terrace | ![](images/paste-038D26A1.png) | TE27 Contours (Cycling) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
-| TE28 Siglap         | ![](images/paste-302637B9.png) | TE28 Contours (Walking) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
-| TE28 Siglap         | ![](images/paste-992D62CC.png) | TE28 Contours (Cycling) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
-| TE29 Bayshore       | ![](images/paste-3C489BBA.png) | TE29 Contours (Walking) |
-+---------------------+--------------------------------+-------------------------+
-|                     |                                |                         |
-|                     |                                |                         |
-| TE29 Bayshore       | ![](images/paste-6932FABE.png) | TE29 Contours (Cycling) |
-+---------------------+--------------------------------+-------------------------+
+|     TE28 Siglap     | ![](images/paste-302637B9.png) | TE28 Contours (Walking) |
+|     TE28 Siglap     | ![](images/paste-992D62CC.png) | TE28 Contours (Cycling) |
+|    TE29 Bayshore    | ![](images/paste-3C489BBA.png) | TE29 Contours (Walking) |
+|    TE29 Bayshore    | ![](images/paste-6932FABE.png) | TE29 Contours (Cycling) |
+
+## 5. Extracting Buildings within Catchment Areas for Amenities Analysis for TE29 Bayshore
+
+### 5.1. Extracting Buildings within Catchment Areas for Amenities Analysis for TE29 Bayshore
+
+To identify the buildings that we want, we must first open the Iso-Area layer. This way, we can see what are the buildings that fall within the catchment area that requires us to recategorize. We will be guiding you through the extraction of amenities that fall within TE29 Bayshore Contours (Walking) as an example.
+
+#### 5.1.1. Classifying Buildings
+
+In the Layers panel, ensure that TE29 Bayshore Contours (Walking) layer is on
+
+-   Open the **Layer** **Properties** ofOSM_Building.
+
+-   Click on **Symbology** tab
+
+-   At the top of the **Symbology** dialog, change **Type** to Categorized.
+
+    ![](images/paste-E9B8D834.png){alt="For Value, select Type" width="600"}
+
+-   For **Value**, select Type
+
+    ![](images/paste-7D72719B.png){width="600"}
+
+-   Click **Classify**. Your screen should look similar to the screenshot as shown below.
+
+    ![](images/paste-B05BC2E6.png){width="400"}
+
+Click **OK** and your screen should look similar to the screenshot as shown below
+
+#### ![](images/paste-F9E279D8.png){width="600"}
+
+5.1.2. Identifying Buildings that are *NULL* within the Catchment Area
+
+Upon closer inspection on **Attribute Table** for the OSM_Buildings layer, we find that many have null Type values. Since the Type is the property that will be able to differentiate the nature of the buildings, we will need to fix this. Therefore, we need to perform recategorizing of the building types.
+
+-   In the Layers panel, right click on OSM_Buildings and open its **Attributes Table**. 
+
+-   Use **Select Features by Area** or **Select Feature(s)** ![](images/paste-98BACBBE.png){width="30" height="20"} and click on one of the buildings in red in the screenshot as shown below. (Your buildings may have a different color combination)
+
+    ![](images/paste-2B27FB97.png){width="600"}
+
+```{=html}
+<!-- -->
+```
+-   We see that the **Type** is null for these buildings.
+
+![](images/paste-6D102738.png){width="600"}
+
+Now, we will need to use external software, Google Maps or Maps, to identify our building type with existing visual data and change it in our **Attributes Table** accordingly.
+
+-   Click on the **Toggle Editing Mode** icon ![](images/paste-824F52F1.png){width="20"} in the **Attributes Table** to allow for editing function. 
+
+#### **5.1.3 Data Cleaning for NULL Buildings within the Catchment Area**
+
+Below shows a table of how and why we recategorize NULL buildings into the correct building types that we use in our analysis.
+
+::: {layout-nrow="2"}
+![](images/Table%20GIS-01.png)
+![](images/paste-D91A6FBA.png){width="598"}
+
+![](images/paste-09EAEF93.png){width="598"}
+:::
+
+-   After editing, click on **Toggle Editing Mode** icon. A pop-up window will appear as shown below
+
+    ![](images/paste-3E8C865E.png){width="200"}
+
+```{=html}
+<!-- -->
+```
+-   Click on **Save** when the prompt appears.
+
+#### **5.1.4 Extracting all Buildings in Catchment Area**
+
+Since we want to analyze the types of buildings that fall under TE29 Bayshore Contours (Walking), we need to extract them out. 
+
+-   In the **Attributes Toolbar**, click on **Select by Location** ![](images/paste-7FEB1CFB.png){width="20"}
+
+The **Select by Location** dialog windows appear.
+
+-   From **Select features from**, select OSM_Buildings 
+
+-   Tick the checkbox in front of **Intersect** under the **Where he Features** 
+
+-   From **By Comparing to the Features from**, select TE29 Bayshore Contours (Walking). Your screen should look similar to the screenshot below.
+
+    ![](images/paste-217AB6DB.png){width="600"}
+
+```{=html}
+<!-- -->
+```
+-   Click **Run**. Your screen should look similar to the screenshot as shown below.
+
+![](images/paste-D340669C.png)\
+
+However, we see that some buildings within the catchment area are not selected because the contour does not cover those parts. However, all buildings directly beside would be reachable within the Iso-Area of 1 km for walking and 1.5 km for cycling. Hence, we need to make sure that these buildings are also selected.
+
+-   In the **Attributes Toolbar**, click on **Select Feature(s)**
+
+    ![](images/paste-D509A22F.png){width="600"}
+
+-   In your keyboard, press on the **Shift** key as you click on the additional buildings that are directly beside the Catchment Areas on your QGIS.
+
+Now, we need to save this to our GeoPackage.
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, save these selected features as a new layer as TE29\_ buildings_walking into your GeoPackage. Your screen should look similar to the screenshot as show below before clicking **OK**
+:::
+
+\
+
+![](images/paste-3693B4B0.png){width="400"}
+
+-   From your Layers Menu, you can see a new layer TE29\_ buildings_walking is created
+
+![](images/paste-DF8421B1.png){width="400" height="36"}However, since the buildings are now uncategorized, you must categorize them again. Since the null building types are updated in TE29\_ buildings_walking, no further data cleaning is required, and categorizing is enough.
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, categorize TE29\_ buildings_walking based on their fclass under **Symbology** in **Layer** **Properties**
+:::
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, repeat all the steps in section 1.6 for all walking and building contours for all **TEL 4 Stage 4 MRT Stations** into your GeoPackage
+:::
+
+### 5.2 Extracting Points of Interests within Catchment Areas for Amenities Analysis for TE29 Bayshore
+
+We also want to analyze the types of POIs that will be affected by the TEL Stage 4 MRT stations. Hence, we also need to get the POIs that fall within the catchment area for both walking and cycling. The steps to do so are also the same as for Buildings.
+
+#### **5.2.1. Extracting all Points of Interest in Catchment Area**
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, extract all Points of Interests that falls under TE29 Bayshore Contours (Walking) and save these selected features as a new layer as TE29_pois_walking into your GeoPackage**.** Your screen should look similar to the screenshot as shown below.
+:::
+
+![](images/paste-89D20C02.png){width="400"}\
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, categorize TE29\_ pois_walking based on their values under **Symbology** in **Layer** **Properties.** Your screen should look similar to the screenshot as shown below.
+:::
+
+![](images/paste-7DF6FB47.png){width="600"}
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, repeat all the steps in section 1.6.2 for all walking and building contours for all **TEL 4 Stage 4 MRT Stations** into your GeoPackage
+:::
+
+## 6. Creating Buffers for Catchment Areas for Amenities Analysis
+
+An ideal catchment area would be buffer generated based on the correct distance (1km for Walking and 1.5km for Cycling). We will compare Iso-Area and buffer to see their differences. From here, we can see if a better road network is required for people to walk or cycle more efficiently. We will be guiding you through the creation of buffers for TE29 Bayshore Contours (Walking) as an example.
+
+### 6.1. Generating Buffer
+
+-   Under Vector from **Menu Toolbar**, hover your cursor over Geoprocessing Tools, and click on the Buffer
+
+    ![](images/paste-C5466398.png){width="400"}
+
+```{=html}
+<!-- -->
+```
+-   From Input layer, select TE29 Bayshore Contours (Walking)
+
+-   From Distance, change the values depending on the contour you are doing
+
+    -   If you are doing walking contour, change the value to 1000
+
+    -   If you are doing cycling contour, change the value to 1500
+
+```{=html}
+<!-- -->
+```
+-   From Segments, type 100
+
+Your screen should look similar to the screenshot as shown below.
+
+![](images/paste-7D6377A4.png){fig-align="center" width="400"}
+
+-   Click **Run**
+
+You can see that a temporary Buffered layer is created from your Layers panel
+
+![](images/paste-899B1B79.png){fig-align="center" width="400"}
+
+Your screen should look similar to the screenshot as shown below.
+
+![](images/paste-6B139C7F.png){fig-align="center" width="600"}
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, save these selected features as a new layer as TE29\_ walking_buffer into your GeoPackage. Your screen should look similar to the screenshot as show below before clicking **OK**
+:::
+
+![](images/paste-53A9646F.png){fig-align="center" width="400"}
+
+### 6.1.2. Data Cleaning of Buffer
+
+To allow the other building layers to be seen, we can make the buffer translucent like the contours.
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, open **Symbology** tab of TE29\_ walking_buffer by opening its Layer Properties
+:::
+
+-   From **Layer Rendering**, drop **Opacity** to 40%. Your screen should look like the screenshot as shown below before clicking **OK**
+
+    ![](images/paste-559D6CB8.png){width="600"}
+
+```{=html}
+<!-- -->
+```
+-   Click **OK**. Your screen should look similar to the screenshot as shown below.
+
+![](images/paste-7124160A.png){fig-align="center" width="600"}
+
+We can reorder and place TE29\_ walking_buffer below TE29 Bayshore Contours (Walking), TE29_buildings_walking and TE29_pois_walking in the Layers panel to not block the contour and buildings layer for clear visibility.
+
+::: callout-note
+## DIY
+
+Using the steps you had learned earlier, create and save the buffer layers for all **TEL 4 Stage 4 MRT Stations** into your GeoPackage
+:::
+
+## 7. Creating Layouts for Amenities Analysis
+
+To analyze what are the buildings and POIs within the catchment area that are affected by the MRT stations, other than categorizing them into their building types and POI class, we want to get the count of these categories. This way, we can get deeper insights as to who exactly are those that are affected by the MRT, and how many of these people are affected. We will do so by making use of the bar graph plot functionality in QGIS to plot the count of these amenities. We will be guiding you through the creation of TE29 Bayshore Contours (Walking) amenities layout as an example.
+
+### 7.1. Getting Counts for Both Buildings and POIs
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, open DB Manager and select either TE29_buildings_walking or TE29_pois_walking under Project Layers.
+:::
+
+-   Click on the SQL Window icon ![](images/paste-40D7173F.png){width="20" height="18"}.
+
+-   In the query, write these SQL codes depending on which layer you start first:
+
+    -   TE29_buildings_walking
+
+        ![](images/paste-44AEEFBF.png){width="600"}
+
+    -   TE29_pois_walking
+
+        ![](images/paste-BEB63429.png){width="600"}
+
+```{=html}
+<!-- -->
+```
+-   Click **Execute**
+
+After inspecting the query loaded and making sure that it is correct, whereby there is a type and count column, you can proceed to save this query you created. The query loaded should similar to the screenshot as shown below.
+
+![](images/paste-C8E99DE5.png){width="300"}
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, load both counts into new layers and save them as new layers TE29_FINAL_BUILDINGS_WALKING and TE29_FINAL_POIS_WALKING into your GeoPackage
+:::
+
+::: callout-note
+## DIY
+
+Repeat this process for all POI and building layers for both Walking and Cycling contours of **all TEL Stage 4 MRT stations**
+:::
+
+### 7.2. Displaying Data in a New Layout for Analysis
+
+#### 7.2.1. Starting a new QGIS print layout
+
+-   From the menu bar, select **Project** -\> **New Print Layout**.
+
+    ![](images/paste-8BAD1B62.png){width="400"}
+
+```{=html}
+<!-- -->
+```
+-   Provide an appropriate title. An example would be:
+
+    ![](images/paste-27DF3DFE.png){width="400"}
+
+-   Click on **OK** button when it is ready.
+
+A new Print Layout dialog window appears.
+
+#### 7.2.2. Adding a map layer
+
+-   From **Menu bar**, select **Add Item** -\> **Add Map**.
+
+    ![](images/paste-C7C660F6.png){width="600"}
+
+-   Once the **Add Map** mode is active, hold the left mouse button and drag a rectangle where you want to insert the map like shown below.
+
+    ![](images/paste-1B2D6E55.png){width="600"}
+
+-   Release your left finger from the left mouse button.
+
+Your screen should look similar to the screenshot below.
+
+![](images/paste-561497F6.png){width="600"}
+
+Notice that a new item called Map 1 has been added on the **Items** Panel.
+
+#### 7.2.3. Changing the size of the map
+
+Under **Item Properties**, go to **Position and Size** Sub-Panel.
+
+-   Change the **Width** to 170
+
+-   Change the **Height** to 129
+
+\
+
+The sub-panel should look like this.
+
+![](images/paste-DE40BF02.png){width="600"}\
+
+#### **7.2.4. Changing the main properties** 
+
+To prevent the view on the layout changes when we turn on/off some layers or change their styles, it is important for us to lock the layers and styles.
+
+-   Scroll the **Main Properties** Panel down until **Layers** appears.
+
+-   Click on the check box in front of **Lock layers** and **Lock styles for layers**.
+
+#### ![](images/paste-623FDA9F.png){width="1000"}7.2.5. Adding Grid Reference
+
+Next, we will add grid reference for the map.
+
+-   From **Items Properties** Panel, scroll down until **Grids** Sub-Panel appears.
+
+-   Click on  ![](images/paste-1283B18D.png){width="100" height="31"}
+
+A new grid frame called Grid 1 is added as shown below.
+
+\
+
+![](images/paste-C91C95DB.png){width="1000"}\
+
+Next, we are going to add a 1000m-by-1000m grid on the layout.
+
+-   Click on **the Modify** Grid button.
+
+-   Scroll down until **Appearance Sub-Panel** appears.
+
+-   For **X**, enter 1000.
+
+-   For **Y**, enter 1000.
+
+![](images/paste-92127D7A.png){width="1000"}\
+
+Next, we will change the line color to gray.
+
+-   Click on the drop-down list behind Line style.
+
+![](images/paste-5B9F84D8.png){width="1000"} 
+
+The color panel appears.
+
+![](images/paste-3FD3FF5B.png) 
+
+-   Choose one of the light gray colors from the panel.
+
+\
+
+Notice that a light gray grid frame is added to the layout.
+
+\
+
+![](images/paste-A105CB4F.png){width="600"} 
+
+Next, we are going to turn on the coordinates.
+
+-   Scroll down the **Map Grid Properties** paneluntil **Draw Coordinates** sub-panel appears.
+
+-   Click on the checkbox in front of **Draw Coordinates**.\
+
+Your screen should look similar to the screenshot below.
+
+![](images/paste-4BEA8F06.png)\
+
+By default, the grid reference appears on the four axis of the map layout. We are going to turn off the grid reference on the right and bottom of the layout.
+
+-   From the **Right** sub-panel, click on the drop-down list and select Disable.
+
+-   From the **Top** sub-panel, click on the drop-down list and select Disable.
+
+\
+
+The map layout should look similar to the screenshot below.
+
+![](images/paste-D9447E39.png){width="1000"}\
+
+#### **7.2.6. Adding Bar Graph for Buildings**
+
+This will allow us to visualize the count of the building type easily for our analysis.
+
+-   Click on **Add Item**, then click on **Add Plot Item**.
+
+-   Click and drag your mouse over the project layer again to create the plot item.
+
+-   On the right now, under click on the plot type that is given by default, then click **Setup Selected Plot**.
+
+-   Under **Plot Properties**, make a few changes:
+
+    -   Choose Bar Plot for **Plot type**
+
+    -   For **Layer**, select TE29_FINAL_BUILDINGS_WALKING
+
+    -   From **Linked map**, select Map 1
+
+    -   For **X field**, choose type 
+
+    -   For **Y field**, choose count
+
+Your screen should look similar to the screenshot as shown below before you click **Update Plot**:
+
+![](images/paste-902F23E7.png){fig-align="center" width="200"}
+
+-   Now, the bar graph will appear in your projection layer. Your screen should look similar to the screenshot as shown below.
+
+![](images/paste-88079E30.png){fig-align="center" width="600"}
+
+#### **7.2.7. Adding Bar Graph for POIs**
+
+DIY: Using the steps you had learned earlier, create a bar chart for TE29_FINAL_POIS_WALKING by following the steps in section 1.8.2.6.
+
+However, this time, there are a few differences to make to Plot Properties
+
+-   Under **Plot Properties**, 
+
+    -   From **Layer**, select TE29_FINAL_POIS_WALKING
+
+    -   For **X field**, choose fclass
+
+Now your projection layer should look similar to the screenshot as shown below.
+
+![](images/paste-FEDAE658.png)\
+
+#### **7.2.8. Adding Map Legend**
+
+Now, we are going to add map legend onto the layout.
+
+-   From the **Menu Bar**, select **Add Item** -\> **Add Legend**.
+
+![](images/paste-CE02F8D8.png)
+
+The map legend will be added onto the layout.
+
+Since this layout should focus on the buildings and POIs in the catchment area alone, we are going to remove other unrelated items from the legend.
+
+-   Heading back to your print layout window, from **Legend Items Sub-Panel**, click on the checkbox in front of **Only Show Items Inside Linked Map**.
+
+![](images/paste-4D95A2E0.png){width="400"}
+
+Your screen should look similar to the screenshot as shown below.
+
+\
+
+![](images/paste-D77DBA87.png)\
+
+#### **7.2.9. Adding Title**
+
+-   From the **Menu Bar**, select **Add Item** -\> **Add Label**.
+
+![](images/paste-B47B06F6.png){fig-align="center" width="600"}
+
+-   At the **Main Properties**, type the following text.
+
+![](images/paste-2A40E6C6.png){fig-align="center" width="600"}
+
+Use an appropriate text based on the catchment area you are doing.
+
+Next, we are going to change it to a bigger font size.
+
+-   From the **Appearance** sub-panel, click on the drop-down list behind **Font**.
+
+\
+
+The font size window appears.
+
+-   Change the **font size** to 20.
+
+![](images/paste-5A32CFE0.png){width="400"}\
+
+Next, change the title horizontal alignment to centre and vertical alignment to middle.
+
+-   For **Horizontal alignment**, click on the radio button in front of Center.
+
+-   For **Vertical alignment**, click on the radio button in front of Middle.
+
+Your layout screen should look similar to the screenshot as shown below.
+
+![](images/paste-D206F065.png)\
+
+#### **7.2.10. Adding North Arrow**
+
+-   From the **Menu Bar**, select **Add Item** -\> **Add North Arrow**
+
+![](images/paste-AD917A92.png){width="600"}\
+\
+
+-   Scroll to the **Position and Size** sub-panel
+
+    -   Change the **Width** to 36
+
+    -   Change the **Height** to 30
+
+![](images/paste-4FD442AC.png){width="600"}\
+
+Your layout should look similar to the screenshot as shown below.
+
+![](images/paste-96DCA740.png)\
+
+#### 7.2.11. Adding Scale
+
+-   From the menu bar, select **Add Item** -\> **Add Scale Bar**
+
+![](images/paste-6C3EEFA9.png)\
+
+Now let us change the scale distance
+
+-   Under **Segments** sub-panel, change the **Fixed Width** to 1000 units.
+
+![](images/paste-9D82AC39.png){width="600"}\
+
+Your layout should look similar to the screenshot as shown below.
+
+#### ![](images/paste-92ECBB5B.png){width="600"}7.2.12. Saving print layout
+
+In QGIS, the composed map layout can be exported into three formats, namely: Image, SVG and PDF.
+
+-   To export, click on **File** from the menu bar and select one under the format list below.
+
+![](images/paste-C763C14A.png)
+
+::: callout-note
+## DIY
+
+Using the steps you had learned in previous hands-on exercise, create Layouts for the rest of the Walking and Cycling Contours for all of **TEL Stage 4 MRT Stations** for Amenities Analysis
+:::
+
+\
+
+## 8. Creating Choropleth Maps for Catchment Population for Population Analysis
+
+### 8.1. Creating Common Attribute
+
+Before you merge 2020POP and MP19_Subzone together, you need to have a common attribute. By opening **Attribute Table** of 2020POP, you will see the following columns
+
+![](images/paste-7F94A258.png){width="600"}
+
+By opening **Attribute Table** of MP19_Subzone, you will see the following columns as well
+
+![](images/paste-D01084AE.png){width="800"}
+
+However, you see that it is quite messy, so you need to filter out columns that do not provide much information to you.
+
+-   Click on **Organize Columns** ![](images/paste-D6DCF1DD.png) and uncheck these following columns before clicking **OK**
+
+::: {layout-ncol="2"}
+![](images/paste-987F1BFB.png)
+
+![](images/paste-AE570F89.png){width="334"}
+:::
+
+You will see that your **Attribute Table** for MP19_Subzone is so much cleaner now
+
+![](images/paste-CE694802.png)
+
+If you look at both **Attribute Tables** carefully, you will realize that the column \'SZ\' in 2020POP is in lower case of column \'SUBZONE_N\' in MP19_Subzone. Therefore, we need to use subzone names to merge both 2020POP and MP19_Subzone together.
+
+-   Go to 2020POP\'s **Attribute Table** and select **Open Field Calculator**![](images/paste-E60BBB07.png){width="20" height="22"} at the top. A pop-up window will appear as shown below
+
+    ![](images/paste-2B058F90.png){width="800"}
+
+-   As we aim to capitalize the string data in \'SZ\' column, fill in the **Output Field Name** and the **Output Field Type** as shown below.
+
+    ![](images/paste-0D5C1001.png){width="1000"}
+
+-   Type the following code as shown below
+
+![](images/paste-B39D124F.png)
+
+The preview will show you what the new string will be in the new column \'SUBZONE\'
+
+-   Click **OK** and you will see that a new column \'SUBZONE\' is added to your 2020POP\'s **Attribute Table**
+
+![](images/paste-E5D6DE1C.png)
+
+However, the table will be in edit format, so you need to save the changes that you had made.
+
+-   Click on ![](images/paste-A2D71350.png){width="20"} (top left of your screen). A pop-up will appear as shown below and click **Save**
+
+![](images/paste-F1C3C74F.png){width="400"}
+
+### 8.2. Performing Relational Join Between MP19_Subzone and 2020POP layers
+
+Now you are ready to perform relational join between the MP19_Subzone layer and the 2020POP layer. To join the **Attribute Table** of a geospatial data and an aspatial **Attribute Table**, we need to identify the common key or popularly known as **Unique Identifier** between these two data sets with we had prepared earlier. In this case, it is the Subzone Names (\'SUBZONE\' and \'SUBZONE_N\')
+
+![](images/paste-B2539C7F.png)
+
+You are ready to join both tables now.
+
+-   From the **Layers** panel, double-click on MP19_Subzone layer.
+
+The **Layer Properties** dialog window appears.
+
+-   From the **Tab** menu, click on the **Joins** tab.
+
+Your screen should look similar to the screenshot below.
+
+![](images/paste-74C979A5.png)
+
+-   Click on **Add** **New Join** icon ![](images/paste-F805EA95.png){width="20"}
+
+The **Add Vector Join** dialog window appears.
+
+-   For **Join Layer**, select 2020POP from the drop-down list.
+
+-   For **Join field**, select SUBZONE from the drop-down list.
+
+-   For **Target field**, select SUBZONE_N from the drop-down list.
+
+    ![](images/paste-777321BB.png)
+
+-   Click on **OK** button to perform the relational join.
+
+You will return to the **Layer Properties** dialog window.
+
+Notice that a relational joined between 2020POP **Attribute Table** and the **Attribute Table** of MP19_Subzone has been created.
+
+-   At the **Layer Properties** dialog window, click on the **OK** button.
+
+Strange, it seems that nothing had happened!
+
+-   At the **Layers** panel, right click on MP19_Subzone layer and select open **Attribute Table** from the context menu.
+
+You will notice that the table now contains additional fields from 2020POP attribute layer.
+
+![](images/paste-8E682C43.png)
+
+Remember that this joint is temporary. It is not part of the **Attribute Table** of MP19_Subzone layer but is just linked dynamically to the 2020POP layer. If you want to permanently join the attributes, you must save it as a new layer.
+
+-   To double check if both attribute tables are joined properly, click on ![](images/paste-11FD368E.png){width="20"}
+
+If the rows are not joined properly, values belonging to 2020POP in **Attribute Table** of MP19_Subzone will reflect as NULL. Therefore, we will have to find NULL values by using the following expression as shown below
+
+-   Type the following code as shown in the screenshot below
+
+    ![](images/paste-20848659.png){width="1000"}
+
+-   Click on **Select Features** 
+
+You can tell that from ![](images/paste-F786FF5C.png){width="400"} that 0 row is selected which means that both attributes\' tables are joined properly
+
+### 8.3. Creating Choropleth Map for Subzone Population
+
+In this section, you will learn how to create a choropleth map showing the distribution of 2020 population in 2020POP by MP19_Subzone.
+
+You are ready to prepare the choropleth now.
+
+-   From the **Layers** panel, double-click on **MP19_Subzone** layer.
+
+The **Layer Properties** dialog window appears.
+
+-   Click on **Symbology** tab.
+
+-   At **Symbol** selection drop-down list, select Graduated from the drop-down list.
+
+-   For **Value**, select 2020POP_total_pop from the drop-down list.
+
+-   For **Classes**, keep it as 5.
+
+-   For **Color Ramp**, choose Blues or any colour of your choice from the drop-down list.
+
+-   For **Mode**, choose Natural Breaks (Jenks) from the drop-down list. 
+
+-   Click on **Classify** button.
+
+Your screen should look similar to the figure below.
+
+![](images/paste-06FD239E.png)
+
+You can review the statistical distribution of the classification in histogram.
+
+-   Click on the **Histogram** tab.
+
+-   Click on **Load values** button.
+
+Your screen should look similar to the figure below.
+
+![](images/paste-133A6701.png)
+
+This feature is very useful for casual data analysts because the histogram helps us to understand the differences of each classification method.
+
+-   Click on **Classes** tab.
+
+-   Click on **Apply** button.
+
+-   Click on the **OK** button.
+
+Your screen should look similar to the figure below.
+
+![](images/paste-95AB4D77.png)
+
+### 8.4. Calculating Catchment Population
+
+We will be guiding you through the calculation of Catchment Population for TE27 Marine Terrace Contours (Walking) as an example.
+
+#### 8.4.1. Creating a \'Subzone_Area\' column for MP19_Subzone
+
+To calculate the Catchment Population, we need to find out the ratio of Subzone Catchment Area to its Subzone Area for all subzones that falls within each contour line first. 
+
+DIY: Using the steps that you learned earlier, open **Attribute Table** of MP19_Subzone and click on **Open Field Calculator**. Your screen should look similar to the screenshot as shown below
+
+![](images/paste-7DC396DF.png)
+
+We want to create a new column \'Subzone_Area\' for each subzone area.
+
+-   Type the following code as shown in the screenshot below before clicking **OK**
+
+![](images/paste-EC3F8EA5.png)
+
+You will see that a new column \'Subzone_Area\' is now created in the **Attribute Table** of MP19_Subzone
+
+![](images/paste-85FD8C07.png)
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, save the changes made and filter out unnecessary columns in the **Attribute Table** of MP19_Subzone. Your screen should look similar to the screenshot as shown below.
+:::
+
+![](images/paste-462F9B29.png)
+
+#### 8.4.2. Extracting Polygons
+
+-   From **Vector** on the Menu, hover your cursor over **Geoprocessing Tools** and click on **Union**
+
+    ![](images/paste-04177CFB.png){width="600"}
+
+-   Your screen should look similar to the screenshot as shown below
+
+    ![](images/paste-124C0E79.png)
+
+-   Select the correct layers for your **Input and Overlay layers** as shown in the screenshot below
+
+![](images/paste-4F980C9F.png)
+
+::: callout-note
+## DIY
+
+With the steps that you learnt earlier, for better performance, select Do Not Filter (Better Performance) from under **Invalid feature filtering** for both input and overlap layers before clicking **Run**. Your screen should look like the screenshot as shown below. 
+:::
+
+You can see that a temporary layer Union is created in your layer menu.
+
+![](images/paste-6B33C082.png)
+
+Let\'s analyze the **Attribute Table** of this Temporary layer Union. 
+
+DIY: With the steps that you learnt earlier, open the **Attribute Table** of Union. Your screen should look similar to the screenshot as shown below
+
+![](images/paste-44E6E373.png)
+
+You can see that it is very messy, thus filtering of column is required.
+
+::: callout-note
+## DIY
+
+With the steps that you learnt earlier, filter out unnecessary columns and leave those columns checked as shown in the screenshot below. Your screen should look similar to the screenshot as shown below.
+:::
+
+![](images/paste-9B9B982B.png)
+
+Since you only need the rows for those in the catchment polygon layers, you need to do further data filtering.
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, click on **Select by Expression** and type in the following code as shown below before clicking **Select Features**
+:::
+
+![](images/paste-2AF751A8.png)
+
+You can see from ![](images/paste-AEF49DCA.png){width="300" height="24"} that 25 rows are selected based on the condition that we had set. Now you want to save these 25 rows as TE27 Population (Walking) into your GeoPackage. However, you need to ensure that these 25 rows have a unique fid first.
+
+![](images/paste-7A40B316.png)
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, manually change all the fid of the selected rows starting from 1 to 25 and save it. Your screen should look similar to the screenshot as shown below.
+:::
+
+![](images/paste-6BE69CE9.png)
+
+Once that is done, you can now save the selected feature into your GeoPackage now
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, save the selected features as a layer as TE27 Population (Walking) into your GeoPackage
+:::
+
+![](images/paste-2D15E550.png)
+
+You can see that a permanent layer called TE27 Population (Walking) is now created in your **Layer** menu as shown below.
+
+![](images/paste-FE077ABB.png)
+
+#### **8.4.3. Creating a \'Catchment\_ Subzone_Area\' Column**
+
+To calculate the Catchment Subzone Area, we need to open the **Attribute Table** for TE27 Population (Walking). 
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, open the **Attribute Table** for TE27 Population (Walking). Your screen should look similar to the screenshot as shown below.
+:::
+
+![](images/paste-8C7CCD81.png)
+
+You can still see that the **Attribute Table** contains a lot of unnecessary columns, thus we need to conduct filtering 
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, filter out unnecessary columns and leave those columns as shown below. Your screen should look similar to the screenshot as shown below
+:::
+
+![](images/paste-68077749.png)
+
+Now we need to find out the area of the Catchment Subzone Area using **Open Field Calculator**
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, create a new column for Catchment_Area using the following code as shown in the screenshot below before clicking **OK**
+:::
+
+![](images/paste-2008C453.png)
+
+Your **Attribute Table** should reflect the additional \'Catchment_Area\' created as shown in the screenshot below. 
+
+![](images/paste-A3C6A690.png)
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, save the changes made to the **Attribute Table** of TE27 Population (Walking)
+:::
+
+#### **8.4.4. Creating a \'Ratio\' Column for TE27 Population (Walking)**
+
+Assuming that Population is equally distributed across the subzone area, you need to calculate the percentage of Catchment Area to respective Subzone Area. Since now you have both Catchment Subzone Area and Subzone Area, this is now possible.
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, create a new column \'Ratio\' using the **Open Field Calculator** in the **Attribute Table** and type in the following code as shown below before clicking **OK**
+:::
+
+![](images/paste-770D8891.png)
+
+Your **Attribute Table** should reflect the additional \'Ratio\' created as shown in the screenshot below. 
+
+![](images/paste-7E096E7B.png)
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, save the changes made to the **Attribute Table** of TE27 Population (Walking)
+:::
+
+#### **8.4.5. Creating a \'Catchment_Population\' Column**
+
+Since now we have the ratio, we will calculate Catchment Population by multiplying the Subzone Population and respective ratio per subzone and contour. The assumption made above still holds.
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, create a new column \'Catchment_Population\' using the **Open Field Calculator** in the **Attribute Table** and type in the following code as shown below before clicking **OK**
+:::
+
+![](images/paste-06FE1910.png)
+
+Your **Attribute Table** should reflect the additional \'Catchment_Population\' created as shown in the screenshot below.
+
+![](images/paste-5BCFBBB5.png)\
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, save the changes made to the **Attribute Table** of TE27 Population (Walking)
+:::
+
+### 8.5. Creating a Choropleth Map for Catchment Population
+
+To better present the data, it would be better to represent the Catchment Population in the form of a Choropleth Map with OSM and MP19_Subzone Layers
+
+#### **8.5.1. Creating a Choropleth Map for Catchment Population**
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, open the **Layer Properties** for TE27 Population (Walking) and click on the **Symbology** tab.
+:::
+
+Our value for Catchment Population Choropleth Map would be \'Catchment_Population\'. But wait! You can see from the screenshot below that this column is not present anywhere in the list of values as shown in the screenshot below.
+
+![](images/paste-3A232904.png)
+
+Is there any way to overcome this? Of course!
+
+-   Click on the ![](images/paste-A4E77577.png){width="20" height="22"} on the right side of **Symbol**. A pop-up should appear as shown in the screenshot below.
+
+    ![](images/paste-18571AD6.png)
+
+```{=html}
+<!-- -->
+```
+-   Type in the following code as shown below before clicking **OK**
+
+    ![](images/paste-CC7A48EE.png)
+
+Now you can see that \'Catchment_Population\' is reflected as the value as shown in the screenshot below.
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, generate a **Choropleth Map** for Catchment Population. Your **Symbology** screen should look similar to the screenshot as shown below before clicking **OK**
+:::
+
+![](images/paste-C698B335.png){fig-align="center"}
+
+Now, you can see that a **Choropleth Map** is generated based on TE27 Contours (Walking)
+
+![](images/paste-A4191F7B.png){fig-align="center"}
+
+#### **8.5.1. Making a Transparent Fill for MP19_Subzone Layer**
+
+However, this isn\'t visibly pleasing. If we can show the division of MP19_Subzone and the OSM layer, it can provide us with more information for better analysis. 
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, open the **Symbology** tab for MP19_Subzone layer.
+:::
+
+![](images/paste-124E55EF.png){fig-align="center"}
+
+-   Click on **Simple Fill** under **Fill**. Your screen should look similar to the screenshot as shown below.
+
+    ![](images/paste-D0D5F7DC.png)
+
+-   Select Transparent Fill under **Fill** color
+
+    ![](images/paste-C6D3EAA1.png)
+
+-   Increase **Stroke Width** to 1 before clicking **OK**
+
+    ![](images/paste-B8EF7D6F.png)
+
+Now you can see from your main screen, 
+
+1.  Each Subzone is divided distinctly 
+
+2.  Each part of the Contour that falls in their respective Subzone
+
+3.  Nearby amenities (Transport, POIs and Buildings) within the Contours
+
+![](images/paste-0C8E5AFC.png)
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, generate **Choropleth Maps** for both Walking and Cycling Contours for the rest of the **TEL Stage 4 MRT Stations**.
+:::
+
+## 9. Creating Layouts for Population Analysis
+
+### 9.1. Displaying Data in a New Layout for Analysis
+
+Try to create a layout for TE29 Bayshore Contours (Walking) as an example.
+
+#### 9.1.1. Starting a new QGIS print layout
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, start a new print layout and title it as TE29 Population (Walking).
+:::
+
+#### 9.1.2. Adding a map layer
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, add a map to TE29 Population (Walking) Layout.
+:::
+
+#### 9.1.3. Adding Grid Reference
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, create a grid reference to TE29 Population (Walking)  Layout.
+:::
+
+#### 9.1.4. Adding Map Legend
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, add a map legend to show the existing features of TE29 Population (Walking)  Layout.
+:::
+
+#### 9.1.5. Adding Title
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, add a title and name it TE29 Catchment Population Distribution (Walking) to show the existing features of TE29 Population (Walking) Layout.
+:::
+
+#### 9.1.6. Adding North Arrow
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, add a north arrow to TE29 Population (Walking) Layout.
+:::
+
+#### 9.1.7. Adding Scale
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, add a scale to TE29 Population (Walking) Layout.
+:::
+
+#### **9.1.8. Saving print layout**
+
+::: callout-note
+## DIY
+
+Using the steps that you learnt earlier, save TE29 Population (Walking) Layout to your laptop. Your layout should look similar to the screenshot as shown below.
+:::
+
+![](images/paste-D2D63C26.png)\
+
+
+\
+
+
+\
+
+
+\
+

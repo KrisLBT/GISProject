@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Group 11 - Methodology</title>
+<title>Group 11 - Step by Step Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,13 +83,13 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./intro.html">Project Scope</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./methodology.html" aria-current="page">Methodology</a>
+    <a class="nav-link active" href="./methodology.html" aria-current="page">Step by Step Guide</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./data.html">Data Used</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./results.html">Results &amp; Discussion</a>
+    <a class="nav-link" href="./results.html">Report</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -133,6 +133,33 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#shortest-network-distance-method" id="toc-shortest-network-distance-method" class="nav-link" data-scroll-target="#shortest-network-distance-method">4.1 Shortest network distance method</a></li>
   </ul></li>
+  <li><a href="#extracting-buildings-within-catchment-areas-for-amenities-analysis-for-te29-bayshore" id="toc-extracting-buildings-within-catchment-areas-for-amenities-analysis-for-te29-bayshore" class="nav-link" data-scroll-target="#extracting-buildings-within-catchment-areas-for-amenities-analysis-for-te29-bayshore">5. Extracting Buildings within Catchment Areas for Amenities Analysis for TE29 Bayshore</a>
+  <ul class="collapse">
+  <li><a href="#extracting-buildings-within-catchment-areas-for-amenities-analysis-for-te29-bayshore-1" id="toc-extracting-buildings-within-catchment-areas-for-amenities-analysis-for-te29-bayshore-1" class="nav-link" data-scroll-target="#extracting-buildings-within-catchment-areas-for-amenities-analysis-for-te29-bayshore-1">5.1. Extracting Buildings within Catchment Areas for Amenities Analysis for TE29 Bayshore</a></li>
+  <li><a href="#extracting-points-of-interests-within-catchment-areas-for-amenities-analysis-for-te29-bayshore" id="toc-extracting-points-of-interests-within-catchment-areas-for-amenities-analysis-for-te29-bayshore" class="nav-link" data-scroll-target="#extracting-points-of-interests-within-catchment-areas-for-amenities-analysis-for-te29-bayshore">5.2 Extracting Points of Interests within Catchment Areas for Amenities Analysis for TE29 Bayshore</a></li>
+  </ul></li>
+  <li><a href="#creating-buffers-for-catchment-areas-for-amenities-analysis" id="toc-creating-buffers-for-catchment-areas-for-amenities-analysis" class="nav-link" data-scroll-target="#creating-buffers-for-catchment-areas-for-amenities-analysis">6. Creating Buffers for Catchment Areas for Amenities Analysis</a>
+  <ul class="collapse">
+  <li><a href="#generating-buffer" id="toc-generating-buffer" class="nav-link" data-scroll-target="#generating-buffer">6.1. Generating Buffer</a></li>
+  <li><a href="#data-cleaning-of-buffer" id="toc-data-cleaning-of-buffer" class="nav-link" data-scroll-target="#data-cleaning-of-buffer">6.1.2. Data Cleaning of Buffer</a></li>
+  </ul></li>
+  <li><a href="#creating-layouts-for-amenities-analysis" id="toc-creating-layouts-for-amenities-analysis" class="nav-link" data-scroll-target="#creating-layouts-for-amenities-analysis">7. Creating Layouts for Amenities Analysis</a>
+  <ul class="collapse">
+  <li><a href="#getting-counts-for-both-buildings-and-pois" id="toc-getting-counts-for-both-buildings-and-pois" class="nav-link" data-scroll-target="#getting-counts-for-both-buildings-and-pois">7.1. Getting Counts for Both Buildings and POIs</a></li>
+  <li><a href="#displaying-data-in-a-new-layout-for-analysis" id="toc-displaying-data-in-a-new-layout-for-analysis" class="nav-link" data-scroll-target="#displaying-data-in-a-new-layout-for-analysis">7.2. Displaying Data in a New Layout for Analysis</a></li>
+  </ul></li>
+  <li><a href="#creating-choropleth-maps-for-catchment-population-for-population-analysis" id="toc-creating-choropleth-maps-for-catchment-population-for-population-analysis" class="nav-link" data-scroll-target="#creating-choropleth-maps-for-catchment-population-for-population-analysis">8. Creating Choropleth Maps for Catchment Population for Population Analysis</a>
+  <ul class="collapse">
+  <li><a href="#creating-common-attribute" id="toc-creating-common-attribute" class="nav-link" data-scroll-target="#creating-common-attribute">8.1. Creating Common Attribute</a></li>
+  <li><a href="#performing-relational-join-between-mp19_subzone-and-2020pop-layers" id="toc-performing-relational-join-between-mp19_subzone-and-2020pop-layers" class="nav-link" data-scroll-target="#performing-relational-join-between-mp19_subzone-and-2020pop-layers">8.2. Performing Relational Join Between MP19_Subzone and 2020POP layers</a></li>
+  <li><a href="#creating-choropleth-map-for-subzone-population" id="toc-creating-choropleth-map-for-subzone-population" class="nav-link" data-scroll-target="#creating-choropleth-map-for-subzone-population">8.3. Creating Choropleth Map for Subzone Population</a></li>
+  <li><a href="#calculating-catchment-population" id="toc-calculating-catchment-population" class="nav-link" data-scroll-target="#calculating-catchment-population">8.4. Calculating Catchment Population</a></li>
+  <li><a href="#creating-a-choropleth-map-for-catchment-population" id="toc-creating-a-choropleth-map-for-catchment-population" class="nav-link" data-scroll-target="#creating-a-choropleth-map-for-catchment-population">8.5. Creating a Choropleth Map for Catchment Population</a></li>
+  </ul></li>
+  <li><a href="#creating-layouts-for-population-analysis" id="toc-creating-layouts-for-population-analysis" class="nav-link" data-scroll-target="#creating-layouts-for-population-analysis">9. Creating Layouts for Population Analysis</a>
+  <ul class="collapse">
+  <li><a href="#displaying-data-in-a-new-layout-for-analysis-1" id="toc-displaying-data-in-a-new-layout-for-analysis-1" class="nav-link" data-scroll-target="#displaying-data-in-a-new-layout-for-analysis-1">9.1. Displaying Data in a New Layout for Analysis</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -141,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Methodology</h1>
+<h1 class="title">Step by Step Guide</h1>
 </div>
 
 
@@ -155,7 +182,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>For our analysis, we used QNEAT3 to find the ISO-area from the various station exits within distances of 1000m and 1500m through the road network. We subsequently used the buffer region using the Euclidean distance of the same values. We then also found the potential population served by the stations. Assuming the population is spread out equally, we used ratio of the subzone area covered by the ISO-area to the total subzone area as a proxy for population percentage served by train station.</p>
 <p>The following is a step-by-step guide in using QGIS to complete our task.</p>
 <hr>
 <section id="installing-qneat3-plugin." class="level2">
@@ -1072,7 +1098,7 @@ DIY
 <h4 class="anchored" data-anchor-id="creating-walking-and-cycling-network-service-area-for-the-rest-of-the-tel-stage-4-mrt-stations"><strong>4.1.5. Creating Walking and Cycling Network Service Area for the Rest of the TEL Stage 4 MRT Stations</strong></h4>
 <table class="table">
 <colgroup>
-<col style="width: 26%">
+<col style="width: 27%">
 <col style="width: 40%">
 <col style="width: 31%">
 </colgroup>
@@ -1156,6 +1182,1265 @@ DIY
 </tr>
 </tbody>
 </table>
+</section>
+</section>
+</section>
+<section id="extracting-buildings-within-catchment-areas-for-amenities-analysis-for-te29-bayshore" class="level2">
+<h2 class="anchored" data-anchor-id="extracting-buildings-within-catchment-areas-for-amenities-analysis-for-te29-bayshore">5. Extracting Buildings within Catchment Areas for Amenities Analysis for TE29 Bayshore</h2>
+<section id="extracting-buildings-within-catchment-areas-for-amenities-analysis-for-te29-bayshore-1" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-buildings-within-catchment-areas-for-amenities-analysis-for-te29-bayshore-1">5.1. Extracting Buildings within Catchment Areas for Amenities Analysis for TE29 Bayshore</h3>
+<p>To identify the buildings that we want, we must first open the Iso-Area layer. This way, we can see what are the buildings that fall within the catchment area that requires us to recategorize. We will be guiding you through the extraction of amenities that fall within TE29 Bayshore Contours (Walking) as an example.</p>
+<section id="classifying-buildings" class="level4">
+<h4 class="anchored" data-anchor-id="classifying-buildings">5.1.1. Classifying Buildings</h4>
+<p>In the Layers panel, ensure that TE29 Bayshore Contours (Walking) layer is on</p>
+<ul>
+<li><p>Open the <strong>Layer</strong> <strong>Properties</strong> ofOSM_Building.</p></li>
+<li><p>Click on <strong>Symbology</strong> tab</p></li>
+<li><p>At the top of the <strong>Symbology</strong> dialog, change <strong>Type</strong> to Categorized.</p>
+<p><img src="images/paste-E9B8D834.png" class="img-fluid" alt="For Value, select Type" width="600"></p></li>
+<li><p>For <strong>Value</strong>, select Type</p>
+<p><img src="images/paste-7D72719B.png" class="img-fluid" width="600"></p></li>
+<li><p>Click <strong>Classify</strong>. Your screen should look similar to the screenshot as shown below.</p>
+<p><img src="images/paste-B05BC2E6.png" class="img-fluid" width="400"></p></li>
+</ul>
+<p>Click <strong>OK</strong> and your screen should look similar to the screenshot as shown below</p>
+</section>
+<section id="section-1" class="level4">
+<h4 class="anchored" data-anchor-id="section-1"><img src="images/paste-F9E279D8.png" class="img-fluid" width="600"></h4>
+<p>5.1.2. Identifying Buildings that are <em>NULL</em> within the Catchment Area</p>
+<p>Upon closer inspection on <strong>Attribute Table</strong> for the OSM_Buildings layer, we find that many have null Type values. Since the Type is the property that will be able to differentiate the nature of the buildings, we will need to fix this. Therefore, we need to perform recategorizing of the building types.</p>
+<ul>
+<li><p>In the Layers panel, right click on OSM_Buildings and open its <strong>Attributes Table</strong>.&nbsp;</p></li>
+<li><p>Use <strong>Select Features by Area</strong> or <strong>Select Feature(s)</strong> <img src="images/paste-98BACBBE.png" width="30" height="20"> and click on one of the buildings in red in the screenshot as shown below. (Your buildings may have a different color combination)</p>
+<p><img src="images/paste-2B27FB97.png" class="img-fluid" width="600"></p></li>
+</ul>
+<!-- -->
+<ul>
+<li>We see that the <strong>Type</strong> is null for these buildings.</li>
+</ul>
+<p><img src="images/paste-6D102738.png" class="img-fluid" width="600"></p>
+<p>Now, we will need to use external software, Google Maps or Maps, to identify our building type with existing visual data and change it in our <strong>Attributes Table</strong> accordingly.</p>
+<ul>
+<li>Click on the <strong>Toggle Editing Mode</strong> icon <img src="images/paste-824F52F1.png" class="img-fluid" width="20"> in the <strong>Attributes Table</strong> to allow for editing function.&nbsp;</li>
+</ul>
+</section>
+<section id="data-cleaning-for-null-buildings-within-the-catchment-area" class="level4">
+<h4 class="anchored" data-anchor-id="data-cleaning-for-null-buildings-within-the-catchment-area"><strong>5.1.3 Data Cleaning for NULL Buildings within the Catchment Area</strong></h4>
+<p>Below shows a table of how and why we recategorize NULL buildings into the correct building types that we use in our analysis.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><img src="images/Table%20GIS-01.png" class="img-fluid"> <img src="images/paste-D91A6FBA.png" class="img-fluid" width="598"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><img src="images/paste-09EAEF93.png" class="img-fluid" width="598"></p>
+</div>
+</div>
+</div>
+<ul>
+<li><p>After editing, click on <strong>Toggle Editing Mode</strong> icon. A pop-up window will appear as shown below</p>
+<p><img src="images/paste-3E8C865E.png" class="img-fluid" width="200"></p></li>
+</ul>
+<!-- -->
+<ul>
+<li>Click on <strong>Save</strong> when the prompt appears.</li>
+</ul>
+</section>
+<section id="extracting-all-buildings-in-catchment-area" class="level4">
+<h4 class="anchored" data-anchor-id="extracting-all-buildings-in-catchment-area"><strong>5.1.4 Extracting all Buildings in Catchment Area</strong></h4>
+<p>Since we want to analyze the types of buildings that fall under TE29 Bayshore Contours (Walking), we need to extract them out.&nbsp;</p>
+<ul>
+<li>In the <strong>Attributes Toolbar</strong>, click on <strong>Select by Location</strong> <img src="images/paste-7FEB1CFB.png" class="img-fluid" width="20"></li>
+</ul>
+<p>The <strong>Select by Location</strong> dialog windows appear.</p>
+<ul>
+<li><p>From <strong>Select features from</strong>, select OSM_Buildings&nbsp;</p></li>
+<li><p>Tick the checkbox in front of <strong>Intersect</strong> under the <strong>Where he Features</strong>&nbsp;</p></li>
+<li><p>From <strong>By Comparing to the Features from</strong>, select TE29 Bayshore Contours (Walking). Your screen should look similar to the screenshot below.</p>
+<p><img src="images/paste-217AB6DB.png" class="img-fluid" width="600"></p></li>
+</ul>
+<!-- -->
+<ul>
+<li>Click <strong>Run</strong>. Your screen should look similar to the screenshot as shown below.</li>
+</ul>
+<p><img src="images/paste-D340669C.png" class="img-fluid"><br>
+</p>
+<p>However, we see that some buildings within the catchment area are not selected because the contour does not cover those parts. However, all buildings directly beside would be reachable within the Iso-Area of 1 km for walking and 1.5 km for cycling. Hence, we need to make sure that these buildings are also selected.</p>
+<ul>
+<li><p>In the <strong>Attributes Toolbar</strong>, click on <strong>Select Feature(s)</strong></p>
+<p><img src="images/paste-D509A22F.png" class="img-fluid" width="600"></p></li>
+<li><p>In your keyboard, press on the <strong>Shift</strong> key as you click on the additional buildings that are directly beside the Catchment Areas on your QGIS.</p></li>
+</ul>
+<p>Now, we need to save this to our GeoPackage.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, save these selected features as a new layer as TE29_ buildings_walking into your GeoPackage. Your screen should look similar to the screenshot as show below before clicking <strong>OK</strong></p>
+</div>
+</div>
+<p><br>
+</p>
+<p><img src="images/paste-3693B4B0.png" class="img-fluid" width="400"></p>
+<ul>
+<li>From your Layers Menu, you can see a new layer TE29_ buildings_walking is created</li>
+</ul>
+<p><img src="images/paste-DF8421B1.png" width="400" height="36">However, since the buildings are now uncategorized, you must categorize them again. Since the null building types are updated in TE29_ buildings_walking, no further data cleaning is required, and categorizing is enough.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, categorize TE29_ buildings_walking based on their fclass under <strong>Symbology</strong> in <strong>Layer</strong> <strong>Properties</strong></p>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, repeat all the steps in section 1.6 for all walking and building contours for all <strong>TEL 4 Stage 4 MRT Stations</strong> into your GeoPackage</p>
+</div>
+</div>
+</section>
+</section>
+<section id="extracting-points-of-interests-within-catchment-areas-for-amenities-analysis-for-te29-bayshore" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-points-of-interests-within-catchment-areas-for-amenities-analysis-for-te29-bayshore">5.2 Extracting Points of Interests within Catchment Areas for Amenities Analysis for TE29 Bayshore</h3>
+<p>We also want to analyze the types of POIs that will be affected by the TEL Stage 4 MRT stations. Hence, we also need to get the POIs that fall within the catchment area for both walking and cycling. The steps to do so are also the same as for Buildings.</p>
+<section id="extracting-all-points-of-interest-in-catchment-area" class="level4">
+<h4 class="anchored" data-anchor-id="extracting-all-points-of-interest-in-catchment-area"><strong>5.2.1. Extracting all Points of Interest in Catchment Area</strong></h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, extract all Points of Interests that falls under TE29 Bayshore Contours (Walking) and save these selected features as a new layer as TE29_pois_walking into your GeoPackage<strong>.</strong> Your screen should look similar to the screenshot as shown below.</p>
+</div>
+</div>
+<p><img src="images/paste-89D20C02.png" class="img-fluid" width="400"><br>
+</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, categorize TE29_ pois_walking based on their values under <strong>Symbology</strong> in <strong>Layer</strong> <strong>Properties.</strong> Your screen should look similar to the screenshot as shown below.</p>
+</div>
+</div>
+<p><img src="images/paste-7DF6FB47.png" class="img-fluid" width="600"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, repeat all the steps in section 1.6.2 for all walking and building contours for all <strong>TEL 4 Stage 4 MRT Stations</strong> into your GeoPackage</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="creating-buffers-for-catchment-areas-for-amenities-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="creating-buffers-for-catchment-areas-for-amenities-analysis">6. Creating Buffers for Catchment Areas for Amenities Analysis</h2>
+<p>An ideal catchment area would be buffer generated based on the correct distance (1km for Walking and 1.5km for Cycling). We will compare Iso-Area and buffer to see their differences. From here, we can see if a better road network is required for people to walk or cycle more efficiently. We will be guiding you through the creation of buffers for TE29 Bayshore Contours (Walking) as an example.</p>
+<section id="generating-buffer" class="level3">
+<h3 class="anchored" data-anchor-id="generating-buffer">6.1. Generating Buffer</h3>
+<ul>
+<li><p>Under Vector from <strong>Menu Toolbar</strong>, hover your cursor over Geoprocessing Tools, and click on the Buffer</p>
+<p><img src="images/paste-C5466398.png" class="img-fluid" width="400"></p></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>From Input layer, select TE29 Bayshore Contours (Walking)</p></li>
+<li><p>From Distance, change the values depending on the contour you are doing</p>
+<ul>
+<li><p>If you are doing walking contour, change the value to 1000</p></li>
+<li><p>If you are doing cycling contour, change the value to 1500</p></li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li>From Segments, type 100</li>
+</ul>
+<p>Your screen should look similar to the screenshot as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-7D6377A4.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<ul>
+<li>Click <strong>Run</strong></li>
+</ul>
+<p>You can see that a temporary Buffered layer is created from your Layers panel</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-899B1B79.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>Your screen should look similar to the screenshot as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-6B139C7F.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, save these selected features as a new layer as TE29_ walking_buffer into your GeoPackage. Your screen should look similar to the screenshot as show below before clicking <strong>OK</strong></p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-53A9646F.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+</section>
+<section id="data-cleaning-of-buffer" class="level3">
+<h3 class="anchored" data-anchor-id="data-cleaning-of-buffer">6.1.2. Data Cleaning of Buffer</h3>
+<p>To allow the other building layers to be seen, we can make the buffer translucent like the contours.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, open <strong>Symbology</strong> tab of TE29_ walking_buffer by opening its Layer Properties</p>
+</div>
+</div>
+<ul>
+<li><p>From <strong>Layer Rendering</strong>, drop <strong>Opacity</strong> to 40%. Your screen should look like the screenshot as shown below before clicking <strong>OK</strong></p>
+<p><img src="images/paste-559D6CB8.png" class="img-fluid" width="600"></p></li>
+</ul>
+<!-- -->
+<ul>
+<li>Click <strong>OK</strong>. Your screen should look similar to the screenshot as shown below.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-7124160A.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+<p>We can reorder and place TE29_ walking_buffer below TE29 Bayshore Contours (Walking), TE29_buildings_walking and TE29_pois_walking in the Layers panel to not block the contour and buildings layer for clear visibility.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned earlier, create and save the buffer layers for all <strong>TEL 4 Stage 4 MRT Stations</strong> into your GeoPackage</p>
+</div>
+</div>
+</section>
+</section>
+<section id="creating-layouts-for-amenities-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="creating-layouts-for-amenities-analysis">7. Creating Layouts for Amenities Analysis</h2>
+<p>To analyze what are the buildings and POIs within the catchment area that are affected by the MRT stations, other than categorizing them into their building types and POI class, we want to get the count of these categories. This way, we can get deeper insights as to who exactly are those that are affected by the MRT, and how many of these people are affected. We will do so by making use of the bar graph plot functionality in QGIS to plot the count of these amenities. We will be guiding you through the creation of TE29 Bayshore Contours (Walking) amenities layout as an example.</p>
+<section id="getting-counts-for-both-buildings-and-pois" class="level3">
+<h3 class="anchored" data-anchor-id="getting-counts-for-both-buildings-and-pois">7.1. Getting Counts for Both Buildings and POIs</h3>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, open DB Manager and select either TE29_buildings_walking or TE29_pois_walking under Project Layers.</p>
+</div>
+</div>
+<ul>
+<li><p>Click on the SQL Window icon <img src="images/paste-40D7173F.png" width="20" height="18">.</p></li>
+<li><p>In the query, write these SQL codes depending on which layer you start first:</p>
+<ul>
+<li><p>TE29_buildings_walking</p>
+<p><img src="images/paste-44AEEFBF.png" class="img-fluid" width="600"></p></li>
+<li><p>TE29_pois_walking</p>
+<p><img src="images/paste-BEB63429.png" class="img-fluid" width="600"></p></li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li>Click <strong>Execute</strong></li>
+</ul>
+<p>After inspecting the query loaded and making sure that it is correct, whereby there is a type and count column, you can proceed to save this query you created. The query loaded should similar to the screenshot as shown below.</p>
+<p><img src="images/paste-C8E99DE5.png" class="img-fluid" width="300"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, load both counts into new layers and save them as new layers TE29_FINAL_BUILDINGS_WALKING and TE29_FINAL_POIS_WALKING into your GeoPackage</p>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Repeat this process for all POI and building layers for both Walking and Cycling contours of <strong>all TEL Stage 4 MRT stations</strong></p>
+</div>
+</div>
+</section>
+<section id="displaying-data-in-a-new-layout-for-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="displaying-data-in-a-new-layout-for-analysis">7.2. Displaying Data in a New Layout for Analysis</h3>
+<section id="starting-a-new-qgis-print-layout" class="level4">
+<h4 class="anchored" data-anchor-id="starting-a-new-qgis-print-layout">7.2.1. Starting a new QGIS print layout</h4>
+<ul>
+<li><p>From the menu bar, select <strong>Project</strong> -&gt; <strong>New Print Layout</strong>.</p>
+<p><img src="images/paste-8BAD1B62.png" class="img-fluid" width="400"></p></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Provide an appropriate title. An example would be:</p>
+<p><img src="images/paste-27DF3DFE.png" class="img-fluid" width="400"></p></li>
+<li><p>Click on <strong>OK</strong> button when it is ready.</p></li>
+</ul>
+<p>A new Print Layout dialog window appears.</p>
+</section>
+<section id="adding-a-map-layer" class="level4">
+<h4 class="anchored" data-anchor-id="adding-a-map-layer">7.2.2. Adding a map layer</h4>
+<ul>
+<li><p>From <strong>Menu bar</strong>, select <strong>Add Item</strong> -&gt; <strong>Add Map</strong>.</p>
+<p><img src="images/paste-C7C660F6.png" class="img-fluid" width="600"></p></li>
+<li><p>Once the <strong>Add Map</strong> mode is active, hold the left mouse button and drag a rectangle where you want to insert the map like shown below.</p>
+<p><img src="images/paste-1B2D6E55.png" class="img-fluid" width="600"></p></li>
+<li><p>Release your left finger from the left mouse button.</p></li>
+</ul>
+<p>Your screen should look similar to the screenshot below.</p>
+<p><img src="images/paste-561497F6.png" class="img-fluid" width="600"></p>
+<p>Notice that a new item called Map 1 has been added on the <strong>Items</strong> Panel.</p>
+</section>
+<section id="changing-the-size-of-the-map" class="level4">
+<h4 class="anchored" data-anchor-id="changing-the-size-of-the-map">7.2.3. Changing the size of the map</h4>
+<p>Under <strong>Item Properties</strong>, go to <strong>Position and Size</strong> Sub-Panel.</p>
+<ul>
+<li><p>Change the <strong>Width</strong> to 170</p></li>
+<li><p>Change the <strong>Height</strong> to 129</p></li>
+</ul>
+<p><br>
+</p>
+<p>The sub-panel should look like this.</p>
+<p><img src="images/paste-DE40BF02.png" class="img-fluid" width="600"><br>
+</p>
+</section>
+<section id="changing-the-main-properties" class="level4">
+<h4 class="anchored" data-anchor-id="changing-the-main-properties"><strong>7.2.4. Changing the main properties</strong></h4>
+<p>To prevent the view on the layout changes when we turn on/off some layers or change their styles, it is important for us to lock the layers and styles.</p>
+<ul>
+<li><p>Scroll the <strong>Main Properties</strong> Panel down until <strong>Layers</strong> appears.</p></li>
+<li><p>Click on the check box in front of <strong>Lock layers</strong> and <strong>Lock styles for layers</strong>.</p></li>
+</ul>
+</section>
+<section id="adding-grid-reference" class="level4">
+<h4 class="anchored" data-anchor-id="adding-grid-reference"><img src="images/paste-623FDA9F.png" class="img-fluid" width="1000">7.2.5. Adding Grid Reference</h4>
+<p>Next, we will add grid reference for the map.</p>
+<ul>
+<li><p>From <strong>Items Properties</strong> Panel, scroll down until <strong>Grids</strong> Sub-Panel appears.</p></li>
+<li><p>Click on&nbsp; <img src="images/paste-1283B18D.png" width="100" height="31"></p></li>
+</ul>
+<p>A new grid frame called Grid 1 is added as shown below.</p>
+<p><br>
+</p>
+<p><img src="images/paste-C91C95DB.png" class="img-fluid" width="1000"><br>
+</p>
+<p>Next, we are going to add a 1000m-by-1000m grid on the layout.</p>
+<ul>
+<li><p>Click on <strong>the Modify</strong> Grid button.</p></li>
+<li><p>Scroll down until <strong>Appearance Sub-Panel</strong> appears.</p></li>
+<li><p>For <strong>X</strong>, enter 1000.</p></li>
+<li><p>For <strong>Y</strong>, enter 1000.</p></li>
+</ul>
+<p><img src="images/paste-92127D7A.png" class="img-fluid" width="1000"><br>
+</p>
+<p>Next, we will change the line color to gray.</p>
+<ul>
+<li>Click on the drop-down list behind Line style.</li>
+</ul>
+<p><img src="images/paste-5B9F84D8.png" class="img-fluid" width="1000">&nbsp;</p>
+<p>The color panel appears.</p>
+<p><img src="images/paste-3FD3FF5B.png" class="img-fluid">&nbsp;</p>
+<ul>
+<li>Choose one of the light gray colors from the panel.</li>
+</ul>
+<p><br>
+</p>
+<p>Notice that a light gray grid frame is added to the layout.</p>
+<p><br>
+</p>
+<p><img src="images/paste-A105CB4F.png" class="img-fluid" width="600">&nbsp;</p>
+<p>Next, we are going to turn on the coordinates.</p>
+<ul>
+<li><p>Scroll down the <strong>Map Grid Properties</strong> paneluntil <strong>Draw Coordinates</strong> sub-panel appears.</p></li>
+<li><p>Click on the checkbox in front of <strong>Draw Coordinates</strong>.<br>
+</p></li>
+</ul>
+<p>Your screen should look similar to the screenshot below.</p>
+<p><img src="images/paste-4BEA8F06.png" class="img-fluid"><br>
+</p>
+<p>By default, the grid reference appears on the four axis of the map layout. We are going to turn off the grid reference on the right and bottom of the layout.</p>
+<ul>
+<li><p>From the <strong>Right</strong> sub-panel, click on the drop-down list and select Disable.</p></li>
+<li><p>From the <strong>Top</strong> sub-panel, click on the drop-down list and select Disable.</p></li>
+</ul>
+<p><br>
+</p>
+<p>The map layout should look similar to the screenshot below.</p>
+<p><img src="images/paste-D9447E39.png" class="img-fluid" width="1000"><br>
+</p>
+</section>
+<section id="adding-bar-graph-for-buildings" class="level4">
+<h4 class="anchored" data-anchor-id="adding-bar-graph-for-buildings"><strong>7.2.6. Adding Bar Graph for Buildings</strong></h4>
+<p>This will allow us to visualize the count of the building type easily for our analysis.</p>
+<ul>
+<li><p>Click on <strong>Add Item</strong>, then click on <strong>Add Plot Item</strong>.</p></li>
+<li><p>Click and drag your mouse over the project layer again to create the plot item.</p></li>
+<li><p>On the right now, under click on the plot type that is given by default, then click <strong>Setup Selected Plot</strong>.</p></li>
+<li><p>Under <strong>Plot Properties</strong>, make a few changes:</p>
+<ul>
+<li><p>Choose Bar Plot for <strong>Plot type</strong></p></li>
+<li><p>For <strong>Layer</strong>, select TE29_FINAL_BUILDINGS_WALKING</p></li>
+<li><p>From <strong>Linked map</strong>, select Map 1</p></li>
+<li><p>For <strong>X field</strong>, choose type&nbsp;</p></li>
+<li><p>For <strong>Y field</strong>, choose count</p></li>
+</ul></li>
+</ul>
+<p>Your screen should look similar to the screenshot as shown below before you click <strong>Update Plot</strong>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-902F23E7.png" class="img-fluid figure-img" width="200"></p>
+</figure>
+</div>
+<ul>
+<li>Now, the bar graph will appear in your projection layer. Your screen should look similar to the screenshot as shown below.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-88079E30.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+</section>
+<section id="adding-bar-graph-for-pois" class="level4">
+<h4 class="anchored" data-anchor-id="adding-bar-graph-for-pois"><strong>7.2.7. Adding Bar Graph for POIs</strong></h4>
+<p>DIY: Using the steps you had learned earlier, create a bar chart for TE29_FINAL_POIS_WALKING by following the steps in section 1.8.2.6.</p>
+<p>However, this time, there are a few differences to make to Plot Properties</p>
+<ul>
+<li><p>Under <strong>Plot Properties</strong>,&nbsp;</p>
+<ul>
+<li><p>From <strong>Layer</strong>, select TE29_FINAL_POIS_WALKING</p></li>
+<li><p>For <strong>X field</strong>, choose fclass</p></li>
+</ul></li>
+</ul>
+<p>Now your projection layer should look similar to the screenshot as shown below.</p>
+<p><img src="images/paste-FEDAE658.png" class="img-fluid"><br>
+</p>
+</section>
+<section id="adding-map-legend" class="level4">
+<h4 class="anchored" data-anchor-id="adding-map-legend"><strong>7.2.8. Adding Map Legend</strong></h4>
+<p>Now, we are going to add map legend onto the layout.</p>
+<ul>
+<li>From the <strong>Menu Bar</strong>, select <strong>Add Item</strong> -&gt; <strong>Add Legend</strong>.</li>
+</ul>
+<p><img src="images/paste-CE02F8D8.png" class="img-fluid"></p>
+<p>The map legend will be added onto the layout.</p>
+<p>Since this layout should focus on the buildings and POIs in the catchment area alone, we are going to remove other unrelated items from the legend.</p>
+<ul>
+<li>Heading back to your print layout window, from <strong>Legend Items Sub-Panel</strong>, click on the checkbox in front of <strong>Only Show Items Inside Linked Map</strong>.</li>
+</ul>
+<p><img src="images/paste-4D95A2E0.png" class="img-fluid" width="400"></p>
+<p>Your screen should look similar to the screenshot as shown below.</p>
+<p><br>
+</p>
+<p><img src="images/paste-D77DBA87.png" class="img-fluid"><br>
+</p>
+</section>
+<section id="adding-title" class="level4">
+<h4 class="anchored" data-anchor-id="adding-title"><strong>7.2.9. Adding Title</strong></h4>
+<ul>
+<li>From the <strong>Menu Bar</strong>, select <strong>Add Item</strong> -&gt; <strong>Add Label</strong>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-B47B06F6.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+<ul>
+<li>At the <strong>Main Properties</strong>, type the following text.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-2A40E6C6.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+<p>Use an appropriate text based on the catchment area you are doing.</p>
+<p>Next, we are going to change it to a bigger font size.</p>
+<ul>
+<li>From the <strong>Appearance</strong> sub-panel, click on the drop-down list behind <strong>Font</strong>.</li>
+</ul>
+<p><br>
+</p>
+<p>The font size window appears.</p>
+<ul>
+<li>Change the <strong>font size</strong> to 20.</li>
+</ul>
+<p><img src="images/paste-5A32CFE0.png" class="img-fluid" width="400"><br>
+</p>
+<p>Next, change the title horizontal alignment to centre and vertical alignment to middle.</p>
+<ul>
+<li><p>For <strong>Horizontal alignment</strong>, click on the radio button in front of Center.</p></li>
+<li><p>For <strong>Vertical alignment</strong>, click on the radio button in front of Middle.</p></li>
+</ul>
+<p>Your layout screen should look similar to the screenshot as shown below.</p>
+<p><img src="images/paste-D206F065.png" class="img-fluid"><br>
+</p>
+</section>
+<section id="adding-north-arrow" class="level4">
+<h4 class="anchored" data-anchor-id="adding-north-arrow"><strong>7.2.10. Adding North Arrow</strong></h4>
+<ul>
+<li>From the <strong>Menu Bar</strong>, select <strong>Add Item</strong> -&gt; <strong>Add North Arrow</strong></li>
+</ul>
+<p><img src="images/paste-AD917A92.png" class="img-fluid" width="600"><br>
+<br>
+</p>
+<ul>
+<li><p>Scroll to the <strong>Position and Size</strong> sub-panel</p>
+<ul>
+<li><p>Change the <strong>Width</strong> to 36</p></li>
+<li><p>Change the <strong>Height</strong> to 30</p></li>
+</ul></li>
+</ul>
+<p><img src="images/paste-4FD442AC.png" class="img-fluid" width="600"><br>
+</p>
+<p>Your layout should look similar to the screenshot as shown below.</p>
+<p><img src="images/paste-96DCA740.png" class="img-fluid"><br>
+</p>
+</section>
+<section id="adding-scale" class="level4">
+<h4 class="anchored" data-anchor-id="adding-scale">7.2.11. Adding Scale</h4>
+<ul>
+<li>From the menu bar, select <strong>Add Item</strong> -&gt; <strong>Add Scale Bar</strong></li>
+</ul>
+<p><img src="images/paste-6C3EEFA9.png" class="img-fluid"><br>
+</p>
+<p>Now let us change the scale distance</p>
+<ul>
+<li>Under <strong>Segments</strong> sub-panel, change the <strong>Fixed Width</strong> to 1000 units.</li>
+</ul>
+<p><img src="images/paste-9D82AC39.png" class="img-fluid" width="600"><br>
+</p>
+<p>Your layout should look similar to the screenshot as shown below.</p>
+</section>
+<section id="saving-print-layout" class="level4">
+<h4 class="anchored" data-anchor-id="saving-print-layout"><img src="images/paste-92ECBB5B.png" class="img-fluid" width="600">7.2.12. Saving print layout</h4>
+<p>In QGIS, the composed map layout can be exported into three formats, namely: Image, SVG and PDF.</p>
+<ul>
+<li>To export, click on <strong>File</strong> from the menu bar and select one under the format list below.</li>
+</ul>
+<p><img src="images/paste-C763C14A.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps you had learned in previous hands-on exercise, create Layouts for the rest of the Walking and Cycling Contours for all of <strong>TEL Stage 4 MRT Stations</strong> for Amenities Analysis</p>
+</div>
+</div>
+<p><br>
+</p>
+</section>
+</section>
+</section>
+<section id="creating-choropleth-maps-for-catchment-population-for-population-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="creating-choropleth-maps-for-catchment-population-for-population-analysis">8. Creating Choropleth Maps for Catchment Population for Population Analysis</h2>
+<section id="creating-common-attribute" class="level3">
+<h3 class="anchored" data-anchor-id="creating-common-attribute">8.1. Creating Common Attribute</h3>
+<p>Before you merge 2020POP and MP19_Subzone together, you need to have a common attribute. By opening <strong>Attribute Table</strong> of 2020POP, you will see the following columns</p>
+<p><img src="images/paste-7F94A258.png" class="img-fluid" width="600"></p>
+<p>By opening <strong>Attribute Table</strong> of MP19_Subzone, you will see the following columns as well</p>
+<p><img src="images/paste-D01084AE.png" class="img-fluid" width="800"></p>
+<p>However, you see that it is quite messy, so you need to filter out columns that do not provide much information to you.</p>
+<ul>
+<li>Click on <strong>Organize Columns</strong> <img src="images/paste-D6DCF1DD.png" class="img-fluid"> and uncheck these following columns before clicking <strong>OK</strong></li>
+</ul>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/paste-987F1BFB.png" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/paste-AE570F89.png" class="img-fluid" width="334"></p>
+</div>
+</div>
+</div>
+<p>You will see that your <strong>Attribute Table</strong> for MP19_Subzone is so much cleaner now</p>
+<p><img src="images/paste-CE694802.png" class="img-fluid"></p>
+<p>If you look at both <strong>Attribute Tables</strong> carefully, you will realize that the column 'SZ' in 2020POP is in lower case of column 'SUBZONE_N' in MP19_Subzone. Therefore, we need to use subzone names to merge both 2020POP and MP19_Subzone together.</p>
+<ul>
+<li><p>Go to 2020POP's <strong>Attribute Table</strong> and select <strong>Open Field Calculator</strong><img src="images/paste-E60BBB07.png" width="20" height="22"> at the top. A pop-up window will appear as shown below</p>
+<p><img src="images/paste-2B058F90.png" class="img-fluid" width="800"></p></li>
+<li><p>As we aim to capitalize the string data in 'SZ' column, fill in the <strong>Output Field Name</strong> and the <strong>Output Field Type</strong> as shown below.</p>
+<p><img src="images/paste-0D5C1001.png" class="img-fluid" width="1000"></p></li>
+<li><p>Type the following code as shown below</p></li>
+</ul>
+<p><img src="images/paste-B39D124F.png" class="img-fluid"></p>
+<p>The preview will show you what the new string will be in the new column 'SUBZONE'</p>
+<ul>
+<li>Click <strong>OK</strong> and you will see that a new column 'SUBZONE' is added to your 2020POP's <strong>Attribute Table</strong></li>
+</ul>
+<p><img src="images/paste-E5D6DE1C.png" class="img-fluid"></p>
+<p>However, the table will be in edit format, so you need to save the changes that you had made.</p>
+<ul>
+<li>Click on <img src="images/paste-A2D71350.png" class="img-fluid" width="20"> (top left of your screen). A pop-up will appear as shown below and click <strong>Save</strong></li>
+</ul>
+<p><img src="images/paste-F1C3C74F.png" class="img-fluid" width="400"></p>
+</section>
+<section id="performing-relational-join-between-mp19_subzone-and-2020pop-layers" class="level3">
+<h3 class="anchored" data-anchor-id="performing-relational-join-between-mp19_subzone-and-2020pop-layers">8.2. Performing Relational Join Between MP19_Subzone and 2020POP layers</h3>
+<p>Now you are ready to perform relational join between the MP19_Subzone layer and the 2020POP layer. To join the <strong>Attribute Table</strong> of a geospatial data and an aspatial <strong>Attribute Table</strong>, we need to identify the common key or popularly known as&nbsp;<strong>Unique Identifier</strong>&nbsp;between these two data sets with we had prepared earlier. In this case, it is the Subzone Names ('SUBZONE' and 'SUBZONE_N')</p>
+<p><img src="images/paste-B2539C7F.png" class="img-fluid"></p>
+<p>You are ready to join both tables now.</p>
+<ul>
+<li>From the&nbsp;<strong>Layers</strong>&nbsp;panel, double-click on&nbsp;MP19_Subzone layer.</li>
+</ul>
+<p>The&nbsp;<strong>Layer Properties</strong>&nbsp;dialog window appears.</p>
+<ul>
+<li>From the&nbsp;<strong>Tab</strong>&nbsp;menu, click on the&nbsp;<strong>Joins</strong>&nbsp;tab.</li>
+</ul>
+<p>Your screen should look similar to the screenshot below.</p>
+<p><img src="images/paste-74C979A5.png" class="img-fluid"></p>
+<ul>
+<li>Click on <strong>Add</strong> <strong>New Join</strong> icon&nbsp;<img src="images/paste-F805EA95.png" class="img-fluid" width="20"></li>
+</ul>
+<p>The&nbsp;<strong>Add Vector Join</strong>&nbsp;dialog window appears.</p>
+<ul>
+<li><p>For&nbsp;<strong>Join Layer</strong>, select&nbsp;2020POP&nbsp;from the drop-down list.</p></li>
+<li><p>For&nbsp;<strong>Join field</strong>, select SUBZONE from the drop-down list.</p></li>
+<li><p>For&nbsp;<strong>Target field</strong>, select SUBZONE_N from the drop-down list.</p>
+<p><img src="images/paste-777321BB.png" class="img-fluid"></p></li>
+<li><p>Click on <strong>OK</strong> button to perform the relational join.</p></li>
+</ul>
+<p>You will return to the <strong>Layer Properties</strong> dialog window.</p>
+<p>Notice that a relational joined between&nbsp;2020POP <strong>Attribute Table</strong> and the <strong>Attribute Table</strong> of&nbsp;MP19_Subzone has been created.</p>
+<ul>
+<li>At the <strong>Layer Properties</strong> dialog window, click on the <strong>OK</strong> button.</li>
+</ul>
+<p>Strange, it seems that nothing had happened!</p>
+<ul>
+<li>At the <strong>Layers</strong> panel, right click on&nbsp;MP19_Subzone&nbsp;layer and select&nbsp;open <strong>Attribute Table</strong>&nbsp;from the context menu.</li>
+</ul>
+<p>You will notice that the table now contains additional fields from 2020POP attribute layer.</p>
+<p><img src="images/paste-8E682C43.png" class="img-fluid"></p>
+<p>Remember that this joint is temporary. It is not part of the <strong>Attribute Table</strong>&nbsp;of&nbsp;MP19_Subzone&nbsp;layer but is just linked dynamically to the&nbsp;2020POP layer. If you want to permanently join the attributes, you must save it as a new layer.</p>
+<ul>
+<li>To double check if both attribute tables are joined properly, click on <img src="images/paste-11FD368E.png" class="img-fluid" width="20"></li>
+</ul>
+<p>If the rows are not joined properly, values belonging to 2020POP in <strong>Attribute Table</strong> of MP19_Subzone will reflect as NULL. Therefore, we will have to find NULL values by using the following expression as shown below</p>
+<ul>
+<li><p>Type the following code as shown in the screenshot below</p>
+<p><img src="images/paste-20848659.png" class="img-fluid" width="1000"></p></li>
+<li><p>Click on <strong>Select Features</strong>&nbsp;</p></li>
+</ul>
+<p>You can tell that from <img src="images/paste-F786FF5C.png" class="img-fluid" width="400"> that 0 row is selected which means that both attributes' tables are joined properly</p>
+</section>
+<section id="creating-choropleth-map-for-subzone-population" class="level3">
+<h3 class="anchored" data-anchor-id="creating-choropleth-map-for-subzone-population">8.3. Creating Choropleth Map for Subzone Population</h3>
+<p>In this section, you will learn how to create a choropleth map showing the distribution of 2020 population in 2020POP by MP19_Subzone.</p>
+<p>You are ready to prepare the choropleth now.</p>
+<ul>
+<li>From the&nbsp;<strong>Layers</strong>&nbsp;panel, double-click on&nbsp;<strong>MP19_Subzone</strong> layer.</li>
+</ul>
+<p>The&nbsp;<strong>Layer Properties</strong>&nbsp;dialog window appears.</p>
+<ul>
+<li><p>Click on&nbsp;<strong>Symbology</strong>&nbsp;tab.</p></li>
+<li><p>At&nbsp;<strong>Symbol</strong>&nbsp;selection drop-down list, select&nbsp;Graduated&nbsp;from the drop-down list.</p></li>
+<li><p>For&nbsp;<strong>Value</strong>, select&nbsp;2020POP_total_pop from the drop-down list.</p></li>
+<li><p>For&nbsp;<strong>Classes</strong>, keep it as&nbsp;5.</p></li>
+<li><p>For&nbsp;<strong>Color Ramp</strong>, choose&nbsp;Blues&nbsp;or any colour of your choice from the drop-down list.</p></li>
+<li><p>For&nbsp;<strong>Mode</strong>, choose&nbsp;Natural Breaks (Jenks)&nbsp;from the drop-down list.&nbsp;</p></li>
+<li><p>Click on&nbsp;<strong>Classify</strong>&nbsp;button.</p></li>
+</ul>
+<p>Your screen should look similar to the figure below.</p>
+<p><img src="images/paste-06FD239E.png" class="img-fluid"></p>
+<p>You can review the statistical distribution of the classification in histogram.</p>
+<ul>
+<li><p>Click on the&nbsp;<strong>Histogram</strong>&nbsp;tab.</p></li>
+<li><p>Click on&nbsp;<strong>Load values</strong>&nbsp;button.</p></li>
+</ul>
+<p>Your screen should look similar to the figure below.</p>
+<p><img src="images/paste-133A6701.png" class="img-fluid"></p>
+<p>This feature is very useful for casual data analysts because the histogram helps us to understand the differences of each classification method.</p>
+<ul>
+<li><p>Click on&nbsp;<strong>Classes</strong>&nbsp;tab.</p></li>
+<li><p>Click on&nbsp;<strong>Apply</strong>&nbsp;button.</p></li>
+<li><p>Click on the <strong>OK</strong> button.</p></li>
+</ul>
+<p>Your screen should look similar to the figure below.</p>
+<p><img src="images/paste-95AB4D77.png" class="img-fluid"></p>
+</section>
+<section id="calculating-catchment-population" class="level3">
+<h3 class="anchored" data-anchor-id="calculating-catchment-population">8.4. Calculating Catchment Population</h3>
+<p>We will be guiding you through the calculation of Catchment Population for TE27 Marine Terrace Contours (Walking) as an example.</p>
+<section id="creating-a-subzone_area-column-for-mp19_subzone" class="level4">
+<h4 class="anchored" data-anchor-id="creating-a-subzone_area-column-for-mp19_subzone">8.4.1. Creating a 'Subzone_Area' column for MP19_Subzone</h4>
+<p>To calculate the Catchment Population, we need to find out the ratio of Subzone Catchment Area to its Subzone Area for all subzones that falls within each contour line first.&nbsp;</p>
+<p>DIY: Using the steps that you learned earlier, open <strong>Attribute Table</strong> of MP19_Subzone and click on <strong>Open Field Calculator</strong>. Your screen should look similar to the screenshot as shown below</p>
+<p><img src="images/paste-7DC396DF.png" class="img-fluid"></p>
+<p>We want to create a new column 'Subzone_Area' for each subzone area.</p>
+<ul>
+<li>Type the following code as shown in the screenshot below before clicking <strong>OK</strong></li>
+</ul>
+<p><img src="images/paste-EC3F8EA5.png" class="img-fluid"></p>
+<p>You will see that a new column 'Subzone_Area' is now created in the <strong>Attribute Table</strong> of MP19_Subzone</p>
+<p><img src="images/paste-85FD8C07.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, save the changes made and filter out unnecessary columns in the <strong>Attribute Table</strong> of MP19_Subzone. Your screen should look similar to the screenshot as shown below.</p>
+</div>
+</div>
+<p><img src="images/paste-462F9B29.png" class="img-fluid"></p>
+</section>
+<section id="extracting-polygons" class="level4">
+<h4 class="anchored" data-anchor-id="extracting-polygons">8.4.2. Extracting Polygons</h4>
+<ul>
+<li><p>From <strong>Vector</strong> on the Menu, hover your cursor over <strong>Geoprocessing Tools</strong> and click on <strong>Union</strong></p>
+<p><img src="images/paste-04177CFB.png" class="img-fluid" width="600"></p></li>
+<li><p>Your screen should look similar to the screenshot as shown below</p>
+<p><img src="images/paste-124C0E79.png" class="img-fluid"></p></li>
+<li><p>Select the correct layers for your <strong>Input and Overlay layers</strong> as shown in the screenshot below</p></li>
+</ul>
+<p><img src="images/paste-4F980C9F.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>With the steps that you learnt earlier, for better performance, select Do Not Filter (Better Performance) from under <strong>Invalid feature filtering</strong> for both input and overlap layers before clicking <strong>Run</strong>. Your screen should look like the screenshot as shown below.&nbsp;</p>
+</div>
+</div>
+<p>You can see that a temporary layer Union is created in your layer menu.</p>
+<p><img src="images/paste-6B33C082.png" class="img-fluid"></p>
+<p>Let's analyze the <strong>Attribute Table</strong> of this Temporary layer Union.&nbsp;</p>
+<p>DIY: With the steps that you learnt earlier, open the <strong>Attribute Table</strong> of Union. Your screen should look similar to the screenshot as shown below</p>
+<p><img src="images/paste-44E6E373.png" class="img-fluid"></p>
+<p>You can see that it is very messy, thus filtering of column is required.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>With the steps that you learnt earlier, filter out unnecessary columns and leave those columns checked as shown in the screenshot below. Your screen should look similar to the screenshot as shown below.</p>
+</div>
+</div>
+<p><img src="images/paste-9B9B982B.png" class="img-fluid"></p>
+<p>Since you only need the rows for those in the catchment polygon layers, you need to do further data filtering.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, click on <strong>Select by Expression</strong> and type in the following code as shown below before clicking <strong>Select Features</strong></p>
+</div>
+</div>
+<p><img src="images/paste-2AF751A8.png" class="img-fluid"></p>
+<p>You can see from <img src="images/paste-AEF49DCA.png" width="300" height="24"> that 25 rows are selected based on the condition that we had set. Now you want to save these 25 rows as TE27 Population (Walking) into your GeoPackage. However, you need to ensure that these 25 rows have a unique fid first.</p>
+<p><img src="images/paste-7A40B316.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, manually change all the fid of the selected rows starting from 1 to 25 and save it. Your screen should look similar to the screenshot as shown below.</p>
+</div>
+</div>
+<p><img src="images/paste-6BE69CE9.png" class="img-fluid"></p>
+<p>Once that is done, you can now save the selected feature into your GeoPackage now</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, save the selected features as a layer as TE27 Population (Walking) into your GeoPackage</p>
+</div>
+</div>
+<p><img src="images/paste-2D15E550.png" class="img-fluid"></p>
+<p>You can see that a permanent layer called TE27 Population (Walking) is now created in your <strong>Layer</strong> menu as shown below.</p>
+<p><img src="images/paste-FE077ABB.png" class="img-fluid"></p>
+</section>
+<section id="creating-a-catchment_-subzone_area-column" class="level4">
+<h4 class="anchored" data-anchor-id="creating-a-catchment_-subzone_area-column"><strong>8.4.3. Creating a 'Catchment_ Subzone_Area' Column</strong></h4>
+<p>To calculate the Catchment Subzone Area, we need to open the <strong>Attribute Table</strong> for TE27 Population (Walking).&nbsp;</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, open the <strong>Attribute Table</strong> for TE27 Population (Walking). Your screen should look similar to the screenshot as shown below.</p>
+</div>
+</div>
+<p><img src="images/paste-8C7CCD81.png" class="img-fluid"></p>
+<p>You can still see that the <strong>Attribute Table</strong> contains a lot of unnecessary columns, thus we need to conduct filtering&nbsp;</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, filter out unnecessary columns and leave those columns as shown below. Your screen should look similar to the screenshot as shown below</p>
+</div>
+</div>
+<p><img src="images/paste-68077749.png" class="img-fluid"></p>
+<p>Now we need to find out the area of the Catchment Subzone Area using <strong>Open Field Calculator</strong></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, create a new column for Catchment_Area using the following code as shown in the screenshot below before clicking <strong>OK</strong></p>
+</div>
+</div>
+<p><img src="images/paste-2008C453.png" class="img-fluid"></p>
+<p>Your <strong>Attribute Table</strong> should reflect the additional 'Catchment_Area' created as shown in the screenshot below.&nbsp;</p>
+<p><img src="images/paste-A3C6A690.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, save the changes made to the <strong>Attribute Table</strong> of TE27 Population (Walking)</p>
+</div>
+</div>
+</section>
+<section id="creating-a-ratio-column-for-te27-population-walking" class="level4">
+<h4 class="anchored" data-anchor-id="creating-a-ratio-column-for-te27-population-walking"><strong>8.4.4. Creating a 'Ratio' Column for TE27 Population (Walking)</strong></h4>
+<p>Assuming that Population is equally distributed across the subzone area, you need to calculate the percentage of Catchment Area to respective Subzone Area. Since now you have both Catchment Subzone Area and Subzone Area, this is now possible.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, create a new column 'Ratio' using the <strong>Open Field Calculator</strong> in the <strong>Attribute Table</strong> and type in the following code as shown below before clicking <strong>OK</strong></p>
+</div>
+</div>
+<p><img src="images/paste-770D8891.png" class="img-fluid"></p>
+<p>Your <strong>Attribute Table</strong> should reflect the additional 'Ratio' created as shown in the screenshot below.&nbsp;</p>
+<p><img src="images/paste-7E096E7B.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, save the changes made to the <strong>Attribute Table</strong> of TE27 Population (Walking)</p>
+</div>
+</div>
+</section>
+<section id="creating-a-catchment_population-column" class="level4">
+<h4 class="anchored" data-anchor-id="creating-a-catchment_population-column"><strong>8.4.5. Creating a 'Catchment_Population' Column</strong></h4>
+<p>Since now we have the ratio, we will calculate Catchment Population by multiplying the Subzone Population and respective ratio per subzone and contour. The assumption made above still holds.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, create a new column 'Catchment_Population' using the <strong>Open Field Calculator</strong> in the <strong>Attribute Table</strong> and type in the following code as shown below before clicking <strong>OK</strong></p>
+</div>
+</div>
+<p><img src="images/paste-06FE1910.png" class="img-fluid"></p>
+<p>Your <strong>Attribute Table</strong> should reflect the additional 'Catchment_Population' created as shown in the screenshot below.</p>
+<p><img src="images/paste-5BCFBBB5.png" class="img-fluid"><br>
+</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, save the changes made to the <strong>Attribute Table</strong> of TE27 Population (Walking)</p>
+</div>
+</div>
+</section>
+</section>
+<section id="creating-a-choropleth-map-for-catchment-population" class="level3">
+<h3 class="anchored" data-anchor-id="creating-a-choropleth-map-for-catchment-population">8.5. Creating a Choropleth Map for Catchment Population</h3>
+<p>To better present the data, it would be better to represent the Catchment Population in the form of a Choropleth Map with OSM and MP19_Subzone Layers</p>
+<section id="creating-a-choropleth-map-for-catchment-population-1" class="level4">
+<h4 class="anchored" data-anchor-id="creating-a-choropleth-map-for-catchment-population-1"><strong>8.5.1. Creating a Choropleth Map for Catchment Population</strong></h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, open the <strong>Layer Properties</strong> for TE27 Population (Walking) and click on the <strong>Symbology</strong> tab.</p>
+</div>
+</div>
+<p>Our value for Catchment Population Choropleth Map would be 'Catchment_Population'. But wait! You can see from the screenshot below that this column is not present anywhere in the list of values as shown in the screenshot below.</p>
+<p><img src="images/paste-3A232904.png" class="img-fluid"></p>
+<p>Is there any way to overcome this? Of course!</p>
+<ul>
+<li><p>Click on the <img src="images/paste-A4E77577.png" width="20" height="22"> on the right side of <strong>Symbol</strong>. A pop-up should appear as shown in the screenshot below.</p>
+<p><img src="images/paste-18571AD6.png" class="img-fluid"></p></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Type in the following code as shown below before clicking <strong>OK</strong></p>
+<p><img src="images/paste-CC7A48EE.png" class="img-fluid"></p></li>
+</ul>
+<p>Now you can see that 'Catchment_Population' is reflected as the value as shown in the screenshot below.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, generate a <strong>Choropleth Map</strong> for Catchment Population. Your <strong>Symbology</strong> screen should look similar to the screenshot as shown below before clicking <strong>OK</strong></p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-C698B335.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>Now, you can see that a <strong>Choropleth Map</strong> is generated based on TE27 Contours (Walking)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-A4191F7B.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="making-a-transparent-fill-for-mp19_subzone-layer" class="level4">
+<h4 class="anchored" data-anchor-id="making-a-transparent-fill-for-mp19_subzone-layer"><strong>8.5.1. Making a Transparent Fill for MP19_Subzone Layer</strong></h4>
+<p>However, this isn't visibly pleasing. If we can show the division of MP19_Subzone and the OSM layer, it can provide us with more information for better analysis.&nbsp;</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, open the <strong>Symbology</strong> tab for MP19_Subzone layer.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-124E55EF.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<ul>
+<li><p>Click on <strong>Simple Fill</strong> under <strong>Fill</strong>. Your screen should look similar to the screenshot as shown below.</p>
+<p><img src="images/paste-D0D5F7DC.png" class="img-fluid"></p></li>
+<li><p>Select Transparent Fill under <strong>Fill</strong> color</p>
+<p><img src="images/paste-C6D3EAA1.png" class="img-fluid"></p></li>
+<li><p>Increase <strong>Stroke Width</strong> to 1 before clicking <strong>OK</strong></p>
+<p><img src="images/paste-B8EF7D6F.png" class="img-fluid"></p></li>
+</ul>
+<p>Now you can see from your main screen,&nbsp;</p>
+<ol type="1">
+<li><p>Each Subzone is divided distinctly&nbsp;</p></li>
+<li><p>Each part of the Contour that falls in their respective Subzone</p></li>
+<li><p>Nearby amenities (Transport, POIs and Buildings) within the Contours</p></li>
+</ol>
+<p><img src="images/paste-0C8E5AFC.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, generate <strong>Choropleth Maps</strong> for both Walking and Cycling Contours for the rest of the <strong>TEL Stage 4 MRT Stations</strong>.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="creating-layouts-for-population-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="creating-layouts-for-population-analysis">9. Creating Layouts for Population Analysis</h2>
+<section id="displaying-data-in-a-new-layout-for-analysis-1" class="level3">
+<h3 class="anchored" data-anchor-id="displaying-data-in-a-new-layout-for-analysis-1">9.1. Displaying Data in a New Layout for Analysis</h3>
+<p>Try to create a layout for TE29 Bayshore Contours (Walking) as an example.</p>
+<section id="starting-a-new-qgis-print-layout-1" class="level4">
+<h4 class="anchored" data-anchor-id="starting-a-new-qgis-print-layout-1">9.1.1. Starting a new QGIS print layout</h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, start a new print layout and title it as TE29 Population (Walking).</p>
+</div>
+</div>
+</section>
+<section id="adding-a-map-layer-1" class="level4">
+<h4 class="anchored" data-anchor-id="adding-a-map-layer-1">9.1.2. Adding a map layer</h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, add a map to TE29 Population (Walking) Layout.</p>
+</div>
+</div>
+</section>
+<section id="adding-grid-reference-1" class="level4">
+<h4 class="anchored" data-anchor-id="adding-grid-reference-1">9.1.3. Adding Grid Reference</h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, create a grid reference to TE29 Population (Walking)&nbsp; Layout.</p>
+</div>
+</div>
+</section>
+<section id="adding-map-legend-1" class="level4">
+<h4 class="anchored" data-anchor-id="adding-map-legend-1">9.1.4. Adding Map Legend</h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, add a map legend to show the existing features of TE29 Population (Walking)&nbsp; Layout.</p>
+</div>
+</div>
+</section>
+<section id="adding-title-1" class="level4">
+<h4 class="anchored" data-anchor-id="adding-title-1">9.1.5. Adding Title</h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, add a title and name it TE29 Catchment Population Distribution (Walking) to show the existing features of TE29 Population (Walking) Layout.</p>
+</div>
+</div>
+</section>
+<section id="adding-north-arrow-1" class="level4">
+<h4 class="anchored" data-anchor-id="adding-north-arrow-1">9.1.6. Adding North Arrow</h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, add a north arrow to TE29 Population (Walking) Layout.</p>
+</div>
+</div>
+</section>
+<section id="adding-scale-1" class="level4">
+<h4 class="anchored" data-anchor-id="adding-scale-1">9.1.7. Adding Scale</h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, add a scale to TE29 Population (Walking) Layout.</p>
+</div>
+</div>
+</section>
+<section id="saving-print-layout-1" class="level4">
+<h4 class="anchored" data-anchor-id="saving-print-layout-1"><strong>9.1.8. Saving print layout</strong></h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+DIY
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the steps that you learnt earlier, save TE29 Population (Walking) Layout to your laptop. Your layout should look similar to the screenshot as shown below.</p>
+</div>
+</div>
+<p><img src="images/paste-D2D63C26.png" class="img-fluid"><br>
+</p>
+<p><br>
+</p>
+<p><br>
+</p>
+<p><br>
+</p>
 
 
 </section>
