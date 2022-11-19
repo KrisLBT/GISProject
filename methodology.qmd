@@ -782,7 +782,7 @@ Using the steps you had learned earlier, generate walking and cycling network se
 |    TE29 Bayshore    | ![](images/paste-3C489BBA.png) | TE29 Contours (Walking) |
 |    TE29 Bayshore    | ![](images/paste-6932FABE.png) | TE29 Contours (Cycling) |
 
-## 5. Extracting Buildings within Catchment Areas for Amenities Analysis for TE29 Bayshore
+## 5. Extracting Amenities within Catchment Areas for Amenities Analysis
 
 ### 5.1. Extracting Buildings within Catchment Areas for Amenities Analysis for TE29 Bayshore
 
