@@ -124,10 +124,9 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 855 Singaporeans stay within the 1000m contour but only 199 of them are willing to walk to TE22A Founders Memorial. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 23.3%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.
 
-###  
+### 
+
 ![](images/paste-4B6D61C9.png)
-
-
 
 2.2 Catchment Population Distribution (Cycling)
 
@@ -280,9 +279,8 @@ Based on the layout and numbers generated, these following subzones \[Alijunied 
 
 2.  3.2% of Marine Parade falls within the catchment area
 
-```{=html}
 <!-- -->
-```
+
 1.  0.9% of Katong falls within the catchment area
 
 2.  0.5% of East Coast falls within the catchment area
@@ -299,17 +297,15 @@ Therefore, TE24 Katong Park is accessible from multiple subzones by cycling:
 
 1.  Marina East (MP) (94.9%)
 
-```{=html}
 <!-- -->
-```
+
 3.  Mountbatten (91.2%) 
 
 4.  Tanjong Rhu (54.1%)
 
 5.  Alijunied (13.8%)
 
-![](images/paste-7E325785.png)
-![](images/paste-3FC35CAC.png)
+![](images/paste-7E325785.png) ![](images/paste-3FC35CAC.png)
 
 ## 5 TE25 Tanjong Katong
 
@@ -372,13 +368,12 @@ Therefore, TE25 Tanjong Katong is accessible from multiple subzones by cycling:
 
 6.  Geylang East (10.8%)
 
-![](images/paste-C78A9790.png)
-![](images/paste-BDB915B7.png)
-![](images/paste-BEC68E9C.png)
+![](images/paste-C78A9790.png) ![](images/paste-BDB915B7.png) ![](images/paste-BEC68E9C.png)
 
 ## 6 TE26 Marine Parade
 
 ### 6.1 Catchment Population
+
 Distribution (Walking)
 
 \[insert pic here\]
@@ -404,6 +399,7 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 ![](images/paste-CA23C417.png)
 
 ### 6.2 Catchment Population
+
 Distribution (Cycling)
 
 \[insert pic here\]
@@ -432,9 +428,8 @@ Therefore, TE26 Marine Parade is accessible from multiple subzones by cycling:
 
 1.  Marine Parade (100%)
 
-```{=html}
 <!-- -->
-```
+
 2.  Katong (98.4%)
 
 3.  East Coast (96.8%)
@@ -447,12 +442,12 @@ Therefore, TE26 Marine Parade is accessible from multiple subzones by cycling:
 
 7.  Siglap (15.7%)
 
-![](images/paste-0D9244BE.png)
-![](images/paste-93E07A44.png)
+![](images/paste-0D9244BE.png) ![](images/paste-93E07A44.png)
 
 ## 7 TE27 Marine Terrace
 
 ### 7.1 Catchment Population
+
 Distribution (Walking)
 
 \[insert pic here\]
@@ -475,8 +470,7 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 25277 Singaporeans stay within the 1000m contour but only 11658 of them are willing to walk to TE27 Marine Terrace. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 46.1%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.
 
-![](images/paste-D9D49199.png)
-![](images/paste-BBF00F7F.png)
+![](images/paste-D9D49199.png) ![](images/paste-BBF00F7F.png)
 
 ### 7.2 Catchment Population Distribution (Cycling)
 
@@ -547,6 +541,7 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 ![](images/paste-B5D4F0AD.png)
 
 ### 8.2 Catchment Population
+
 Distribution (Cycling)
 
 \[insert pic here\]

@@ -32,7 +32,6 @@ This will significantly improve first and last mile journeys using public transp
 ### TE23 -- Tanjong Rhu
 
 ::: {layout-colnum="2"}
-
 ![Walking Catchment and Buffer](images/TE23%20Walking%20Buffer-01.png){fig-align="center"}
 :::
 
