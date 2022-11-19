@@ -16,26 +16,26 @@ Thomson East Coast line (TEL) was announced by the [Land Transport Authority](ht
 
 This is in conjunction with Singapore's Green Plan which, among others, aims to significantly reduce our carbon emissions and ensure that Singapore is more sustainable. One way would be to reduce demand for private transportation.
 
-Our focus is on the Stage 4 stations(Founders Memorial to Bayshore) , which are currently in the works and will be opened by 2025.
+Our focus is on the Stage 4 stations (Founders Memorial to Bayshore) , which are currently in the works and will be opened by 2025.
 
 ## Problem and Aim
 
-Presently, however, private transportation is preferred due to its ease and comfort. As a result, this study aims to see how accessible and convenient TEL Stage 4 MRT stations are for first and last mile journeys. We will do so by analysing two ways in which Singaporeans may get to the MRT - walking or cycling. This will prove whether the construction of TEL Stage 4 MRT is competent to successfully encourage people to use public transportation.
+[Presently, however, private transportation is preferred due to its ease and comfort.](https://www.channelnewsasia.com/singapore/car-sale-coe-prices-premiums-driving-covid-19-pandemic-2295731) As a result, this study aims to see how accessible and convenient TEL Stage 4 MRT stations are for first and last mile journeys. We will do so by analysing two ways in which Singaporeans may get to the MRT -- walking or cycling. This will prove whether the construction of TEL Stage 4 MRT is competent to successfully encourage people to use public transportation.
 
 ## Motivation
 
-With Singapore Green Plan 2030, we want to explore how the expansion of TEL Stage 4 MRT Stations can help in making public transportation and Singapore more sustainable and greener.
+With [Singapore Green Plan 2030](https://www.greenplan.gov.sg/key-focus-areas/energy-reset/), we want to explore how the expansion of TEL Stage 4 MRT Stations can help in making public transportation and Singapore more sustainable and greener.
 
 ## Deliverables
 
-### Deliverable #1
+### Deliverable 1
 
 We will provide both the buffer regions and the ISO-areas (using QNEAT3) of the aforementioned stations. The maximum walking distance for both buffer and ISO-area is 1000m while maximum cycling distance is 1500m.
 
-### Deliverable #2
+### Deliverable 2
 
 Afterwards, we will be conducting an analysis of the various amenities and buildings that lie within the catchment area.
 
-### Deliverable #3
+### Deliverable 3
 
 We will also find the population size of the people served by this line by using the composite subzone areas and population.

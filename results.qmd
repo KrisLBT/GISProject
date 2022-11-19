@@ -33,6 +33,8 @@ For the cycling catchment area, more residential areas are covered within it. Th
 
 Furthermore, Promenade MRT (CC4/DT14) lies within the cycling catchment area. This means that line transfers for cyclists who need to travel to a station in the Thomson-East Coast line can do so easily without having to take the bus or private transport.
 
+This will significantly improve first and last mile journeys using public transport for those who are willing to cycle since the reach of TE22A has expanded to those that start or end their journey anywhere along the Thomson-East Coast line or the Circle line.
+
 ### TE23 -- Tanjong Rhu
 
 ::: {layout-ncol="2"}
@@ -43,9 +45,11 @@ Furthermore, Promenade MRT (CC4/DT14) lies within the cycling catchment area. Th
 
 Compared to Founder's Memorial, the buffer area and the catchment areas are very similar to each other. This means that this area is very well-connected by the roads and walk/cycleways within the area and no new pathways need to be built to accommodate easier transit
 
-The contours for 0-600m around Tanjong Rhu station exits covers a significant number of residential areas . Upon looking at the area on Google Street Maps, some of these residential buildings may also be hotels. Building an MRT station here would ensure that Singaporeans and tourists staying within this area will be better served by public transportation, especially since there are no nearby other MRT stations within this area, apart from Founder's Memorial.
+There are more buildings covered by Tanjong Rhu catchment area as compared to Founder\'s Memorial catchment area. However, some of which lie in both catchment areas. These buildings in the overlapping catchment areas include residential and commercial buildings. Therefore, residents and people who frequent these commercial buildings get to benefit from the convenience of having two accessible MRT stations.
 
-Sports Hub also lies within the 1000m buffer zone. Singapore residents who wish to exercise will be able to use public transportation to travel there.
+Upon looking at the area on Google Street Maps, some buildings may also be hotels. Building an MRT station in the catchment area would ensure that Singaporeans and tourists staying within this area will be better served by public transportation, especially since there are no nearby other MRT stations within this area, apart from Founder's Memorial.
+
+Sports Hub also lies within the 1000m buffer zone. While it may be a 1000m walk from TE23, people who visit the Sports Hub are most likely to be ready to engage in some form of exercise. Hence, the willingness to walk 1000m to their destination will likely be greater than 15%. Thus, TE23 will serve as a sustainable and motivational form of transportation for active citizens travelling to the Sports Hub. Hence, Singapore residents who wish to exercise will be able to use public transportation to travel there.
 
 ::: {layout-ncol="2"}
 ![Catchment Area](images/TE23%20Cycling-01.png){fig-align="center" width="600"}

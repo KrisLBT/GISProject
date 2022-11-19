@@ -17,9 +17,9 @@ Our project aims to
 
 ## Motivations
 
-According to the Singapore Green Plan, the government wishes to substantially reduce our carbon emissions in order to combat climate change. One such way it aims to achieve this is by encouraging public transport instead of private transport.
+The Ministry of Transport aims to have [8 in 10 households in Singapore be within a 10 minute walk of an MRT](https://www.mot.gov.sg/news/details/opening-speech-by-minister-for-transport-mr-s-iswaran-at-singapore-international-transport-and-congress-exhibition). This was driven by the need to ensure that transit within Singapore continues to be sustainable and to reduce carbon emissions to combat climate change, which is one of the main goals highlighted in the [Singapore Green Plan](https://www.greenplan.gov.sg/key-focus-areas/energy-reset/).
 
-At present, most Singapore residents use public transport such as buses and trains. This is due to the costliness in purchasing and maintaining a car. However, many people still find public transportation to be insufficient, with many wealthier people and families opting for car ownership instead. This is partially driven by the comfort and ease that driving provides to its riders.
+At present, [most Singapore residents do not own a car](https://www.budgetdirect.com.sg/car-insurance/research/car-ownership-singapore). Instead, they use public transport such as buses and trains. This is due to the [costliness in purchasing and maintaining a car](https://fortune.com/2022/07/25/singapore-car-license-price/). However, many people still find public transportation to be insufficient, with many wealthier people and families opting for car ownership instead. This is partially driven by the comfort and ease that driving provides to its riders.
 
 However, this contributes to our carbon emissions and makes meeting the goals set by the Green Plan difficult to achieve. This is compounded by the fact that car ownership is a negative externality. Despite the convenience it affords to its owners, it aggravates traffic and is a source of various types of pollution apart from air pollution, such as noise.
 
@@ -27,7 +27,9 @@ This points to a need to strengthen our public transportation system and to acco
 
 ## Project Scope
 
-To assess the accessibility and effectiveness of the MRT stations, we analysed the building types and amenities within a 1000m and 1500m distance from the stations, both via Euclidean distance and network analysis. Furthermore, the population distribution by subzone was also used to understand the potential reach to residents within the area.
+To assess the accessibility and effectiveness of the MRT stations, we analysed the building types and amenities within a reasonable walking and cycling distance from the stations, both via Euclidean distance and network analysis. The distances selected for walking and cycling are 1000m and 1500m. These were selected based on the [willingness to walk certain distances among Singaporeans](https://www.researchgate.net/publication/245561443_Using_Equivalent_Walking_Distance_to_Assess_Pedestrian_Accessibility_to_Transit_Stations_in_Singapore). At 1000m, willingness dropped to around 10%, which is insignificant.
+
+Furthermore, the population distribution by subzone was also used to understand the potential reach to residents within the area.
 
 ## Project Timeline
 
