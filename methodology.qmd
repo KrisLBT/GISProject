@@ -7,7 +7,7 @@ The following is a step-by-step guide in using QGIS to complete our task.
 
 ------------------------------------------------------------------------
 
-## 1. Installing QNEAT3 plugin.
+## 1. Installing QNEAT3 plugin.
 
 Before getting started, you need to install QNEAT3 plugin.
 
