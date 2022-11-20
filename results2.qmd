@@ -89,14 +89,21 @@ Assumption made is:
 
 We have also defined the variables that we will be using in our calculations later and its formula (if any) based on the table as shown below.
 
++----------------------+----------------------------------------------------+-----------------------------------+
 | Variables            | Definition                                         | Formula (if any)                  |
-|----------------------|----------------------------------------------------|-----------------------------------|
++======================+====================================================+===================================+
 | Subzone Name         | Name of Subzone                                    | -Nil-                             |
++----------------------+----------------------------------------------------+-----------------------------------+
 | Catchment Area       | Area of Subzone in the Catchment Zone              | \$area from QGIS                  |
++----------------------+----------------------------------------------------+-----------------------------------+
 | Subzone Area         | Area of Subzone                                    | \$area from QGIS                  |
++----------------------+----------------------------------------------------+-----------------------------------+
 | Ratio                | Calculated Ratio of Catchment Area to Subzone Area | Catchment Area/Subzone Area       |
++----------------------+----------------------------------------------------+-----------------------------------+
 | Subzone Population   | Raw Subzone Population Numbers                     | -Nil-                             |
++----------------------+----------------------------------------------------+-----------------------------------+
 | Catchment Population | Calculated Catchment Population Numbers            | Ratio \* Total Subzone Population |
++----------------------+----------------------------------------------------+-----------------------------------+
 
 \
 
@@ -104,7 +111,7 @@ We have also defined the variables that we will be using in our calculations lat
 
 ### 2.1 Catchment Population Distribution (Walking)
 
-\[insert pic here\]
+![](images/paste-4C323744.png){fig-align="center"}
 
 Based on the Walking Catchment Population Distribution for TE22A Founders Memorial, we can see that these following subzones (Marina East and Tanjong Rhu) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Tanjong Rhu. This is shown by the blue contour layers.
 
@@ -124,21 +131,15 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 855 Singaporeans stay within the 1000m contour but only 199 of them are willing to walk to TE22A Founders Memorial. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 23.3%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.
 
-### 
+![](images/paste-E44D2C72.png){fig-align="center"}
 
-![](images/paste-4B6D61C9.png)
+### 2.2 Catchment Population Distribution (Cycling)
 
-2.2 Catchment Population Distribution (Cycling)
-
-\[pic here\]
+![](images/paste-9AD79646.png){fig-align="center"}
 
 Based on the Cycling Catchment Population Distribution for TE22A Founders Memorial, we can see that the largest proportion of the catchment population falls within Tanjong Rhu. This is shown by the red contour layers. However, the largest subzone covered in this catchment area is Marina East. This is shown by the white contours covering almost Marina East fully. 
 
-\
-
 We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.
-
-\
 
 Based on the layout and numbers generated, these following subzones \[Marina East (86.5%), Marina South (9.7%), Nicoll (8.1%), Marina Centre (16.5%), Marina East (MP) (2.2%) and Tanjong Rhu (20.2%)\] are captured at the 1600m mark. Additionally, it is noted that:
 
@@ -148,11 +149,7 @@ Based on the layout and numbers generated, these following subzones \[Marina Eas
 
 3.  2.2% of Marina East (MP) falls within the cycling catchment area.
 
-\
-
 As a result, these three subzones are considered insignificant, thus we will eliminate them from the list of subzones.
-
-\
 
 Therefore, TE22A Founders Memorial is accessible from multiple subzones by cycling:
 
@@ -162,13 +159,13 @@ Therefore, TE22A Founders Memorial is accessible from multiple subzones by cycli
 
 3.  Marina Centre (16.5%)
 
-![](images/paste-EDCE629A.png)
+![](images/paste-DF26A785.png)
 
 ## 3 TE23 Tanjong Rhu
 
 ### 3.1 Catchment Population Distribution (Walking)
 
-\[insert pic here\]
+![](images/paste-BA23ED92.png){fig-align="center"}
 
 Based on the Walking Catchment Population Distribution for TE23 Tanjong Rhu, we can see that these following subzones (Marina East, Nicoll and Tanjong Rhu) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Tanjong Rhu at the 200m mark onwards where all the residential areas lie. This is shown by the blue contour layers.
 
@@ -188,33 +185,23 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 6391 Singaporeans stay within the 1000m contour but only 2581 of them are willing to walk to TE23 Tanjong Rhu. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 40.4%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.
 
-![](images/paste-2BAB8A36.png)
+![](images/paste-C6C700C3.png)
 
 ### 3.2 Catchment Population Distribution (Cycling)
 
-\[insert pic here\]
+![](images/paste-8337B8DE.png){fig-align="center"}
 
 Based on the Cycling Catchment Population Distribution for TE23 Tanjong Rhu, we can see that the largest proportion of the catchment population still falls within Tanjong Rhu. This is shown by red contour layers. The largest subzone covered in this catchment area is also Tanjong Rhu. This is shown by the red contours covering Tanjong Rhu almost fully as well. 
 
-\
-
 We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.
 
-\
-
 Based on the layout and numbers generated, these following subzones \[Alijunied (0.4%), Kampong Bugis (17.9%), Marina Centre (7.3%), Marina East (31.3%), Marina East (MP) (6.5%), Mountbatten (1.5%), Nicoll (54.5%) and Tanjong Rhu (96.4)\] are captured at the 1600m mark. Additionally, it is noted that:
-
-\
 
 1.  Only 1.5% of Mountbatten falls within the catchment area
 
 2.  Only 0.4% of Alijunied falls within the catchment area
 
-\
-
 As a result, these two subzones are considered insignificant, thus we will eliminate Mountbatten and Alijunied from the list of subzones.
-
-\
 
 Therefore, TE22A Founders Memorial is accessible from multiple subzones by cycling:
 
@@ -236,7 +223,7 @@ Therefore, TE22A Founders Memorial is accessible from multiple subzones by cycli
 
 ### 4.1 Catchment Population Distribution (Walking)
 
-\[insert pic here\]
+![](images/paste-E85DF22E.png){fig-align="center"}
 
 Based on the Walking Catchment Population Distribution for TE24 Katong Park, we can see that these following subzones (Aljunied, Marina East (MP), Mountbattenl and Tanjong Rhu) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Mountbatten. This is shown by the darkest blue contour layer.
 
@@ -257,53 +244,36 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 8302 Singaporeans stays within the 1000m contour but only 3297 of them are willing to walk to TE24 Katong Park. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 39.7%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.
 
 \
-![](images/paste-7655EA63.png)
+![](images/paste-CB7F1F5C.png)
 
 ### 4.2 Catchment Population Distribution (Walking)
 
-\[insert pic here\]
+![](images/paste-5AA79EA9.png){fig-align="center"}
 
 Based on the Cycling Catchment Population Distribution for TE24 Katong Park, we can see that the largest proportion of the catchment population falls within Mountbatten. This is shown by the darkest red contour. The largest subzone covered in this catchment area is also Mountbatten. This is shown by the largest contour covering almost Mountbatten fully as well. 
 
-\
-
 We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.
 
-\
-
 Based on the layout and numbers generated, these following subzones \[Alijunied (13.8%), East Coast (0.5%), Geylang East (0.1%), Katong (0.9%), Marina East (4.3%), Marina East (MP) (94.9%), Marine Parade (3.2%), Mountbatten (91.2%) and Tanjong Rhu (54.1%)\] are captured at the 1600m mark. Additionally, it is noted that:
-
-\
 
 1.  4.3% of Marina East falls within the catchment area
 
 2.  3.2% of Marine Parade falls within the catchment area
 
-<!-- -->
+3.  0.9% of Katong falls within the catchment area
 
-1.  0.9% of Katong falls within the catchment area
+4.  0.5% of East Coast falls within the catchment area
 
-2.  0.5% of East Coast falls within the catchment area
-
-3.  0.1% of Geylang East falls within the catchment area
-
-\
+5.  0.1% of Geylang East falls within the catchment area
 
 As a result, these five subzones are considered insignificant, thus we will eliminate them from the list of subzones.
-
-\
 
 Therefore, TE24 Katong Park is accessible from multiple subzones by cycling:
 
 1.  Marina East (MP) (94.9%)
-
-<!-- -->
-
-3.  Mountbatten (91.2%) 
-
-4.  Tanjong Rhu (54.1%)
-
-5.  Alijunied (13.8%)
+2.  Mountbatten (91.2%) 
+3.  Tanjong Rhu (54.1%)
+4.  Alijunied (13.8%)
 
 ![](images/paste-7E325785.png) ![](images/paste-3FC35CAC.png)
 
@@ -311,7 +281,7 @@ Therefore, TE24 Katong Park is accessible from multiple subzones by cycling:
 
 ### 5.1 Catchment Population Distribution (Walking)
 
-\[insert pic here\]
+![](images/paste-9846B4C6.png){fig-align="center"}
 
 Based on the Walking Catchment Population Distribution for TE25 Tanjong Katong, we can see that these following subzones (East Coast, Katong, Marina East (MP), Marine Parade and Mountbatten) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Marine Parade. This is shown by the darkest blue contour layers.
 
@@ -332,19 +302,17 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 15857 Singaporeans stay within the 1000m contour but only 6620 of them are willing to walk to TE25 Tanjong Katong. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 41.7%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.
 
 \
-![](images/paste-E7AA9F90.png)
+![](images/paste-DAF6F5AF.png)
+
+![](images/paste-7659B90C.png)
 
 ### 5.2 Catchment Population Distribution (Cycling)
 
-\[insert pic here\]
+![](images/paste-3E1E6863.png){fig-align="center"}
 
-Based on the Cycling Catchment Population Distribution for TE25 Tanjong Katong, we can see that the largest proportion of the catchment population falls within Marine Parade. This is shown by the darkest red contour layer. However, the largest subzone covered in this catchment area is Mountbatten. This is shown by the largest contour covering almost Mountbatten fully. 
-
-\
+Based on the Cycling Catchment Population Distribution for TE25 Tanjong Katong, we can see that the largest proportion of the catchment population falls within Marine Parade. This is shown by the darkest red contour layer. However, the largest subzone covered in this catchment area is Mountbatten. This is shown by the largest contour covering almost Mountbatten fully.
 
 We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.
-
-\
 
 Based on the layout and numbers generated, these following subzones \[Alijunied (0.2%), East Coast (50.5%), Geylang East (10.8%), Katong (74.2%), Marina East (MP) (14.9%), Marine Parade (58.1%), Mountbatten (92.2%) and Tanjong Rhu (1.6%)\] are captured at the 1600m mark. Additionally, you can highlight that:
 
@@ -368,15 +336,15 @@ Therefore, TE25 Tanjong Katong is accessible from multiple subzones by cycling:
 
 6.  Geylang East (10.8%)
 
-![](images/paste-C78A9790.png) ![](images/paste-BDB915B7.png) ![](images/paste-BEC68E9C.png)
+![](images/paste-736850B2.png) ![](images/paste-82138343.png)
+
+![](images/paste-5E1ABD4E.png)
 
 ## 6 TE26 Marine Parade
 
-### 6.1 Catchment Population
+### 6.1 Catchment Population Distribution (Walking)
 
-Distribution (Walking)
-
-\[insert pic here\]
+![](images/paste-93C3E5F4.png){fig-align="center"}
 
 Based on the Walking Catchment Population Distribution for TE26 Marine Parade, we can see that these following subzones (East Coast, Frankel, Geylang East, Katong and Marine Parade) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Marine Parade. This is shown by the darkest blue contour layers.
 
@@ -396,61 +364,39 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 33379 Singaporeans stay within the 1000m contour but only 15308 of them are willing to walk to TE26 Marine Parade. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 45.9%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.
 
-![](images/paste-CA23C417.png)
+![](images/paste-D0F01339.png)
 
-### 6.2 Catchment Population
+### 6.2 Catchment Population Distribution (Cycling)
 
-Distribution (Cycling)
-
-\[insert pic here\]
+![](images/paste-65B75CE9.png){fig-align="center"}
 
 Based on the Cycling Catchment Population Distribution for TE26 Marine Parade, we can see that the largest proportion of the catchment population falls within Marine Parade. This is shown by the darkest red contour layer. However, the largest subzone covered in this catchment area is also Marine Parade. This is shown by the largest contour covering Marine Parade fully. 
 
-\
-
 We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.
-
-\
 
 Based on the layout and numbers generated, these following subzones \[Mountbatten (18,4%), Katong (98.4%), Marine Parade (100%), East Coast (96.8%), Marina East (2.7%), Frankel (26.9%), Geylang East (20.4%) and Siglap (15.7%)\] are captured at the 1600m mark. Additionally, it is noted that:
 
-\
-
 1.  2.7% of Marina East falls within the catchment area
 
-\
-
 As a result, this subzone is considered insignificant, thus we will eliminate it from the list of subzones.
-
-\
 
 Therefore, TE26 Marine Parade is accessible from multiple subzones by cycling:
 
 1.  Marine Parade (100%)
-
-<!-- -->
-
 2.  Katong (98.4%)
-
 3.  East Coast (96.8%)
-
 4.  Frankel (26.9%)
-
 5.  Geylang East (20.4%)
-
 6.  Mountbatten (18,4%)
-
 7.  Siglap (15.7%)
 
 ![](images/paste-0D9244BE.png) ![](images/paste-93E07A44.png)
 
 ## 7 TE27 Marine Terrace
 
-### 7.1 Catchment Population
+### 7.1 Catchment Population Distribution (Walking)
 
-Distribution (Walking)
-
-\[insert pic here\]
+![](images/paste-09C4D7BA.png){fig-align="center"}
 
 Based on the Walking Catchment Population Distribution for TE27 Marine Terrace, we can see that these following subzones (Katong, Marine Parade, East Coast, Frankel and Siglap) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Marine Terrace. This is shown by the darkest blue contour layers.
 
@@ -470,33 +416,25 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 25277 Singaporeans stay within the 1000m contour but only 11658 of them are willing to walk to TE27 Marine Terrace. The percentage of catchment population who is willing to walk to MRT Station over catchment population is 46.1%. This percentage does not reflect the number of Singaporeans who is willing to take public transportation but reflects the number of Singaporeans willing to walk to MRT station.
 
-![](images/paste-D9D49199.png) ![](images/paste-BBF00F7F.png)
+![](images/paste-70624A41.png)
+
+![](images/paste-C71C44FA.png)
 
 ### 7.2 Catchment Population Distribution (Cycling)
 
-\[insert pic here\]
+![](images/paste-AC5D5FC2.png){fig-align="center"}
 
 Based on the Cycling Catchment Population Distribution for TE27 Marine Terrace, we can see that the larger proportion of the catchment population falls within Marine Parade and Frankel. This is shown by the darkest red contour layers. However, the largest subzone covered in this catchment area is Frankel. This is shown by the largest contour covering Frankel. 
 
-\
-
 We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.
 
-\
-
 Based on the layout and numbers generated, these following subzones \[Marine Parade (81.1%), Frankel (55.2%), Siglap (55.6%), Geylang East (2.1%), Katong (53.6%), Kembangan (0.9%) and East Coast (63.6%)\] are captured at the 1600m mark. Additionally, it is noted that:
-
-\
 
 1.  2.1% of Geylang East falls within the catchment area
 
 2.  0.9% of Kembangan falls within the catchment area
 
-\
-
 As a result, these subzones are considered insignificant, thus we will eliminate them from the list of subzones.
-
-\
 
 Therefore, TE27 Marine Terrace is accessible from multiple subzones by cycling:
 
@@ -518,7 +456,7 @@ Therefore, TE27 Marine Terrace is accessible from multiple subzones by cycling:
 
 ### 8.1 Catchment Population Distribution (Walking)
 
-\[insert pic here\]
+![](images/paste-BAE4FF3C.png){fig-align="center"}
 
 Based on the Walking Catchment Population Distribution for TE28 Siglap, we can see that these following subzones (Siglap, Frankel, Bayshore and Bedok South) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Frankel. This is shown by the darkest blue contour layer.
 
@@ -540,35 +478,21 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 ![](images/paste-B5D4F0AD.png)
 
-### 8.2 Catchment Population
+### 8.2 Catchment Population Distribution (Cycling)
 
-Distribution (Cycling)
-
-\[insert pic here\]
+![](images/paste-4DD9BAD2.png){fig-align="center"}
 
 Based on the Cycling Catchment Population Distribution for TE28 Siglap, we can see that the largest proportion of the catchment population falls within Frankel. This is shown by the darkest red contour layers. The largest subzone covered in this catchment area is also Frankel. This is shown by the largest contour covering Frankel. 
 
-\
-
 We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.
-
-\
 
 Based on the layout and numbers generated, these following subzones \[Siglap (90.0%), Frankel (50.4%), Bayshore (24.5%), Bedok South (16.8%), Marine Parade (7.0%) and East Coast (0.5%)\] are captured at the 1600m mark. Additionally, it is noted that:
 
-\
-
 1.  0.5% of East Coast falls within the catchment area
-
-\
 
 As a result, this subzone is considered insignificant, thus we will eliminate it from the list of subzones.
 
-\
-
 Therefore, TE28 Siglap is accessible from multiple subzones by cycling:
-
-\
 
 1.  Siglap (90.0%)
 
@@ -586,7 +510,7 @@ Therefore, TE28 Siglap is accessible from multiple subzones by cycling:
 
 ### 9.1 Catchment Population Distribution (Walking)
 
-\[insert pic here\]
+![](images/paste-BF453BBA.png){fig-align="center"}
 
 Based on the Walking Catchment Population Distribution for TE29 Bayshore, we can see that these following subzones (Bayshore, Bedok South, Frankel, Siglap) are captured at the 1000m mark. However, we can see that the largest proportion of catchment population falls within Bedok South. This is shown by the darkest blue contour layer.
 
@@ -610,23 +534,15 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 ### 9.2 Catchment Population Distribution (Cycling)
 
-\[insert pic here\]
+![](images/paste-4DDD8BD0.png){fig-align="center"}
 
 Based on the Cycling Catchment Population Distribution for TE29 Bayshore, we can see that the largest proportion of the catchment population falls within Bedok South. This is shown by the darkest red contour layer. The largest subzone covered in this catchment area is also Bedok South. This is shown by the largest contour covering Bedok South. 
 
-\
-
 We further broke down the population distribution per contour and subzone level below to visualize these numbers more clearly. Though these numbers are very large, the percentage of people who cycle is very low. As a result, these numbers do not reflect people who are willing to cycle to MRT but the distribution of catchment population within subzone areas.
-
-\
 
 Based on the layout and numbers generated, these following subzones \[Bayshore (51.9%), Bedok South (54.4%), Frankel (10.3%) and Siglap (26.5%)\] are captured at the 1600m mark. 
 
-\
-
 Since there are no insignificant subzones, TE28 Siglap is accessible from multiple subzones by cycling:
-
-\
 
 1.  Bedok South (54.4%)
 
