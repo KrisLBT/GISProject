@@ -40,8 +40,44 @@ Afterwards, we will be conducting an analysis of the various amenities and build
 
 We will also find the population size of the people served by this line by using the composite subzone areas and population.
 
-## Poster
+## Posters
+
+### Townhall Poster
 
 Here is the poster used at the Townhall presentation:
 
-![](images/Catch%20Them%20All.jpg){width="1600"}
+![](images/Poster.png)
+
+Here are the posters for the other stations:
+
+### TE22A
+
+![](images/TE22A%20Founder%20Memorial-01.png)
+
+### TE23
+
+![](images/TE23%20Tanjong%20Rhu-02.png)
+
+### TE24
+
+![](images/TE24%20Katong%20Park-01.png)
+
+### TE25
+
+![](images/TE25%20Tanjong%20Katong-01.png)
+
+### TE26
+
+![](images/TE26%20Marine%20Parade-01.png)
+
+### TE27
+
+![](images/TE27%20Marine%20Terrace-01.png)
+
+### TE28
+
+![](images/TE28%20Siglap-01.png)
+
+### TE29
+
+![](images/TE29%20Bayshore-01.png)
