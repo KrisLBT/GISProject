@@ -1,9 +1,9 @@
 ---
-title: "Step by Step Guide"
+title: "Methodology"
 editor: visual
 ---
 
-The following is a step-by-step guide in using QGIS to complete our task.
+A detailed documentation of the methods used can be found below
 
 ------------------------------------------------------------------------
 
@@ -765,22 +765,37 @@ Using the steps you had learned earlier, generate walking and cycling network se
 
 #### **4.1.5. Creating Walking and Cycling Network Service Area for the Rest of the TEL Stage 4 MRT Stations**
 
-|  MRT Station Name   |         Layer Cleaning         |       Layer Name        |
-|:-------------------:|:------------------------------:|:-----------------------:|
-|  TE23 Tanjong Rhu   | ![](images/paste-F1627895.png) | TE23 Contours (Walking) |
-|  TE23 Tanjong Rhu   | ![](images/paste-57A1A192.png) | TE23 Contours (Cycling) |
-|  TE24 Katong Park   | ![](images/paste-F9EB11E7.png) | TE24 Contours (Walking) |
-|  TE24 Katong Park   | ![](images/paste-44EE9F00.png) | TE24 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+| MRT Station Name    | Layer Cleaning                 | Layer Name              |
++:===================:+:==============================:+:=======================:+
+| TE23 Tanjong Rhu    | ![](images/paste-F1627895.png) | TE23 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+| TE23 Tanjong Rhu    | ![](images/paste-57A1A192.png) | TE23 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+| TE24 Katong Park    | ![](images/paste-F9EB11E7.png) | TE24 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+| TE24 Katong Park    | ![](images/paste-44EE9F00.png) | TE24 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
 | TE25 Tanjong Katong | ![](images/paste-32474ADC.png) | TE25 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
 | TE25 Tanjong Katong | ![](images/paste-96F6298B.png) | TE25 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
 | TE26 Marine Parade  | ![](images/paste-A9ABA3FD.png) | TE26 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
 | TE26 Marine Parade  | ![](images/paste-81496094.png) | TE26 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
 | TE27 Marine Terrace | ![](images/paste-1A40E7E9.png) | TE27 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
 | TE27 Marine Terrace | ![](images/paste-038D26A1.png) | TE27 Contours (Cycling) |
-|     TE28 Siglap     | ![](images/paste-302637B9.png) | TE28 Contours (Walking) |
-|     TE28 Siglap     | ![](images/paste-992D62CC.png) | TE28 Contours (Cycling) |
-|    TE29 Bayshore    | ![](images/paste-3C489BBA.png) | TE29 Contours (Walking) |
-|    TE29 Bayshore    | ![](images/paste-6932FABE.png) | TE29 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+| TE28 Siglap         | ![](images/paste-302637B9.png) | TE28 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+| TE28 Siglap         | ![](images/paste-992D62CC.png) | TE28 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
+| TE29 Bayshore       | ![](images/paste-3C489BBA.png) | TE29 Contours (Walking) |
++---------------------+--------------------------------+-------------------------+
+| TE29 Bayshore       | ![](images/paste-6932FABE.png) | TE29 Contours (Cycling) |
++---------------------+--------------------------------+-------------------------+
 
 ## 5. Extracting Amenities within Catchment Areas for Amenities Analysis
 

@@ -1,5 +1,5 @@
 ---
-title: "Report Pt.2"
+title: "Results of Population Analysis"
 editor: visual
 ---
 
@@ -267,8 +267,11 @@ As a result, these five subzones are considered insignificant, thus we will elim
 Therefore, TE24 Katong Park is accessible from multiple subzones by cycling:
 
 1.  Marina East (MP) (94.9%)
+
 2.  Mountbatten (91.2%) 
+
 3.  Tanjong Rhu (54.1%)
+
 4.  Alijunied (13.8%)
 
 ![](images/paste-7E325785.png) ![](images/paste-3FC35CAC.png)

@@ -1,5 +1,5 @@
 ---
-title: "Report Pt.1"
+title: "Results of Amenities Analysis"
 editor: visual
 ---
 
@@ -39,6 +39,8 @@ In order to conduct similar analysis for both our Walking and Cycling Catchment,
 
 ### 2.1. TE22A -- Founders Memorial
 
+#### 2.1.1. Catchment Amenities Distribution and Buffer (Walking)
+
 ![Walking Catchment and Buffer](images/TE22A%20Walking%20Buffer-01.png){fig-align="center" width="1600"}
 
 Notably, there are few residential areas within the walking catchment area. The residential areas are also within the 800-1000m contour, where only a small number of people would be willing to walk. However, this MRT station is near several tourist attractions such as Founder\'s Memorial, Garden by the Bay East and Marina Bay Golf Course. In doing so, people who wish to visit these areas will have their needs better accommodated to and businesses that cater to them may see increased foot traffic. Hence, tourists and tourist-facing businesses are the main beneficiaries of this station. This would mean that TE22A will not be very useful for first mile journeys, but will be catered more for last mile journeys for people to get to these tourist spots and recreational activities.
@@ -46,6 +48,8 @@ Notably, there are few residential areas within the walking catchment area. The 
 The buffer area covers the area across the bridge while the catchment area that is based on the road network cuts off before the bridge. This suggests that there is the potential for encouraging walks across the bridge that has not yet been fully tapped into yet. To do so, more direct networks could be built such that travellers would be able to cross the bridge without having to use other forms of transport such as buses or taxis. 
 
 From the layout, it can also be seen that walking contour intervals are more clustered together towards the centre of the map. It signifies that those areas are inaccessible based on the existing road network systems. However, since the area belongs to Marina Bay Golf Course, it is a private property which explains its inaccessibility.
+
+#### 2.1.2. Catchment Amenities Distribution and Buffer (Cycling)
 
 ![Cycling Catchment and Buffer](images/TE22A%20Cycling%20Buffer.png){fig-align="center" width="1600"}
 
@@ -57,6 +61,8 @@ From the layout, it can also be seen that cycling contour intervals are more clu
 
 ### 2.2. TE23 -- Tanjong Rhu
 
+#### 2.2.1. Catchment Amenities Distribution and Buffer (Walking)
+
 ![Walking Catchment and Buffer](images/TE23%20Walking-01.png){fig-align="center" width="1600"}
 
 There are more buildings covered by Tanjong Rhu catchment area as compared to Founder\'s Memorial catchment area. Some of which lie in both catchment areas. These buildings in the overlapping catchment areas include residential and commercial buildings. Therefore, residents and people who frequent these commercial buildings get to benefit from the convenience of having two accessible MRT stations, improving both first and last mile journeys. Upon looking at the area on Google Street Maps, some buildings in the catchment area may also be hotels. Building an MRT station here would ensure that Singaporeans and tourists staying within this area will be better served by public transportation, especially since there are no nearby other MRT stations within this area, apart from Founder\'s Memorial.
@@ -64,6 +70,8 @@ There are more buildings covered by Tanjong Rhu catchment area as compared to Fo
 Sports Hub also lies within the 1000m buffer zone. Singapore residents who wish to exercise will be able to use public transportation to travel there. Although the Sports Hub may be a 1000m walk from TE23, people who visit the Sports Hub are most likely to be ready to engage in some form of exercise. Hence, the willingness to walk 1000m to their destination will likely be greater than 15%. Thus, TE23 will serve as a sustainable and motivational form of transportation for active citizens travelling to the Sports Hub.
 
 Compared to TE22A Founder\'s Memorial, the walking contour intervals for TE23 Tanjong Rhu is more spaced out. This means that the walking catchment area is more well-connected by the roads within the area. No new pathways need to be built to accommodate easier transit. Despite more clustered contour intervals near East Coast Part Zone A, it is remembered that its nearby land belongs to Marina Bay Golf Course, which is a private property, explaining its inaccessibility.
+
+#### 2.2.2. Catchment Amenities Distribution and Buffer (Cycling)
 
 ![Cycling Catchment and Buffer](images/TE23%20Cycling-02.png){fig-align="center" width="1600"}
 
@@ -73,6 +81,8 @@ Compared to TE22A Founder\'s Memorial, the cycling contour intervals for TE23 Ta
 
 ### 2.3. TE24 -- Katong Park
 
+#### 2.3.1. Catchment Amenities Distribution and Buffer (Walking)
+
 ![Walking Catchment and Buffer](images/TE24%20Walking-01.png){fig-align="center" width="1600"}
 
 The walking catchment area covers a significant number of residential areas for both low rise and high rise buildings, including hotels. The station will, thus, be able to cater to a large and diverse set of people who may need to travel to tourist attractions or to commercial buildings. Therefore, improving first mile journey can be addressed by TE24 since the station is largely centred around living land use. 
@@ -80,6 +90,8 @@ The walking catchment area covers a significant number of residential areas for 
 Dunman High is also 400-600m away (5-7 minutes' walk) from TE24, making it more convenient for students to alight here than at Mountbatten, the current nearest MRT which is a 15 minutes' walk. Since most students will travel with public transportation, this also improves last mile journey for students as they have a much more convenient route to travel to school after alighting from an MRT station.
 
 The walking contour intervals for TE24 Katong Park are evenly distributed. This means that the catchment area is more well-connected by the roads within the area. No new pathways need to be built to accommodate easier transit. Furthermore, since the walking catchment area nearly covers the buffer, it also shows that the existing road network is almost at optimum and location is ideal for Singaporeans to walk TE24 Katong Park with ease.
+
+#### 2.3.2. Catchment Amenities Distribution and Buffer (Cycling)
 
 ![Cycling Catchment and Buffer](images/TE24%20Cycling%20Buffer-02.png){fig-align="center" width="1600"}
 
@@ -91,6 +103,8 @@ The cycling contour intervals for TE24 Katong Park are also evenly distributed. 
 
 ### 2.4. TE25 -- Tanjong Katong
 
+#### 2.4.1. Catchment Amenities Distribution and Buffer (Walking)
+
 ![Walking Catchment and Buffer](images/TE25%20Walking%20Buffer-02.png){fig-align="center" width="1600"}
 
 The walking catchment area covers a significant number of residential buildings - both high rise and low rise, including hotels and condominiums. This could suggest that the TEL would need to be able to accommodate a diverse pool of needs, ranging from tourists and residents. Importantly, the majority of them are low rise residential areas, where people are generally car owners. Hence, by making public transport more accessible to these residents, the ease of first mile journey using public transport will highly encourage them to use their cars less frequently and opt to use the train when travelling instead.
@@ -98,6 +112,8 @@ The walking catchment area covers a significant number of residential buildings 
 The discrepancy between the buffer area and the area covered by the road network is mostly due to the low rise residential buildings. This suggests that providing a more convenient first mile journey for these residents could be achievable if there are better road networks in this area. With the current road networks, it could have contributed to the residents\' use of private vehicles to get to their destination, even if they are of a short distance. Therefore, the enhancement for first mile journey could have been benefited by a larger population.
 
 Similarly to TE24 Katong Park, the walking contour intervals for TE25 Tanjong Katong are also evenly distributed. This means that the walking catchment area is more well-connected by the roads within the area.The Singapore Government can explore improving the road network systems to expand the walking catchment area upwards towards the buffer limit. However, since the walking catchment area covers a significant part of the buffer, it shows that the existing road network is almost at optimum and location is ideal for Singaporeans for Singaporeans to walk to TE25 Tanjong Katong with ease.
+
+#### 2.4.2. Catchment Amenities Distribution and Buffer (Cycling)
 
 ![Cycling Catchment and Buffer](images/TE25%20Cycling%20Buffer.png){fig-align="center" width="1600"}
 
@@ -109,6 +125,8 @@ Similarly to TE24 Katong Park, the cycling contour intervals for TE25 Tanjong Ka
 
 ### 2.5. TE26 -- Marine Parade
 
+#### 2.5.1. Catchment Amenities Distribution and Buffer (Walking)
+
 ![Walking Catchment and Buffer](images/TE26%20Marine%20Parade%20MRT%20(Walking)-01.png){fig-align="center" width="1600"}
 
 Within the 0-400m contour of the Iso-Area, most buildings are residential and retail buildings. This shows that the MRT station will be very useful in encouraging a diverse set of people to take public transportation as it can reach out to a large number of people who have a high willingness to walk to an MRT station to travel. The MRT will be located directly beside a few large retail buildings, with one of its exits lying inside one retail building to provide easy access to the station through the mall. This suggests that the intended main beneficiaries of such a station would be people who work in the commercial buildings within the region. Thus, the first mile and last mile journeys for residents and workers in this region will be significantly improved.
@@ -116,6 +134,8 @@ Within the 0-400m contour of the Iso-Area, most buildings are residential and re
 We can also see that TE26 will have 6 exits that are distributed throughout a relatively large area, where 3 of them lie outside the MRT station itself. This provides people with a comfortable and convenient way to access TE26 through an underground pass at a further distance from the MRT station itself, further reducing the barriers to accessibility of using public transport. 
 
 Similarly to TE25 Tanjong Katong, the walking contour intervals for TE26 Marine Parade are also relatively distributed. This means that the walking catchment area is more well-connected by the roads within the area. Since the walking catchment area covers a significant part of the buffer, it shows that the existing road network is almost at optimum and  location is ideal for Singaporeans to walk to TE26 Marine Parade with ease.
+
+#### 2.5.2. Catchment Amenities Distribution and Buffer (Cycling)
 
 ![Cycling Catchment and Buffer](images/TE26%20Marine%20Parade%20MRT%20(Cycling).png){fig-align="center" width="1600"}
 
@@ -127,11 +147,15 @@ Similarly to TE25 Tanjong Katong, the cycling contour intervals for TE26 Marine 
 
 ### 2.6. TE27 -- Marine Terrace
 
+#### 2.6.1. Catchment Amenities Distribution and Buffer (Walking)
+
 ![Walking Catchment and Buffer](images/TE27%20Marine%20Terrance%20MRT%20(Walking).png){fig-align="center" width="1600"}
 
 The walking catchment area covers many residential buildings, especially that of high rise buildings located within 0-600m of the MRT station. This means that there will be a high percentage of people who will walk to the MRT despite a 50% willingness at a distance of 600m since high rise residential buildings are home to a large number of people. This will mean that first mile journey will improve for a large number of people. Within 0-400m of this catchment area also includes 5 schools. Hence, this MRT will provide students more options and convenience to travel, improving last mile journey for them. With the short last mile journey distance for students, it could also substantially reduce traffic congestion, especially during drop-off periods, as students may opt to use the MRT instead of private vehicles. As many buildings within this catchment area are of high density functions, TE27 proves to be a very useful station for many people to use as their travelling mode.
 
 As shown by the buffer area, more low rise residential buildings would be covered if there were better road networks. This could suggest that the number of roads inside these low rise residential neighbourhoods is insufficient for walking. This will hence cause people to use private vehicles to travel instead. Therefore, in order to encourage these residents to switch to public transport, better road networks can be implemented.
+
+#### 2.6.2. Catchment Amenities Distribution and Buffer (Cycling)
 
 ![Cycling Catchment and Buffer](images/TE27%20Marine%20Terrance%20MRT%20(Cycling).png){fig-align="center" width="1600"}
 
@@ -141,11 +165,15 @@ Nonetheless, the cycling contour intervals for TE27 Marine Terrace are also rela
 
 ### 2.7. TE28 -- Siglap
 
+#### 2.7.1. Catchment Amenities Distribution and Buffer (Walking)
+
 ![Walking Catchment and Buffer](images/TE28%20Siglap%20MRT%20(Walking).png){fig-align="center" width="1600"}
 
 Most of the buildings within the walking catchment area of TE28 are low rise residential, suggesting that most people living in this area are of high economic status. As such, most may own private vehicles and the presence of an MRT may not be as effective to encourage people to use public transportation as their form of travel. However, it still has the potential to encourage them to switch over to public transportation occasionally and its presence can precipitate a modal shift within this population. The (high rise) residential buildings within 0-400m of the MRT may greatly serve these residents and their first mile journeys. Since the majority of the buildings in this catchment area are for residential, TE28 will greatly serve to improve first mile journeys for Singaporeans. Furthermore, Victoria School is located within 200m of the MRT, providing great convenience for these students\' last mile journey as well.
 
 Similarly to TE27 Marine Parade, the cycling contour intervals for TE28 Siglap are also relatively distributed. This means that the walking catchment area is more well-connected by the roads within the area. Since the walking catchment area covers a significant part of the buffer, it shows that the existing road network is almost at optimum and location is ideal for Singaporeans for Singaporeans to walk to TE28 Siglap with ease.
+
+#### 2.7.2. Catchment Amenities Distribution and Buffer (Cycling)
 
 ![Cycling Catchment and Buffer](images/TE28%20Siglap%20MRT%20(Cycling).png){width="1600"}
 
@@ -155,6 +183,8 @@ Similarly to TE27 Marine Parade, the cycling contour intervals for TE28 Siglap a
 
 ### 2.8. TE29 -- Bayshore
 
+#### 2.8.1. Catchment Amenities Distribution and Buffer (Walking)
+
 ![Walking Catchment and Buffer](images/TE29%20Bayshore%20MRT%20(Walking)-01.png){width="1600"}
 
 All types of residential buildings lie close on the North and West sides of TE29 Bayshore. Interestingly, an equal number of residential and low rise residential buildings fall within 0-600m of the catchment area. This suggests that the main intended beneficiaries of this station would be for the first mile journey for all socioeconomic classes residents in this catchment area. The inclusion of the higher socioeconomic class means that the wealthier residents may be encouraged to use private transport less and instead use public transport. 
@@ -162,6 +192,8 @@ All types of residential buildings lie close on the North and West sides of TE29
 Given that this catchment area is quite small, TE29 Bayshore still has 5 MRT exits, two of which do not have any buildings or POIs near them. This may suggest that these 2 exits in the East of TE29 Bayshore MRT are redundant since any other POIs or buildings are closer to the 3 other exits that TE29 Bayshore already has. Building unnecessary exits may cause users alighting at TE29 Bayshore to get confused by which exit to come out from, causing accidental mistakes and prolonging the last mile journey. Hence, this may make the last mile journey for people alighting at TE29 Bayshore more difficult and unpleasant.
 
 The buffer area for TE29 Bayshore covers a much significant area as compared to the catchment area. We can see that the East Coast Park (ECP) at the South-East of the buffer area cannot be accessed by the contour area at all, suggesting that there is a very poor road network in this region. To counter this, better road networks can be implemented, such as underpass or overhead bridge across the ECP highway in this South-East region in order to improve last mile journeys to ECP. Furthermore, this will then put the 2 exits on the East of TE29 Bayshore MRT to good use.
+
+#### 2.8.2. Catchment Amenities Distribution and Buffer (Cycling)
 
 ![Cycling Catchment and Buffer](images/TE29%20Bayshore%20MRT%20(Cycling).png){fig-align="center" width="1600"}
 
@@ -173,7 +205,7 @@ Similarly to TE28 Siglap, the cycling contour intervals for TE29 Bayshore are al
 
 The catchment areas, for both walking and cycling, show us that the main beneficiaries of  the TEL Stage 4 MRT stations are the residents. This is primarily due to the large catering of land use by the [Master Plan 2019](https://www.ura.gov.sg/maps/?service=MP) toward Residential along the East Coast of Singapore in the Marine Parade Subzone. These Residential land use will hence have the greatest direct impact by the presence of TEL. 
 
-With the majority of these residential buildings being low rise residential estates, the TEL may achieve its goal of encouraging more wealthy people to switch to public transportation through the promotion of higher convenience and increased accessibility to public transportation. There is now a higher hope that the majority of these residents will take up TEL Stage 4 MRT Stations for their journeys. 
+With the majority of these residential buildings being low rise residential estates, the TEL Stage 4 MRT Stations may achieve its goal of encouraging more wealthy people to switch to public transportation through the promotion of higher convenience and increased accessibility to public transportation. There is now a higher hope that the majority of these residents will take up TEL Stage 4 MRT Stations for their journeys. 
 
 Therefore, this will improve road congestion problems, making first and last mile journeys for all road users a more efficient one. Furthermore, with the TEL\'s aims to reduce travel time to the central area, nearby Singaporeans\' needs will now be better accommodated.
 
