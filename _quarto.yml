@@ -8,7 +8,7 @@ website:
       - href: index.qmd
         text: Introduction
       - href: intro.qmd
-        text: Project Scope
+        text: Project Proposal
       - href: methodology.qmd
         text: Methodology
       - href: data.qmd
