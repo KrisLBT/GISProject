@@ -3,11 +3,11 @@ title: "Report Pt.2"
 editor: visual
 ---
 
-## 1 Means of Analysis
+## 1. Means of Analysis
 
 ### 1.1. Significance of Catchment Population Distribution (Walking) Analysis
 
-As Singapore moves towards SG Green Plan 2030, one of their goals is to [achieve 75% mass public transport (i.e. rail and bus) peak-period modal share](https://www.greenplan.gov.sg/targets). By expanding current MRT station network, they hope to make public transportation more accessible for Singaporeans to encourage more Singaporeans to take them. With this goal in mind, we will conduct Population Distribution Analysis for Walking Catchment Areas. It will consist of the following:
+As Singapore moves towards SG Green Plan 2030, one of their goals is to [achieve 75% mass public transport (i.e. rail and bus) peak-period modal share](https://www.greenplan.gov.sg/targets). By expanding current MRT station network, they hope to make public transportation more accessible for Singaporeans to encourage more Singaporeans to take them. Furthermore, we will explore how effective the catchment areas of the upcoming Thomson-East Coast station are based on the current road network present i encouraging Singaporeans to cycle. With this goal in mind, we will conduct Population Distribution Analysis for Walking Catchment Areas. It will consist of the following:
 
 1.  Proportion of population captured within a subzone 
 
@@ -65,7 +65,7 @@ We have also defined the variables that we will be using in our calculations lat
 
 \
 
-### 1.2 Significance of Catchment Population Distribution (cycling) Analysis
+### 1.2. Significance of Catchment Population Distribution (cycling) Analysis
 
 With this goal in mind, we will conduct Population Distribution Analysis for Cycling Catchment Areas. It will consist of the following:
 
@@ -101,11 +101,11 @@ We have also defined the variables that we will be using in our calculations lat
 | Catchment Population | Calculated Catchment Population Numbers            | Ratio \* Total Subzone Population |
 +----------------------+----------------------------------------------------+-----------------------------------+
 
-\
+##  2. Amenities Analysis for Stations
 
-## 2 TE22A Founders Memorial
+### 2.1. TE22A Founders Memorial
 
-### 2.1 Catchment Population Distribution (Walking)
+#### 2.1.1. Catchment Population Distribution (Walking)
 
 ![](images/paste-4C323744.png){fig-align="center"}
 
@@ -129,7 +129,7 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 ![](images/paste-E44D2C72.png){fig-align="center"}
 
-### 2.2 Catchment Population Distribution (Cycling)
+#### 2.1.2. Catchment Population Distribution (Cycling)
 
 ![](images/paste-9AD79646.png){fig-align="center"}
 
@@ -157,9 +157,9 @@ Therefore, TE22A Founders Memorial is accessible from multiple subzones by cycli
 
 ![](images/paste-DF26A785.png)
 
-## 3 TE23 Tanjong Rhu
+### 2.2. TE23 Tanjong Rhu
 
-### 3.1 Catchment Population Distribution (Walking)
+#### 2.2.1. Catchment Population Distribution (Walking)
 
 ![](images/paste-BA23ED92.png){fig-align="center"}
 
@@ -183,7 +183,7 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 ![](images/paste-C6C700C3.png)
 
-### 3.2 Catchment Population Distribution (Cycling)
+#### 2.2.2. Catchment Population Distribution (Cycling)
 
 ![](images/paste-8337B8DE.png){fig-align="center"}
 
@@ -215,9 +215,9 @@ Therefore, TE22A Founders Memorial is accessible from multiple subzones by cycli
 
 ![](images/paste-3B6A65F0.png)
 
-## 4 TE24 Katong Park
+### 2.3. TE24 Katong Park
 
-### 4.1 Catchment Population Distribution (Walking)
+#### 2.3.1. Catchment Population Distribution (Walking)
 
 ![](images/paste-E85DF22E.png){fig-align="center"}
 
@@ -242,7 +242,7 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 \
 ![](images/paste-CB7F1F5C.png)
 
-### 4.2 Catchment Population Distribution (Walking)
+#### 2.3.2. Catchment Population Distribution (Walking)
 
 ![](images/paste-5AA79EA9.png){fig-align="center"}
 
@@ -273,9 +273,9 @@ Therefore, TE24 Katong Park is accessible from multiple subzones by cycling:
 
 ![](images/paste-7E325785.png) ![](images/paste-3FC35CAC.png)
 
-## 5 TE25 Tanjong Katong
+### 2.4. TE25 Tanjong Katong
 
-### 5.1 Catchment Population Distribution (Walking)
+#### 2.4.1. Catchment Population Distribution (Walking)
 
 ![](images/paste-9846B4C6.png){fig-align="center"}
 
@@ -302,7 +302,7 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 ![](images/paste-7659B90C.png)
 
-### 5.2 Catchment Population Distribution (Cycling)
+#### 2.4.2. Catchment Population Distribution (Cycling)
 
 ![](images/paste-3E1E6863.png){fig-align="center"}
 
@@ -336,9 +336,9 @@ Therefore, TE25 Tanjong Katong is accessible from multiple subzones by cycling:
 
 ![](images/paste-5E1ABD4E.png)
 
-## 6 TE26 Marine Parade
+### 2.5 TE26 Marine Parade
 
-### 6.1 Catchment Population Distribution (Walking)
+#### 2.5.1. Catchment Population Distribution (Walking)
 
 ![](images/paste-93C3E5F4.png){fig-align="center"}
 
@@ -362,7 +362,7 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 ![](images/paste-D0F01339.png)
 
-### 6.2 Catchment Population Distribution (Cycling)
+#### 2.5.2. Catchment Population Distribution (Cycling)
 
 ![](images/paste-65B75CE9.png){fig-align="center"}
 
@@ -388,9 +388,9 @@ Therefore, TE26 Marine Parade is accessible from multiple subzones by cycling:
 
 ![](images/paste-0D9244BE.png) ![](images/paste-93E07A44.png)
 
-## 7 TE27 Marine Terrace
+### 2.6. TE27 Marine Terrace
 
-### 7.1 Catchment Population Distribution (Walking)
+#### 2.6.1. Catchment Population Distribution (Walking)
 
 ![](images/paste-09C4D7BA.png){fig-align="center"}
 
@@ -416,7 +416,7 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 ![](images/paste-C71C44FA.png)
 
-### 7.2 Catchment Population Distribution (Cycling)
+#### 2.6.2. Catchment Population Distribution (Cycling)
 
 ![](images/paste-AC5D5FC2.png){fig-align="center"}
 
@@ -448,9 +448,9 @@ Therefore, TE27 Marine Terrace is accessible from multiple subzones by cycling:
 
 ![](images/paste-95CEF0AC.png)
 
-## 8 TE28 Siglap
+### 2.7. TE28 Siglap
 
-### 8.1 Catchment Population Distribution (Walking)
+#### 2.7.1. Catchment Population Distribution (Walking)
 
 ![](images/paste-BAE4FF3C.png){fig-align="center"}
 
@@ -474,7 +474,7 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 ![](images/paste-B5D4F0AD.png)
 
-### 8.2 Catchment Population Distribution (Cycling)
+#### 2.7.2. Catchment Population Distribution (Cycling)
 
 ![](images/paste-4DD9BAD2.png){fig-align="center"}
 
@@ -502,9 +502,9 @@ Therefore, TE28 Siglap is accessible from multiple subzones by cycling:
 
 ![](images/paste-52114DCB.png)
 
-## 9 TE29 Bayshore
+### 2.8. TE29 Bayshore
 
-### 9.1 Catchment Population Distribution (Walking)
+#### 2.8.1. Catchment Population Distribution (Walking)
 
 ![](images/paste-BF453BBA.png){fig-align="center"}
 
@@ -528,7 +528,7 @@ Based on the numbers generated, the following breakdown are the Singaporeans who
 
 ![](images/paste-12573723.png)
 
-### 9.2 Catchment Population Distribution (Cycling)
+#### 2.8.2. Catchment Population Distribution (Cycling)
 
 ![](images/paste-4DDD8BD0.png){fig-align="center"}
 
@@ -549,3 +549,62 @@ Since there are no insignificant subzones, TE28 Siglap is accessible from multip
 4.  Frankel (10.3%)
 
 ![](images/paste-9E17227A.png)
+
+## 3. Lessons Learnt
+
+### 3.1 Conclusion of Walking Population Analysis
+
+The percentage of the catchment population who is willing to walk from maximum Iso Area Distance of 1000m from all TEL Stage 4 MRT Stations mainly falls within 33.0% to 46.1% with an outlier of 23.3% for TE22A Founders Memorial. The ranking of effectiveness of MRT Station in capturing Singaporeans to walk to MRT Stations goes as follows:
+
+1.  TE27 Marine Terrace 46.1%
+
+2.  TE26 Marine Parade 45.9%
+
+3.  TE25 Tanjong Katong 41.7%
+
+4.  TE23 Tanjong Rhu 40.4%
+
+5.  TE24 Katong Park 39.7%
+
+6.  TE28 Siglap 36.8%
+
+7.  TE29 Bayshore 33.0%
+
+8.  TE22A Founders Memorial 23.3%
+
+ 
+
+Percentage for Founders Memorial is low due to the MRT being built nearer towards recreational land uses such as East Coast Park Zone A and Marina Bay Golf Course. Therefore, it mainly provides leisure Singaporeans and tourists greater access to nature reserves and recreational venues. As a result, it explains its low percentage. This does not mean that the location of this MRT Station is not ideal but it is effective in aiding Singaporeans in their last mile journeys by increasing accessibility to remote areas of Singapore.
+
+Percentages for Marine Terrace and Marine Parade are extremely high as compared to the rest due to the MRT Stations being built at locations with high proportions of residential areas, which explains the high subzone populations as well. Therefore, locations of these two MRT Stations are extremely ideal as they are effective in aiding Singaporeans in their first mile journeys by increasing accessibility to them.
+
+### 3.2 Conclusion of Cycling Population Analysis
+
+The number of subzones captured from maximum Iso Area Distance of 1600m falls within 3 to 7 with TE22A Founders Memorial being the least accessible. The ranking of effectiveness of MRT Station in capturing Singaporeans to cycle to MRT Stations goes as follows:
+
+1.  TE26 Marine Parade 7
+
+2.  TE25 Tanjong Katong 6
+
+3.  TE23 Tanjong Rhu 6
+
+4.  TE27 Marine Terrace 5
+
+5.  TE28 Siglap 5
+
+6.  TE24 Katong Park 4
+
+7.  TE29 Bayshore 4
+
+8.  TE22A Founders Memorial 3
+
+TE22A Founders Memorial managed to capture the least subzones due to its low accessibility as a result of it being surrounded by water bodies. Though it initially captured 6 different subzones, 3 of them are not accessible if the maximum distance travelled based on the existing road network is 1600m. Therefore, TE22A Founders Memorial is the least accessible if Singaporeans want to cycle to it as well.
+
+TE26 Marine Parade managed to capture the most subzone due to its size of MRT Station. Being the largest MRT Station with its exits being most distributed across the MRT Station, its accessibility is maximised as it was able to branch out extensively to more subzones. Therefore, TE26 Marine Parade is the most accessible if Singaporeans want to cycle to it.
+
+TE25 Tanjong Katong is ranked higher than TE23 Tanjong Rhu as total catchment area for TE25 Tanjong Katong (3868708.0m2) is higher than that of TE23 Tanjong Rhu (3562429.2m2). Therefore, TE25 Tanjong Katong is more accessible than TE23 Tanjong Rhu based on existing road networks for both MRT Stations. 
+
+Similarly for TE24 Katong Park and TE29 Bayshore, total catchment area for TE24 Katong Park (4797523.0m2) is higher than that of TE29 Bayshore (3689993.5m2). Therefore, TE24 Katong Park is more accessible than TE29 Bayshore based on existing road networks for both MRT Stations, TE24 Katong Park will rank higher than TE29 Bayshore.
+
+\
+

@@ -1,5 +1,5 @@
 ---
-title: "Catch Them All"
+title: "Catch Them All: The Study of TE Stage 4 MRT Stations' Catchment Areas"
 ---
 
 # Introduction
@@ -38,7 +38,7 @@ Afterwards, we will be conducting an analysis of the various amenities and build
 
 ### Deliverable 3
 
-We will also find the population size of the people served by this line by using the composite subzone areas and population.
+We will also calculating the number of people who can be potentially served by the MRT stations from each subzone.
 
 ## Posters
 
@@ -48,36 +48,36 @@ Here is the poster used at the Townhall presentation:
 
 ![](images/Poster.png)
 
-Here are the posters for the other stations:
+Here are the posters belonging to the QR codes:
 
-### TE22A
+### TE22A -- Founders Memorial
 
 ![](images/TE22A%20Founder%20Memorial-01.png)
 
-### TE23
+### TE23 -- Tanjong Rhu
 
 ![](images/TE23%20Tanjong%20Rhu-02.png)
 
-### TE24
+### TE24 -- Katong Park
 
 ![](images/TE24%20Katong%20Park-01.png)
 
-### TE25
+### TE25 -- Tanjong Katong
 
 ![](images/TE25%20Tanjong%20Katong-01.png)
 
-### TE26
+### TE26 -- Marine Parade
 
 ![](images/TE26%20Marine%20Parade-01.png)
 
-### TE27
+### TE27 -- Marine Terrace
 
 ![](images/TE27%20Marine%20Terrace-01.png)
 
-### TE28
+### TE28 -- Siglap
 
 ![](images/TE28%20Siglap-01.png)
 
-### TE29
+### TE29 -- Bayshore
 
 ![](images/TE29%20Bayshore-01.png)
