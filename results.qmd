@@ -3,13 +3,45 @@ title: "Report Pt.1"
 editor: visual
 ---
 
-## Methodology
+## 1. Means of Analysis
+
+### 1.1. Significance of Amenities Analysis
+
+As Singapore moves towards SG Green Plan 2030, one of their goals is to [achieve 75% mass public transport (i.e. rail and bus) peak-period modal share](https://www.greenplan.gov.sg/targets). By expanding the current MRT station network, they hope to improve Singaporeans\' first and last mile journeys to encourage more Singaporeans to take them. With this goal in mind, we will conduct Amenities Analysis for Catchment Areas. It will consist of the following:
+
+1.  Analysis of the Amenities Distribution within Catchment Areas
+
+Firstly, our purpose of analysis is to explore the types of Amenities captured at each contour level for each TEL Stage 4 MRT Stations based on the current road network present and analyse its impact on first and last mile journeys for Singaporeans
+
+We also assume that buffers are the optimum catchment areas for all TEL Stage 4 MRT Stations. With reference to Walking and Cycling Buffers, we also hope to analyse the distribution of the contour intervals to provide improvements to existing road network systems to increase the reach of Catchment Areas.
+
+1.  Comparison of Catchment Areas to respective Buffers 
+
+2.  Analysis of Contour Interval Distribution of Catchment Areas 
+
+Assumptions made are:
+
+1.  Buffers are the most optimum catchment areas for all TEL Stage 4 MRT Stations
+
+### 1.2. Significance of 1000m for Walking Iso-Area and Buffer
+
+A distance of 1000m will be used for maximum Walking Iso-Area and Buffer. This is because the proportion of Singaporeans who are willing to walk to an MRT station from a distance of more than 1000m from MRT Station, drops to less than 1/10. This proportion is insignificant and lesser than the proportion at 1000m which is 10% which is considered to be small. As a result, further analysis of Singaporeans\' willingness to walk from more than 1000m will not be able to provide us with deep insights for analysis, thus we will stop at 1000m for this project.
+
+The study also shows the proportion of Singaporeans who are willing to walk to MRT Station every 200m till the 1000m mark. As a result, we will be using 200m as our Walking Iso-Area Interval and these proportion figures in our calculation for population analysis later.
+
+### 1.3. Significance of 1500m for Cycling Iso-Area and Buffer
+
+We initially hope to use a distance of 1500m for maximum Cycling Iso-Area and Buffer. This is because URA adds 250-800 [bicycle](https://www.ura.gov.sg/Corporate/Guidelines/-/media/BD725DB201DB496A93569C8072DD9FD0.ashx) racks to accommodate leisure cyclists that fall within a radius of 1500m from MRT Stations. As a result, following URA\'s urban planning methodology in our project would aid us greatly in our analysis.
+
+In order to conduct similar analysis for both our Walking and Cycling Catchment, we will also be using 200m as Cycling Iso-Area Interval in our QGIS. However, this will push our maximum Cycling Iso-Area and Buffer to 1600m instead, which is a multiple of 200m, as the QGIS is not able to generate an additional internal of 100m for our last Cycling Iso-Area Polygon Layer.
+
+## 2. Methodology
 
 For the analysis, both the buffer area (calculated by a given Euclidean distance), the ISO-area (derived from the road network) and the various amenities and buildings that lie within them will be used to assess the accessibility of the stations. A distance of 1000m will be used for walking buffer and ISO-area while a distance of 1500m will be used for cycling. For both cycling and walking ISO-areas, intervals of 200m will be used to determine the relative accessibility of certain amenities within a given catchment area.
 
-## Amenities Analysis
+## 3. Amenities Analysis
 
-### TE22A -- Founders Memorial
+### 3.1. TE22A -- Founders Memorial
 
 ![Walking Catchment and Buffer](images/TE22A%20Walking%20Buffer-01.png){fig-align="center" width="1600"}
 
@@ -27,7 +59,7 @@ Promenade MRT (CC4/DT14) lies outside the cycling catchment area, but within the
 
 From the layout, it can also be seen that cycling contour intervals are more clustered together towards the centre of the map. It signifies that those areas are inaccessible based on the existing road network systems. However, since the area belongs to Marina Bay Golf Course, it is a private property which explains its inaccessibility.
 
-### TE23 -- Tanjong Rhu
+### 3.2. TE23 -- Tanjong Rhu
 
 ![Walking Catchment and Buffer](images/TE23%20Walking-01.png){fig-align="center" width="1600"}
 
@@ -43,7 +75,7 @@ In the cycling catchment area, more amenities are covered. The map shows more ty
 
 Compared to TE22A Founder\'s Memorial, the cycling contour intervals for TE23 Tanjong Rhu is more spaced out. This means that the cycling catchment area is more well-connected by the roads within the area. No new pathways need to be built to accommodate easier transit. Despite more clustered contour intervals near East Coast Part Zone A, it is remembered that its nearby land belongs to Marina Bay Golf Course, which is a private property, explaining its inaccessibility.
 
-### TE24 -- Katong Park
+### 3.3. TE24 -- Katong Park
 
 ![Walking Catchment and Buffer](images/TE24%20Walking-01.png){fig-align="center" width="1600"}
 
@@ -61,7 +93,7 @@ A larger number of low rise residential areas are also covered within this regio
 
 The cycling contour intervals for TE24 Katong Park are also evenly distributed. This means that the cycling catchment area is more well-connected by the roads within the area. No new pathways need to be built to accommodate easier transit. Furthermore, since the cycling catchment area nearly covers the buffer, it also shows that the existing road network is almost at optimum and location is ideal for Singaporeans to cycle TE24 Katong Park with ease.
 
-### TE25 -- Tanjong Katong
+### 3.4. TE25 -- Tanjong Katong
 
 ![Walking Catchment and Buffer](images/TE25%20Walking%20Buffer-02.png){fig-align="center" width="1600"}
 
@@ -79,7 +111,7 @@ For the cycling catchment area, even more amenities are covered. The map shows m
 
 Similarly to TE24 Katong Park, the cycling contour intervals for TE25 Tanjong Katong are also evenly distributed. This means that the cycling catchment area is more well-connected by the roads within the area.The Singapore Government can explore improving the road network systems to expand the cycling catchment area upwards towards the buffer limit. However, since the cycling catchment area covers a significant part of the buffer, it shows that the existing road network is almost at optimum and location is ideal for Singaporeans to cycle to TE25 Tanjong Katong with ease.
 
-### TE26 -- Marine Parade
+### 3.5. TE26 -- Marine Parade
 
 ![Walking Catchment and Buffer](images/TE26%20Marine%20Parade%20MRT%20(Walking)-01.png){fig-align="center" width="1600"}
 
@@ -97,7 +129,7 @@ Additionally, the cycling catchment for TE26 reaches approximately 4300 (high ri
 
 Similarly to TE25 Tanjong Katong, the cycling contour intervals for TE26 Marine Parade are also relatively distributed. This means that the cycling catchment area is more well-connected by the roads within the area. Since the cycling catchment area covers a significant part of the buffer, it shows that the existing road network is almost at optimum and  location is ideal for Singaporeans to cycle to TE26 Marine Parade with ease.
 
-### TE27 -- Marine Terrace
+### 3.6. TE27 -- Marine Terrace
 
 ![Walking Catchment and Buffer](images/TE27%20Marine%20Terrance%20MRT%20(Walking).png){fig-align="center" width="1600"}
 
@@ -111,7 +143,7 @@ For the cycling catchment area, it reaches more low rise residential buildings. 
 
 Nonetheless, the cycling contour intervals for TE27 Marine Terrace are also relatively well-distributed as that in TE26 Marine Parade. This means that the cycling catchment area is more well-connected by the roads within the area. Since the cycling catchment area covers a significant part of the buffer, it shows that the existing road network is almost at optimum and  location is ideal for Singaporeans for Singaporeans to cycle to TE27 Marine Terrace with ease.\
 
-### TE28 -- Siglap
+### 3.7. TE28 -- Siglap
 
 ![Walking Catchment and Buffer](images/TE28%20Siglap%20MRT%20(Walking).png){fig-align="center" width="1600"}
 
@@ -125,7 +157,7 @@ For the cycling catchment area, it also mainly reaches out to more low rise resi
 
 Similarly to TE27 Marine Parade, the cycling contour intervals for TE28 Siglap are also relatively well-distributed. This means that the walking catchment area is more well-connected by the roads within the area. Since the cycling catchment area covers a significant part of the buffer, it shows that the existing road network is almost at optimum and location is ideal for Singaporeans to cycle to TE28 Siglap with ease.
 
-### TE29 -- Bayshore
+### 3.8. TE29 -- Bayshore
 
 ![Walking Catchment and Buffer](images/TE29%20Bayshore%20MRT%20(Walking)-01.png){width="1600"}
 
@@ -141,7 +173,7 @@ For the cycling catchment area, more amenities are covered. More housing estates
 
 Similarly to TE28 Siglap, the cycling contour intervals for TE29 Bayshore are also relatively distributed. This means that the cycling catchment area is more well-connected by the roads within the area. Since the cycling catchment area covers a significant part of the buffer, it shows that the existing road network is almost at optimum and location is ideal for Singaporeans to cycle to TE29 Bayshore with ease.
 
-## Lessons Learnt
+## 4. Lessons Learnt
 
 The catchment areas, for both walking and cycling, show us that the main beneficiaries of  the TEL Stage 4 MRT stations are the residents. This is primarily due to the large catering of land use by the [Master Plan 2019](https://www.ura.gov.sg/maps/?service=MP) toward Residential along the East Coast of Singapore in the Marine Parade Subzone. These Residential land use will hence have the greatest direct impact by the presence of TEL. 
 
