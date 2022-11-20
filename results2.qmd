@@ -605,9 +605,9 @@ TE22A Founders Memorial managed to capture the least subzones due to its low acc
 
 TE26 Marine Parade managed to capture the most subzone due to its size of MRT Station. Being the largest MRT Station with its exits being most distributed across the MRT Station, its accessibility is maximised as it was able to branch out extensively to more subzones. Therefore, TE26 Marine Parade is the most accessible if Singaporeans want to cycle to it.
 
-TE25 Tanjong Katong is ranked higher than TE23 Tanjong Rhu as total catchment area for TE25 Tanjong Katong (3868708.0m2) is higher than that of TE23 Tanjong Rhu (3562429.2m2). Therefore, TE25 Tanjong Katong is more accessible than TE23 Tanjong Rhu based on existing road networks for both MRT Stations. 
+TE25 Tanjong Katong is ranked higher than TE23 Tanjong Rhu as total catchment area for TE25 Tanjong Katong (3868708.0m^2^) is higher than that of TE23 Tanjong Rhu (3562429.2m^2^). Therefore, TE25 Tanjong Katong is more accessible than TE23 Tanjong Rhu based on existing road networks for both MRT Stations. 
 
-Similarly for TE24 Katong Park and TE29 Bayshore, total catchment area for TE24 Katong Park (4797523.0m2) is higher than that of TE29 Bayshore (3689993.5m2). Therefore, TE24 Katong Park is more accessible than TE29 Bayshore based on existing road networks for both MRT Stations, TE24 Katong Park will rank higher than TE29 Bayshore.
+Similarly for TE24 Katong Park and TE29 Bayshore, total catchment area for TE24 Katong Park (4797523.0m^2^) is higher than that of TE29 Bayshore (3689993.5m^2^). Therefore, TE24 Katong Park is more accessible than TE29 Bayshore based on existing road networks for both MRT Stations, TE24 Katong Park will rank higher than TE29 Bayshore.
 
 \
 
