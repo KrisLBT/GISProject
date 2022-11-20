@@ -1,19 +1,25 @@
 ---
-title: "Introduction"
+title: "Project Scope"
 editor: visual
 ---
 
 ## Our goals
 
-Our project aims to
+Our project aims to understand how well TEL Stage 4 MRT Stations will serve Singaporeans in their first and last mile journeys in two parts.
 
-1.  Understand how well the new MRT stations will serve the people coming to and from this area
+Firstly, we want to evaluate the effectiveness of the locations of TEL Stage 4 MRT Stations based on the amenities (ranging from residential to commercial) captured within both Walking and Cycling Catchment Areas.
 
-2.  Access its accessibility to various amenities such as restaurants, schools and shopping malls
+1.  We want to analyze the types of amenities in each Catchment Areas of all TEL Stage 4 MRT Stations.
 
-3.  Find out which areas could have more roads and lines built to maximise the accessibility of the MRT stations
+2.  Additionally, we also want to compare all Catchment Areas to its respective Buffers (which we assume to be the ideal Catchment Areas) and provide improvement for existing road network system to increase the reach of all Catchment Areas.
 
-4.  Find the population size of the people being served.
+Secondly, we want to evaluate the effectiveness of the locations of TEL Stage 4 MRT Stations based on subzone population captured within both Walking and Cycling Catchment Areas.
+
+1.  We want to analyze the proportion of subzone population in each Catchment Areas of all TEL Stage 4 MRT Stations.
+
+2.  For Walking Catchment Areas, we want to further analyze the population who is willing to walk to the MRT stations within each contour interval to further evaluate the effectiveness of the locations of TEL Stage 4 MRT Stations
+
+3.  For Cycling Catchment Areas, we want to further analyze the number of subzone captured within each contour interval to further evaluate the effectiveness of the locations of TEL Stage 4 MRT Stations instead. This is because cycling is not a popular option amongst Singaporeans (cite), thus the numbers are low and insignificant. As a result, they will not be able to provide us with deep insights.
 
 ## Motivations
 
@@ -21,13 +27,17 @@ The Ministry of Transport aims to have [8 in 10 households in Singapore be withi
 
 At present, [most Singapore residents do not own a car](https://www.budgetdirect.com.sg/car-insurance/research/car-ownership-singapore). Instead, they use public transport such as buses and trains. This is due to the [costliness in purchasing and maintaining a car](https://fortune.com/2022/07/25/singapore-car-license-price/). However, many people still find public transportation to be insufficient, with many wealthier people and families opting for car ownership instead. This is partially driven by the comfort and ease that driving provides to its riders.
 
-However, this contributes to our carbon emissions and makes meeting the goals set by the Green Plan difficult to achieve. This is compounded by the fact that car ownership is a negative externality. Despite the convenience it affords to its owners, it aggravates traffic and is a source of various types of pollution apart from air pollution, such as noise.
+However, this contributes to our carbon emissions and makes [meeting the goals set by the Green Plan](https://www.greenplan.gov.sg/key-focus-areas/energy-reset/) difficult to achieve. This is compounded by the fact that car ownership is a negative externality. Despite the convenience it affords to its owners, it aggravates traffic and is a source of various types of pollution apart from air pollution, such as noise.
 
 This points to a need to strengthen our public transportation system and to accommodate the diverse needs of Singapore residents.
 
 ## Project Scope
 
-To assess the accessibility and effectiveness of the MRT stations, we analysed the building types and amenities within a reasonable walking and cycling distance from the stations, both via Euclidean distance and network analysis. The distances selected for walking and cycling are 1000m and 1500m. These were selected based on the [willingness to walk certain distances among Singaporeans](https://www.researchgate.net/publication/245561443_Using_Equivalent_Walking_Distance_to_Assess_Pedestrian_Accessibility_to_Transit_Stations_in_Singapore). At 1000m, willingness dropped to around 10%, which is insignificant.
+To assess the accessibility and effectiveness of the MRT stations, we analysed the building types and amenities within a reasonable walking and cycling distance from the stations, both via Euclidean distance and network analysis. The distances selected for walking and cycling are 1000m and 1500m.
+
+1000m was selected for the walking distance based on the [willingness to walk certain distances among Singaporeans](https://www.researchgate.net/publication/245561443_Using_Equivalent_Walking_Distance_to_Assess_Pedestrian_Accessibility_to_Transit_Stations_in_Singapore). 80%, 50%, 30% and 15% of Singaporeans were willing to walk distances of 400m, 600m, 800m and 1000m. Hence, we opted to have intervals of 200m to reflect this. At 1000m, willingness dropped to around 10%, which is insignificant. Hence, it was cut off at 1000m.
+
+1500m was selected as the [URA builds cycling racks within 1500m of an MRT station](https://www.ura.gov.sg/Corporate/Guidelines/-/media/BD725DB201DB496A93569C8072DD9FD0.ashx). Hence, not everyone who is willing to cycle a certain distance will be able to do so. However, 200m intervals were still chosen for the contours as it is the same intervals used for walking. The catchment area, however, used 1600m to ensure that the intervals will still be equal.
 
 Furthermore, the population distribution by subzone was also used to understand the potential reach to residents within the area.
 

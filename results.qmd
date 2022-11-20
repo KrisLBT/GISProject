@@ -7,7 +7,7 @@ editor: visual
 
 For the analysis, both the buffer area (calculated by a given Euclidean distance), the ISO-area (derived from the road network) and the various amenities and buildings that lie within them will be used to assess the accessibility of the stations. A distance of 1000m will be used for walking buffer and ISO-area while a distance of 1500m will be used for cycling. For both cycling and walking ISO-areas, intervals of 200m will be used to determine the relative accessibility of certain amenities within a given catchment area.
 
-## Catchment and Buffer Area Analysis
+## Amenities Analysis
 
 ### TE22A -- Founders Memorial
 

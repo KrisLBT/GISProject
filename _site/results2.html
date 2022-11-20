@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./data.html">Data Used</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./results.html">Catchment Analysis</a>
+    <a class="nav-link" href="./results.html">Amenities Analysis</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./results2.html" aria-current="page">Population Analysis</a>
@@ -188,14 +188,13 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="means-of-analysis">1 Means of Analysis</h2>
 <section id="significance-of-catchment-population-distribution-walking-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="significance-of-catchment-population-distribution-walking-analysis">1.1. Significance of Catchment Population Distribution (Walking) Analysis</h3>
-<p>As Singapore moves towards SG Green Plan 2030, one of their goals is to <a href="https://www.greenplan.gov.sg/targets">achieve 75% mass public transport (i.e.&nbsp;rail and bus) peak-period modal share</a>. By expanding current MRT station network, they hope to make public transportation more accessible for Singaporeans to encourage more Singaporeans to take them. With this goal in mind, we will&nbsp;</p>
-<p>Our analysis consists of the following:</p>
+<p>As Singapore moves towards SG Green Plan 2030, one of their goals is to <a href="https://www.greenplan.gov.sg/targets">achieve 75% mass public transport (i.e.&nbsp;rail and bus) peak-period modal share</a>. By expanding current MRT station network, they hope to make public transportation more accessible for Singaporeans to encourage more Singaporeans to take them. With this goal in mind, we will conduct Population Distribution Analysis for Walking Catchment Areas. It will consist of the following:</p>
 <ol type="1">
 <li><p>Proportion of population captured within a subzone&nbsp;</p></li>
 <li><p>Proportion of subzone population who is willing to walk to TEL Stage 4 MRT Stations.</p></li>
 </ol>
-<p>The reason why we want to analyze Catchment Population Distribution (Walking) this way because we want to explore how effective are the walking catchment areas of the upcoming Thomson East Coast Line Stage 4 MRT Stations are based on current road network present.&nbsp;</p>
-<p>Additionally, with the current road network present, it is <a href="https://www.researchgate.net/publication/245561443_Using_Equivalent_Walking_Distance_to_Assess_Pedestrian_Accessibility_to_Transit_Stations_in_Singapore">important to analyze the proportion of Singaporeans who is wiling to walk at each contour distance</a> to evaluate the location chosen for the TEL Stage 4 MRT Stations.</p>
+<p>Firstly, our purpose of analysis is to explore explore how effective are the walking catchment areas in capturing subzone population for each TEL Stage 4 MRT Stations based on the current road network present.</p>
+<p>Additionally, it is <a href="https://www.researchgate.net/publication/245561443_Using_Equivalent_Walking_Distance_to_Assess_Pedestrian_Accessibility_to_Transit_Stations_in_Singapore">important to analyze the proportion of Singaporeans who is wiling to walk at each contour distance</a> to evaluate the location chosen for the TEL Stage 4 MRT Stations.</p>
 <p>Assumptions made are:</p>
 <ol type="1">
 <li><p>Population is evenly distributed throughout the entire subzone</p></li>
@@ -204,9 +203,9 @@ ul.task-list li input[type="checkbox"] {
 <p>We have also defined the variables that we will be using in our calculations later and its formula (if any) based on the table as shown below.</p>
 <table class="table">
 <colgroup>
-<col style="width: 17%">
-<col style="width: 38%">
-<col style="width: 43%">
+<col style="width: 14%">
+<col style="width: 50%">
+<col style="width: 34%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -262,8 +261,8 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>Percentage Population</td>
-<td>Calculated Percentage of Subzone Population who is willing to walk to MRT Station</td>
-<td>Total Population (Willing to Walk to MRT) within Contour / Total Subzone Population * 100</td>
+<td>Calculated Percentage of Catchment Population who is willing to walk to MRT Station at Subzone Levels within the Catchment Areas</td>
+<td>Population (Willing to Walk to MRT) within Contour / Total Catchment Population * 100</td>
 </tr>
 </tbody>
 </table>
@@ -272,14 +271,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="significance-of-catchment-population-distribution-cycling-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="significance-of-catchment-population-distribution-cycling-analysis">1.2 Significance of Catchment Population Distribution (cycling) Analysis</h3>
-<p>Furthermore, we will explore how effective are the catchment areas of the upcoming Thomson East Coast Line Stage 4 MRT Station based on current road network present in encouraging Singaporeans to cycle.&nbsp;</p>
-<p>Our analysis consists of the following:</p>
+<p>With this goal in mind, we will conduct Population Distribution Analysis for Cycling Catchment Areas. It will consist of the following:</p>
 <ol type="1">
 <li><p>Proportion of population captured within a subzone&nbsp;</p></li>
 <li><p>Accessibility of TEL Stage 4 MRT Stations</p></li>
 </ol>
-<p>The reason why we want to analyze Catchment Population Distribution (Cycling) this way because we want to explore how effective are the cycling catchment areas of the upcoming Thomson East Coast Line Stage 4 MRT Stations are based on current road network present.&nbsp;</p>
-<p>However, based on URA,<a href="https://www.singstat.gov.sg/-/media/files/visualising_data/infographics/c2020/c2020-geographical-distribution-transport.ashx">it is stated that only 3.9% of Singaporeans take a combination of transportation.</a> For example, one combination would be cycling and taking the bus. Therefore, the proportion of Singapore who cycles and takes the MRT is far lesser than the 3.9% stated. As a result, due to the low numbers, a better analysis would be how accessible TEL Stage 4 MRT Stations would be from the various subzones that fall within 1.6km radius instead of the number of people who is willing to cycle within the catchment area.&nbsp;</p>
+<p>Firstly, our purpose of analysis is to explore how effective are the cycling catchment areas in capturing subzone population for each TEL Stage 4 MRT Stations based on the current road network present.</p>
+<p>However, based on URA,<a href="https://www.singstat.gov.sg/-/media/files/visualising_data/infographics/c2020/c2020-geographical-distribution-transport.ashx">it is stated that only 3.9% of Singaporeans take a combination of transportation.</a> For example, one combination would be cycling and taking the bus. Therefore, the proportion of Singapore who cycles and takes the MRT is far lesser than the 3.9% stated. Due to low and insignificant numbers, a more suitable analysis to evaluate its location suitability would be from the various subzones that fall within 1.6km radius instead of the number of people who is willing to cycle within the catchment area.&nbsp;</p>
 <p>The Singapore Government only built <a href="https://www.ura.gov.sg/Corporate/Guidelines/-/media/BD725DB201DB496A93569C8072DD9FD0.ashx">800 bicycle racks within the 1.5km radius of each MRT Station</a>. However, since our interval between each contour is 200m for contour generation in our QGIS, the max contour will be at 1.6km instead. We will also eliminate subzones from the list of accessibility if the proportion of the subzone that is in the catchment area is below 5% as it renders the subzone insignificant in the catchment area.</p>
 <p>Assumption made is:</p>
 <ol type="1">

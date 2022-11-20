@@ -12,7 +12,7 @@ website:
       - href: data.qmd
         text: Data Used
       - href: results.qmd
-        text: Catchment Analysis
+        text: Amenities Analysis
       - href: results2.qmd
         text: Population Analysis
         

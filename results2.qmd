@@ -7,17 +7,15 @@ editor: visual
 
 ### 1.1. Significance of Catchment Population Distribution (Walking) Analysis
 
-As Singapore moves towards SG Green Plan 2030, one of their goals is to [achieve 75% mass public transport (i.e. rail and bus) peak-period modal share](https://www.greenplan.gov.sg/targets). By expanding current MRT station network, they hope to make public transportation more accessible for Singaporeans to encourage more Singaporeans to take them. With this goal in mind, we will 
-
-Our analysis consists of the following:
+As Singapore moves towards SG Green Plan 2030, one of their goals is to [achieve 75% mass public transport (i.e. rail and bus) peak-period modal share](https://www.greenplan.gov.sg/targets). By expanding current MRT station network, they hope to make public transportation more accessible for Singaporeans to encourage more Singaporeans to take them. With this goal in mind, we will conduct Population Distribution Analysis for Walking Catchment Areas. It will consist of the following:
 
 1.  Proportion of population captured within a subzone 
 
 2.  Proportion of subzone population who is willing to walk to TEL Stage 4 MRT Stations.
 
-The reason why we want to analyze Catchment Population Distribution (Walking) this way because we want to explore how effective are the walking catchment areas of the upcoming Thomson East Coast Line Stage 4 MRT Stations are based on current road network present. 
+Firstly, our purpose of analysis is to explore explore how effective are the walking catchment areas in capturing subzone population for each TEL Stage 4 MRT Stations based on the current road network present.
 
-Additionally, with the current road network present, it is [important to analyze the proportion of Singaporeans who is wiling to walk at each contour distance](https://www.researchgate.net/publication/245561443_Using_Equivalent_Walking_Distance_to_Assess_Pedestrian_Accessibility_to_Transit_Stations_in_Singapore) to evaluate the location chosen for the TEL Stage 4 MRT Stations.
+Additionally, it is [important to analyze the proportion of Singaporeans who is wiling to walk at each contour distance](https://www.researchgate.net/publication/245561443_Using_Equivalent_Walking_Distance_to_Assess_Pedestrian_Accessibility_to_Transit_Stations_in_Singapore) to evaluate the location chosen for the TEL Stage 4 MRT Stations.
 
 Assumptions made are:
 
@@ -27,59 +25,57 @@ Assumptions made are:
 
 We have also defined the variables that we will be using in our calculations later and its formula (if any) based on the table as shown below.
 
-+-------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| Variables                           | Definition                                                                        | Formula (if any)                                                                           |
-+=====================================+===================================================================================+============================================================================================+
-| Subzone Name                        | Name of Subzone                                                                   | -Nil-                                                                                      |
-+-------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| Catchment Area                      | Area of Subzone in the Catchment Zone                                             | \$area from QGIS                                                                           |
-+-------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| Subzone Area                        | Area of Subzone                                                                   | \$area from QGIS                                                                           |
-+-------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| Ratio                               | Calculated Ratio of Catchment Area to Subzone Area                                | Catchment Area/Subzone Area                                                                |
-+-------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| Subzone Population                  | Raw Subzone Population Numbers                                                    | Subzone Population                                                                         |
-+-------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| Catchment Population                | Calculated Catchment Population Numbers                                           | Ratio \* Total Subzone Population                                                          |
-+-------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| Population (Willing to Walk to MRT) | Calculated Catchment Population who is willing to walk to MRT                     | 200m:                                                                                      |
-|                                     |                                                                                   |                                                                                            |
-|                                     |                                                                                   | Catchment Population (0-200m) \* 1                                                         |
-|                                     |                                                                                   |                                                                                            |
-|                                     |                                                                                   | 400m:                                                                                      |
-|                                     |                                                                                   |                                                                                            |
-|                                     |                                                                                   | Catchment Population (200-400m) \* 0.8                                                     |
-|                                     |                                                                                   |                                                                                            |
-|                                     |                                                                                   | 600m:                                                                                      |
-|                                     |                                                                                   |                                                                                            |
-|                                     |                                                                                   | Catchment Population (400-600m) \* 0.5                                                     |
-|                                     |                                                                                   |                                                                                            |
-|                                     |                                                                                   | 800m:                                                                                      |
-|                                     |                                                                                   |                                                                                            |
-|                                     |                                                                                   | Catchment Population (600-800m) \* 0.3                                                     |
-|                                     |                                                                                   |                                                                                            |
-|                                     |                                                                                   | 1000m:                                                                                     |
-|                                     |                                                                                   |                                                                                            |
-|                                     |                                                                                   | Catchment Population (800-1000m) \* 0.15                                                   |
-+-------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| Percentage Population               | Calculated Percentage of Subzone Population who is willing to walk to MRT Station | Total Population (Willing to Walk to MRT) within Contour / Total Subzone Population \* 100 |
-+-------------------------------------+-----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+| Variables                           | Definition                                                                                                                       | Formula (if any)                                                                       |
++=====================================+==================================================================================================================================+========================================================================================+
+| Subzone Name                        | Name of Subzone                                                                                                                  | -Nil-                                                                                  |
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+| Catchment Area                      | Area of Subzone in the Catchment Zone                                                                                            | \$area from QGIS                                                                       |
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+| Subzone Area                        | Area of Subzone                                                                                                                  | \$area from QGIS                                                                       |
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+| Ratio                               | Calculated Ratio of Catchment Area to Subzone Area                                                                               | Catchment Area/Subzone Area                                                            |
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+| Subzone Population                  | Raw Subzone Population Numbers                                                                                                   | Subzone Population                                                                     |
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+| Catchment Population                | Calculated Catchment Population Numbers                                                                                          | Ratio \* Total Subzone Population                                                      |
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+| Population (Willing to Walk to MRT) | Calculated Catchment Population who is willing to walk to MRT                                                                    | 200m:                                                                                  |
+|                                     |                                                                                                                                  |                                                                                        |
+|                                     |                                                                                                                                  | Catchment Population (0-200m) \* 1                                                     |
+|                                     |                                                                                                                                  |                                                                                        |
+|                                     |                                                                                                                                  | 400m:                                                                                  |
+|                                     |                                                                                                                                  |                                                                                        |
+|                                     |                                                                                                                                  | Catchment Population (200-400m) \* 0.8                                                 |
+|                                     |                                                                                                                                  |                                                                                        |
+|                                     |                                                                                                                                  | 600m:                                                                                  |
+|                                     |                                                                                                                                  |                                                                                        |
+|                                     |                                                                                                                                  | Catchment Population (400-600m) \* 0.5                                                 |
+|                                     |                                                                                                                                  |                                                                                        |
+|                                     |                                                                                                                                  | 800m:                                                                                  |
+|                                     |                                                                                                                                  |                                                                                        |
+|                                     |                                                                                                                                  | Catchment Population (600-800m) \* 0.3                                                 |
+|                                     |                                                                                                                                  |                                                                                        |
+|                                     |                                                                                                                                  | 1000m:                                                                                 |
+|                                     |                                                                                                                                  |                                                                                        |
+|                                     |                                                                                                                                  | Catchment Population (800-1000m) \* 0.15                                               |
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+| Percentage Population               | Calculated Percentage of Catchment Population who is willing to walk to MRT Station at Subzone Levels within the Catchment Areas | Population (Willing to Walk to MRT) within Contour / Total Catchment Population \* 100 |
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 
 \
 
 ### 1.2 Significance of Catchment Population Distribution (cycling) Analysis
 
-Furthermore, we will explore how effective are the catchment areas of the upcoming Thomson East Coast Line Stage 4 MRT Station based on current road network present in encouraging Singaporeans to cycle. 
-
-Our analysis consists of the following:
+With this goal in mind, we will conduct Population Distribution Analysis for Cycling Catchment Areas. It will consist of the following:
 
 1.  Proportion of population captured within a subzone 
 
 2.  Accessibility of TEL Stage 4 MRT Stations
 
-The reason why we want to analyze Catchment Population Distribution (Cycling) this way because we want to explore how effective are the cycling catchment areas of the upcoming Thomson East Coast Line Stage 4 MRT Stations are based on current road network present. 
+Firstly, our purpose of analysis is to explore how effective are the cycling catchment areas in capturing subzone population for each TEL Stage 4 MRT Stations based on the current road network present.
 
-However, based on URA,[it is stated that only 3.9% of Singaporeans take a combination of transportation.](https://www.singstat.gov.sg/-/media/files/visualising_data/infographics/c2020/c2020-geographical-distribution-transport.ashx) For example, one combination would be cycling and taking the bus. Therefore, the proportion of Singapore who cycles and takes the MRT is far lesser than the 3.9% stated. As a result, due to the low numbers, a better analysis would be how accessible TEL Stage 4 MRT Stations would be from the various subzones that fall within 1.6km radius instead of the number of people who is willing to cycle within the catchment area. 
+However, based on URA,[it is stated that only 3.9% of Singaporeans take a combination of transportation.](https://www.singstat.gov.sg/-/media/files/visualising_data/infographics/c2020/c2020-geographical-distribution-transport.ashx) For example, one combination would be cycling and taking the bus. Therefore, the proportion of Singapore who cycles and takes the MRT is far lesser than the 3.9% stated. Due to low and insignificant numbers, a more suitable analysis to evaluate its location suitability would be from the various subzones that fall within 1.6km radius instead of the number of people who is willing to cycle within the catchment area. 
 
 The Singapore Government only built [800 bicycle racks within the 1.5km radius of each MRT Station](https://www.ura.gov.sg/Corporate/Guidelines/-/media/BD725DB201DB496A93569C8072DD9FD0.ashx). However, since our interval between each contour is 200m for contour generation in our QGIS, the max contour will be at 1.6km instead. We will also eliminate subzones from the list of accessibility if the proportion of the subzone that is in the catchment area is below 5% as it renders the subzone insignificant in the catchment area.
 
